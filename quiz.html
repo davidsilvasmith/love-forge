@@ -199,6 +199,8 @@
 
       const message = opener[primary];
       const extraTools = extra.length ? extra : ['/blog/10-minute-weekly-meeting.html'];
+      const siteOrigin = window.location.origin || 'https://loveforge.ai';
+      const fullUrl = (path) => `${siteOrigin}${path}`;
       const dayByDay = [
         `Day 1: Run ${niceName(start)} and send the tonight text.`,
         `Day 2: Repeat ${niceName(start)}. Both rate connection 1-10.`,
@@ -209,7 +211,7 @@
         'Day 7: 10-minute review — keep, tweak, or switch based on your average score.'
       ];
       const planText = [
-        `Start tool: ${niceName(start)}`,
+        `Start tool: ${niceName(start)} (${fullUrl(start)})`,
         `Tonight text: "${message}"`,
         '',
         '7-day checklist:',
@@ -217,7 +219,7 @@
         '',
         'Score after each run: both partners rate connection 1-10.',
         'Keep the tool if your average improves by 2+ points after 7 days.',
-        `Also add: ${extraTools.map(x => niceName(x)).join(', ')}`
+        `Also add: ${extraTools.map(x => `${niceName(x)} (${fullUrl(x)})`).join(', ')}`
       ].join('\n');
       const out = document.getElementById('out');
       out.className = 'result';
@@ -249,11 +251,11 @@
       const sendEmailBtn = document.getElementById('send-email');
       const copyState = document.getElementById('copy-state');
 
-      const smsBody = `${message}\n\nStart tool: ${niceName(start)}\nPlan: ${window.location.origin || ''}${start}`;
+      const smsBody = `${message}\n\nStart tool: ${niceName(start)}\nLink: ${fullUrl(start)}`;
       sendSmsBtn.href = `sms:?&body=${encodeURIComponent(smsBody)}`;
 
       const emailSubject = 'Want to try one relationship reset tool this week?';
-      const emailBody = `${message}\n\nI took this 2-minute quiz and got this starting tool: ${window.location.origin || ''}${start}\n\nIf you're open, let's test it for 7 days and keep it only if it helps both of us.`;
+      const emailBody = `${message}\n\nI took this 2-minute quiz and got this starting tool: ${fullUrl(start)}\n\nIf you're open, let's test it for 7 days and keep it only if it helps both of us.`;
       sendEmailBtn.href = `mailto:?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
       copyBtn.addEventListener('click', async () => {
         try {
