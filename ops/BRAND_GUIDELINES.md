@@ -27,3 +27,7 @@ Each page should include:
 - Primary CTA = next best helpful step (quiz or start tool)
 - Secondary CTA = browse tool library
 - No aggressive urgency language
+
+
+## Primary audience anchor
+Write for a 35-year-old busy parent (soccer-mom readability): short, practical, emotionally safe, no jargon, no lectures.

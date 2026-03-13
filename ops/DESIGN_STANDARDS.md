@@ -24,3 +24,9 @@ No design change counts as done without:
 1. Commit hash
 2. GitHub Pages status built
 3. Live URL posted
+
+
+## Anti-text-wall rule (required)
+- Blog hub cannot be a plain list only.
+- Every high-traffic page must include at least one visual block (tiles/cards/icons) above the fold.
+- Break any block over 5 lines into bullets or cards.
