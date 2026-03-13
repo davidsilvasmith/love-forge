@@ -104,8 +104,19 @@ form .q{
 }
 input[type="radio"]{accent-color:#7c5cff}
 
+.visual-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:10px 0 4px}
+.visual-tile{min-height:150px;border-radius:16px;padding:16px;border:1px solid rgba(255,255,255,.14);display:flex;flex-direction:column;justify-content:flex-end;box-shadow:var(--shadow)}
+.visual-tile h3{margin:0 0 4px}
+.tile-1{background:linear-gradient(140deg,#6d4aff,#3b82f6)}
+.tile-2{background:linear-gradient(140deg,#0ea5a5,#2563eb)}
+.tile-3{background:linear-gradient(140deg,#f43f5e,#7c3aed)}
+.tile-4{background:linear-gradient(140deg,#14b8a6,#22c55e)}
+.update-item{display:grid;grid-template-columns:96px 1fr;gap:12px;align-items:start}
+.update-date{font-weight:700;color:#dbe5ff}
+
 @media (max-width:720px){
   .wrap{padding:18px}
   .hero{padding:62px 18px}
   .btn{width:100%;text-align:center;margin:.35rem 0}
+  .update-item{grid-template-columns:1fr}
 }
