@@ -1,22 +1,144 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Love Forge Relationship Quiz</title><link rel="stylesheet" href="/assets/styles.css"><style>.q{margin:14px 0;padding:14px;background:#171a21;border-radius:10px}.opt{display:block;margin:6px 0}.result{margin-top:16px;padding:14px;border-radius:10px;background:#1c2330}</style></head><body><div class="wrap"><p><a href="/">← Home</a></p><h1>2-Minute Relationship Triage Quiz</h1><p>Answer quickly. This is for direction, not diagnosis.</p><form id="quiz">
-<div class="q"><strong>1) Most common pain right now?</strong><label class="opt"><input type="radio" name="q1" value="disconnect" required> We feel disconnected/roommate-ish</label><label class="opt"><input type="radio" name="q1" value="conflict"> Arguments escalate fast</label><label class="opt"><input type="radio" name="q1" value="trust"> Trust feels shaky</label><label class="opt"><input type="radio" name="q1" value="distance"> Travel/time apart creates drift</label></div>
-<div class="q"><strong>2) How often do you have intentional connection time?</strong><label class="opt"><input type="radio" name="q2" value="low" required> Rarely</label><label class="opt"><input type="radio" name="q2" value="med"> 1-2x/week</label><label class="opt"><input type="radio" name="q2" value="high"> Most days</label></div>
-<div class="q"><strong>3) During conflict, what happens most?</strong><label class="opt"><input type="radio" name="q3" value="explode" required> We escalate / get personal</label><label class="opt"><input type="radio" name="q3" value="avoid"> We avoid and go cold</label><label class="opt"><input type="radio" name="q3" value="repair"> We repair quickly</label></div>
-<div class="q"><strong>4) Which would help most this week?</strong><label class="opt"><input type="radio" name="q4" value="script" required> Better scripts</label><label class="opt"><input type="radio" name="q4" value="ritual"> Better daily rhythm</label><label class="opt"><input type="radio" name="q4" value="boundaries"> Better boundaries</label></div>
-<button class="btn" type="submit">Get my starting plan</button></form><div id="out"></div></div><script>
-const map={disconnect:'/blog/daily-15-minute-connection-block.html',conflict:'/blog/fight-fair-protocol.html',trust:'/blog/boundary-definition-tool.html',distance:'/blog/distance-connection-protocol.html'};
-const opener={
-disconnect:"Can we try one 15-minute check-in tonight at 8:30? No fixing, just listening and one appreciation each.",
-conflict:"We keep getting stuck in the same fight loop. Can we use a 25-minute script tonight so we both feel heard without escalation?",
-trust:"I want us to feel safer and more stable. Can we set clear boundaries together for 10 minutes tonight and write them down?",
-distance:"Can we do a 10-minute connection reset tonight while we're apart so we don't drift this week?"
-};
-document.getElementById('quiz').addEventListener('submit',e=>{e.preventDefault();const d=new FormData(e.target);const q1=d.get('q1');const q2=d.get('q2');const q3=d.get('q3');const q4=d.get('q4');let primary=q1;
-if(q3==='explode') primary='conflict'; if(q3==='avoid'&&q1!=='trust') primary='disconnect'; if(q4==='boundaries') primary='trust';
-const start=map[primary];
-const extra=[];
-if(q2==='low') extra.push('/blog/10-minute-weekly-meeting.html');
-if(q3!=='repair') extra.push('/blog/pause-and-return-tool.html');
-if(primary!=='distance'&&q1==='distance') extra.push('/blog/re-entry-plan-tool.html');
-const out=document.getElementById('out'); out.className='result'; out.innerHTML=`<h2>Your starting tool</h2><p><a href='${start}'>${start.replace('/blog/','').replace('.html','').replaceAll('-',' ')}</a></p><p><strong>7-day plan:</strong> run one tool daily, then review on day 7.</p><h3>Text you can send tonight</h3><div class='q'><em>"${opener[primary]}"</em></div><p><strong>Score it:</strong> after each run, both rate connection 1-10. Keep the tool if your average improves by 2+ points after 7 days.</p><h3>Also add</h3><ul>${extra.map(x=>`<li><a href='${x}'>${x.replace('/blog/','').replace('.html','').replaceAll('-',' ')}</a></li>`).join('')||'<li><a href="/blog/10-minute-weekly-meeting.html">10-minute weekly meeting</a></li>'}</ul><p><a class='btn' href='/blog/'>See full tool library</a></p>`;
-});</script></body></html>
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Love Forge Relationship Quiz</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+  <style>
+    .q { margin:14px 0; padding:14px; background:#171a21; border-radius:10px; }
+    .opt { display:block; margin:6px 0; }
+    .result { margin-top:16px; padding:14px; border-radius:10px; background:#1c2330; }
+    .row { display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+    .mini { padding:8px 12px; border:1px solid #6f7b91; border-radius:8px; background:transparent; color:#e9edf6; cursor:pointer; }
+    .mini:hover { border-color:#a8b3c7; }
+    .copied { color:#88e39b; font-size:.92rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <p><a href="/">← Home</a></p>
+    <h1>2-Minute Relationship Triage Quiz</h1>
+    <p>Answer quickly. This is for direction, not diagnosis.</p>
+
+    <form id="quiz">
+      <div class="q">
+        <strong>1) Most common pain right now?</strong>
+        <label class="opt"><input type="radio" name="q1" value="disconnect" required> We feel disconnected/roommate-ish</label>
+        <label class="opt"><input type="radio" name="q1" value="conflict"> Arguments escalate fast</label>
+        <label class="opt"><input type="radio" name="q1" value="trust"> Trust feels shaky</label>
+        <label class="opt"><input type="radio" name="q1" value="distance"> Travel/time apart creates drift</label>
+      </div>
+
+      <div class="q">
+        <strong>2) How often do you have intentional connection time?</strong>
+        <label class="opt"><input type="radio" name="q2" value="low" required> Rarely</label>
+        <label class="opt"><input type="radio" name="q2" value="med"> 1-2x/week</label>
+        <label class="opt"><input type="radio" name="q2" value="high"> Most days</label>
+      </div>
+
+      <div class="q">
+        <strong>3) During conflict, what happens most?</strong>
+        <label class="opt"><input type="radio" name="q3" value="explode" required> We escalate / get personal</label>
+        <label class="opt"><input type="radio" name="q3" value="avoid"> We avoid and go cold</label>
+        <label class="opt"><input type="radio" name="q3" value="repair"> We repair quickly</label>
+      </div>
+
+      <div class="q">
+        <strong>4) Which would help most this week?</strong>
+        <label class="opt"><input type="radio" name="q4" value="script" required> Better scripts</label>
+        <label class="opt"><input type="radio" name="q4" value="ritual"> Better daily rhythm</label>
+        <label class="opt"><input type="radio" name="q4" value="boundaries"> Better boundaries</label>
+      </div>
+
+      <button class="btn" type="submit">Get my starting plan</button>
+    </form>
+
+    <div id="out"></div>
+  </div>
+
+  <script>
+    const map = {
+      disconnect: '/blog/daily-15-minute-connection-block.html',
+      conflict: '/blog/fight-fair-protocol.html',
+      trust: '/blog/boundary-definition-tool.html',
+      distance: '/blog/distance-connection-protocol.html'
+    };
+
+    const opener = {
+      disconnect: 'Can we try one 15-minute check-in tonight at 8:30? No fixing, just listening and one appreciation each.',
+      conflict: 'We keep getting stuck in the same fight loop. Can we use a 25-minute script tonight so we both feel heard without escalation?',
+      trust: 'I want us to feel safer and more stable. Can we set clear boundaries together for 10 minutes tonight and write them down?',
+      distance: 'Can we do a 10-minute connection reset tonight while we\'re apart so we don\'t drift this week?'
+    };
+
+    function niceName(path) {
+      return path.replace('/blog/', '').replace('.html', '').replaceAll('-', ' ');
+    }
+
+    function copyText(text) {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        return navigator.clipboard.writeText(text);
+      }
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      ta.remove();
+      return Promise.resolve();
+    }
+
+    document.getElementById('quiz').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const d = new FormData(e.target);
+      const q1 = d.get('q1');
+      const q2 = d.get('q2');
+      const q3 = d.get('q3');
+      const q4 = d.get('q4');
+
+      let primary = q1;
+      if (q3 === 'explode') primary = 'conflict';
+      if (q3 === 'avoid' && q1 !== 'trust') primary = 'disconnect';
+      if (q4 === 'boundaries') primary = 'trust';
+
+      const start = map[primary];
+      const extra = [];
+      if (q2 === 'low') extra.push('/blog/10-minute-weekly-meeting.html');
+      if (q3 !== 'repair') extra.push('/blog/pause-and-return-tool.html');
+      if (primary !== 'distance' && q1 === 'distance') extra.push('/blog/re-entry-plan-tool.html');
+
+      const message = opener[primary];
+      const out = document.getElementById('out');
+      out.className = 'result';
+      out.innerHTML = `
+        <h2>Your starting tool</h2>
+        <p><a href="${start}">${niceName(start)}</a></p>
+        <p><strong>7-day plan:</strong> run one tool daily, then review on day 7.</p>
+        <h3>Text you can send tonight</h3>
+        <div class="q"><em>"${message}"</em></div>
+        <div class="row">
+          <button id="copy-opener" class="mini" type="button">Copy text</button>
+          <span id="copy-state" class="copied" aria-live="polite"></span>
+        </div>
+        <p><strong>Score it:</strong> after each run, both rate connection 1-10. Keep the tool if your average improves by 2+ points after 7 days.</p>
+        <h3>Also add</h3>
+        <ul>${extra.map(x => `<li><a href="${x}">${niceName(x)}</a></li>`).join('') || '<li><a href="/blog/10-minute-weekly-meeting.html">10-minute weekly meeting</a></li>'}</ul>
+        <p><a class="btn" href="/blog/">See full tool library</a></p>
+      `;
+
+      const copyBtn = document.getElementById('copy-opener');
+      const copyState = document.getElementById('copy-state');
+      copyBtn.addEventListener('click', async () => {
+        try {
+          await copyText(message);
+          copyState.textContent = 'Copied.';
+          setTimeout(() => { copyState.textContent = ''; }, 1500);
+        } catch {
+          copyState.textContent = 'Could not copy — select and copy manually.';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
