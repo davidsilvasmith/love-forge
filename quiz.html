@@ -13,6 +13,13 @@
     .mini { padding:8px 12px; border:1px solid #6f7b91; border-radius:8px; background:transparent; color:#e9edf6; cursor:pointer; }
     .mini:hover { border-color:#a8b3c7; }
     .copied { color:#88e39b; font-size:.92rem; }
+    .lane-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:10px; margin:14px 0 18px; }
+    .lane-tile { border:1px solid #4d5a74; border-radius:12px; padding:12px; background:linear-gradient(160deg,#182033,#111725); color:#e9edf6; cursor:pointer; text-align:left; }
+    .lane-tile:hover { border-color:#91a2c4; }
+    .lane-tile.active { border-color:#8aa2ff; box-shadow:0 0 0 2px rgba(138,162,255,.25) inset; }
+    .lane-emoji { font-size:1.25rem; display:block; margin-bottom:6px; }
+    .lane-title { font-weight:700; display:block; margin-bottom:2px; }
+    .lane-sub { color:#b7c3dd; font-size:.9rem; }
   </style>
 </head>
 <body>
@@ -20,6 +27,29 @@
     <p><a href="/">← Home</a></p>
     <h1>2-Minute Relationship Triage Quiz</h1>
     <p>Answer quickly. This is for direction, not diagnosis.</p>
+
+    <div class="lane-grid" role="group" aria-label="Choose your main relationship pain">
+      <button class="lane-tile" type="button" data-pick="disconnect">
+        <span class="lane-emoji" aria-hidden="true">💞</span>
+        <span class="lane-title">Feeling distant</span>
+        <span class="lane-sub">Roommate energy, low closeness</span>
+      </button>
+      <button class="lane-tile" type="button" data-pick="conflict">
+        <span class="lane-emoji" aria-hidden="true">🔥</span>
+        <span class="lane-title">Escalating conflict</span>
+        <span class="lane-sub">Arguments spike fast</span>
+      </button>
+      <button class="lane-tile" type="button" data-pick="trust">
+        <span class="lane-emoji" aria-hidden="true">🧭</span>
+        <span class="lane-title">Trust wobble</span>
+        <span class="lane-sub">Boundaries feel unclear</span>
+      </button>
+      <button class="lane-tile" type="button" data-pick="distance">
+        <span class="lane-emoji" aria-hidden="true">✈️</span>
+        <span class="lane-title">Distance drift</span>
+        <span class="lane-sub">Travel/time apart strain</span>
+      </button>
+    </div>
 
     <form id="quiz">
       <div class="q">
@@ -89,6 +119,30 @@
       return Promise.resolve();
     }
 
+    const laneTiles = Array.from(document.querySelectorAll('.lane-tile'));
+    const q1Radios = Array.from(document.querySelectorAll('input[name="q1"]'));
+
+    function setLaneActive(value) {
+      laneTiles.forEach(tile => tile.classList.toggle('active', tile.dataset.pick === value));
+    }
+
+    laneTiles.forEach(tile => {
+      tile.addEventListener('click', () => {
+        const val = tile.dataset.pick;
+        const radio = document.querySelector(`input[name="q1"][value="${val}"]`);
+        if (radio) {
+          radio.checked = true;
+          setLaneActive(val);
+          radio.closest('.q')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      });
+    });
+
+    q1Radios.forEach(r => {
+      r.addEventListener('change', () => setLaneActive(r.value));
+      if (r.checked) setLaneActive(r.value);
+    });
+
     document.getElementById('quiz').addEventListener('submit', (e) => {
       e.preventDefault();
       const d = new FormData(e.target);
@@ -109,6 +163,14 @@
       if (primary !== 'distance' && q1 === 'distance') extra.push('/blog/re-entry-plan-tool.html');
 
       const message = opener[primary];
+      const planText = [
+        `Start tool: ${niceName(start)}`,
+        '7-day plan: run one tool daily, then review on day 7.',
+        `Tonight text: "${message}"`,
+        'Score after each run: both partners rate connection 1-10.',
+        'Keep the tool if your average improves by 2+ points after 7 days.',
+        `Also add: ${(extra.length ? extra : ['/blog/10-minute-weekly-meeting.html']).map(x => niceName(x)).join(', ')}`
+      ].join('\n');
       const out = document.getElementById('out');
       out.className = 'result';
       out.innerHTML = `
@@ -119,6 +181,7 @@
         <div class="q"><em>"${message}"</em></div>
         <div class="row">
           <button id="copy-opener" class="mini" type="button">Copy text</button>
+          <button id="copy-plan" class="mini" type="button">Copy full 7-day plan</button>
           <span id="copy-state" class="copied" aria-live="polite"></span>
         </div>
         <p><strong>Score it:</strong> after each run, both rate connection 1-10. Keep the tool if your average improves by 2+ points after 7 days.</p>
@@ -128,11 +191,21 @@
       `;
 
       const copyBtn = document.getElementById('copy-opener');
+      const copyPlanBtn = document.getElementById('copy-plan');
       const copyState = document.getElementById('copy-state');
       copyBtn.addEventListener('click', async () => {
         try {
           await copyText(message);
-          copyState.textContent = 'Copied.';
+          copyState.textContent = 'Copied text.';
+          setTimeout(() => { copyState.textContent = ''; }, 1500);
+        } catch {
+          copyState.textContent = 'Could not copy — select and copy manually.';
+        }
+      });
+      copyPlanBtn.addEventListener('click', async () => {
+        try {
+          await copyText(planText);
+          copyState.textContent = 'Copied full plan.';
           setTimeout(() => { copyState.textContent = ''; }, 1500);
         } catch {
           copyState.textContent = 'Could not copy — select and copy manually.';
