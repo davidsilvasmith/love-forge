@@ -29,10 +29,15 @@
 4. **Ship Fast**
    - Publish within 24-48 hours
 
-5. **Measure**
+5. **Ship + Verify (mandatory)**
+   - Commit + push to `main`
+   - Confirm GitHub Pages status = `built`
+   - Post deploy proof: commit hash + changed files + live URL
+
+6. **Measure**
    - Compare metrics after 3-7 days
 
-6. **Decide**
+7. **Decide**
    - Keep / Kill / Iterate
 
 ## Content Quality Gate (must pass all)
