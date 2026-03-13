@@ -232,6 +232,8 @@
           <button id="copy-opener" class="mini" type="button">Copy text</button>
           <button id="copy-plan" class="mini" type="button">Copy full 7-day plan</button>
           <button id="download-plan" class="mini" type="button">Download plan (.txt)</button>
+          <a id="send-sms" class="mini" href="#">Open SMS draft</a>
+          <a id="send-email" class="mini" href="#">Open email draft</a>
           <span id="copy-state" class="copied" aria-live="polite"></span>
         </div>
         <p><strong>Score it:</strong> after each run, both rate connection 1-10. Keep the tool if your average improves by 2+ points after 7 days.</p>
@@ -243,7 +245,16 @@
       const copyBtn = document.getElementById('copy-opener');
       const copyPlanBtn = document.getElementById('copy-plan');
       const downloadPlanBtn = document.getElementById('download-plan');
+      const sendSmsBtn = document.getElementById('send-sms');
+      const sendEmailBtn = document.getElementById('send-email');
       const copyState = document.getElementById('copy-state');
+
+      const smsBody = `${message}\n\nStart tool: ${niceName(start)}\nPlan: ${window.location.origin || ''}${start}`;
+      sendSmsBtn.href = `sms:?&body=${encodeURIComponent(smsBody)}`;
+
+      const emailSubject = 'Want to try one relationship reset tool this week?';
+      const emailBody = `${message}\n\nI took this 2-minute quiz and got this starting tool: ${window.location.origin || ''}${start}\n\nIf you're open, let's test it for 7 days and keep it only if it helps both of us.`;
+      sendEmailBtn.href = `mailto:?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
       copyBtn.addEventListener('click', async () => {
         try {
           await copyText(message);
