@@ -142,6 +142,18 @@
       return Promise.resolve();
     }
 
+    function downloadText(filename, text) {
+      const blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 0);
+    }
+
     const laneTiles = Array.from(document.querySelectorAll('.lane-tile'));
     const q1Radios = Array.from(document.querySelectorAll('input[name="q1"]'));
 
@@ -219,6 +231,7 @@
         <div class="row">
           <button id="copy-opener" class="mini" type="button">Copy text</button>
           <button id="copy-plan" class="mini" type="button">Copy full 7-day plan</button>
+          <button id="download-plan" class="mini" type="button">Download plan (.txt)</button>
           <span id="copy-state" class="copied" aria-live="polite"></span>
         </div>
         <p><strong>Score it:</strong> after each run, both rate connection 1-10. Keep the tool if your average improves by 2+ points after 7 days.</p>
@@ -229,6 +242,7 @@
 
       const copyBtn = document.getElementById('copy-opener');
       const copyPlanBtn = document.getElementById('copy-plan');
+      const downloadPlanBtn = document.getElementById('download-plan');
       const copyState = document.getElementById('copy-state');
       copyBtn.addEventListener('click', async () => {
         try {
@@ -246,6 +260,16 @@
           setTimeout(() => { copyState.textContent = ''; }, 1500);
         } catch {
           copyState.textContent = 'Could not copy — select and copy manually.';
+        }
+      });
+      downloadPlanBtn.addEventListener('click', () => {
+        try {
+          const filename = `love-forge-7-day-plan-${primary}.txt`;
+          downloadText(filename, planText);
+          copyState.textContent = 'Downloaded plan.';
+          setTimeout(() => { copyState.textContent = ''; }, 1500);
+        } catch {
+          copyState.textContent = 'Could not download — copy plan instead.';
         }
       });
     });
