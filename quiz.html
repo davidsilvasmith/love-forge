@@ -13,6 +13,11 @@
     .mini { padding:8px 12px; border:1px solid #6f7b91; border-radius:8px; background:transparent; color:#e9edf6; cursor:pointer; }
     .mini:hover { border-color:#a8b3c7; }
     .copied { color:#88e39b; font-size:.92rem; }
+    .flow-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:10px; margin:12px 0 16px; }
+    .flow-step { border:1px solid #46536c; border-radius:12px; padding:12px; background:#121927; }
+    .flow-icon { font-size:1.1rem; display:block; margin-bottom:6px; }
+    .flow-title { font-weight:700; display:block; margin-bottom:3px; }
+    .flow-copy { color:#b7c3dd; font-size:.9rem; margin:0; }
     .lane-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:10px; margin:14px 0 18px; }
     .lane-tile { border:1px solid #4d5a74; border-radius:12px; padding:12px; background:linear-gradient(160deg,#182033,#111725); color:#e9edf6; cursor:pointer; text-align:left; }
     .lane-tile:hover { border-color:#91a2c4; }
@@ -27,6 +32,24 @@
     <p><a href="/">← Home</a></p>
     <h1>2-Minute Relationship Triage Quiz</h1>
     <p>Answer quickly. This is for direction, not diagnosis.</p>
+
+    <div class="flow-grid" aria-label="How this works">
+      <div class="flow-step">
+        <span class="flow-icon" aria-hidden="true">🧠</span>
+        <span class="flow-title">Pick your pain lane</span>
+        <p class="flow-copy">Choose the one issue hurting you most right now.</p>
+      </div>
+      <div class="flow-step">
+        <span class="flow-icon" aria-hidden="true">⚡</span>
+        <span class="flow-title">Answer 4 fast questions</span>
+        <p class="flow-copy">No overthinking. Your first answer is usually the right one.</p>
+      </div>
+      <div class="flow-step">
+        <span class="flow-icon" aria-hidden="true">🛠️</span>
+        <span class="flow-title">Run one tool tonight</span>
+        <p class="flow-copy">Get one action plan + one text you can send immediately.</p>
+      </div>
+    </div>
 
     <div class="lane-grid" role="group" aria-label="Choose your main relationship pain">
       <button class="lane-tile" type="button" data-pick="disconnect">
@@ -163,20 +186,34 @@
       if (primary !== 'distance' && q1 === 'distance') extra.push('/blog/re-entry-plan-tool.html');
 
       const message = opener[primary];
+      const extraTools = extra.length ? extra : ['/blog/10-minute-weekly-meeting.html'];
+      const dayByDay = [
+        `Day 1: Run ${niceName(start)} and send the tonight text.`,
+        `Day 2: Repeat ${niceName(start)}. Both rate connection 1-10.`,
+        `Day 3: Run ${niceName(extraTools[0])} for friction reduction.`,
+        `Day 4: Repeat ${niceName(start)} with one specific ask each.`,
+        `Day 5: Run ${niceName(extraTools[1] || extraTools[0])} and capture one agreement in writing.`,
+        'Day 6: Repeat the tool that gave the best score so far.',
+        'Day 7: 10-minute review — keep, tweak, or switch based on your average score.'
+      ];
       const planText = [
         `Start tool: ${niceName(start)}`,
-        '7-day plan: run one tool daily, then review on day 7.',
         `Tonight text: "${message}"`,
+        '',
+        '7-day checklist:',
+        ...dayByDay.map((step, i) => `${i + 1}. ${step}`),
+        '',
         'Score after each run: both partners rate connection 1-10.',
         'Keep the tool if your average improves by 2+ points after 7 days.',
-        `Also add: ${(extra.length ? extra : ['/blog/10-minute-weekly-meeting.html']).map(x => niceName(x)).join(', ')}`
+        `Also add: ${extraTools.map(x => niceName(x)).join(', ')}`
       ].join('\n');
       const out = document.getElementById('out');
       out.className = 'result';
       out.innerHTML = `
         <h2>Your starting tool</h2>
         <p><a href="${start}">${niceName(start)}</a></p>
-        <p><strong>7-day plan:</strong> run one tool daily, then review on day 7.</p>
+        <h3>7-day checklist</h3>
+        <ol>${dayByDay.map(step => `<li>${step}</li>`).join('')}</ol>
         <h3>Text you can send tonight</h3>
         <div class="q"><em>"${message}"</em></div>
         <div class="row">
@@ -186,7 +223,7 @@
         </div>
         <p><strong>Score it:</strong> after each run, both rate connection 1-10. Keep the tool if your average improves by 2+ points after 7 days.</p>
         <h3>Also add</h3>
-        <ul>${extra.map(x => `<li><a href="${x}">${niceName(x)}</a></li>`).join('') || '<li><a href="/blog/10-minute-weekly-meeting.html">10-minute weekly meeting</a></li>'}</ul>
+        <ul>${extraTools.map(x => `<li><a href="${x}">${niceName(x)}</a></li>`).join('')}</ul>
         <p><a class="btn" href="/blog/">See full tool library</a></p>
       `;
 
