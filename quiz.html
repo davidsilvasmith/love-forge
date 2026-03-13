@@ -32,6 +32,9 @@
     <p><a href="/">← Home</a></p>
     <h1>2-Minute Relationship Triage Quiz</h1>
     <p>Answer quickly. This is for direction, not diagnosis.</p>
+    <div class="q" role="note" aria-label="Safety note">
+      <strong>Safety first:</strong> If there are threats, physical intimidation, or ongoing emotional abuse, skip this quiz plan and contact a licensed professional or local support resource now.
+    </div>
 
     <div class="flow-grid" aria-label="How this works">
       <div class="flow-step">
@@ -199,6 +202,7 @@
 
       const message = opener[primary];
       const extraTools = extra.length ? extra : ['/blog/10-minute-weekly-meeting.html'];
+      const isHighConflict = q3 === 'explode';
       const siteOrigin = window.location.origin || 'https://loveforge.ai';
       const fullUrl = (path) => `${siteOrigin}${path}`;
       const dayByDay = [
@@ -226,6 +230,7 @@
       out.innerHTML = `
         <h2>Your starting tool</h2>
         <p><a href="${start}">${niceName(start)}</a></p>
+        ${isHighConflict ? '<div class="q"><strong>Important:</strong> Start with the <a href="/blog/pause-and-return-tool.html">Pause-and-Return Tool</a> first. If conflict includes intimidation, threats, or feeling unsafe, stop DIY scripts and involve a licensed professional immediately.</div>' : ''}
         <h3>7-day checklist</h3>
         <ol>${dayByDay.map(step => `<li>${step}</li>`).join('')}</ol>
         <h3>Text you can send tonight</h3>
