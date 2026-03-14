@@ -339,11 +339,18 @@
       const sendEmailBtn = document.getElementById('send-email');
       const copyState = document.getElementById('copy-state');
 
-      const smsBody = `${message}\n\nStart tool: ${niceName(start)}\nLink: ${fullUrl(start)}`;
+      const highConflictText = 'I don’t want us to keep escalating. Can we pause for 20 minutes and restart with calmer voices at 8:30? I want to understand, not win.';
+      const smsBody = isHighConflict
+        ? `${highConflictText}\n\nStart tool: ${niceName('/blog/pause-and-return-tool.html')}\nLink: ${fullUrl('/blog/pause-and-return-tool.html')}`
+        : `${message}\n\nStart tool: ${niceName(start)}\nLink: ${fullUrl(start)}`;
       sendSmsBtn.href = `sms:?&body=${encodeURIComponent(smsBody)}`;
 
-      const emailSubject = 'Want to try one relationship reset tool this week?';
-      const emailBody = `${message}\n\nI took this 2-minute quiz and got this starting tool: ${fullUrl(start)}\n\nIf you're open, let's test it for 7 days and keep it only if it helps both of us.`;
+      const emailSubject = isHighConflict
+        ? 'Can we reset this conversation tonight?'
+        : 'Want to try one relationship reset tool this week?';
+      const emailBody = isHighConflict
+        ? `${highConflictText}\n\nI took this 2-minute quiz and it suggested we start with this de-escalation tool: ${fullUrl('/blog/pause-and-return-tool.html')}\n\nIf either of us feels unsafe, we should pause DIY and involve a licensed professional.`
+        : `${message}\n\nI took this 2-minute quiz and got this starting tool: ${fullUrl(start)}\n\nIf you're open, let's test it for 7 days and keep it only if it helps both of us.`;
       sendEmailBtn.href = `mailto:?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
       copyBtn.addEventListener('click', async () => {
         try {
