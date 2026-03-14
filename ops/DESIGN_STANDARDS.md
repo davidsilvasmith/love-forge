@@ -18,7 +18,7 @@
 - [ ] Mobile view tested
 - [ ] Reading level plain English
 - [ ] Script and metric included
-- [ ] Every tool page includes a "Sample agenda" block with minute-by-minute steps
+- [ ] Every tool page includes either (a) an exact plan or (b) a quick action checklist
 
 ## Deployment gate
 No design change counts as done without:
@@ -31,3 +31,9 @@ No design change counts as done without:
 - Blog hub cannot be a plain list only.
 - Every high-traffic page must include at least one visual block (tiles/cards/icons) above the fold.
 - Break any block over 5 lines into bullets or cards.
+
+## Actionability standard (required)
+- Do not force minute-by-minute agendas on tools that don't need them.
+- If a tool is conversational/structured, include an exact plan.
+- If a tool is habit/setup-based, include a quick action checklist.
+- Reader should know exactly what to do in under 60 seconds.
