@@ -26,6 +26,9 @@ Each page should include:
 
 ## Clarity rule
 If a step is non-obvious, explain it in one plain-English sentence right where it appears. Do not make readers guess.
+
+## No-idea-without-instructions rule
+Never publish a tool that says "create" or "plan" without giving a ready-to-use template, starter script, or builder. If the reader must invent from scratch, the tool is incomplete.
 ## CTA standards
 - Primary CTA = next best helpful step (quiz or start tool)
 - Secondary CTA = browse tool library

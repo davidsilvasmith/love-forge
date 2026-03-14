@@ -39,3 +39,4 @@ No design change counts as done without:
 - If a tool is conversational/structured, include an exact plan.
 - If a tool is habit/setup-based, include a quick action checklist.
 - Reader should know exactly what to do in under 60 seconds.
+- If copy says “create/build/plan,” include a template or interactive builder on the page.
