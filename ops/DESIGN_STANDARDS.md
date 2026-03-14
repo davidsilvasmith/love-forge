@@ -31,6 +31,8 @@ No design change counts as done without:
 - Blog hub cannot be a plain list only.
 - Every high-traffic page must include at least one visual block (tiles/cards/icons) above the fold.
 - Break any block over 5 lines into bullets or cards.
+- Keep instruction manuals skimmable: max 4 bullets, one sentence each.
+- Prefer progressive disclosure: short default content first, details second.
 
 ## Actionability standard (required)
 - Do not force minute-by-minute agendas on tools that don't need them.

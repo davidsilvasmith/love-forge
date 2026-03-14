@@ -22,7 +22,10 @@ Each page should include:
 3. 10-15 minute action
 4. Copy/paste script
 5. Simple success metric
+6. Mini instruction manual (when to use, frequency, common mistake, what to do if awkward)
 
+## Clarity rule
+If a step is non-obvious, explain it in one plain-English sentence right where it appears. Do not make readers guess.
 ## CTA standards
 - Primary CTA = next best helpful step (quiz or start tool)
 - Secondary CTA = browse tool library
