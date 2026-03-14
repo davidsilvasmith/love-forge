@@ -316,6 +316,13 @@
         'Day 6: Repeat the tool that gave the best score so far.',
         'Day 7: 10-minute review — keep, tweak, or switch based on your average score.'
       ];
+      const why = [];
+      if (q1 === primary) why.push(`You said your biggest pain is ${niceName(start)} territory.`);
+      if (q3 === 'explode') why.push('You flagged fast escalation, so conflict de-escalation gets priority.');
+      if (q3 === 'avoid') why.push('You flagged shutdown/avoid patterns, so reconnection reps come first.');
+      if (q4 === 'boundaries') why.push('You asked for better boundaries, so clarity and agreements are prioritized.');
+      if (q2 === 'low') why.push('You reported low intentional connection time, so this plan starts with small daily reps.');
+      const whyTop = why.slice(0, 3);
       const dayVisuals = ['🧪', '🔁', '🛠️', '💬', '🧾', '📈', '✅'];
       const dayCardsHtml = dayByDay.map((step, i) => {
         const cleaned = step.replace(/^Day\s\d+:\s*/, '');
@@ -324,6 +331,7 @@
       const fallbackMessage = `No pressure if tonight is bad timing. I’m going to test one 10-minute reset on my side this week so we argue less and feel better. If you’re open later, I’d love to try it together.`;
       const planText = [
         `Start tool: ${niceName(start)} (${fullUrl(start)})`,
+        ...(whyTop.length ? ['Why this tool:', ...whyTop.map((line) => `- ${line}`), ''] : []),
         `Tonight text: "${message}"`,
         `If partner says no: "${fallbackMessage}"`,
         '',
@@ -365,6 +373,7 @@
         <h2>Your starting tool</h2>
         <p><a href="${start}">${niceName(start)}</a></p>
         ${isHighConflict ? '<div class="q"><strong>Important:</strong> Start with the <a href="/blog/pause-and-return-tool.html">Pause-and-Return Tool</a> first. If conflict includes intimidation, threats, or feeling unsafe, stop DIY scripts and involve a licensed professional immediately.</div>' : ''}
+        ${whyTop.length ? `<h3>Why this recommendation</h3><div class="q"><ul>${whyTop.map((line) => `<li>${line}</li>`).join('')}</ul></div>` : ''}
         <h3>7-day checklist</h3>
         <div class="result-day-grid" aria-label="Your 7-day plan">${dayCardsHtml}</div>
         <h3>Text you can send tonight</h3>
