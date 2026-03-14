@@ -300,6 +300,16 @@
         '',
         'Keep if 7-day average improved by 2+ points.'
       ].join('\n');
+      const scorecardCsvText = [
+        'day,my_score_1_to_10,partner_score_1_to_10,average,notes',
+        '1,,,,',
+        '2,,,,',
+        '3,,,,',
+        '4,,,,',
+        '5,,,,',
+        '6,,,,',
+        '7,,,,'
+      ].join('\n');
       const out = document.getElementById('out');
       out.className = 'result';
       out.innerHTML = `
@@ -317,6 +327,7 @@
           <button id="copy-fallback" class="mini" type="button">Copy fallback text</button>
           <button id="copy-plan" class="mini" type="button">Copy full 7-day plan</button>
           <button id="copy-scorecard" class="mini" type="button">Copy 7-day scorecard</button>
+          <button id="download-scorecard-csv" class="mini" type="button">Download scorecard (.csv)</button>
           <button id="download-plan" class="mini" type="button">Download plan (.txt)</button>
           <button id="download-ics" class="mini" type="button">Download 7-day reminders (.ics)</button>
           <a id="send-sms" class="mini" href="#">Open SMS draft</a>
@@ -333,6 +344,7 @@
       const copyFallbackBtn = document.getElementById('copy-fallback');
       const copyPlanBtn = document.getElementById('copy-plan');
       const copyScorecardBtn = document.getElementById('copy-scorecard');
+      const downloadScorecardCsvBtn = document.getElementById('download-scorecard-csv');
       const downloadPlanBtn = document.getElementById('download-plan');
       const downloadIcsBtn = document.getElementById('download-ics');
       const sendSmsBtn = document.getElementById('send-sms');
@@ -386,6 +398,16 @@
           setTimeout(() => { copyState.textContent = ''; }, 1500);
         } catch {
           copyState.textContent = 'Could not copy — select and copy manually.';
+        }
+      });
+      downloadScorecardCsvBtn.addEventListener('click', () => {
+        try {
+          const filename = `love-forge-7-day-scorecard-${primary}.csv`;
+          downloadText(filename, scorecardCsvText);
+          copyState.textContent = 'Downloaded scorecard CSV.';
+          setTimeout(() => { copyState.textContent = ''; }, 1500);
+        } catch {
+          copyState.textContent = 'Could not download CSV — copy scorecard instead.';
         }
       });
       downloadPlanBtn.addEventListener('click', () => {
