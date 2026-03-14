@@ -18,6 +18,7 @@
 - [ ] Mobile view tested
 - [ ] Reading level plain English
 - [ ] Script and metric included
+- [ ] Every tool page includes a "Sample agenda" block with minute-by-minute steps
 
 ## Deployment gate
 No design change counts as done without:
