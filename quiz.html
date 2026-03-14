@@ -162,6 +162,54 @@
       setTimeout(() => URL.revokeObjectURL(url), 0);
     }
 
+    function toIcsDate(date) {
+      return date.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}Z$/, 'Z');
+    }
+
+    function buildSevenDayIcs({ start, toolName, toolUrl }) {
+      const lines = [
+        'BEGIN:VCALENDAR',
+        'VERSION:2.0',
+        'PRODID:-//Love Forge//7-Day Plan//EN',
+        'CALSCALE:GREGORIAN',
+        'METHOD:PUBLISH'
+      ];
+
+      for (let i = 0; i < 7; i += 1) {
+        const dayStart = new Date(start);
+        dayStart.setDate(start.getDate() + i);
+        dayStart.setHours(20, 30, 0, 0);
+        const dayEnd = new Date(dayStart.getTime() + 15 * 60 * 1000);
+        const uid = `love-forge-day-${i + 1}-${Date.now()}@loveforge.ai`;
+        const description = `Run ${toolName} tonight.\\nTool: ${toolUrl}\\nThen both rate connection 1-10.`;
+        lines.push(
+          'BEGIN:VEVENT',
+          `UID:${uid}`,
+          `DTSTAMP:${toIcsDate(new Date())}`,
+          `DTSTART:${toIcsDate(dayStart)}`,
+          `DTEND:${toIcsDate(dayEnd)}`,
+          `SUMMARY:Love Forge check-in (Day ${i + 1}/7)`,
+          `DESCRIPTION:${description}`,
+          'END:VEVENT'
+        );
+      }
+
+      lines.push('END:VCALENDAR');
+      return lines.join('\r\n');
+    }
+
+    function downloadIcs(filename, icsText) {
+      const blob = new Blob([icsText], { type: 'text/calendar;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 0);
+    }
+
     const laneTiles = Array.from(document.querySelectorAll('.lane-tile'));
     const q1Radios = Array.from(document.querySelectorAll('input[name="q1"]'));
 
@@ -270,6 +318,7 @@
           <button id="copy-plan" class="mini" type="button">Copy full 7-day plan</button>
           <button id="copy-scorecard" class="mini" type="button">Copy 7-day scorecard</button>
           <button id="download-plan" class="mini" type="button">Download plan (.txt)</button>
+          <button id="download-ics" class="mini" type="button">Download 7-day reminders (.ics)</button>
           <a id="send-sms" class="mini" href="#">Open SMS draft</a>
           <a id="send-email" class="mini" href="#">Open email draft</a>
           <span id="copy-state" class="copied" aria-live="polite"></span>
@@ -285,6 +334,7 @@
       const copyPlanBtn = document.getElementById('copy-plan');
       const copyScorecardBtn = document.getElementById('copy-scorecard');
       const downloadPlanBtn = document.getElementById('download-plan');
+      const downloadIcsBtn = document.getElementById('download-ics');
       const sendSmsBtn = document.getElementById('send-sms');
       const sendEmailBtn = document.getElementById('send-email');
       const copyState = document.getElementById('copy-state');
@@ -339,6 +389,17 @@
           setTimeout(() => { copyState.textContent = ''; }, 1500);
         } catch {
           copyState.textContent = 'Could not download — copy plan instead.';
+        }
+      });
+      downloadIcsBtn.addEventListener('click', () => {
+        try {
+          const filename = `love-forge-7-day-reminders-${primary}.ics`;
+          const ics = buildSevenDayIcs({ start: new Date(), toolName: niceName(start), toolUrl: fullUrl(start) });
+          downloadIcs(filename, ics);
+          copyState.textContent = 'Downloaded calendar reminders.';
+          setTimeout(() => { copyState.textContent = ''; }, 1500);
+        } catch {
+          copyState.textContent = 'Could not create reminders — use the text plan instead.';
         }
       });
     });
