@@ -224,9 +224,11 @@
         const cleaned = step.replace(/^Day\s\d+:\s*/, '');
         return `<div class="result-day"><span class="day-kicker">${dayVisuals[i]} Day ${i + 1}</span><h4>${i < 6 ? 'Run' : 'Decide'}</h4><p>${cleaned}</p></div>`;
       }).join('');
+      const fallbackMessage = `No pressure if tonight is bad timing. I’m going to test one 10-minute reset on my side this week so we argue less and feel better. If you’re open later, I’d love to try it together.`;
       const planText = [
         `Start tool: ${niceName(start)} (${fullUrl(start)})`,
         `Tonight text: "${message}"`,
+        `If partner says no: "${fallbackMessage}"`,
         '',
         '7-day checklist:',
         ...dayByDay.map((step, i) => `${i + 1}. ${step}`),
@@ -260,8 +262,11 @@
         <div class="result-day-grid" aria-label="Your 7-day plan">${dayCardsHtml}</div>
         <h3>Text you can send tonight</h3>
         <div class="q"><em>"${message}"</em></div>
+        <p><strong>If they’re not ready:</strong> send a low-pressure fallback and run Day 1 solo anyway.</p>
+        <div class="q"><em>"${fallbackMessage}"</em></div>
         <div class="row">
           <button id="copy-opener" class="mini" type="button">Copy text</button>
+          <button id="copy-fallback" class="mini" type="button">Copy fallback text</button>
           <button id="copy-plan" class="mini" type="button">Copy full 7-day plan</button>
           <button id="copy-scorecard" class="mini" type="button">Copy 7-day scorecard</button>
           <button id="download-plan" class="mini" type="button">Download plan (.txt)</button>
@@ -276,6 +281,7 @@
       `;
 
       const copyBtn = document.getElementById('copy-opener');
+      const copyFallbackBtn = document.getElementById('copy-fallback');
       const copyPlanBtn = document.getElementById('copy-plan');
       const copyScorecardBtn = document.getElementById('copy-scorecard');
       const downloadPlanBtn = document.getElementById('download-plan');
@@ -293,6 +299,15 @@
         try {
           await copyText(message);
           copyState.textContent = 'Copied text.';
+          setTimeout(() => { copyState.textContent = ''; }, 1500);
+        } catch {
+          copyState.textContent = 'Could not copy — select and copy manually.';
+        }
+      });
+      copyFallbackBtn.addEventListener('click', async () => {
+        try {
+          await copyText(fallbackMessage);
+          copyState.textContent = 'Copied fallback text.';
           setTimeout(() => { copyState.textContent = ''; }, 1500);
         } catch {
           copyState.textContent = 'Could not copy — select and copy manually.';
