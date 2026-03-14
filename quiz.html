@@ -25,6 +25,11 @@
     .lane-emoji { font-size:1.25rem; display:block; margin-bottom:6px; }
     .lane-title { font-weight:700; display:block; margin-bottom:2px; }
     .lane-sub { color:#b7c3dd; font-size:.9rem; }
+    .result-day-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:10px; margin:10px 0 14px; }
+    .result-day { border:1px solid #4b5a76; border-radius:12px; padding:10px; background:linear-gradient(165deg,#182135,#121a2a); }
+    .result-day h4 { margin:0 0 4px; font-size:.95rem; }
+    .result-day p { margin:0; color:#c3cde1; font-size:.9rem; line-height:1.35; }
+    .day-kicker { display:inline-flex; align-items:center; gap:6px; margin-bottom:6px; color:#93a9d9; font-size:.78rem; text-transform:uppercase; letter-spacing:.04em; }
   </style>
 </head>
 <body>
@@ -214,6 +219,11 @@
         'Day 6: Repeat the tool that gave the best score so far.',
         'Day 7: 10-minute review — keep, tweak, or switch based on your average score.'
       ];
+      const dayVisuals = ['🧪', '🔁', '🛠️', '💬', '🧾', '📈', '✅'];
+      const dayCardsHtml = dayByDay.map((step, i) => {
+        const cleaned = step.replace(/^Day\s\d+:\s*/, '');
+        return `<div class="result-day"><span class="day-kicker">${dayVisuals[i]} Day ${i + 1}</span><h4>${i < 6 ? 'Run' : 'Decide'}</h4><p>${cleaned}</p></div>`;
+      }).join('');
       const planText = [
         `Start tool: ${niceName(start)} (${fullUrl(start)})`,
         `Tonight text: "${message}"`,
@@ -225,6 +235,21 @@
         'Keep the tool if your average improves by 2+ points after 7 days.',
         `Also add: ${extraTools.map(x => `${niceName(x)} (${fullUrl(x)})`).join(', ')}`
       ].join('\n');
+      const scorecardText = [
+        'Love Forge 7-Day Scorecard',
+        `Primary tool: ${niceName(start)} (${fullUrl(start)})`,
+        '',
+        'Day | My score (1-10) | Partner score (1-10) | Average | Notes',
+        '1   |                 |                       |         |',
+        '2   |                 |                       |         |',
+        '3   |                 |                       |         |',
+        '4   |                 |                       |         |',
+        '5   |                 |                       |         |',
+        '6   |                 |                       |         |',
+        '7   |                 |                       |         |',
+        '',
+        'Keep if 7-day average improved by 2+ points.'
+      ].join('\n');
       const out = document.getElementById('out');
       out.className = 'result';
       out.innerHTML = `
@@ -232,12 +257,13 @@
         <p><a href="${start}">${niceName(start)}</a></p>
         ${isHighConflict ? '<div class="q"><strong>Important:</strong> Start with the <a href="/blog/pause-and-return-tool.html">Pause-and-Return Tool</a> first. If conflict includes intimidation, threats, or feeling unsafe, stop DIY scripts and involve a licensed professional immediately.</div>' : ''}
         <h3>7-day checklist</h3>
-        <ol>${dayByDay.map(step => `<li>${step}</li>`).join('')}</ol>
+        <div class="result-day-grid" aria-label="Your 7-day plan">${dayCardsHtml}</div>
         <h3>Text you can send tonight</h3>
         <div class="q"><em>"${message}"</em></div>
         <div class="row">
           <button id="copy-opener" class="mini" type="button">Copy text</button>
           <button id="copy-plan" class="mini" type="button">Copy full 7-day plan</button>
+          <button id="copy-scorecard" class="mini" type="button">Copy 7-day scorecard</button>
           <button id="download-plan" class="mini" type="button">Download plan (.txt)</button>
           <a id="send-sms" class="mini" href="#">Open SMS draft</a>
           <a id="send-email" class="mini" href="#">Open email draft</a>
@@ -251,6 +277,7 @@
 
       const copyBtn = document.getElementById('copy-opener');
       const copyPlanBtn = document.getElementById('copy-plan');
+      const copyScorecardBtn = document.getElementById('copy-scorecard');
       const downloadPlanBtn = document.getElementById('download-plan');
       const sendSmsBtn = document.getElementById('send-sms');
       const sendEmailBtn = document.getElementById('send-email');
@@ -275,6 +302,15 @@
         try {
           await copyText(planText);
           copyState.textContent = 'Copied full plan.';
+          setTimeout(() => { copyState.textContent = ''; }, 1500);
+        } catch {
+          copyState.textContent = 'Could not copy — select and copy manually.';
+        }
+      });
+      copyScorecardBtn.addEventListener('click', async () => {
+        try {
+          await copyText(scorecardText);
+          copyState.textContent = 'Copied 7-day scorecard.';
           setTimeout(() => { copyState.textContent = ''; }, 1500);
         } catch {
           copyState.textContent = 'Could not copy — select and copy manually.';
