@@ -30,6 +30,21 @@
     .result-day h4 { margin:0 0 4px; font-size:.95rem; }
     .result-day p { margin:0; color:#c3cde1; font-size:.9rem; line-height:1.35; }
     .day-kicker { display:inline-flex; align-items:center; gap:6px; margin-bottom:6px; color:#93a9d9; font-size:.78rem; text-transform:uppercase; letter-spacing:.04em; }
+    .also-add-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:10px; margin:10px 0 12px; }
+    .also-add-tile { border:1px solid #4f5d79; border-radius:12px; padding:12px; background:linear-gradient(165deg,#1b2337,#121a2a); color:#e9edf6; text-decoration:none; display:flex; flex-direction:column; gap:6px; min-height:120px; }
+    .also-add-tile:hover { border-color:#91a2c4; }
+    .also-add-icon { width:34px; height:34px; border-radius:10px; display:grid; place-items:center; background:#111827; border:1px solid #5d6b86; font-size:1rem; }
+    .also-add-tile h4 { margin:0; font-size:.98rem; }
+    .also-add-tile p { margin:0; color:#c3cde1; font-size:.88rem; line-height:1.35; }
+    .state-board { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:10px; margin:12px 0 14px; }
+    .state-panel { border:1px solid rgba(255,255,255,.22); border-radius:14px; padding:12px; min-height:130px; box-shadow:0 14px 28px rgba(0,0,0,.28); }
+    .state-kicker { display:inline-block; font-size:.73rem; text-transform:uppercase; letter-spacing:.05em; color:#dce6ff; font-weight:700; margin-bottom:6px; }
+    .state-panel h3 { margin:0 0 4px; font-size:1rem; }
+    .state-panel p { margin:0; color:#e6edff; font-size:.9rem; line-height:1.35; }
+    .state-disconnect { background:radial-gradient(circle at 20% 20%, rgba(244,114,182,.45), transparent 55%), linear-gradient(145deg,#24183a,#111a2f); }
+    .state-conflict { background:radial-gradient(circle at 80% 20%, rgba(251,113,133,.42), transparent 55%), linear-gradient(145deg,#2b1a2a,#111a2f); }
+    .state-trust { background:radial-gradient(circle at 70% 20%, rgba(99,102,241,.4), transparent 55%), linear-gradient(145deg,#162347,#111b30); }
+    .state-distance { background:radial-gradient(circle at 80% 25%, rgba(45,212,191,.4), transparent 55%), linear-gradient(145deg,#123038,#111b30); }
   </style>
 </head>
 <body>
@@ -37,6 +52,30 @@
     <p><a href="/">← Home</a></p>
     <h1>2-Minute Relationship Triage Quiz</h1>
     <p>Answer quickly. This is for direction, not diagnosis.</p>
+
+    <div class="state-board" aria-label="Choose the visual lane that matches tonight">
+      <div class="state-panel state-disconnect">
+        <span class="state-kicker">Lane 1</span>
+        <h3>💞 Distant</h3>
+        <p>Conversations are logistics-only and closeness feels low.</p>
+      </div>
+      <div class="state-panel state-conflict">
+        <span class="state-kicker">Lane 2</span>
+        <h3>🔥 Escalating</h3>
+        <p>Small disagreements turn into high-heat arguments fast.</p>
+      </div>
+      <div class="state-panel state-trust">
+        <span class="state-kicker">Lane 3</span>
+        <h3>🧭 Unsteady trust</h3>
+        <p>Boundaries feel fuzzy and safety is dropping.</p>
+      </div>
+      <div class="state-panel state-distance">
+        <span class="state-kicker">Lane 4</span>
+        <h3>✈️ Apart</h3>
+        <p>Travel or schedule split is creating emotional drift.</p>
+      </div>
+    </div>
+
     <div class="q" role="note" aria-label="Safety note">
       <strong>Safety first:</strong> If there are threats, physical intimidation, or ongoing emotional abuse, skip this quiz plan and contact a licensed professional or local support resource now.
     </div>
@@ -135,6 +174,16 @@
 
     function niceName(path) {
       return path.replace('/blog/', '').replace('.html', '').replaceAll('-', ' ');
+    }
+
+    function toolEmoji(path) {
+      if (path.includes('pause-and-return')) return '🧯';
+      if (path.includes('weekly-meeting')) return '🗓️';
+      if (path.includes('boundary')) return '🧭';
+      if (path.includes('distance') || path.includes('trip') || path.includes('re-entry')) return '✈️';
+      if (path.includes('fight') || path.includes('conflict')) return '🔥';
+      if (path.includes('trust')) return '🔐';
+      return '🛠️';
     }
 
     function copyText(text) {
@@ -336,7 +385,7 @@
         </div>
         <p><strong>Score it:</strong> after each run, both rate connection 1-10. Keep the tool if your average improves by 2+ points after 7 days.</p>
         <h3>Also add</h3>
-        <ul>${extraTools.map(x => `<li><a href="${x}">${niceName(x)}</a></li>`).join('')}</ul>
+        <div class="also-add-grid" aria-label="Recommended backup tools">${extraTools.map(x => `<a class="also-add-tile" href="${x}"><span class="also-add-icon" aria-hidden="true">${toolEmoji(x)}</span><h4>${niceName(x)}</h4><p>Use this as your backup rep on high-friction days.</p></a>`).join('')}</div>
         <p><a class="btn" href="/blog/">See full tool library</a></p>
       `;
 
