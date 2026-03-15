@@ -41,6 +41,12 @@
 </div>
 </div>
 
+<div class="card" id="nextToolCard"><h2>Best next tool for tonight</h2>
+<p id="nextToolWhy">Start with one focused rep so you get a quick win tonight.</p>
+<p><a class="btn" id="nextToolLink" href="/blog/daily-15-minute-connection-block.html">Open tonight’s tool</a></p>
+<p><small>Rule: if you have multiple issues, pick the one causing the most pain tonight. Run only that lane for 7 days before you switch.</small></p>
+</div>
+
 <div class="card">
 <h2>Step 2: Schedule first session now</h2>
 <div class="builder row">
@@ -77,6 +83,7 @@
 <script>
 const TOOL={disconnect:'/blog/daily-15-minute-connection-block.html',conflict:'/blog/fight-fair-protocol.html',trust:'/blog/boundary-definition-tool.html',distance:'/blog/distance-connection-protocol.html'};
 const FALLBACK={disconnect:'/blog/10-minute-weekly-meeting.html',conflict:'/blog/pause-and-return-tool.html',trust:'/blog/transparency-tool.html',distance:'/blog/re-entry-plan-tool.html'};
+const TOOL_BLURB={disconnect:'Use this to reconnect without over-talking.',conflict:'Use this first to stop escalation and repair calmly.',trust:'Use this to set one clear boundary both can keep.',distance:'Use this to stay connected during travel or long-distance weeks.'};
 const ESC='If conflict includes intimidation, threats, or feeling unsafe, stop this plan and involve a licensed professional immediately.';
 const $=id=>document.getElementById(id);
 
@@ -130,8 +137,14 @@ Day 7 rule: KEEP if avg delta >= +1.0, TWEAK if 0 to +0.9, SWAP if negative.`;
 
 const laneTiles=[...document.querySelectorAll('.plan-lane-tile')];
 const issueSelect=$('issue');
+function renderNextTool(value){
+  const tool=TOOL[value];
+  $('nextToolLink').href=tool;
+  $('nextToolWhy').textContent=TOOL_BLURB[value]||'Start with one focused rep so you get a quick win tonight.';
+}
 function syncLaneTiles(value){
   laneTiles.forEach(tile=>tile.classList.toggle('is-active',tile.dataset.issue===value));
+  renderNextTool(value);
 }
 laneTiles.forEach(tile=>tile.addEventListener('click',()=>{
   issueSelect.value=tile.dataset.issue;
