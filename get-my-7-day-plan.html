@@ -15,14 +15,16 @@
   <div class="highlight-card"><small>Fastest win</small><h3>Stop browsing. Start tonight.</h3><p>Choose one lane and run one short session before bed.</p></div>
   <div class="highlight-card"><small>Rule that matters</small><h3>One lane for 7 days</h3><p>No tool stacking. Keep it simple so you can actually finish.</p></div>
 </div>
-<div class="process-strip" aria-label="Three-step setup">
-  <div class="process-step"><span class="process-icon" aria-hidden="true">1️⃣</span><h3>Choose lane</h3><p>Distant, conflict, trust, or distance stress.</p></div>
-  <div class="process-step"><span class="process-icon" aria-hidden="true">2️⃣</span><h3>Generate script</h3><p>Build invite + 7-day prescription in one click.</p></div>
-  <div class="process-step"><span class="process-icon" aria-hidden="true">3️⃣</span><h3>Run and score</h3><p>Track before/after score each day, then keep or swap.</p></div>
+<div class="quick-start-block-grid" aria-label="Tonight in one screen">
+  <div class="quick-start-block"><span class="quick-start-emoji" aria-hidden="true">1️⃣</span><h3>Pick lane</h3><p>Distant, conflict, trust, or distance stress.</p></div>
+  <div class="quick-start-block"><span class="quick-start-emoji" aria-hidden="true">2️⃣</span><h3>Build script</h3><p>Generate invite + 7-day plan in one click.</p></div>
+  <div class="quick-start-block"><span class="quick-start-emoji" aria-hidden="true">3️⃣</span><h3>Lock first rep</h3><p>Pick date/time now so tonight actually happens.</p></div>
+  <div class="quick-start-block"><span class="quick-start-emoji" aria-hidden="true">4️⃣</span><h3>Score and decide</h3><p>Track daily. Keep if results improve.</p></div>
 </div>
 <div class="comparison-grid" aria-label="Pick your first lane by relationship state">
   <a class="compare-tile" href="#issue"><small>Low conflict, low warmth</small><h3>Start: We feel distant</h3><p>Best first rep: short daily reconnect and appreciation.</p></a>
   <a class="compare-tile" href="#issue"><small>Hot conflict / frequent blowups</small><h3>Start: Arguments escalate</h3><p>Best first rep: de-escalate first, then calm repair script.</p></a>
+  <a class="compare-tile" href="#issue"><small>Shaky trust / uncertainty</small><h3>Start: Trust feels shaky</h3><p>Best first rep: one clear boundary both can keep.</p></a>
 </div>
 </div>
 
@@ -47,6 +49,20 @@
 <p><small>Rule: if you have multiple issues, pick the one causing the most pain tonight. Run only that lane for 7 days before you switch.</small></p>
 </div>
 
+<div class="card"><h2>If you have multiple issues tonight, use this 30-second tie-breaker</h2>
+<p>Pick the <strong>first YES</strong>. That becomes tonight’s single focus.</p>
+<div class="builder row">
+  <div><strong>1) Is anyone getting flooded or escalating?</strong><p>YES → Start with <a href="/blog/pause-and-return-tool.html">Pause-and-Return Tool</a>.</p></div>
+  <div><strong>2) Is trust uncertainty the loudest pain?</strong><p>YES → Start with <a href="/blog/boundary-definition-tool.html">Boundary Definition Tool</a>.</p></div>
+  <div><strong>3) Otherwise, are you mostly distant?</strong><p>YES → Start with <a href="/blog/daily-15-minute-connection-block.html">15-Minute Connection Block</a>.</p></div>
+</div>
+<p><strong>Copy/paste decision text:</strong></p>
+<div id="tie-breaker-text" class="copy-box">We have a few issues, so tonight let’s pick one only: whichever is most painful right now. We’ll run one 10-minute tool tonight, score it, and ignore the rest until tomorrow.</div>
+<p><button class="btn" id="copy-tie-breaker" type="button">Copy tie-breaker text</button></p>
+<small id="copy-tie-breaker-status" class="muted" aria-live="polite"></small>
+<p><small>Low-energy fallback: if either of us is drained, do only the first 5 minutes and schedule the full rep tomorrow.</small></p>
+</div>
+
 <div class="card">
 <h2>Step 2: Schedule first session now</h2>
 <div class="builder row">
@@ -63,9 +79,11 @@
 </div>
 
 <div class="card"><h2>Tonight fallback paths (use if energy is low)</h2>
-<p><strong>Low-energy version (3 minutes):</strong> Send this now: <strong>"I only have 3 minutes tonight. Can we do one tiny reset round at 8:30?"</strong> Then run one rep only.</p>
-<p><strong>If emotions spike:</strong> Say: <strong>"Pause. I want to come back at 9:15 and finish this calmly."</strong> Then use <a href="/blog/pause-and-return-tool.html">Pause-and-Return Tool</a>.</p>
-<p><strong>Best next tool if tonight fails:</strong> Use <a href="/blog/10-minute-weekly-meeting.html">10-Minute Weekly Meeting</a> tomorrow to reset structure.</p>
+<div class="fallback-grid" aria-label="Low-energy fallback options">
+  <div class="fallback-tile"><span class="fallback-icon" aria-hidden="true">🔋</span><h3>Only 3 minutes</h3><p><em>"I only have 3 minutes tonight. Can we do one tiny reset round at 8:30?"</em></p><small>Run one rep only. Don’t expand the conversation.</small></div>
+  <div class="fallback-tile"><span class="fallback-icon" aria-hidden="true">🧯</span><h3>Emotions spiking</h3><p><em>"Pause. I want to come back at 9:15 and finish this calmly."</em></p><small>Then use <a href="/blog/pause-and-return-tool.html">Pause-and-Return Tool</a>.</small></div>
+  <div class="fallback-tile"><span class="fallback-icon" aria-hidden="true">📅</span><h3>Tonight failed</h3><p>Reset tomorrow with the <a href="/blog/10-minute-weekly-meeting.html">10-Minute Weekly Meeting</a>.</p><small>Protect momentum with a low-friction structure.</small></div>
+</div>
 </div>
 
 <div class="card"><h2>Your invite text (copy/paste)</h2><div id="invite" class="copy-box">Generate your plan first.</div></div>
@@ -152,6 +170,16 @@ laneTiles.forEach(tile=>tile.addEventListener('click',()=>{
 }));
 issueSelect.addEventListener('change',()=>syncLaneTiles(issueSelect.value));
 syncLaneTiles(issueSelect.value);
+
+const tieBreakerBtn=$('copy-tie-breaker');
+const tieBreakerText=$('tie-breaker-text');
+const tieBreakerStatus=$('copy-tie-breaker-status');
+if(tieBreakerBtn&&tieBreakerText&&tieBreakerStatus){
+  tieBreakerBtn.addEventListener('click',async()=>{
+    try{await navigator.clipboard.writeText(tieBreakerText.textContent);tieBreakerStatus.textContent='Copied. Send it and keep tonight focused on one issue.';}
+    catch(e){tieBreakerStatus.textContent='Copy failed. Select the text above and copy manually.';}
+  });
+}
 
 $('build').onclick=buildPlan; $('copyInvite').onclick=copyInvite; $('downloadIcs').onclick=downloadIcs; $('saveScore').onclick=saveScore;
 </script></body></html>
