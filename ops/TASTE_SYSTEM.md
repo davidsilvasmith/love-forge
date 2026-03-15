@@ -6,6 +6,14 @@ Turn subjective quality into objective publish tests so weak pages never ship.
 ## Core principle
 Do not ask readers to invent. Give them a next step they can use tonight.
 
+## 80/20 product focus (current)
+Prioritize guided action loops over content expansion:
+1) Get My 7-Day Plan flow
+2) Immediate scheduling + partner invite
+3) Simple score tracking (before/after)
+4) Early safety/escalation routing
+5) Next rep defined at every endpoint
+
 ## The 6 Gates (all required)
 
 ### Gate 1: Tonight Test

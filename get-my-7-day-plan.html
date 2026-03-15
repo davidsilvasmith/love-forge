@@ -1,0 +1,98 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Get My 7-Day Plan | Love Forge</title><link rel="stylesheet" href="/assets/styles.css"></head><body><div class="wrap">
+<p><a href="/">← Home</a></p>
+<h1>Get My 7-Day Plan</h1><p class="pill">Less browsing, more doing</p>
+
+<div class="card"><h2>Safety first</h2><p>If there are threats, physical intimidation, or ongoing emotional abuse, skip DIY tools and contact a licensed professional/support resource now.</p><label><input type="checkbox" id="safeCheck"> I understand this plan is for non-unsafe situations.</label></div>
+
+<div class="card">
+<h2>Step 1: Pick your main problem</h2>
+<div class="builder row">
+  <div><label>Main issue</label><select id="issue"><option value="disconnect">We feel distant</option><option value="conflict">Arguments escalate</option><option value="trust">Trust feels shaky</option><option value="distance">We’re apart / travel stress</option></select></div>
+  <div><label>Time you can commit daily</label><select id="minutes"><option>10</option><option>15</option><option>20</option></select></div>
+</div>
+</div>
+
+<div class="card">
+<h2>Step 2: Schedule first session now</h2>
+<div class="builder row">
+  <div><label>First session date</label><input id="date" type="date"></div>
+  <div><label>First session time</label><input id="time" value="8:30 PM"></div>
+</div>
+<div class="builder row">
+  <div><label>Partner name (optional)</label><input id="partner" placeholder="Julie"></div>
+  <div><label>Your name (optional)</label><input id="me" placeholder="Dave"></div>
+</div>
+<button class="btn" id="build">Build my 7-day prescription</button>
+<button class="btn" style="background:#2d6cdf" id="copyInvite">Copy partner invite</button>
+<button class="btn" style="background:#3f8b4b" id="downloadIcs">Download 7-day reminders (.ics)</button>
+</div>
+
+<div class="card"><h2>Your invite text (copy/paste)</h2><div id="invite" class="copy-box">Generate your plan first.</div></div>
+
+<div class="card"><h2>Your 7-day prescription</h2><div id="plan" class="copy-box">Generate your plan first.</div></div>
+
+<div class="card"><h2>Step 3: Track progress (30 seconds/day)</h2>
+<p>Before each session, rate connection 1-10. After each session, rate again. At day 7: keep, tweak, or swap.</p>
+<div class="builder row"><div><label>Before score</label><input id="before" type="number" min="1" max="10" value="5"></div><div><label>After score</label><input id="after" type="number" min="1" max="10" value="6"></div></div>
+<button class="btn" id="saveScore">Save today’s score</button>
+<div id="scoreOut" class="copy-box">No scores saved yet.</div>
+</div>
+
+</div>
+<script>
+const TOOL={disconnect:'/blog/daily-15-minute-connection-block.html',conflict:'/blog/fight-fair-protocol.html',trust:'/blog/boundary-definition-tool.html',distance:'/blog/distance-connection-protocol.html'};
+const FALLBACK={disconnect:'/blog/10-minute-weekly-meeting.html',conflict:'/blog/pause-and-return-tool.html',trust:'/blog/transparency-tool.html',distance:'/blog/re-entry-plan-tool.html'};
+const ESC='If conflict includes intimidation, threats, or feeling unsafe, stop this plan and involve a licensed professional immediately.';
+const $=id=>document.getElementById(id);
+
+function nice(path){return path.replace('/blog/','').replace('.html','').replaceAll('-',' ')}
+function full(path){return (location.origin||'https://love.forge.dsdoes.com')+path}
+
+function buildPlan(){
+  if(!$('safeCheck').checked){alert('Please confirm safety note first.'); return;}
+  const issue=$('issue').value, mins=$('minutes').value, d=$('date').value||'tomorrow', t=$('time').value||'8:30 PM';
+  const partner=$('partner').value||'love';
+  const tool=TOOL[issue], fb=FALLBACK[issue];
+  const invite=`Hey ${partner}, can we do ${mins} minutes at ${t} on ${d} to reset us a bit? I already picked a simple plan so this is easy.`;
+  const plan=`Day 1: Run ${nice(tool)} tonight for ${mins} minutes.
+Day 2: Repeat same tool; keep it simple.
+Day 3: Add fallback tool: ${nice(fb)} if needed.
+Day 4: Repeat primary tool; one specific appreciation each.
+Day 5: If stuck, use fallback first then primary tool.
+Day 6: Repeat whichever gave better score.
+Day 7: Review average score and choose: KEEP / TWEAK / SWAP.
+
+Primary tool: ${full(tool)}
+Fallback tool: ${full(fb)}
+Escalation: ${ESC}`;
+  $('invite').textContent=invite; $('plan').textContent=plan;
+}
+
+function copyInvite(){navigator.clipboard.writeText($('invite').textContent).then(()=>alert('Invite copied ✅')).catch(()=>alert('Copy failed'))}
+
+function icsDate(dt){return dt.toISOString().replace(/[-:]/g,'').replace(/\.\d{3}Z$/,'Z')}
+function downloadIcs(){
+ const issue=$('issue').value, tool=TOOL[issue];
+ const lines=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Love Forge//7Day//EN','CALSCALE:GREGORIAN'];
+ for(let i=0;i<7;i++){const s=new Date(); s.setDate(s.getDate()+i); s.setHours(20,30,0,0); const e=new Date(s.getTime()+15*60000);
+ lines.push('BEGIN:VEVENT',`UID:lf-${Date.now()}-${i}@loveforge`,`DTSTAMP:${icsDate(new Date())}`,`DTSTART:${icsDate(s)}`,`DTEND:${icsDate(e)}`,`SUMMARY:Love Forge 7-day reset (${i+1}/7)`,`DESCRIPTION:Run ${nice(tool)}. Rate before/after connection.`, 'END:VEVENT');}
+ lines.push('END:VCALENDAR');
+ const blob=new Blob([lines.join('
+')],{type:'text/calendar'}); const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='love-forge-7-day-plan.ics'; a.click();
+}
+
+function saveScore(){
+ const before=Number($('before').value||0), after=Number($('after').value||0);
+ const data=JSON.parse(localStorage.getItem('lf_scores')||'[]'); data.push({ts:new Date().toISOString(),before,after,delta:after-before}); localStorage.setItem('lf_scores',JSON.stringify(data));
+ const avg=(arr,key)=>arr.reduce((a,b)=>a+(b[key]||0),0)/Math.max(arr.length,1);
+ const out=`Entries: ${data.length}
+Avg before: ${avg(data,'before').toFixed(1)}
+Avg after: ${avg(data,'after').toFixed(1)}
+Avg delta: ${avg(data,'delta').toFixed(2)}
+
+Day 7 rule: KEEP if avg delta >= +1.0, TWEAK if 0 to +0.9, SWAP if negative.`;
+ $('scoreOut').textContent=out;
+}
+
+$('build').onclick=buildPlan; $('copyInvite').onclick=copyInvite; $('downloadIcs').onclick=downloadIcs; $('saveScore').onclick=saveScore;
+</script></body></html>
