@@ -9,6 +9,7 @@ Use this before shipping any page.
 3. If they’re exhausted, is there a low-energy version?
 4. If emotions spike, is there a fallback path?
 5. Is there a concrete 7-day success signal?
+6. If multiple issues are likely, does the page explicitly say how to pick ONE issue tonight?
 
 If any answer is NO -> do not ship.
 

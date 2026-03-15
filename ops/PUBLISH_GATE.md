@@ -7,9 +7,10 @@ A page change is publish-ready only if all items are true:
 3. **Action artifact present** (plan/checklist/template/builder)
 4. **Copy/paste script present**
 5. **Best next tool present**
-6. **Commit hash posted**
-7. **GitHub Pages status = built**
-8. **Live URL posted**
+6. **Multi-issue clarity present** (if users likely have multiple simultaneous issues, page must explicitly tell them how to pick one focus tonight)
+7. **Commit hash posted**
+8. **GitHub Pages status = built**
+9. **Live URL posted**
 
 ## Shipping report format (required)
 - Commit: <hash>
