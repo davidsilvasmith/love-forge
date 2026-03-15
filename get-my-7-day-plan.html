@@ -1,4 +1,4 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Get My 7-Day Plan | Love Forge</title><link rel="stylesheet" href="/assets/styles.css"></head><body><div class="wrap">
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Get My 7-Day Plan | Love Forge</title><link rel="stylesheet" href="/assets/styles.css"><style>.quick-start-block-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin:12px 0 10px}.quick-start-block{background:rgba(11,16,32,.52);border:1px solid rgba(255,255,255,.16);border-radius:14px;padding:12px;box-shadow:0 8px 22px rgba(5,8,20,.35);min-height:132px;display:flex;flex-direction:column;gap:7px}.quick-start-emoji{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:rgba(124,92,255,.24);border:1px solid rgba(255,255,255,.2);font-size:.95rem}.quick-start-block h3{margin:0;font-size:.96rem}.quick-start-block p{margin:0;color:#dce5ff;font-size:.87rem}</style></head><body><div class="wrap">
 <p><a href="/">← Home</a></p>
 <h1>Get My 7-Day Plan</h1><p class="pill">Less browsing, more doing</p>
 
@@ -76,6 +76,27 @@
 <button class="btn" id="build">Build my 7-day prescription</button>
 <button class="btn" style="background:#2d6cdf" id="copyInvite">Copy partner invite</button>
 <button class="btn" style="background:#3f8b4b" id="downloadIcs">Download 7-day reminders (.ics)</button>
+
+<div class="icon-row" aria-label="Step 2 scheduling checklist">
+  <span class="icon-chip">📅 Pick exact date</span>
+  <span class="icon-chip">🕣 Lock exact time</span>
+  <span class="icon-chip">📩 Send invite now</span>
+  <span class="icon-chip">🔔 Download reminders</span>
+</div>
+<div class="highlight-grid">
+  <div class="highlight-card"><small>Execution rule</small><h3>Schedule before emotions shift</h3><p>Lock date/time first, then send invite. Don’t leave tonight to chance.</p></div>
+  <div class="highlight-card"><small>Friction killer</small><h3>Use one message + one click</h3><p>Build your text, copy it, then set reminders so this actually gets done.</p></div>
+</div>
+<div class="quick-start-block-grid" aria-label="Step 2 in four taps">
+  <div class="quick-start-block"><span class="quick-start-emoji" aria-hidden="true">1️⃣</span><h3>Choose date</h3><p>Set your first session day.</p></div>
+  <div class="quick-start-block"><span class="quick-start-emoji" aria-hidden="true">2️⃣</span><h3>Choose time</h3><p>Use a realistic time both can keep.</p></div>
+  <div class="quick-start-block"><span class="quick-start-emoji" aria-hidden="true">3️⃣</span><h3>Generate + copy</h3><p>Build plan and copy partner invite text.</p></div>
+  <div class="quick-start-block"><span class="quick-start-emoji" aria-hidden="true">4️⃣</span><h3>Set reminders</h3><p>Download .ics to protect consistency.</p></div>
+</div>
+<div class="comparison-grid" aria-label="Choose your scheduling mode">
+  <div class="compare-tile"><small>Ultra-busy week</small><h3>Mode: 10-minute minimum</h3><p>Short, reliable reps beat long plans you skip.</p></div>
+  <div class="compare-tile"><small>Stable bandwidth</small><h3>Mode: 15-20 minute standard</h3><p>Use the full structure and log scores daily.</p></div>
+</div>
 </div>
 
 <div class="card"><h2>Tonight fallback paths (use if energy is low)</h2>
@@ -92,6 +113,17 @@
 
 <div class="card"><h2>Step 3: Track progress (30 seconds/day)</h2>
 <p>Before each session, rate connection 1-10. After each session, rate again. At day 7: keep, tweak, or swap.</p>
+<div class="icon-row" aria-label="Scoring logic at a glance">
+  <span class="icon-chip">⬇️ Before score</span>
+  <span class="icon-chip">⬆️ After score</span>
+  <span class="icon-chip">➕ Delta = progress</span>
+  <span class="icon-chip">📌 Day 7 decision</span>
+</div>
+<div class="comparison-grid" aria-label="Day 7 outcome thresholds">
+  <div class="compare-tile"><small>Avg delta +1.0 or higher</small><h3>KEEP</h3><p>The lane is working. Continue another 7 days.</p></div>
+  <div class="compare-tile"><small>Avg delta 0 to +0.9</small><h3>TWEAK</h3><p>Keep lane, reduce friction, simplify timing/script.</p></div>
+  <div class="compare-tile"><small>Avg delta below 0</small><h3>SWAP</h3><p>Switch to a different lane tomorrow.</p></div>
+</div>
 <div class="builder row"><div><label>Before score</label><input id="before" type="number" min="1" max="10" value="5"></div><div><label>After score</label><input id="after" type="number" min="1" max="10" value="6"></div></div>
 <button class="btn" id="saveScore">Save today’s score</button>
 <div id="scoreOut" class="copy-box">No scores saved yet.</div>
