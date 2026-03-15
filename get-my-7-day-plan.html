@@ -4,8 +4,37 @@
 
 <div class="card"><h2>Safety first</h2><p>If there are threats, physical intimidation, or ongoing emotional abuse, skip DIY tools and contact a licensed professional/support resource now.</p><label><input type="checkbox" id="safeCheck"> I understand this plan is for non-unsafe situations.</label></div>
 
+<div class="card quick-start"><h2>Quick-start visual guide</h2>
+<div class="icon-row" aria-label="How this plan works at a glance">
+  <span class="icon-chip">🧭 Pick one lane</span>
+  <span class="icon-chip">⏱️ 10–20 min/day</span>
+  <span class="icon-chip">📅 Lock it on calendar</span>
+  <span class="icon-chip">📊 Score daily</span>
+</div>
+<div class="highlight-grid">
+  <div class="highlight-card"><small>Fastest win</small><h3>Stop browsing. Start tonight.</h3><p>Choose one lane and run one short session before bed.</p></div>
+  <div class="highlight-card"><small>Rule that matters</small><h3>One lane for 7 days</h3><p>No tool stacking. Keep it simple so you can actually finish.</p></div>
+</div>
+<div class="process-strip" aria-label="Three-step setup">
+  <div class="process-step"><span class="process-icon" aria-hidden="true">1️⃣</span><h3>Choose lane</h3><p>Distant, conflict, trust, or distance stress.</p></div>
+  <div class="process-step"><span class="process-icon" aria-hidden="true">2️⃣</span><h3>Generate script</h3><p>Build invite + 7-day prescription in one click.</p></div>
+  <div class="process-step"><span class="process-icon" aria-hidden="true">3️⃣</span><h3>Run and score</h3><p>Track before/after score each day, then keep or swap.</p></div>
+</div>
+<div class="comparison-grid" aria-label="Pick your first lane by relationship state">
+  <a class="compare-tile" href="#issue"><small>Low conflict, low warmth</small><h3>Start: We feel distant</h3><p>Best first rep: short daily reconnect and appreciation.</p></a>
+  <a class="compare-tile" href="#issue"><small>Hot conflict / frequent blowups</small><h3>Start: Arguments escalate</h3><p>Best first rep: de-escalate first, then calm repair script.</p></a>
+</div>
+</div>
+
 <div class="card">
 <h2>Step 1: Pick your main problem</h2>
+<p>Tap one lane, then generate your exact 7-day script.</p>
+<div class="plan-lane-grid" aria-label="Choose your relationship lane">
+  <button type="button" class="plan-lane-tile is-active" data-issue="disconnect"><span class="plan-lane-icon" aria-hidden="true">💞</span><h3>We feel distant</h3><p>Start with a short daily reconnect rep.</p></button>
+  <button type="button" class="plan-lane-tile" data-issue="conflict"><span class="plan-lane-icon" aria-hidden="true">🔥</span><h3>Arguments escalate</h3><p>De-escalate first, then repair calmly.</p></button>
+  <button type="button" class="plan-lane-tile" data-issue="trust"><span class="plan-lane-icon" aria-hidden="true">🧭</span><h3>Trust feels shaky</h3><p>Set one boundary both can keep.</p></button>
+  <button type="button" class="plan-lane-tile" data-issue="distance"><span class="plan-lane-icon" aria-hidden="true">✈️</span><h3>We’re apart / travel stress</h3><p>Keep connection warm across distance.</p></button>
+</div>
 <div class="builder row">
   <div><label>Main issue</label><select id="issue"><option value="disconnect">We feel distant</option><option value="conflict">Arguments escalate</option><option value="trust">Trust feels shaky</option><option value="distance">We’re apart / travel stress</option></select></div>
   <div><label>Time you can commit daily</label><select id="minutes"><option>10</option><option>15</option><option>20</option></select></div>
@@ -83,8 +112,7 @@ function downloadIcs(){
  for(let i=0;i<7;i++){const s=new Date(); s.setDate(s.getDate()+i); s.setHours(20,30,0,0); const e=new Date(s.getTime()+15*60000);
  lines.push('BEGIN:VEVENT',`UID:lf-${Date.now()}-${i}@loveforge`,`DTSTAMP:${icsDate(new Date())}`,`DTSTART:${icsDate(s)}`,`DTEND:${icsDate(e)}`,`SUMMARY:Love Forge 7-day reset (${i+1}/7)`,`DESCRIPTION:Run ${nice(tool)}. Rate before/after connection.`, 'END:VEVENT');}
  lines.push('END:VCALENDAR');
- const blob=new Blob([lines.join('
-')],{type:'text/calendar'}); const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='love-forge-7-day-plan.ics'; a.click();
+ const blob=new Blob([lines.join('\r\n')],{type:'text/calendar'}); const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='love-forge-7-day-plan.ics'; a.click();
 }
 
 function saveScore(){
@@ -99,6 +127,18 @@ Avg delta: ${avg(data,'delta').toFixed(2)}
 Day 7 rule: KEEP if avg delta >= +1.0, TWEAK if 0 to +0.9, SWAP if negative.`;
  $('scoreOut').textContent=out;
 }
+
+const laneTiles=[...document.querySelectorAll('.plan-lane-tile')];
+const issueSelect=$('issue');
+function syncLaneTiles(value){
+  laneTiles.forEach(tile=>tile.classList.toggle('is-active',tile.dataset.issue===value));
+}
+laneTiles.forEach(tile=>tile.addEventListener('click',()=>{
+  issueSelect.value=tile.dataset.issue;
+  syncLaneTiles(tile.dataset.issue);
+}));
+issueSelect.addEventListener('change',()=>syncLaneTiles(issueSelect.value));
+syncLaneTiles(issueSelect.value);
 
 $('build').onclick=buildPlan; $('copyInvite').onclick=copyInvite; $('downloadIcs').onclick=downloadIcs; $('saveScore').onclick=saveScore;
 </script></body></html>
