@@ -8,19 +8,29 @@
 ## Backlog
 
 ### TODO
-- **LF-036 Homepage should make the skeptical-partner 7-day ask copyable so users can send the experiment text without retyping it under friction**
-  - **Page:** `/index.html`
-  - **Problem:** The homepage explains the skeptical-partner pitch well, but the strongest 7-day experiment ask still lives as plain copy instead of a one-tap send action.
-  - **User pain:** "My partner is skeptical. Give me the exact low-pressure 7-day text so I can send it fast."
-  - **Proposed change:** Turn the skeptical-partner experiment opener into a copy-ready action with one lighter fallback so resistance drops faster.
-  - **Expected outcome:** Faster skeptical-partner invites, less friction in the highest-resistance path, stronger first send rate from the homepage.
-  - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+- **LF-037 Blog hub should make the skeptical-partner route obvious before library browsing so hesitant couples can send one low-pressure ask without digging**
+  - **Page:** `/blog/index.html`
+  - **Problem:** The homepage now handles skeptical partners better, but the blog hub still leans harder toward browsing tools than toward one copy-ready skeptical invite.
+  - **User pain:** "My partner is skeptical. Do not make me browse more. Give me the one text and first tool fast."
+  - **Proposed change:** Add one skeptic-friendly send block near the top of the blog hub with one copy-ready ask, one lighter fallback, and one recommended first tool.
+  - **Expected outcome:** Faster sends from the hub, less browsing drift, stronger follow-through for hesitant couples.
+  - **Score:** Impact 4 / Confidence 4 / Ease 3 = **11**
   - **Status:** TODO
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-036 Homepage should make the skeptical-partner 7-day ask copyable so users can send the experiment text without retyping it under friction
+- **Page:** `/index.html`
+- **Problem:** The homepage explains the skeptical-partner pitch well, but the strongest 7-day experiment ask still lives as plain copy instead of a one-tap send action.
+- **User pain:** "My partner is skeptical. Give me the exact low-pressure 7-day text so I can send it fast."
+- **Proposed change:** Turn the skeptical-partner experiment opener into a copy-ready action with one lighter fallback so resistance drops faster.
+- **Expected outcome:** Faster skeptical-partner invites, less friction in the highest-resistance path, stronger first send rate from the homepage.
+- **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage now gives skeptical partners one copy-ready 7-day experiment ask plus one lighter fallback text, so a stressed spouse can send the test fast without rewriting the pitch. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-035 Pause-and-Return should generate the exact pause, return, and close text so flooded couples do not have to translate the tool in the middle of a fight
 - **Page:** `/blog/pause-and-return-tool.html`
