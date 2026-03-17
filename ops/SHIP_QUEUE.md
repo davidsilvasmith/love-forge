@@ -8,12 +8,28 @@
 ## Backlog
 
 ### TODO
-- _none_
+- **LF-006** Homepage should prune duplicate choice blocks below the fold
+  - **Page:** `/index.html`
+  - **Problem:** The homepage has strong first-screen clarity, but lower sections repeat similar choices and can dilute momentum.
+  - **User pain:** "I already know my problem. I do not want to keep re-deciding the same thing."
+  - **Proposed change:** Cut or merge duplicate chooser blocks so the homepage keeps one clear path to first action, fallback, and next tool.
+  - **Expected outcome:** Faster scanning, less overload, higher clickthrough into one tool.
+  - **Score:** Impact 4 / Confidence 4 / Ease 3 = **11**
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-005 Blog conflict routing now sends hot couples to de-escalation first
+- **Page:** `/blog/index.html`
+- **Problem:** The blog hub told users that hot conflict beats other work, but some conflict entry points still routed them straight into a longer fight tool.
+- **User pain:** "We are already heated. Do not send us into a bigger talk first."
+- **Proposed change:** Make the conflict quick-pick and decision board route to Pause-and-Return first, and add one explicit rule that hot conflict must cool down before Fight Fair.
+- **Expected outcome:** Safer first move, less overwhelm, and faster starts for couples in active escalation.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Blog hub now sends active-conflict users to Pause-and-Return as the first move in every main conflict entry point, and explicitly says Fight Fair comes after both people are calm. Live URL: `https://love.forge.dsdoes.com/blog/`
 
 #### LF-004 Trust lane page should choose the safest first move fast
 - **Page:** `/blog/boundary-definition-tool.html`
