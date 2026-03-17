@@ -23,7 +23,7 @@
 - **Expected outcome:** Faster follow-through after yes, less friction between agreement and a real scheduled rep.
 - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
 - **Status:** SHIPPED
-- **Proof after ship:** Homepage yes-state lock-in text now updates from the same real-time picker used for the first ask, and the page tells users to change the time once above and copy the ready-to-send confirmation exactly as it updates here. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Homepage yes-state lock-in text now updates from the same real-time picker used for the first ask, and the page tells users to change the time once above and copy the ready-to-send confirmation exactly as it updates here. Commit: `916a91a`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-048 Homepage should make the first-screen partner send visibly customizable so a stressed spouse can swap the time and send tonight without mentally editing the copy first
 - **Page:** `/index.html`
