@@ -8,18 +8,28 @@
 ## Backlog
 
 ### TODO
-- **LF-007** Homepage should tighten the 7-day plan area into one cleaner continuation path
+- **LF-008** Homepage should turn the partner-share block into one clearer choice with the best next send action
   - **Page:** `/index.html`
-  - **Problem:** After the core starter flow, the homepage still shifts into several utility blocks before the final CTA.
-  - **User pain:** "I picked a lane. Now just help me keep going without more reading."
-  - **Proposed change:** Merge the 7-day plan, score tracker, and final CTA into one tighter continuation block with one obvious next action.
-  - **Expected outcome:** Better continuation after first click, less drop-off below the fold, cleaner path into the plan flow.
-  - **Score:** Impact 4 / Confidence 4 / Ease 3 = **11**
+  - **Problem:** The homepage still asks users to share the site in several ways before clearly telling them which share action is best tonight.
+  - **User pain:** "Just tell me the easiest message to send so we can start."
+  - **Proposed change:** Simplify the share section to one primary partner invite path, one fallback, and one stronger reason to send it now.
+  - **Expected outcome:** Faster partner invites, less hesitation, more starts from one copied message.
+  - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-007 Homepage turns the 7-day plan into one cleaner continuation block
+- **Page:** `/index.html`
+- **Problem:** After the starter flow, the homepage split the next step across a separate plan card, score tracker card, and final CTA card.
+- **User pain:** "I picked a lane. Now just help me keep going without more reading."
+- **Proposed change:** Merge the 7-day plan, score tracker, and next-action CTA into one tighter continuation block with one obvious path.
+- **Expected outcome:** Better continuation after first click, less drop-off below the fold, cleaner path into the plan flow.
+- **Score:** Impact 4 / Confidence 4 / Ease 3 = **11**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage now groups the 7-day path, score tracker, and next step into one continuation block so users can lock a time, copy the tracker once, and choose the guided plan or quiz without bouncing between separate cards. Commit: `4ed13a0`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-006 Homepage prunes duplicate choice blocks below the fold
 - **Page:** `/index.html`
