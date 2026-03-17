@@ -30,7 +30,7 @@
 - **Expected outcome:** Faster starts on hard talks, less kitchen-sink fighting, cleaner next-step closes, and more couples actually using Fight Fair tonight.
 - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
 - **Status:** SHIPPED
-- **Proof after ship:** Fight Fair now tells couples when not to use it, helps them choose one issue fast, gives a copy-ready opener plus full and short scripts, and generates a personalized fight plan so they can handle one hard talk tonight without improvising.
+- **Proof after ship:** Fight Fair now tells couples when not to use it, helps them choose one issue fast, gives a copy-ready opener plus full and short scripts, and generates a personalized fight plan so they can handle one hard talk tonight without improvising. Commit: `df174ac`. Live URL: `https://love.forge.dsdoes.com/blog/fight-fair-protocol.html`
 
 
 #### LF-040 Repair Attempt should generate the exact apology, repair line, and tomorrow follow-through so a cold couple can repair tonight without improvising
