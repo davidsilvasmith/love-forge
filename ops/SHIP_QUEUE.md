@@ -8,12 +8,29 @@
 ## Backlog
 
 ### TODO
-- _none_
+- LF-048 Homepage should make the first-screen partner send visibly customizable so a stressed spouse can swap the time and send tonight without mentally editing the copy first
+  - **Page:** `/index.html`
+  - **Problem:** The homepage now gives strong copy-ready texts, but the time and details are still static, which makes a tired spouse mentally rewrite before sending.
+  - **User pain:** "This is close, but I still have to edit it in my head before I send it."
+  - **Proposed change:** Add one tiny builder or inline customizer for the best first send so users can set the time and preserve the low-pressure wording.
+  - **Expected outcome:** Faster sends from the homepage and less friction on the highest-traffic action.
+  - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-047 One-Issue Rule should generate the exact invite, focus line, full script, and low-energy fallback so a stressed spouse can keep one hard talk on one topic tonight without improvising
+- **Page:** `/blog/one-issue-rule.html`
+- **Problem:** The page had a good framework, but a stressed spouse still had to invent the one-issue sentence, the specific moment, the tomorrow ask, the mirror line, and the fallback wording while already irritated.
+- **User pain:** "I know we need to stay on one issue. Do not make me build the exact words from scratch while I am already worked up."
+- **Proposed change:** Add one fill-in builder that writes the invite, focus line, exact 4-line script, and low-energy fallback from one issue, one moment, one ask, one time, and one mirror line.
+- **Expected outcome:** Faster starts, less improvising, cleaner one-topic talks, and better odds a couple actually finishes one useful rep tonight.
+- **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+- **Status:** SHIPPED
+- **Proof after ship:** One-Issue Rule now gives couples a fill-in builder that generates the invite, focus line, full script, and low-energy fallback, while updating the default script live so they can stay on one issue tonight without improvising.
 
 #### LF-046 Clean Complaint Script should generate the exact complaint, mirror line, and doable ask so a stressed spouse can raise one issue tonight without sounding attacking
 - **Page:** `/blog/clean-complaint-script.html`

@@ -15,7 +15,7 @@
 <div class="card quick-start">
   <h2>First step (do this now)</h2>
   <p><strong>Copy this. Fill one time. Send it.</strong></p>
-  <div id="one-issue-invite" class="copy-box">Can we do One-Issue Rule at [7:45 PM]? 10 minutes, one issue only. I want lighter, not heavier.</div>
+  <div id="one-issue-invite" class="copy-box">Can we do One-Issue Rule at 7:45 PM? 10 minutes, one issue only. I want lighter, not heavier.</div>
   <p><button class="btn" id="copy-one-issue-invite" type="button">Copy first-step text</button></p>
   <small id="copy-one-issue-invite-status" class="muted" aria-live="polite"></small>
   <p class="muted">That is the whole first step. Do not explain more. Do not bring up the issue yet.</p>
@@ -29,7 +29,50 @@
     <li><strong>If not, what problem showed up most this week?</strong> Pick that.</li>
     <li><strong>If still tied, what can you test tomorrow with one visible action?</strong> Pick that.</li>
   </ol>
-  <p><strong>Say this exact line:</strong> “Tonight’s issue is <strong>[one sentence]</strong>. Everything else is parked for tomorrow.”</p>
+  <p><strong>Say this exact line:</strong> <span id="one-issue-focus-line">“Tonight’s issue is bedtime handoff chaos. Everything else is parked for tomorrow.”</span></p>
+</div>
+
+<div class="card">
+  <h2>One-Issue builder</h2>
+  <p><strong>Do not invent the wording while you are already irritated.</strong> Fill in one issue, one moment, one ask, and one time. The page will write the invite, focus line, full script, and low-energy fallback for you.</p>
+  <div class="builder" aria-label="One-Issue Rule builder">
+    <div class="row">
+      <div>
+        <label for="one-issue-builder-issue"><strong>Tonight's one issue</strong></label>
+        <input id="one-issue-builder-issue" type="text" value="bedtime handoff chaos" />
+      </div>
+      <div>
+        <label for="one-issue-builder-moment"><strong>Specific moment</strong></label>
+        <input id="one-issue-builder-moment" type="text" value="last night when I handled both kids and cleanup alone" />
+      </div>
+    </div>
+    <div class="row">
+      <div>
+        <label for="one-issue-builder-ask"><strong>Tomorrow's specific action</strong></label>
+        <input id="one-issue-builder-ask" type="text" value="take bath and pajamas without me jumping in" />
+      </div>
+      <div>
+        <label for="one-issue-builder-time"><strong>Exact time</strong></label>
+        <input id="one-issue-builder-time" type="text" value="7:45 PM" />
+      </div>
+    </div>
+    <div class="row">
+      <div>
+        <label for="one-issue-builder-mirror"><strong>Mirror line starter</strong></label>
+        <input id="one-issue-builder-mirror" type="text" value="you felt alone and overloaded" />
+      </div>
+      <div>
+        <label for="one-issue-builder-low"><strong>Low-energy fallback time</strong></label>
+        <input id="one-issue-builder-low" type="text" value="tomorrow at lunch" />
+      </div>
+    </div>
+    <div class="highlight-grid" aria-label="Built One-Issue outputs">
+      <div class="highlight-card"><small>Invite text</small><p id="one-issue-builder-invite-output">Can we do One-Issue Rule at 7:45 PM? 10 minutes, one issue only. I want lighter, not heavier.</p><p><button class="btn" id="copy-one-issue-builder-invite" type="button">Copy invite text</button></p><small id="copy-one-issue-builder-invite-status" class="muted" aria-live="polite"></small></div>
+      <div class="highlight-card"><small>Focus line</small><p id="one-issue-builder-focus-output">Tonight’s issue is bedtime handoff chaos. Everything else is parked for tomorrow.</p><p><button class="btn" id="copy-one-issue-builder-focus" type="button">Copy focus line</button></p><small id="copy-one-issue-builder-focus-status" class="muted" aria-live="polite"></small></div>
+      <div class="highlight-card"><small>Low-energy fallback</small><p id="one-issue-builder-low-output">I still want to fix bedtime handoff chaos, but I do not have a good 10-minute brain tonight. Can we do the first 5 minutes at 7:45 PM or finish the full talk tomorrow at lunch?</p><p><button class="btn" id="copy-one-issue-builder-low" type="button">Copy low-energy text</button></p><small id="copy-one-issue-builder-low-status" class="muted" aria-live="polite"></small></div>
+    </div>
+    <p class="muted">Use one issue only tonight. If you feel tempted to add a second one, park it in Notes and come back tomorrow.</p>
+  </div>
 </div>
 
 <div class="card">
@@ -44,10 +87,10 @@
 <div class="card">
   <h2>One script (copy/paste)</h2>
   <p><strong>Use this exact 4-line script. Do not improvise.</strong></p>
-  <div id="one-issue-script" class="copy-box">1. Tonight’s one issue is [issue].
-2. The moment was [moment].
-3. Tomorrow I need [specific action] by [time].
-4. What I hear you saying is [one-sentence mirror]. I can do [specific action] by [time].</div>
+  <div id="one-issue-script" class="copy-box">1. Tonight’s one issue is bedtime handoff chaos.
+2. The moment was last night when I handled both kids and cleanup alone.
+3. Tomorrow I need you to take bath and pajamas without me jumping in by 7:45 PM.
+4. What I hear you saying is you felt alone and overloaded. I can take bath and pajamas without you jumping in by 7:45 PM.</div>
   <p><button class="btn" id="copy-one-issue-script" type="button">Copy the 4-line script</button></p>
   <small id="copy-one-issue-script-status" class="muted" aria-live="polite"></small>
   <p class="muted">Then switch once. If a new topic appears, say only: “Park it for tomorrow.”</p>
@@ -100,4 +143,47 @@
 </div>
 
 <div class="card"><h2>Best next tool</h2><p>If the issue keeps escalating, go to <a href="/blog/pause-and-return-tool.html">Pause-and-Return</a> first. If this helped, use <a href="/blog/10-minute-weekly-meeting.html">10-Minute Weekly Meeting</a> to keep progress stable.</p></div>
-</div><script>(function(){const copyPairs=[{btn:'copy-one-issue-invite',text:'one-issue-invite',status:'copy-one-issue-invite-status',ok:'Copied. Fill the time and send it.'},{btn:'copy-one-issue-script',text:'one-issue-script',status:'copy-one-issue-script-status',ok:'Copied. Use it exactly as written tonight.'}];for(const pair of copyPairs){const btn=document.getElementById(pair.btn);const text=document.getElementById(pair.text);const status=document.getElementById(pair.status);if(!btn||!text||!status)continue;btn.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(text.textContent);status.textContent=pair.ok;}catch(e){status.textContent='Copy failed. Select the text above and copy manually.';}});}})();</script></body></html>
+</div><script>(function(){
+const issueInput=document.getElementById('one-issue-builder-issue');
+const momentInput=document.getElementById('one-issue-builder-moment');
+const askInput=document.getElementById('one-issue-builder-ask');
+const timeInput=document.getElementById('one-issue-builder-time');
+const mirrorInput=document.getElementById('one-issue-builder-mirror');
+const lowInput=document.getElementById('one-issue-builder-low');
+const inviteTop=document.getElementById('one-issue-invite');
+const focusTop=document.getElementById('one-issue-focus-line');
+const scriptTop=document.getElementById('one-issue-script');
+const inviteOutput=document.getElementById('one-issue-builder-invite-output');
+const focusOutput=document.getElementById('one-issue-builder-focus-output');
+const lowOutput=document.getElementById('one-issue-builder-low-output');
+function clean(v,fallback){const value=(v||'').trim();return value||fallback;}
+function sentenceCase(text){const t=clean(text,'the issue');return t.charAt(0).toLowerCase()+t.slice(1);}
+function update(){
+  const issue=clean(issueInput.value,'bedtime handoff chaos');
+  const moment=clean(momentInput.value,'last night when I handled both kids and cleanup alone');
+  const ask=clean(askInput.value,'take bath and pajamas without me jumping in');
+  const time=clean(timeInput.value,'7:45 PM');
+  const mirror=clean(mirrorInput.value,'you felt alone and overloaded');
+  const low=clean(lowInput.value,'tomorrow at lunch');
+  const invite=`Can we do One-Issue Rule at ${time}? 10 minutes, one issue only. I want lighter, not heavier.`;
+  const focus=`Tonight’s issue is ${sentenceCase(issue)}. Everything else is parked for tomorrow.`;
+  const script=`1. Tonight’s one issue is ${sentenceCase(issue)}.\n2. The moment was ${moment}.\n3. Tomorrow I need you to ${ask} by ${time}.\n4. What I hear you saying is ${mirror}. I can ${ask} by ${time}.`;
+  const lowText=`I still want to fix ${sentenceCase(issue)}, but I do not have a good 10-minute brain tonight. Can we do the first 5 minutes at ${time} or finish the full talk ${low}?`;
+  inviteTop.textContent=invite;
+  focusTop.textContent=`“${focus}”`;
+  scriptTop.textContent=script;
+  inviteOutput.textContent=invite;
+  focusOutput.textContent=focus;
+  lowOutput.textContent=lowText;
+}
+[issueInput,momentInput,askInput,timeInput,mirrorInput,lowInput].forEach(function(input){if(input){input.addEventListener('input',update);}});
+update();
+const copyPairs=[
+  {btn:'copy-one-issue-invite',text:'one-issue-invite',status:'copy-one-issue-invite-status',ok:'Copied. Fill nothing else and send it.'},
+  {btn:'copy-one-issue-script',text:'one-issue-script',status:'copy-one-issue-script-status',ok:'Copied. Use it exactly as written tonight.'},
+  {btn:'copy-one-issue-builder-invite',text:'one-issue-builder-invite-output',status:'copy-one-issue-builder-invite-status',ok:'Copied invite text.'},
+  {btn:'copy-one-issue-builder-focus',text:'one-issue-builder-focus-output',status:'copy-one-issue-builder-focus-status',ok:'Copied focus line.'},
+  {btn:'copy-one-issue-builder-low',text:'one-issue-builder-low-output',status:'copy-one-issue-builder-low-status',ok:'Copied low-energy fallback.'}
+];
+for(const pair of copyPairs){const btn=document.getElementById(pair.btn);const text=document.getElementById(pair.text);const status=document.getElementById(pair.status);if(!btn||!text||!status)continue;btn.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(text.textContent);status.textContent=pair.ok;}catch(e){status.textContent='Copy failed. Select the text above and copy manually.';}});}
+})();</script></body></html>
