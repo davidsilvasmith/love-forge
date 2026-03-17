@@ -8,18 +8,28 @@
 ## Backlog
 
 ### TODO
-- **LF-006** Homepage should prune duplicate choice blocks below the fold
+- **LF-007** Homepage should tighten the 7-day plan area into one cleaner continuation path
   - **Page:** `/index.html`
-  - **Problem:** The homepage has strong first-screen clarity, but lower sections repeat similar choices and can dilute momentum.
-  - **User pain:** "I already know my problem. I do not want to keep re-deciding the same thing."
-  - **Proposed change:** Cut or merge duplicate chooser blocks so the homepage keeps one clear path to first action, fallback, and next tool.
-  - **Expected outcome:** Faster scanning, less overload, higher clickthrough into one tool.
+  - **Problem:** After the core starter flow, the homepage still shifts into several utility blocks before the final CTA.
+  - **User pain:** "I picked a lane. Now just help me keep going without more reading."
+  - **Proposed change:** Merge the 7-day plan, score tracker, and final CTA into one tighter continuation block with one obvious next action.
+  - **Expected outcome:** Better continuation after first click, less drop-off below the fold, cleaner path into the plan flow.
   - **Score:** Impact 4 / Confidence 4 / Ease 3 = **11**
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-006 Homepage prunes duplicate choice blocks below the fold
+- **Page:** `/index.html`
+- **Problem:** The homepage had a strong first screen, but lower sections kept asking users to pick a lane again in slightly different formats.
+- **User pain:** "I already know my problem. I do not want to keep re-deciding the same thing."
+- **Proposed change:** Cut duplicate chooser blocks so the homepage keeps one clear path to first action, fallback, and next tool.
+- **Expected outcome:** Faster scanning, less overload, higher clickthrough into one tool.
+- **Score:** Impact 4 / Confidence 4 / Ease 3 = **11**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage now keeps the first-screen lane chooser and removes repeated below-the-fold pickers by problem, mode, time, stack, and visual lane, so the page stays focused on taking one action tonight. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-005 Blog conflict routing now sends hot couples to de-escalation first
 - **Page:** `/blog/index.html`
