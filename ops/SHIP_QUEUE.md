@@ -8,12 +8,12 @@
 ## Backlog
 
 ### TODO
-- **LF-029 Blog hub sharpens the copy/send step so users can invite a partner without reading past the fold**
+- **LF-030 Blog hub makes the “yes, let’s do it” step obvious right after the partner invite**
   - **Page:** `/blog/index.html`
-  - **Problem:** The blog hub now splits tonight path vs browse path better, but the partner-invite scripts still sit below several chooser blocks instead of becoming the next obvious action.
-  - **User pain:** "Okay, I picked the tool. Now give me the exact text to send without making me keep scrolling."
-  - **Proposed change:** Move one copy-ready partner invite higher and tighten the top flow so choosing a path naturally leads into one send action.
-  - **Expected outcome:** Faster partner sends, less drop-off between tool choice and actual use, stronger share intent from the hub.
+  - **Problem:** The hub now gets users to the send step faster, but the follow-through after a partner says yes still competes with more browsing and chooser blocks instead of one locked-in first rep.
+  - **User pain:** "My partner said yes. Now tell us exactly which first tool to run without making us think again."
+  - **Proposed change:** Tighten the post-invite flow so one clear first rep becomes the dominant next action after the copied text.
+  - **Expected outcome:** More immediate tool starts after the partner invite, less drop-off between copied text and actual use, better tonight completion rate.
   - **Score:** Impact 4 / Confidence 4 / Ease 3 = **11**
   - **Status:** TODO
 
@@ -21,6 +21,16 @@
 - _none_
 
 ## SHIPPED
+
+#### LF-029 Blog hub sharpens the copy/send step so users can invite a partner without reading past the fold
+- **Page:** `/blog/index.html`
+- **Problem:** The blog hub now splits tonight path vs browse path better, but the partner-invite scripts still sit below several chooser blocks instead of becoming the next obvious action.
+- **User pain:** "Okay, I picked the tool. Now give me the exact text to send without making me keep scrolling."
+- **Proposed change:** Move one copy-ready partner invite higher and tighten the top flow so choosing a path naturally leads into one send action.
+- **Expected outcome:** Faster partner sends, less drop-off between tool choice and actual use, stronger share intent from the hub.
+- **Score:** Impact 4 / Confidence 4 / Ease 3 = **11**
+- **Status:** SHIPPED
+- **Proof after ship:** Blog hub now puts the partner-send step directly under the first scenario chooser, renames the copy block around one obvious next action, and tells users to stop browsing once they have the text. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/blog/`
 
 #### LF-028 Blog hub sharpens the first-screen split between fix-tonight tools and browse-the-library paths
 - **Page:** `/blog/index.html`
