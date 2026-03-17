@@ -8,18 +8,23 @@
 ## Backlog
 
 ### TODO
-- LF-017 Blog hub should make the trust lane point to outside backup before boundary-setting when trust is actively broken
-  - **Page:** `/blog/index.html`
-  - **Problem:** The quick-pick and relationship-moment trust entries still send stressed users to Boundary Definition first, even though active lying, cheating, hidden money, or secret messages need outside backup before a boundary talk.
-  - **User pain:** "I clicked trust, but I still have to guess whether this is a boundary talk night or a get-help-now night."
-  - **Proposed change:** Split the trust route into active trust-break vs shaky-boundary cases so the blog hub sends high-risk trust situations straight to Get Backup Tool and keeps Boundary Definition for calmer rule-setting.
-  - **Expected outcome:** Better trust triage, fewer wrong first clicks, tighter consistency across every trust entry point on the hub.
-  - **Score:** Impact 4 / Confidence 4 / Ease 3 = **11**
+- _none_
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-017 Blog hub splits active trust breaks from calmer boundary-setting so users get the safer first click
+- **Page:** `/blog/index.html`
+- **Problem:** The quick-pick and relationship-moment trust entries still sent stressed users to Boundary Definition first, even though active lying, cheating, hidden money, or secret messages need outside backup before a boundary talk.
+- **User pain:** "I clicked trust, but I still have to guess whether this is a boundary talk night or a get-help-now night."
+- **Proposed change:** Split the trust route into active trust-break vs shaky-boundary cases so the blog hub sends high-risk trust situations straight to Get Backup Tool and keeps Boundary Definition for calmer rule-setting.
+- **Expected outcome:** Better trust triage, fewer wrong first clicks, tighter consistency across every trust entry point on the hub.
+- **Score:** Impact 4 / Confidence 4 / Ease 3 = **11**
+- **Status:** SHIPPED
+- **Proof after ship:** Blog hub now routes hard trust hits to Get Backup Tool in both the quick-pick strip and the relationship-moment chooser, while keeping Boundary Definition for lower-drama rule-setting. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/blog/`
+
 
 #### LF-016 Blog hub surfaces the trust-break backup route before generic browsing
 - **Page:** `/blog/index.html`
