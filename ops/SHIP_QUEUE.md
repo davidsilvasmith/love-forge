@@ -8,12 +8,30 @@
 ## Backlog
 
 ### TODO
-- _none_
+- LF-041 Homepage first screen should make the first send feel even more immediate on mobile so a stressed spouse gets to one text faster
+- **Page:** `/index.html`
+- **Problem:** The homepage is strong, but the first send still sits below multiple blocks on smaller screens, which can slow the fastest useful action.
+- **User pain:** "I already know we need help. Just give me the text faster."
+- **Proposed change:** Tighten the first-screen handoff from lane choice to partner-send so the copy-ready ask becomes visible sooner on mobile.
+- **Expected outcome:** Faster partner sends, less scrolling friction, stronger first-action rate.
+- **Score:** Impact 4 / Confidence 3 / Ease 3 = **10**
+- **Status:** TODO
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-042 Fight Fair should generate the exact opener, one-issue script, and low-energy fallback so couples can have one hard talk tonight without improvising
+- **Page:** `/blog/fight-fair-protocol.html`
+- **Problem:** The page had the right intent, but a stressed spouse still had to invent the opener, choose the issue on the fly, and assemble the actual fight-cleaner script while already irritated.
+- **User pain:** "We keep having the same fight. Do not give me theory. Give me the exact words and tell us how to stay on one issue tonight."
+- **Proposed change:** Add one one-issue selector, one copy-ready opener, one full 12-minute script, one 5-minute fallback, and one builder that outputs the exact fight plan.
+- **Expected outcome:** Faster starts on hard talks, less kitchen-sink fighting, cleaner next-step closes, and more couples actually using Fight Fair tonight.
+- **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+- **Status:** SHIPPED
+- **Proof after ship:** Fight Fair now tells couples when not to use it, helps them choose one issue fast, gives a copy-ready opener plus full and short scripts, and generates a personalized fight plan so they can handle one hard talk tonight without improvising.
+
 
 #### LF-040 Repair Attempt should generate the exact apology, repair line, and tomorrow follow-through so a cold couple can repair tonight without improvising
 - **Page:** `/blog/repair-attempt-tool.html`

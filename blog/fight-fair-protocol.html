@@ -13,70 +13,216 @@
 <div class="highlight-grid">
   <div class="highlight-card">
     <small>Problem</small>
-    <h3>Talks get mean, fast</h3>
-    <p>When you are tired and rushed, small things turn into big fights.</p>
+    <h3>You keep having the same ugly fight</h3>
+    <p>When both of you are tired, one comment turns into tone, history, and a whole new night gone.</p>
   </div>
   <div class="highlight-card">
     <small>Promise</small>
-    <h3>One simple way to fight cleaner</h3>
-    <p>You can handle one hard topic tonight without tearing each other down.</p>
+    <h3>Have one hard talk without piling on</h3>
+    <p>You leave with one agreed next step instead of ten fresh wounds.</p>
+  </div>
+  <div class="highlight-card">
+    <small>Use this only when</small>
+    <h3>You can stay in the room without yelling</h3>
+    <p>If voices are already sharp, bodies are flooded, or someone wants to leave, use <a href="/blog/pause-and-return-tool.html">Pause-and-Return</a> first.</p>
   </div>
 </div>
 
 <div class="card quick-start">
-  <h2>Do this tonight (10-15 minutes)</h2>
-  <ol>
-    <li>Pick one issue only.</li>
-    <li>Set a 12-minute timer.</li>
-    <li>Use the script below, then take turns.</li>
-    <li>End with one small step for tomorrow.</li>
-  </ol>
-  <p><strong>Copy/paste script:</strong> “I love you. I don’t want another huge fight. Can we take 10 minutes, stick to one topic, and leave with one small next step?”</p>
-</div>
-
-<div class="card"><h2>Use this exact plan (copy this)</h2><ol><li><strong>Minute 0-2:</strong> Name today’s focus in one sentence.</li><li><strong>Minute 2-6:</strong> Each person gets 2 minutes uninterrupted.</li><li><strong>Minute 6-9:</strong> Choose one action for next 24 hours.</li><li><strong>Minute 9-10:</strong> Confirm when you’ll check in again.</li></ol></div>
-
-<div class="comparison-grid">
-  <a class="compare-tile" href="/blog/pause-and-return-tool.html">
-    <small>If one of you is too heated</small>
-    <h3>Use Pause-and-Return first</h3>
-    <p>Take a break, calm down, then come back at a set time.</p>
-  </a>
-  <a class="compare-tile" href="/blog/fight-fair-protocol.html">
-    <small>If you can talk without yelling</small>
-    <h3>Use this tool now</h3>
-    <p>One issue. Short timer. One next step.</p>
-  </a>
-  <a class="compare-tile" href="/blog/10-minute-weekly-meeting.html">
-    <small>After a better week</small>
-    <h3>Move to Weekly Meeting</h3>
-    <p>Keep the progress going with a simple weekly check-in.</p>
-  </a>
+  <h2>Do this tonight (10-12 minutes)</h2>
+  <div class="process-strip" aria-label="Fight Fair quick start">
+    <div class="process-step"><span class="process-icon" aria-hidden="true">1️⃣</span><h3>Pick one issue only</h3><p>Choose the one thing causing the most damage tonight. Do not stack old cases.</p></div>
+    <div class="process-step"><span class="process-icon" aria-hidden="true">2️⃣</span><h3>Read the opener exactly</h3><p>Use the copy-ready script below so the talk starts calmer.</p></div>
+    <div class="process-step"><span class="process-icon" aria-hidden="true">3️⃣</span><h3>Set a 12-minute timer</h3><p>Shorter is safer. Stop on time even if the issue is not fully solved.</p></div>
+    <div class="process-step"><span class="process-icon" aria-hidden="true">4️⃣</span><h3>Leave with one next step</h3><p>End with one action for tomorrow and one next check-in time.</p></div>
+  </div>
 </div>
 
 <div class="card">
-  <h2>Kid-chaos version</h2>
-  <ul>
-    <li>Do it after bedtime, in the car, or on a short walk.</li>
-    <li>If kids interrupt, do 5 minutes now and 5 minutes later.</li>
-    <li>If voices rise, pause and pick a return time before you walk away.</li>
-  </ul>
+  <h2>If you have 3 fights at once</h2>
+  <p><strong>Do not freestyle.</strong> Pick your tonight issue in this order and stop at the first match.</p>
+  <div class="quick-start-block-grid" aria-label="How to choose one issue tonight">
+    <div class="quick-start-block"><span class="quick-start-emoji" aria-hidden="true">1️⃣</span><h3>Safety or trust first</h3><p>If the real issue is lying, threats, intimidation, hidden money, cheating, or secret messages, stop here. This is not a Fight Fair night.</p></div>
+    <div class="quick-start-block"><span class="quick-start-emoji" aria-hidden="true">2️⃣</span><h3>Pick the hottest repeat problem</h3><p>If not, choose the same issue that keeps creating the ugliest tone: chores, lateness, screens, parenting, money, or shutdown.</p></div>
+    <div class="quick-start-block"><span class="quick-start-emoji" aria-hidden="true">3️⃣</span><h3>Choose the issue you can test tomorrow</h3><p>If two feel equal, choose the one where one behavior can change in the next 24 hours.</p></div>
+    <div class="quick-start-block"><span class="quick-start-emoji" aria-hidden="true">4️⃣</span><h3>Park the rest out loud</h3><p>Say: “We are doing one issue tonight so we do not wreck the whole conversation.”</p></div>
+  </div>
+</div>
+
+<div class="card">
+  <h2>Copy/paste opener + low-energy fallback</h2>
+  <div class="highlight-grid" aria-label="Fight Fair starter scripts">
+    <div class="highlight-card"><small>Main opener</small><h3>Start without a throat-punch</h3><p id="fight-fair-main-text">I love you, and I do not want another messy fight tonight. Can we stay on one topic for 12 minutes, each get a turn, and leave with one small next step for tomorrow?</p><p><button class="btn" id="copy-fight-fair-main" type="button">Copy main opener</button></p><small id="copy-fight-fair-main-status" class="muted" aria-live="polite"></small></div>
+    <div class="highlight-card"><small>Low-energy fallback</small><h3>Use this when one of you is fading</h3><p id="fight-fair-fallback-text">I do want to deal with this, but I do not trust us to do it well for long tonight. Can we do 5 clean minutes now, pick one next step, and finish the bigger talk tomorrow?</p><p><button class="btn" id="copy-fight-fair-fallback" type="button">Copy low-energy fallback</button></p><small id="copy-fight-fair-fallback-status" class="muted" aria-live="polite"></small></div>
+  </div>
+</div>
+
+<div class="card quick-start">
+  <h2>Use this exact 12-minute plan</h2>
+  <div class="quick-start-block-grid" aria-label="Exact Fight Fair run of show">
+    <div class="quick-start-block"><span class="quick-start-emoji" aria-hidden="true">0-2</span><h3>Name the issue</h3><p>Use one sentence only: “The issue tonight is ________.” No backstory dump.</p></div>
+    <div class="quick-start-block"><span class="quick-start-emoji" aria-hidden="true">2-5</span><h3>Partner A gets one turn</h3><p>Use: “When ______ happened, I felt ______, and I need ______ tomorrow.”</p></div>
+    <div class="quick-start-block"><span class="quick-start-emoji" aria-hidden="true">5-8</span><h3>Partner B mirrors, then takes a turn</h3><p>Mirror first: “What I hear is ________. Did I get that right?” Then switch.</p></div>
+    <div class="quick-start-block"><span class="quick-start-emoji" aria-hidden="true">8-10</span><h3>Pick one tiny change</h3><p>Agree on one behavior for the next 24 hours. Small beats dramatic.</p></div>
+    <div class="quick-start-block"><span class="quick-start-emoji" aria-hidden="true">10-12</span><h3>Close cleanly</h3><p>Say thank you, lock the next check-in time, and stop before the fight grows new legs.</p></div>
+  </div>
+</div>
+
+<div class="card quick-start">
+  <h2>Copy this exact script</h2>
+  <p>Do not improvise when you are already activated. Copy this, read it, and stop after one rep.</p>
+  <textarea id="fight-fair-full-script" readonly style="width:100%;min-height:240px;padding:12px;font:inherit">Fight Fair Tool
+
+Opening line:
+I love you, and I do not want another messy fight tonight. Can we stay on one topic for 12 minutes, each get a turn, and leave with one small next step for tomorrow?
+
+Minute 0-2:
+Say: The issue tonight is ________.
+Rule: No old cases, no bringing in three other problems.
+
+Minute 2-5:
+Partner A says: When ______ happened, I felt ______, and I need ______ tomorrow.
+Partner B only says: What I hear is ________. Did I get that right?
+
+Minute 5-8:
+Switch roles.
+Partner B says: When ______ happened, I felt ______, and I need ______ tomorrow.
+Partner A only says: What I hear is ________. Did I get that right?
+
+Minute 8-10:
+Choose one tiny action for the next 24 hours.
+Examples: text if late, put phones down at dinner, handle bedtime together, check bank balance before buying, revisit tone after work.
+
+Minute 10-12:
+Close with: Thank you for staying on this with me. Our next check-in is ________.
+Then stop. Do not reopen the issue after the timer ends.</textarea>
+  <p><button class="btn" id="copy-fight-fair-full" type="button">Copy full script</button></p>
+  <small id="copy-fight-fair-full-status" class="muted" aria-live="polite"></small>
+</div>
+
+<div class="card">
+  <h2>5-minute version for kid chaos or late-night brain</h2>
+  <div class="comparison-grid" aria-label="Choose the right version tonight">
+    <div class="compare-tile"><small>Use full version</small><h3>You are calm enough to stay on script</h3><p>Run the 12-minute plan and finish with one next step.</p></div>
+    <div class="compare-tile"><small>Use short version</small><h3>You are both tired but still reachable</h3><p>Do the 5-minute reset below tonight, then finish tomorrow.</p></div>
+  </div>
+  <textarea id="fight-fair-short-script" readonly style="width:100%;min-height:160px;padding:12px;font:inherit">5-Minute Fight Fair Reset
+
+Say this:
+I do want to deal with this, but I do not trust us to do it well for long tonight. Can we do 5 clean minutes now, pick one next step, and finish the bigger talk tomorrow?
+
+Then do this:
+1. Name one issue only.
+2. Each person gets one minute.
+3. Mirror back one sentence each.
+4. Pick one action for tomorrow.
+5. Lock the time for the full follow-up and stop.</textarea>
+  <p><button class="btn" id="copy-fight-fair-short" type="button">Copy 5-minute fallback</button></p>
+  <small id="copy-fight-fair-short-status" class="muted" aria-live="polite"></small>
+</div>
+
+<div class="card">
+  <h2>If emotions spike</h2>
+  <div class="comparison-grid">
+    <a class="compare-tile" href="/blog/pause-and-return-tool.html">
+      <small>Voices rise or someone shuts down</small>
+      <h3>Switch to Pause-and-Return</h3>
+      <p>Do not force clean conflict when the room is already hot.</p>
+    </a>
+    <div class="compare-tile">
+      <small>If trust is the real issue</small>
+      <h3>Do not keep fighting cleaner</h3>
+      <p>Use <a href="/blog/third-party-escalation-tool.html">Get Backup Tool</a> if this is really about lying, cheating, hidden money, or secret messages.</p>
+    </div>
+    <a class="compare-tile" href="/blog/10-minute-weekly-meeting.html">
+      <small>After a better week</small>
+      <h3>Move to Weekly Meeting</h3>
+      <p>Use structure once the same fight stops dominating the house.</p>
+    </a>
+  </div>
+</div>
+
+<div class="card">
+  <h2>Fight-plan builder</h2>
+  <div class="builder">
+    <div class="row">
+      <div><label for="issue">Tonight's one issue</label><input id="issue" value="we both got sharp during bedtime" /></div>
+      <div><label for="need">One thing you need tomorrow</label><input id="need" value="we tag-team bedtime instead of disappearing" /></div>
+    </div>
+    <div class="row">
+      <div><label for="checkin">Next check-in time</label><input id="checkin" value="tomorrow at 8:30 PM" /></div>
+      <div><label for="mode">Choose your mode</label><select id="mode"><option value="normal">Normal 12-minute version</option><option value="short">Low-energy 5-minute version</option><option value="repair">Repair-first version</option></select></div>
+    </div>
+    <div>
+      <button class="btn" id="build-fight-fair" type="button">Generate my fight plan</button>
+      <button class="btn" style="background:#2d6cdf" id="copy-fight-fair-builder" type="button">Copy builder output</button>
+    </div>
+    <div id="fight-fair-output" class="copy-box">Tap “Generate my fight plan” to create your copy/paste script.</div>
+  </div>
 </div>
 
 <div class="card">
   <h2>What better looks like in 7 days</h2>
   <div class="icon-row">
     <div class="icon-chip">✅ Fewer blow-ups</div>
-    <div class="icon-chip">✅ Quicker make-ups</div>
-    <div class="icon-chip">✅ More calm at home</div>
+    <div class="icon-chip">✅ Less kitchen-sink fighting</div>
+    <div class="icon-chip">✅ One agreed next step after conflict</div>
+    <div class="icon-chip">✅ Faster return to normal tone</div>
   </div>
-  <p><strong>Keep it simple:</strong> If this helps even a little, keep using it this week.</p>
+  <p><strong>Success signal:</strong> the same fight gets shorter, cleaner, or easier to repair on at least 4 of the next 7 days.</p>
 </div>
 
-<div class="card"><h2>How to use this tool effectively</h2><ul><li><strong>When to use it:</strong> Use <strong>Fight Fair Tool</strong> when this exact problem is happening now, not as a general reading exercise.</li><li><strong>How often:</strong> Run it once today, then repeat 3-7 times before judging results.</li><li><strong>Common mistake:</strong> Changing multiple things at once. Use one tool at a time so you can see what works.</li><li><strong>If it feels awkward:</strong> Use the script exactly once, keep the first run under 10 minutes, and rate helpfulness 1-10.</li></ul></div>
+<div class="card"><h2>How to use this tool effectively</h2><ul><li><strong>When to use it:</strong> Use <strong>Fight Fair Tool</strong> when both of you are upset but still calm enough to follow a short structure.</li><li><strong>How often:</strong> Run it once tonight, then repeat 3-7 times before judging results.</li><li><strong>Common mistake:</strong> Sneaking in old grievances after you picked the one issue.</li><li><strong>If it feels awkward:</strong> Read the script exactly, keep the first run short, and score whether tension dropped by at least 1 point.</li></ul></div>
 
-<div class="card"><h2>Tomorrow rep + fallback + escalation</h2><ul><li><strong>Tomorrow:</strong> run this same tool once more before trying a new one.</li><li><strong>If it didn’t help:</strong> switch to <a href="/blog/pause-and-return-tool.html">Pause-and-Return Tool</a> first, then retry.</li><li><strong>If it got worse or felt unsafe:</strong> stop DIY and involve a licensed professional/support resource.</li></ul></div>
+<div class="card"><h2>Tomorrow rep + fallback + escalation</h2><ul><li><strong>Tomorrow:</strong> run this same tool once more before trying a new one.</li><li><strong>If it didn’t help:</strong> switch to <a href="/blog/pause-and-return-tool.html">Pause-and-Return Tool</a> first, then retry.</li><li><strong>If trust got exposed:</strong> stop using this as your main tool and move to <a href="/blog/third-party-escalation-tool.html">Get Backup Tool</a>.</li><li><strong>If it got worse or felt unsafe:</strong> stop DIY and involve a licensed professional/support resource.</li></ul></div>
 
 <div class="card"><h2>Best next tool</h2><p>After this, run <a href="/blog/repair-attempt-tool.html">Repair Attempt Tool</a> so recovery gets faster after hard moments.</p></div>
 
-</div></body></html>
+</div><script>(function(){
+const copyPairs=[
+  {btn:'copy-fight-fair-main',text:'fight-fair-main-text',status:'copy-fight-fair-main-status',ok:'Copied main opener ✅'},
+  {btn:'copy-fight-fair-fallback',text:'fight-fair-fallback-text',status:'copy-fight-fair-fallback-status',ok:'Copied low-energy fallback ✅'},
+  {btn:'copy-fight-fair-full',text:'fight-fair-full-script',status:'copy-fight-fair-full-status',ok:'Copied full script ✅',value:true},
+  {btn:'copy-fight-fair-short',text:'fight-fair-short-script',status:'copy-fight-fair-short-status',ok:'Copied 5-minute fallback ✅',value:true}
+];
+for(const pair of copyPairs){
+  const btn=document.getElementById(pair.btn);
+  const text=document.getElementById(pair.text);
+  const status=document.getElementById(pair.status);
+  if(!btn||!text||!status) continue;
+  btn.addEventListener('click', async()=>{
+    try{
+      await navigator.clipboard.writeText(pair.value ? text.value : text.textContent);
+      status.textContent=pair.ok;
+    }catch(e){
+      status.textContent='Copy failed. Select and copy manually.';
+    }
+  });
+}
+const $=id=>document.getElementById(id);
+function build(){
+  const issue=$('issue').value.trim()||'we keep colliding on the same issue';
+  const need=$('need').value.trim()||'we make one small change tomorrow';
+  const checkin=$('checkin').value.trim()||'tomorrow at 8:30 PM';
+  const mode=$('mode').value;
+  let block='';
+  if(mode==='normal'){
+    block=`Fight Fair Plan\n\nOpening line:\nI love you, and I do not want another messy fight tonight. Can we stay on one topic for 12 minutes, each get a turn, and leave with one small next step for tomorrow?\n\nTonight's one issue:\n${issue}\n\nPartner A line:\nWhen ${issue}, I felt ______, and I need ${need} tomorrow.\n\nPartner B mirror:\nWhat I hear is ________. Did I get that right?\n\nSwitch roles and repeat once.\n\n24-hour action:\n${need}\n\nNext check-in:\n${checkin}`;
+  } else if(mode==='short'){
+    block=`5-Minute Fight Fair Reset\n\nSay this:\nI do want to deal with this, but I do not trust us to do it well for long tonight. Can we do 5 clean minutes now, pick one next step, and finish the bigger talk tomorrow?\n\nOne issue:\n${issue}\n\nOne tomorrow step:\n${need}\n\nFull follow-up time:\n${checkin}`;
+  } else {
+    block=`Repair-First Fight Plan\n\nStart with:\nI care more about us than winning this right now. Let us slow this down and stay on one issue.\n\nOne issue only:\n${issue}\n\nEach person gets one short turn:\nWhen ${issue}, I felt ______, and I need ${need} tomorrow.\n\nIf tone spikes, pause and use Pause-and-Return.\n\nNext check-in:\n${checkin}`;
+  }
+  $('fight-fair-output').textContent=block;
+}
+$('build-fight-fair').addEventListener('click',build);
+$('copy-fight-fair-builder').addEventListener('click',async()=>{
+  try{
+    await navigator.clipboard.writeText($('fight-fair-output').textContent);
+    $('copy-fight-fair-builder').textContent='Copied ✅';
+    setTimeout(()=>$('copy-fight-fair-builder').textContent='Copy builder output',1200);
+  }catch(e){
+    alert('Copy failed. You can still select and copy manually.');
+  }
+});
+})();</script></body></html>
