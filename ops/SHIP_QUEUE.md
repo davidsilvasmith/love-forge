@@ -8,19 +8,29 @@
 ## Backlog
 
 ### TODO
-- LF-057 Blog hub should align the library lane language and counts so browse-first users do not see a 5-lane chooser above a 4-lane library and pause on whether planning is a separate path
+- LF-058 Blog hub library should make the planning follow-through path visible without looking like a missing fifth filter so calm users know where structure tools live after they pick the right temperature
   - **Page:** `/blog/index.html`
-  - **Problem:** The merged browse block is cleaner, but the lane-first section now names conflict, connection, trust, distance, and planning, while the library stats and lane buttons still present 4 lanes, which can create one last credibility wobble before filtering.
-  - **User pain:** "You just told me planning is a lane, then the library says there are 4 lanes. Do not make me wonder if I am in the wrong section."
-  - **Proposed change:** Tighten the browse-first copy and/or library metadata so the lane count and planning path read as one consistent system.
-  - **Expected outcome:** Cleaner browse trust, less hesitation before filtering, and a more credible lane-first handoff.
-  - **Score:** Impact 3 / Confidence 4 / Ease 4 = **11**
+  - **Problem:** The copy now clarifies that planning is follow-through, not a fifth core lane, but calm users still have to infer where the planning tools live because the filter UI only exposes the 4 core lanes.
+  - **User pain:** "Got it, planning is not the first move. But once we are calm, show me where the structure tools are without making me hunt the full list."
+  - **Proposed change:** Add one small planning follow-through entry inside the library guidance so users can jump to the right planning tools without confusing the core-lane system.
+  - **Expected outcome:** Better follow-through discovery, less hunting in the full list, and cleaner alignment between the lane model and the actual tool library.
+  - **Score:** Impact 3 / Confidence 4 / Ease 3 = **10**
   - **Status:** TODO
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-057 Blog hub should align the library lane language and counts so browse-first users do not see a 5-lane chooser above a 4-lane library and pause on whether planning is a separate path
+- **Page:** `/blog/index.html`
+- **Problem:** The merged browse block is cleaner, but the lane-first section now names conflict, connection, trust, distance, and planning, while the library stats and lane buttons still present 4 lanes, which can create one last credibility wobble before filtering.
+- **User pain:** "You just told me planning is a lane, then the library says there are 4 lanes. Do not make me wonder if I am in the wrong section."
+- **Proposed change:** Tighten the browse-first copy and library metadata so the lane count and planning path read as one consistent system.
+- **Expected outcome:** Cleaner browse trust, less hesitation before filtering, and a more credible lane-first handoff.
+- **Score:** Impact 3 / Confidence 4 / Ease 4 = **11**
+- **Status:** SHIPPED
+- **Proof after ship:** Blog hub now defines conflict, connection, trust, and distance as the 4 core lanes, repositions planning as a calm follow-through path, and updates the library labels to match that system so browse-first users do not hit a lane-count contradiction before filtering.
 
 #### LF-056 Blog hub should tighten the browse-first entry block into one simpler lane-first action so stressed users do not hit both a browse explainer and a second relationship-moment chooser before the library
 - **Page:** `/blog/index.html`
