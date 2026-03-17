@@ -8,19 +8,29 @@
 ## Backlog
 
 ### TODO
-- **LF-037 Blog hub should make the skeptical-partner route obvious before library browsing so hesitant couples can send one low-pressure ask without digging**
+- **LF-038 Blog hub should make the no-thanks response less awkward so hesitant couples know the next safe move without reopening the whole library**
   - **Page:** `/blog/index.html`
-  - **Problem:** The homepage now handles skeptical partners better, but the blog hub still leans harder toward browsing tools than toward one copy-ready skeptical invite.
-  - **User pain:** "My partner is skeptical. Do not make me browse more. Give me the one text and first tool fast."
-  - **Proposed change:** Add one skeptic-friendly send block near the top of the blog hub with one copy-ready ask, one lighter fallback, and one recommended first tool.
-  - **Expected outcome:** Faster sends from the hub, less browsing drift, stronger follow-through for hesitant couples.
-  - **Score:** Impact 4 / Confidence 4 / Ease 3 = **11**
+  - **Problem:** The hub now handles skeptical partners better on the first ask, but the decline path still mostly routes users to a low-energy solo text instead of clearly telling them what to do tomorrow or which tool to hold for later.
+  - **User pain:** "My partner said not tonight. Tell me the next safe move so I do not turn this into another fight or just give up."
+  - **Proposed change:** Add one short no-thanks follow-up block with an exact reply, a tomorrow retry rule, and one safest-next-tool reminder.
+  - **Expected outcome:** Less friction after a soft no, fewer pressure spirals, stronger next-day follow-through.
+  - **Score:** Impact 4 / Confidence 3 / Ease 4 = **11**
   - **Status:** TODO
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-037 Blog hub should make the skeptical-partner route obvious before library browsing so hesitant couples can send one low-pressure ask without digging
+- **Page:** `/blog/index.html`
+- **Problem:** The homepage now handles skeptical partners better, but the blog hub still leans harder toward browsing tools than toward one copy-ready skeptical invite.
+- **User pain:** "My partner is skeptical. Do not make me browse more. Give me the one text and first tool fast."
+- **Proposed change:** Add one skeptic-friendly send block near the top of the blog hub with one copy-ready ask, one lighter fallback, and one recommended first tool.
+- **Expected outcome:** Faster sends from the hub, less browsing drift, stronger follow-through for hesitant couples.
+- **Score:** Impact 4 / Confidence 4 / Ease 3 = **11**
+- **Status:** SHIPPED
+- **Proof after ship:** Blog hub now gives skeptical partners one obvious low-pressure experiment ask, one lighter fallback for people who hate the word tool, and one default first-tool route with the same conflict/trust safety overrides, so a stressed spouse can invite a hesitant partner without digging through the library first.
 
 #### LF-036 Homepage should make the skeptical-partner 7-day ask copyable so users can send the experiment text without retyping it under friction
 - **Page:** `/index.html`
