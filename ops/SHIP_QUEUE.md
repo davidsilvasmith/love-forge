@@ -32,7 +32,7 @@
 - **Expected outcome:** Higher clickthrough to relevant tools, lower overwhelm.
 - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
 - **Status:** SHIPPED
-- **Proof after ship:** Blog hub now groups the first decision by relationship moment so a stressed spouse can choose conflict, connection, trust, distance, or planning without scanning the whole library. Commit: `pending`. Live URL: `https://love.forge.dsdoes.com/blog/`
+- **Proof after ship:** Blog hub now groups the first decision by relationship moment so a stressed spouse can choose conflict, connection, trust, distance, or planning without scanning the whole library. Commit: `c6d8ed7`. Live URL: `https://love.forge.dsdoes.com/blog/`
 
 #### LF-001 Homepage hero for stressed couples
 - **Page:** `/index.html`
