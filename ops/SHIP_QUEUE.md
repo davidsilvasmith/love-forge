@@ -23,7 +23,7 @@
 - **Expected outcome:** More booked calls, less stalling after first contact, and higher follow-through from the trust-break backup path.
 - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
 - **Status:** SHIPPED
-- **Proof after ship:** Get Backup Tool now gives couples exact reply texts for booking a time, asking for one referral when someone has no room, and giving one-sentence context when asked what is going on. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/blog/third-party-escalation-tool.html`
+- **Proof after ship:** Get Backup Tool now gives couples exact reply texts for booking a time, asking for one referral when someone has no room, and giving one-sentence context when asked what is going on. Commit: `183cdfb`. Live URL: `https://love.forge.dsdoes.com/blog/third-party-escalation-tool.html`
 
 #### LF-018 Get Backup Tool adds copy buttons and a stop-at-first-yes chooser so stressed couples send outreach faster
 - **Page:** `/blog/third-party-escalation-tool.html`
