@@ -29,7 +29,7 @@
 - **Expected outcome:** Faster partner invites, less hesitation, more starts from one copied message.
 - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
 - **Status:** SHIPPED
-- **Proof after ship:** Homepage now gives one clear partner-invite text as the primary action, explains why that ask is safer after a hard day, and fixes the shared link to the live Love Forge domain. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Homepage now gives one clear partner-invite text as the primary action, explains why that ask is safer after a hard day, and fixes the shared link to the live Love Forge domain. Commit: `ee90186`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-007 Homepage turns the 7-day plan into one cleaner continuation block
 - **Page:** `/index.html`
