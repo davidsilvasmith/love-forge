@@ -29,7 +29,7 @@
 - **Expected outcome:** More second-touch follow-through, fewer dropped outreach attempts, better odds of booking support within 7 days.
 - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
 - **Status:** SHIPPED
-- **Proof after ship:** Get Backup Tool now gives one exact 24-hour follow-up text, tells users not to add more story, and adds one simple helper-switch rule so they know what to send next after silence. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/blog/third-party-escalation-tool.html`
+- **Proof after ship:** Get Backup Tool now gives one exact 24-hour follow-up text, tells users not to add more story, and adds one simple helper-switch rule so they know what to send next after silence. Commit: `4c464bd`. Live URL: `https://love.forge.dsdoes.com/blog/third-party-escalation-tool.html`
 
 #### LF-013 Get Backup Tool adds helper-specific outreach examples so users do not stall after choosing
 - **Page:** `/blog/third-party-escalation-tool.html`
