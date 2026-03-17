@@ -29,7 +29,7 @@
 - **Expected outcome:** Safer triage, more credible trust handling, less chance users start with the wrong page.
 - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
 - **Status:** SHIPPED
-- **Proof after ship:** Homepage trust triage now names concrete trust-break cases, tells users not to start with a big feelings talk, gives one copy-ready escalation script, and routes them straight into the Get Backup Tool before generic communication tools. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Homepage trust triage now names concrete trust-break cases, tells users not to start with a big feelings talk, gives one copy-ready escalation script, and routes them straight into the Get Backup Tool before generic communication tools. Commit: `a5be076`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-010 Blog hub cuts duplicate chooser blocks so the fastest next tool stays obvious
 - **Page:** `/blog/index.html`
