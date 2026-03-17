@@ -8,12 +8,29 @@
 ## Backlog
 
 ### TODO
-- _none_
+- LF-052 Attention Budget Tool should generate the exact nightly attention-protecting text, one protected-slot plan, and low-energy fallback so a wiped-out spouse can protect one block tonight without inventing the words
+  - **Page:** `/blog/attention-budget-tool.html`
+  - **Problem:** The page names the right goal, but it still reads like advice. A stressed spouse still has to choose the slot, phrase the ask, and translate the tool into a concrete tonight plan.
+  - **User pain:** "We are both fried. Do not make me turn this into a custom routine from scratch."
+  - **Proposed change:** Add one protected-slot builder that writes the invite, exact 10-minute plan, low-energy fallback, and tomorrow proof action.
+  - **Expected outcome:** Faster starts, less mental translation, and more couples actually protecting one attention block tonight.
+  - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+  - **Status:** TODO
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-051 Resentment Flush Tool should generate the exact resentment line, clean ask, and proof action so a stressed spouse can clear one lingering hurt tonight without improvising
+- **Page:** `/blog/resentment-flush-tool.html`
+- **Problem:** The page had the right intent, but it still read like generic advice. A stressed spouse still had to decide which resentment to pick, translate it into exact words, and invent the ask plus deadline while already irritated.
+- **User pain:** "I know what is bugging me. Do not make me build the sentence from scratch while I am already resentful."
+- **Proposed change:** Add one one-issue chooser, one fill-in builder that writes the resentment line, clean ask, proof lock, low-energy version, and pause fallback, plus a sharper 10-minute plan and 7-day keep-or-switch rule.
+- **Expected outcome:** Faster starts, less stacking old hurts, cleaner asks, and better odds a couple actually clears one lingering resentment tonight.
+- **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+- **Status:** SHIPPED
+- **Proof after ship:** Resentment Flush Tool now tells couples how to choose one resentment fast, gives a fill-in builder for the exact resentment line, clean ask, proof action, low-energy version, and pause fallback, and adds a tighter 10-minute plan so they can clear one lingering hurt tonight without improvising.
 
 #### LF-050 Weekly State-of-Us Scorecard should generate the exact score-summary, focus line, and tomorrow action so a stressed spouse can run the check-in tonight without inventing the wording
 - **Page:** `/blog/weekly-state-of-us-scorecard.html`
