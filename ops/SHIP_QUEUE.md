@@ -8,18 +8,28 @@
 ## Backlog
 
 ### TODO
-- LF-015 Homepage should route trust-hit couples into backup faster with one direct hero-level exit
-  - **Page:** `/index.html`
-  - **Problem:** The homepage mentions trust-break escalation lower on the page, but a spouse landing cold can still miss the fastest safe route if the real issue is lying, cheating, hidden money, or repeated blowups.
-  - **User pain:** "We do not need more browsing. Tell us the safest page to open first tonight."
-  - **Proposed change:** Add one sharper trust-hit escape hatch above the fold that routes directly into Get Backup Tool with one exact line about when not to start with a long talk.
-  - **Expected outcome:** Faster safer routing for high-stakes couples, less wrong-tool usage, better first-screen clarity.
+- LF-016 Blog hub should surface the trust-break backup route in the first decision block
+  - **Page:** `/blog/index.html`
+  - **Problem:** The homepage now routes trust-hit couples faster, but the blog hub can still look like a general library instead of clearly saying when to skip browsing and go straight to outside backup.
+  - **User pain:** "I landed on the tool list, but I still need the safest first click when trust got hit."
+  - **Proposed change:** Add one high-contrast trust-break route near the top of the blog index that sends users directly to Get Backup Tool before generic communication tools.
+  - **Expected outcome:** Safer routing from the tool library, less wrong-page browsing, better consistency between homepage and blog hub.
   - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-015 Homepage adds a trust-hit fast exit above the fold so couples route to backup before the wrong talk
+- **Page:** `/index.html`
+- **Problem:** The homepage mentioned trust-break escalation lower on the page, but a spouse landing cold could still miss the safest route when lying, cheating, hidden money, secret messages, or repeat blowups were the real issue.
+- **User pain:** "We do not need more browsing. Tell us the safest page to open first tonight."
+- **Proposed change:** Add one high-contrast trust-hit block above the lane chooser with one exact text and one direct button into Get Backup Tool.
+- **Expected outcome:** Faster safer routing for high-stakes couples, less wrong-tool usage, better first-screen clarity.
+- **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage first screen now gives trust-hit couples one direct warning not to start with a long feelings talk, one copy-ready text, and one obvious button into Get Backup Tool before the generic lane chooser. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-014 Get Backup Tool adds one exact 24-hour follow-up so couples do not freeze after silence
 - **Page:** `/blog/third-party-escalation-tool.html`
