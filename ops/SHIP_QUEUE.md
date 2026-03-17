@@ -23,7 +23,7 @@
 - **Expected outcome:** Faster starts on the trust-boundary path, less freezing at placeholders, more copied scripts.
 - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
 - **Status:** SHIPPED
-- **Proof after ship:** Boundary Definition Tool now lets couples pick one lane, fill in the exact rule, miss response, and review time, then copy three finished lines for the boundary statement, consequence, and review text without rewriting from scratch. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/blog/boundary-definition-tool.html`
+- **Proof after ship:** Boundary Definition Tool now lets couples pick one lane, fill in the exact rule, miss response, and review time, then copy three finished lines for the boundary statement, consequence, and review text without rewriting from scratch. Commit: `fd962ce`. Live URL: `https://love.forge.dsdoes.com/blog/boundary-definition-tool.html`
 
 
 #### LF-020 Get Backup Tool adds a fill-in builder so couples can copy finished outreach texts instead of staring at placeholders
