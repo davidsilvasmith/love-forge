@@ -8,18 +8,28 @@
 ## Backlog
 
 ### TODO
-- LF-011 Homepage should surface the safest trust-break route before generic communication tools
-  - **Page:** `/index.html`
-  - **Problem:** The homepage safety section mentions trust breaks, but stressed users can still miss the strongest route when lying, cheating, or hidden money is the real emergency.
-  - **User pain:** "If trust got broken, just tell me the safest first move tonight."
-  - **Proposed change:** Turn the trust-break warning into one sharper first-action block with one exact script and one clearer route into third-party escalation.
-  - **Expected outcome:** Safer triage, more credible trust handling, less chance users start with the wrong page.
+- LF-012 Get Backup Tool should make the helper-choice order faster to scan on mobile
+  - **Page:** `/blog/third-party-escalation-tool.html`
+  - **Problem:** The tool has the right sequence, but the helper-type choice is still buried in body copy instead of a faster visual decision block.
+  - **User pain:** "Just tell me who to contact first so we can send the messages tonight."
+  - **Proposed change:** Turn the helper-type order into one obvious chooser with one-line guidance for therapist, coach, or trusted mentor.
+  - **Expected outcome:** Faster outreach, less debate, better follow-through on the trust-break path.
   - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-011 Homepage surfaces the safest trust-break route before generic communication tools
+- **Page:** `/index.html`
+- **Problem:** The homepage safety section mentioned trust breaks, but stressed users could still miss the strongest route when lying, cheating, or hidden money was the real emergency.
+- **User pain:** "If trust got broken, just tell me the safest first move tonight."
+- **Proposed change:** Turn the trust-break warning into one sharper first-action block with one exact script and one clearer route into third-party escalation.
+- **Expected outcome:** Safer triage, more credible trust handling, less chance users start with the wrong page.
+- **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage trust triage now names concrete trust-break cases, tells users not to start with a big feelings talk, gives one copy-ready escalation script, and routes them straight into the Get Backup Tool before generic communication tools. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-010 Blog hub cuts duplicate chooser blocks so the fastest next tool stays obvious
 - **Page:** `/blog/index.html`
