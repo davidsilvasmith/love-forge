@@ -9,6 +9,20 @@
 
 ### TODO
 
+#### LF-004 Trust lane page should choose the safest first move fast
+- **Page:** `/blog/boundary-definition-tool.html`
+- **Problem:** Trust pain pages can still feel like more reading instead of an immediate first move.
+- **User pain:** "If trust feels off, tell me exactly what to say and what to lock down tonight."
+- **Proposed change:** Tighten first screen, add one sharper starter script, and make the first boundary decision easier to scan.
+- **Expected outcome:** Faster trust-lane starts, less hesitation, better odds a couple actually runs the tool tonight.
+- **Score:** Impact 4 / Confidence 4 / Ease 3 = **11**
+- **Status:** TODO
+- **Proof after ship:** _pending_
+
+## IN PROGRESS
+- _none_
+
+## SHIPPED
 
 #### LF-002 Blog index becomes decision hub
 - **Page:** `/blog/index.html`
@@ -17,14 +31,8 @@
 - **Proposed change:** Group tools by moments: conflict, distance, trust, connection, planning.
 - **Expected outcome:** Higher clickthrough to relevant tools, lower overwhelm.
 - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
-- **Status:** TODO
-- **Proof after ship:** _pending_
-
-
-## IN PROGRESS
-- _none_
-
-## SHIPPED
+- **Status:** SHIPPED
+- **Proof after ship:** Blog hub now groups the first decision by relationship moment so a stressed spouse can choose conflict, connection, trust, distance, or planning without scanning the whole library. Commit: `pending`. Live URL: `https://love.forge.dsdoes.com/blog/`
 
 #### LF-001 Homepage hero for stressed couples
 - **Page:** `/index.html`
