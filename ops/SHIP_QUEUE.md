@@ -8,19 +8,29 @@
 ## Backlog
 
 ### TODO
-- LF-053 Blog hub should make the fastest tonight path even more dominant than browsing so a stressed spouse lands on one send and one first rep before scanning the library
+- LF-054 Blog hub should make the skeptical-partner route feel secondary to the default tonight path so stressed users do not pause on a niche branch before sending the main ask
   - **Page:** `/blog/index.html`
-  - **Problem:** The hub is much better, but the top still competes with multiple valid routes and browsing options before the single fastest tonight action fully takes over.
-  - **User pain:** "I already know we need help tonight. Do not make me evaluate three good options before I send one text."
-  - **Proposed change:** Tighten the top of the blog hub around one primary tonight path, one default first rep, and one lower-noise browse handoff.
-  - **Expected outcome:** Faster first sends, less browse drift, and more couples starting one tool tonight instead of reading around it.
-  - **Score:** Impact 4 / Confidence 4 / Ease 3 = **11**
+  - **Problem:** The top of the hub is clearer now, but the skeptical-partner block still appears high enough to compete with the main tonight path for users who do not actually need it.
+  - **User pain:** "I am not dealing with a skeptical partner. Do not make me re-evaluate if I should take a side route before I send the normal text."
+  - **Proposed change:** Demote or tighten the skeptical-partner section so the main tonight path stays dominant and the niche branch still exists without stealing early attention.
+  - **Expected outcome:** Faster first sends from the default route and less hesitation at the top of the hub.
+  - **Score:** Impact 3 / Confidence 4 / Ease 4 = **11**
   - **Status:** TODO
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-053 Blog hub should make the fastest tonight path even more dominant than browsing so a stressed spouse lands on one send and one first rep before scanning the library
+- **Page:** `/blog/index.html`
+- **Problem:** The hub was much better, but the top still competed with multiple valid routes and browsing options before the single fastest tonight action fully took over.
+- **User pain:** "I already know we need help tonight. Do not make me evaluate three good options before I send one text."
+- **Proposed change:** Tighten the top of the blog hub around one primary tonight path, one default first rep, and one lower-noise browse handoff.
+- **Expected outcome:** Faster first sends, less browse drift, and more couples starting one tool tonight instead of reading around it.
+- **Score:** Impact 4 / Confidence 4 / Ease 3 = **11**
+- **Status:** SHIPPED
+- **Proof after ship:** Blog hub now opens with one dominant “Fastest tonight path” that tells users to pick one problem, send one small ask, and run the default first rep before browsing, while demoting browse to an explicit fallback and keeping the two safety overrides visible. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/blog/`
 
 #### LF-052 Attention Budget Tool should generate the exact nightly attention-protecting text, one protected-slot plan, and low-energy fallback so a wiped-out spouse can protect one block tonight without inventing the words
 - **Page:** `/blog/attention-budget-tool.html`
