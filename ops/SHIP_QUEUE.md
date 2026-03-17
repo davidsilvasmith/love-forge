@@ -8,13 +8,30 @@
 ## Backlog
 
 ### TODO
-- _none yet_
+- **LF-026 Homepage trims below-the-fold choice overload so the first clear path stays obvious after the hero**
+  - **Page:** `/index.html`
+  - **Problem:** The hero is strong, but the homepage still repeats too many alternate routes below the fold, which can turn one clean decision into more scanning.
+  - **User pain:** "I already picked the problem. Stop making me evaluate five more sections before I act."
+  - **Proposed change:** Tighten the homepage continuation blocks so one primary next step stays dominant after the first screen.
+  - **Expected outcome:** Faster clicks into one tool, less scroll fatigue, stronger first-session action rate.
+  - **Score:** Impact 4 / Confidence 4 / Ease 3 = **11**
+  - **Status:** TODO
 
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-025 Distance Connection Protocol adds a copy-ready nightly script builder so apart couples stop translating the routine by hand
+- **Page:** `/blog/distance-connection-protocol.html`
+- **Problem:** The page had a useful routine, but tired spouses still had to decide the focus, rewrite the invite, and improvise the actual call structure when they were already apart and low on energy.
+- **User pain:** "Do not make me invent the distance call tonight. Give me the exact text and tell us what one thing to cover."
+- **Proposed change:** Add one clear pick-one-focus block, stronger first-step copy, and a builder that outputs an exact nightly script for normal, low-energy, and repair-first versions.
+- **Expected outcome:** Faster starts, less overtalking while apart, and more couples actually running one distance check-in tonight.
+- **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+- **Status:** SHIPPED
+- **Proof after ship:** Distance Connection Protocol now tells couples how to choose one focus fast, gives stronger starter copy and low-energy fallback text, and generates one exact nightly script for normal, low-energy, or repair-first distance check-ins. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/blog/distance-connection-protocol.html`
 
 #### LF-024 Daily 15-Minute Connection Block adds copy-ready full and short scripts so tired couples can run the rep without translating it
 - **Page:** `/blog/daily-15-minute-connection-block.html`

@@ -3,38 +3,69 @@
 <p><a href="/blog/">← Back to all tools</a></p>
 <h1>Distance Connection Protocol</h1><p class="pill">For busy parents • practical in 10-15 minutes</p>
 
-<div class="icon-row" aria-label="What this tool improves">
-  <div class="icon-chip">💞 Less drift</div>
-  <div class="icon-chip">🧯 Fewer blowups</div>
-  <div class="icon-chip">🔁 Faster repair</div>
-  <div class="icon-chip">📈 Better connection score</div>
+<div class="card quick-start">
+  <h2>Do this first tonight</h2>
+  <p><strong>If you are apart and starting to feel like coworkers, not partners, do not wing this call.</strong> Pick one focus, copy one text, and run one short rep.</p>
+  <div class="icon-row" aria-label="What this tool improves">
+    <div class="icon-chip">💞 Less drift</div>
+    <div class="icon-chip">🧯 Fewer blowups</div>
+    <div class="icon-chip">📱 One exact text</div>
+    <div class="icon-chip">📈 Better connection score</div>
+  </div>
+  <ol>
+    <li>Pick one fixed 10-12 minute call window.</li>
+    <li>Pick one focus only: connection, logistics, or repair.</li>
+    <li>Send the exact text below.</li>
+    <li>Use a timer and stop after one rep.</li>
+  </ol>
+  <p><strong>Copy/paste starter text:</strong> “I do not want a giant relationship talk tonight. Can we do one 10-minute distance check-in at <strong>[time]</strong> and keep it to one focus only?”</p>
+  <p class="muted"><strong>Low-energy fallback:</strong> “I am wiped, but I do not want us to drift. Can we do 5 minutes tonight and the full check-in tomorrow at <strong>[time]</strong>?”</p>
+</div>
+
+<div class="card">
+  <h2>Pick ONE focus in 20 seconds</h2>
+  <p><strong>If more than one thing is wrong, stop at the first match:</strong></p>
+  <ol>
+    <li><strong>Repair first:</strong> use repair if the last call ended tense, cold, or unfinished.</li>
+    <li><strong>Logistics second:</strong> use logistics if travel, pickups, money, or schedule confusion is creating friction.</li>
+    <li><strong>Connection third:</strong> use connection if nothing is on fire but you feel far apart.</li>
+  </ol>
+  <p class="muted">Say this out loud: “Tonight we are doing <strong>[one focus]</strong> only. Everything else waits until tomorrow or the weekly meeting.”</p>
 </div>
 
 <div class="highlight-grid">
   <div class="highlight-card">
     <small>Problem</small>
-    <h3>Travel creates emotional distance</h3>
-    <p>Separate schedules, kid logistics, and short texts can make you feel like roommates.</p>
+    <h3>Travel creates emotional distance fast</h3>
+    <p>Separate schedules, kid logistics, and short texts can make you feel like roommates with admin duties.</p>
   </div>
   <div class="highlight-card">
     <small>Promise</small>
-    <h3>One repeatable 12-minute reset</h3>
-    <p>Short, scripted daily check-ins keep the connection warm while life is chaotic.</p>
+    <h3>One repeatable 10-minute reset</h3>
+    <p>Short, scripted daily check-ins keep the connection warm without turning every call into homework.</p>
   </div>
 </div>
 
-<div class="card quick-start">
-  <h2>Quick start block (tonight)</h2>
-  <ol>
-    <li>Pick one fixed 12-minute call window.</li>
-    <li>Use a timer so it stays light.</li>
-    <li>Run one script exactly (no freestyle).</li>
-    <li>End with one concrete step for tomorrow.</li>
-  </ol>
-  <p><strong>Copy/paste script:</strong> “I don’t want a giant relationship talk. I want one small win tonight. Can we run the Distance Connection Protocol for 10 minutes and see if it helps?”</p>
-</div>
+<div class="card"><h2>Use this exact plan (copy this)</h2><ol><li><strong>Minute 0-2:</strong> Name tonight’s one focus in one sentence.</li><li><strong>Minute 2-6:</strong> Each person gets 2 minutes uninterrupted.</li><li><strong>Minute 6-8:</strong> Reflect back one thing you heard right.</li><li><strong>Minute 8-10:</strong> Choose one action for the next 24 hours and confirm the next check-in time.</li></ol></div>
 
-<div class="card"><h2>Use this exact plan (copy this)</h2><ol><li><strong>Minute 0-2:</strong> Name today’s focus in one sentence.</li><li><strong>Minute 2-6:</strong> Each person gets 2 minutes uninterrupted.</li><li><strong>Minute 6-9:</strong> Choose one action for next 24 hours.</li><li><strong>Minute 9-10:</strong> Confirm when you’ll check in again.</li></ol></div>
+<div class="card">
+  <h2>Tonight script builder</h2>
+  <div class="builder">
+    <div class="row">
+      <div><label>Call time</label><input id="call-time" value="8:30 PM" /></div>
+      <div><label>Tonight's focus</label><select id="focus"><option value="connection">Connection</option><option value="logistics">Logistics</option><option value="repair">Repair</option></select></div>
+    </div>
+    <div class="row">
+      <div><label>Tomorrow action</label><input id="tomorrow-action" value="Send one encouraging text at lunch" /></div>
+      <div><label>Energy level</label><select id="energy"><option value="normal">Normal 10-minute call</option><option value="low">Low-energy 5-minute version</option><option value="tense">Tense repair-first version</option></select></div>
+    </div>
+    <div>
+      <button class="btn" id="buildBtn" type="button">Generate my copy/paste script</button>
+      <button class="btn" style="background:#2d6cdf" id="copyBtn" type="button">Copy to clipboard</button>
+    </div>
+    <div id="output" class="copy-box">Tap “Generate my copy/paste script” to create tonight’s exact distance check-in.</div>
+  </div>
+</div>
 
 <div class="comparison-grid">
   <a class="compare-tile" href="/blog/pause-and-return-tool.html">
@@ -64,18 +95,46 @@
 </div>
 
 <div class="card">
-  <h2>Scoreboard (7 days)</h2>
+  <h2>7-day score to watch</h2>
   <div class="icon-row">
-    <div class="icon-chip">✅ Fewer escalations</div>
+    <div class="icon-chip">✅ 5 of 7 check-ins done</div>
+    <div class="icon-chip">✅ Fewer tense calls</div>
     <div class="icon-chip">✅ Faster repair</div>
     <div class="icon-chip">✅ +2 connection points</div>
   </div>
-  <p><strong>Rule:</strong> Keep tools that improve your score by 2+ points. Swap the rest.</p>
+  <p><strong>Rule:</strong> Keep this protocol if your average connection score rises by 2+ points or your calls feel calmer by day 7.</p>
 </div>
 
-<div class="card"><h2>How to use this tool effectively</h2><ul><li><strong>When to use it:</strong> Use <strong>Distance Connection Protocol</strong> when this exact problem is happening now, not as a general reading exercise.</li><li><strong>How often:</strong> Run it once today, then repeat 3-7 times before judging results.</li><li><strong>Common mistake:</strong> Changing multiple things at once. Use one tool at a time so you can see what works.</li><li><strong>If it feels awkward:</strong> Use the script exactly once, keep the first run under 10 minutes, and rate helpfulness 1-10.</li></ul></div>
+<div class="card"><h2>How to use this tool effectively</h2><ul><li><strong>When to use it:</strong> Use <strong>Distance Connection Protocol</strong> when travel, opposite schedules, or nights apart are creating drift right now.</li><li><strong>How often:</strong> Run it once tonight, then repeat 3-7 times before judging it.</li><li><strong>Common mistake:</strong> Mixing logistics, resentment, and repair into the same call. Pick one focus only.</li><li><strong>If it feels awkward:</strong> Use the script exactly once, keep the first run under 10 minutes, and rate helpfulness 1-10.</li></ul></div>
 
 <div class="card"><h2>Tomorrow rep + fallback + escalation</h2><ul><li><strong>Tomorrow:</strong> run this same tool once more before trying a new one.</li><li><strong>If it didn’t help:</strong> switch to <a href="/blog/pause-and-return-tool.html">Pause-and-Return Tool</a> first, then retry.</li><li><strong>If it got worse or felt unsafe:</strong> stop DIY and involve a licensed professional/support resource.</li></ul></div>
 
-<div class="card"><h2>Best next tool</h2><p>After this, run <a href="/blog/10-minute-weekly-meeting.html">10-Minute Weekly Meeting</a> to keep momentum.</p></div>
-</div></body></html>
+<div class="card"><h2>Best next tool</h2><p>After 7 days, run <a href="/blog/10-minute-weekly-meeting.html">10-Minute Weekly Meeting</a> so the distance routine turns into a steady weekly rhythm.</p></div>
+</div><script>
+const $=id=>document.getElementById(id);
+function build(){
+  const time=$('call-time').value;
+  const focus=$('focus').value;
+  const action=$('tomorrow-action').value;
+  const energy=$('energy').value;
+  let focusLine='';
+  if(focus==='repair') focusLine='repair the tension from our last call';
+  else if(focus==='logistics') focusLine='clean up one logistics issue without turning it into a big fight';
+  else focusLine='feel close again for 10 minutes';
+
+  let block='';
+  if(energy==='normal'){
+    block=`Distance Connection Protocol — ${time}\n\nSend this text:\n“I do not want a giant relationship talk tonight. Can we do one 10-minute distance check-in at ${time} and keep it to one focus only?”\n\nCall plan:\n0:00-2:00 — Name the focus\n• “Tonight I want to ${focusLine}.”\n\n2:00-6:00 — Two minutes each\n• Person 1 shares without interruption\n• Person 2 reflects back one thing they heard\n• Switch\n\n6:00-8:00 — Name the one next step\n• “One thing that would help me tomorrow is: ${action}.”\n\n8:00-10:00 — Lock tomorrow\n• Confirm the next check-in time\n• End with one appreciation`;
+  } else if(energy==='low'){
+    block=`Low-Energy Distance Connection Protocol — ${time}\n\nSend this text:\n“I am wiped, but I do not want us to drift. Can we do 5 minutes tonight and the full check-in tomorrow at ${time}?”\n\n5-minute plan:\n0:00-1:00 — One sentence each on how you are doing\n1:00-3:00 — Pick one focus only: ${focus}\n3:00-5:00 — Lock one action for tomorrow: ${action}\n\nClose:\n“Thanks for doing the short version. Let’s do the full one tomorrow at ${time}.”`;
+  } else {
+    block=`Repair-First Distance Connection Protocol — ${time}\n\nSend this text:\n“Our last call felt rough. I do not want another messy round. Can we do a short repair-first check-in at ${time} and keep it to one issue only?”\n\nCall plan:\n0:00-2:00 — Start repair\n• “I care more about us than winning this.”\n• “Tonight I want to repair the tension from our last call.”\n\n2:00-6:00 — Two minutes each\n• Each person says what felt hard without stacking other issues\n\n6:00-8:00 — Reflect back\n• Each person repeats one thing they heard right\n\n8:00-10:00 — One next step\n• Tomorrow action: ${action}\n• Confirm next check-in time: ${time}`;
+  }
+  $('output').textContent=block;
+}
+$('buildBtn').addEventListener('click',build);
+$('copyBtn').addEventListener('click',async()=>{
+  const t=$('output').textContent;
+  try{await navigator.clipboard.writeText(t); $('copyBtn').textContent='Copied ✅'; setTimeout(()=>$('copyBtn').textContent='Copy to clipboard',1200);}catch(e){alert('Copy failed. You can still select and copy manually.');}
+});
+</script></body></html>
