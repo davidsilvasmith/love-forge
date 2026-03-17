@@ -43,4 +43,4 @@
 - **Expected outcome:** More saves/shares, better perceived usefulness.
 - **Score:** Impact 5 / Confidence 4 / Ease 3 = **12**
 - **Status:** SHIPPED
-- **Proof after ship:** Added copy-ready starter + 4-line script, three realistic examples, and a mini instruction manual with common mistake + awkward fallback. Live URL: _pending publish_
+- **Proof after ship:** Added copy-ready starter + 4-line script, three realistic examples, and a mini instruction manual with common mistake + awkward fallback. Live URL: `https://love.forge.dsdoes.com/blog/one-issue-rule.html`
