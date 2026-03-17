@@ -15,6 +15,16 @@
 
 ## SHIPPED
 
+#### LF-040 Repair Attempt should generate the exact apology, repair line, and tomorrow follow-through so a cold couple can repair tonight without improvising
+- **Page:** `/blog/repair-attempt-tool.html`
+- **Problem:** The page explained repair well enough, but a stressed spouse still had to invent the apology, the impact line, and the next-step close while already feeling defensive or shut down.
+- **User pain:** "I know I need to repair this, but give me the exact words so I do not ramble, defend myself, or disappear."
+- **Proposed change:** Add one repair builder that outputs the opener, main repair line, low-energy fallback, and tomorrow follow-through, plus one exact 10-minute script and a cleaner 7-day recovery tracker.
+- **Expected outcome:** Faster repair starts, less defensive apologizing, stronger follow-through after friction, and more couples actually completing one repair rep tonight.
+- **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+- **Status:** SHIPPED
+- **Proof after ship:** Repair Attempt now gives couples a fill-in builder for the opener, repair line, low-energy fallback, and tomorrow close, plus one copy-ready 10-minute script and a simple recovery tracker so they can repair one specific miss tonight without inventing the words.
+
 #### LF-039 Homepage should make the soft-no path explicit so a hesitant couple knows the exact next move without falling out of the 7-day loop
 - **Page:** `/index.html`
 - **Problem:** The blog hub now handles a soft no better, but the homepage still leans harder toward yes-state follow-through than a clear decline path with a tomorrow retry rule.
