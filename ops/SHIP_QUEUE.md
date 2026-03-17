@@ -29,18 +29,18 @@
 - **Status:** TODO
 - **Proof after ship:** _pending_
 
-#### LF-003 Make one flagship tool undeniably useful tonight
-- **Page:** `/blog/one-issue-rule.html`
-- **Problem:** Strong concept, but page should feel more like a tonight-use playbook than a blog post.
-- **User pain:** "We keep spiraling into five fights at once."
-- **Proposed change:** Add a tighter 3-step tonight plan, do/don't examples, and a copy/paste repair script.
-- **Expected outcome:** More saves/shares, better perceived usefulness.
-- **Score:** Impact 5 / Confidence 4 / Ease 3 = **12**
-- **Status:** TODO
-- **Proof after ship:** _pending_
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
-- _none logged under this new system yet_
+
+#### LF-003 Make one flagship tool undeniably useful tonight
+- **Page:** `/blog/one-issue-rule.html`
+- **Problem:** Strong concept, but page should feel more like a tonight-use playbook than a blog post.
+- **User pain:** "We keep spiraling into five fights at once."
+- **Proposed change:** Add a tighter 3-step tonight plan, realistic examples, copy buttons, and a mini instruction manual.
+- **Expected outcome:** More saves/shares, better perceived usefulness.
+- **Score:** Impact 5 / Confidence 4 / Ease 3 = **12**
+- **Status:** SHIPPED
+- **Proof after ship:** Added copy-ready starter + 4-line script, three realistic examples, and a mini instruction manual with common mistake + awkward fallback. Live URL: _pending publish_
