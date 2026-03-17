@@ -8,20 +8,29 @@
 ## Backlog
 
 ### TODO
-- **LF-027 Homepage sharpens the handoff from starter choice to partner send so the next move stays obvious after the first click**
-  - **Page:** `/index.html`
-  - **Problem:** After choosing a starter, the homepage still makes users scan several response-state sections before clearly pushing the best share/send action.
-  - **User pain:** "I picked the tool. Now tell me the exact message to send without making me keep scrolling through edge cases."
-  - **Proposed change:** Tighten the post-starter flow so the partner invite becomes the obvious continuation before secondary branches.
-  - **Expected outcome:** Faster partner sends, less homepage wandering, higher first-action follow-through.
-  - **Score:** Impact 4 / Confidence 4 / Ease 3 = **11**
+- **LF-028 Blog hub sharpens the first-screen split between fix-tonight tools and browse-the-library paths**
+  - **Page:** `/blog/index.html`
+  - **Problem:** The blog hub may still make stressed users read too much library framing before the best tonight-use route feels obvious.
+  - **User pain:** "I do not want to browse a relationship content library. I want the one tool we should use tonight."
+  - **Proposed change:** Tighten the top of the blog index so one direct tonight path stays dominant before the broader tool library.
+  - **Expected outcome:** Faster first clicks from the hub, less browsing drift, higher start rate on one tool.
+  - **Score:** Impact 4 / Confidence 3 / Ease 3 = **10**
   - **Status:** TODO
-
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-027 Homepage sharpens the handoff from starter choice to partner send so the next move stays obvious after the first click
+- **Page:** `/index.html`
+- **Problem:** After choosing a starter, the homepage still makes users scan several response-state sections before clearly pushing the best share/send action.
+- **User pain:** "I picked the tool. Now tell me the exact message to send without making me keep scrolling through edge cases."
+- **Proposed change:** Tighten the post-starter flow so the partner invite becomes the obvious continuation before secondary branches.
+- **Expected outcome:** Faster partner sends, less homepage wandering, higher first-action follow-through.
+- **Score:** Impact 4 / Confidence 4 / Ease 3 = **11**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage now turns the post-starter block into a strict two-step flow: pick one starter, then jump straight to the copy-ready partner text, with the old extra starter card reframed as a fallback instead of another browsing detour. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-026 Homepage trims below-the-fold choice overload so the first clear path stays obvious after the hero
 - **Page:** `/index.html`
