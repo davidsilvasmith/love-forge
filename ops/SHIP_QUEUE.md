@@ -8,18 +8,23 @@
 ## Backlog
 
 ### TODO
-- **LF-009** Homepage should make the “partner says yes” section feel more like one immediate next action than three equal tiles
-  - **Page:** `/index.html`
-  - **Problem:** After the partner invite, the “yes” block still makes users scan three parallel tiles instead of showing the fastest first move, then the opener, then the close.
-  - **User pain:** "Okay, they said yes. What do I send first?"
-  - **Proposed change:** Turn the yes-state block into one primary lock-it-in action with one follow-up opener and one simple close.
-  - **Expected outcome:** Faster follow-through after partner buy-in, less hesitation between yes and actual scheduled rep.
-  - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+- _none_
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-009 Homepage makes the “partner said yes” state one obvious next move
+- **Page:** `/index.html`
+- **Problem:** After the partner invite, the “yes” block still made users scan three equal tiles instead of showing the fastest first move.
+- **User pain:** "Okay, they said yes. What do I send first?"
+- **Proposed change:** Turn the yes-state block into one primary lock-in action with one opener, one close, and one low-energy fallback.
+- **Expected outcome:** Faster follow-through after partner buy-in, less hesitation between yes and an actual scheduled rep.
+- **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage now makes the yes-state feel like one immediate move by leading with a copy-ready lock-in text, adding exact-time guidance, and demoting the opener and close to support steps so stressed spouses can schedule the rep fast. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+
 
 #### LF-008 Homepage turns the partner-share block into one clearer send action
 - **Page:** `/index.html`
