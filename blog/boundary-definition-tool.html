@@ -48,6 +48,8 @@
 
 <div class="card boundary-template-card"><h2>Rule starter templates (pick one)</h2><div class="boundary-template-grid" aria-label="Boundary templates by topic"><div class="boundary-template-tile"><span class="boundary-template-icon" aria-hidden="true">📱</span><h3>Phone + DMs</h3><p class="boundary-template-script">“We will not delete chats. If one of us gets a message that feels gray-area, we share it before bed.”</p><small>Use when trust is shaky around private messages.</small></div><div class="boundary-template-tile"><span class="boundary-template-icon" aria-hidden="true">🕒</span><h3>Time + availability</h3><p class="boundary-template-script">“We will protect 15 minutes at night with no phones. If schedule explodes, we text a new time before 8 PM.”</p><small>Use when logistics keep replacing connection.</small></div><div class="boundary-template-tile"><span class="boundary-template-icon" aria-hidden="true">💳</span><h3>Money + commitments</h3><p class="boundary-template-script">“We will get a yes from both before any spend over $100. If urgent, we send one text and wait for reply.”</p><small>Use when surprise spends create resentment.</small></div></div><p class="muted">Pick one template only. Test for 7 days. Do not combine templates tonight.</p></div>
 
+<div class="card"><h2>Boundary builder (copy the finished version)</h2><p><strong>If blanks make you stall, use this builder.</strong> Pick one lane, fill in the exact rule, and copy the finished boundary statement, consequence line, and review text.</p><div class="builder" aria-label="Boundary definition builder"><div class="row"><div><label for="boundary-builder-lane"><strong>Lane</strong></label><select id="boundary-builder-lane"><option value="phone">Phone + DMs</option><option value="time" selected>Time + availability</option><option value="money">Money + commitments</option></select></div><div><label for="boundary-builder-rule"><strong>Main rule detail</strong></label><input id="boundary-builder-rule" type="text" value="15 minutes tonight with no phones" /></div></div><div class="row"><div><label for="boundary-builder-miss"><strong>If we miss it...</strong></label><input id="boundary-builder-miss" type="text" value="text a new time before 8 PM tomorrow" /></div><div><label for="boundary-builder-review"><strong>Review time</strong></label><input id="boundary-builder-review" type="text" value="next Tuesday at 8:30 PM" /></div></div><div class="highlight-grid" aria-label="Built boundary outputs"><div class="highlight-card"><small>Finished boundary statement</small><p id="boundary-builder-statement">For the next 7 days, our time + availability boundary is: we protect 15 minutes tonight with no phones.</p><p><button class="btn" id="copy-boundary-builder-statement" type="button">Copy boundary statement</button></p><small id="copy-boundary-builder-statement-status" class="muted" aria-live="polite"></small></div><div class="highlight-card"><small>Consequence + repair line</small><p id="boundary-builder-consequence">If we miss this, we text a new time before 8 PM tomorrow and reset within 24 hours with a 5-minute check-in.</p><p><button class="btn" id="copy-boundary-builder-consequence" type="button">Copy consequence line</button></p><small id="copy-boundary-builder-consequence-status" class="muted" aria-live="polite"></small></div><div class="highlight-card"><small>Review text</small><p id="boundary-builder-review-output">We will review this boundary next Tuesday at 8:30 PM and decide whether to keep, tighten, or rewrite it.</p><p><button class="btn" id="copy-boundary-builder-review" type="button">Copy review text</button></p><small id="copy-boundary-builder-review-status" class="muted" aria-live="polite"></small></div></div><p class="muted">Use this when you want exact wording fast. Build one lane only tonight.</p></div></div>
+
 <div class="comparison-grid" aria-label="Choose your mode for tonight">
   <div class="compare-tile">
     <small>Normal energy</small>
@@ -75,4 +77,58 @@
 <div class="card"><h2>Tomorrow rep + fallback + escalation</h2><div class="comparison-grid" aria-label="Boundary next step paths"><div class="compare-tile"><small>Tomorrow</small><h3>Repeat once before switching</h3><p>Run this same tool again tomorrow before trying a new one.</p></div><a class="compare-tile" href="/blog/pause-and-return-tool.html"><small>If it didn’t help</small><h3>Use Pause-and-Return first</h3><p>De-escalate, then retry the boundary tool once calm.</p></a><div class="compare-tile"><small>If it felt unsafe</small><h3>Stop DIY</h3><p>Do not force the tool. Involve a licensed professional or support resource.</p></div></div></div>
 
 <div class="card best-next-card"><h2>Best next tool</h2><div class="best-next-grid"><a class="best-next-tile calm" href="/blog/10-minute-weekly-meeting.html"><span class="best-next-kicker">Keep the new rule alive</span><h3>10-Minute Weekly Meeting</h3><p>Use one short weekly review so the boundary stays real instead of fading after day 7.</p><small>Best handoff after this page.</small></a></div></div>
-</div></body></html>
+</div><script>(function(){
+const laneInput=document.getElementById('boundary-builder-lane');
+const ruleInput=document.getElementById('boundary-builder-rule');
+const missInput=document.getElementById('boundary-builder-miss');
+const reviewInput=document.getElementById('boundary-builder-review');
+const statementOutput=document.getElementById('boundary-builder-statement');
+const consequenceOutput=document.getElementById('boundary-builder-consequence');
+const reviewOutput=document.getElementById('boundary-builder-review-output');
+const laneLabels={phone:'phone + DMs',time:'time + availability',money:'money + commitments'};
+const laneDefaults={
+  phone:{rule:'no deleted chats and share any gray-area message before bed',miss:'share the message within 24 hours and pause private replies until we do',review:'next Tuesday at 8:30 PM'},
+  time:{rule:'15 minutes tonight with no phones',miss:'text a new time before 8 PM tomorrow',review:'next Tuesday at 8:30 PM'},
+  money:{rule:'get a yes from both before any spend over $100',miss:'pause the purchase until we both review it tomorrow',review:'Sunday at 7:00 PM'}
+};
+function fillDefaults(){
+  const defaults=laneDefaults[laneInput.value]||laneDefaults.time;
+  ruleInput.value=defaults.rule;
+  missInput.value=defaults.miss;
+  reviewInput.value=defaults.review;
+  renderBuilder();
+}
+function renderBuilder(){
+  const lane=laneLabels[laneInput.value]||laneLabels.time;
+  const rule=(ruleInput.value||'one clear rule').trim().replace(/[.]+$/,'');
+  const miss=(missInput.value||'reset within 24 hours').trim().replace(/[.]+$/,'');
+  const review=(reviewInput.value||'in 7 days').trim().replace(/[.]+$/,'');
+  statementOutput.textContent=`For the next 7 days, our ${lane} boundary is: we ${rule}.`;
+  consequenceOutput.textContent=`If we miss this, we ${miss} and reset within 24 hours with a 5-minute check-in.`;
+  reviewOutput.textContent=`We will review this boundary ${review} and decide whether to keep, tighten, or rewrite it.`;
+}
+if(laneInput&&ruleInput&&missInput&&reviewInput&&statementOutput&&consequenceOutput&&reviewOutput){
+  laneInput.addEventListener('change',fillDefaults);
+  [ruleInput,missInput,reviewInput].forEach(el=>el.addEventListener('input',renderBuilder));
+  renderBuilder();
+}
+const copyPairs=[
+  {btn:'copy-boundary-builder-statement',text:'boundary-builder-statement',status:'copy-boundary-builder-statement-status',ok:'Copied boundary statement ✅'},
+  {btn:'copy-boundary-builder-consequence',text:'boundary-builder-consequence',status:'copy-boundary-builder-consequence-status',ok:'Copied consequence line ✅'},
+  {btn:'copy-boundary-builder-review',text:'boundary-builder-review-output',status:'copy-boundary-builder-review-status',ok:'Copied review text ✅'}
+];
+for(const pair of copyPairs){
+  const btn=document.getElementById(pair.btn);
+  const text=document.getElementById(pair.text);
+  const status=document.getElementById(pair.status);
+  if(!btn||!text||!status) continue;
+  btn.addEventListener('click',async()=>{
+    try{
+      await navigator.clipboard.writeText(text.textContent);
+      status.textContent=pair.ok;
+    }catch(e){
+      status.textContent='Copy failed. Select and copy manually.';
+    }
+  });
+}
+})();</script></body></html>

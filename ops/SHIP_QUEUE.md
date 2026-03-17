@@ -8,19 +8,23 @@
 ## Backlog
 
 ### TODO
-- **LF-021 Boundary Definition Tool adds a prefilled boundary builder so shaky-trust couples stop staring at blanks**
-  - **Page:** `/blog/boundary-definition-tool.html`
-  - **Problem:** The page gives examples, but stressed spouses still have to assemble the final boundary line, consequence, and review time by hand.
-  - **User pain:** "I get the idea, but I still need the exact rule text we can copy tonight."
-  - **Proposed change:** Add one fill-in builder that outputs a finished boundary statement, consequence line, and check-in text in one block.
-  - **Expected outcome:** Faster starts on the trust-boundary path, less freezing at placeholders, more copied scripts.
-  - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
-
+- _none yet_
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-021 Boundary Definition Tool adds a prefilled boundary builder so shaky-trust couples stop staring at blanks
+- **Page:** `/blog/boundary-definition-tool.html`
+- **Problem:** The page gives examples, but stressed spouses still have to assemble the final boundary line, consequence, and review time by hand.
+- **User pain:** "I get the idea, but I still need the exact rule text we can copy tonight."
+- **Proposed change:** Add one fill-in builder that outputs a finished boundary statement, consequence line, and check-in text in one block.
+- **Expected outcome:** Faster starts on the trust-boundary path, less freezing at placeholders, more copied scripts.
+- **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+- **Status:** SHIPPED
+- **Proof after ship:** Boundary Definition Tool now lets couples pick one lane, fill in the exact rule, miss response, and review time, then copy three finished lines for the boundary statement, consequence, and review text without rewriting from scratch. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/blog/boundary-definition-tool.html`
+
 
 #### LF-020 Get Backup Tool adds a fill-in builder so couples can copy finished outreach texts instead of staring at placeholders
 - **Page:** `/blog/third-party-escalation-tool.html`
