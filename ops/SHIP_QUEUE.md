@@ -23,7 +23,7 @@
 - **Expected outcome:** Faster first send, less friction on mobile, and fewer stalled trust-break users.
 - **Score:** Impact 4 / Confidence 5 / Ease 4 = **13**
 - **Status:** SHIPPED
-- **Proof after ship:** Get Backup Tool now tells users exactly when to say yes to therapist vs coach vs mentor, lets them copy the partner invite instantly, and adds one-tap copy buttons for each outreach script so they can send messages without rewriting. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/blog/third-party-escalation-tool.html`
+- **Proof after ship:** Get Backup Tool now tells users exactly when to say yes to therapist vs coach vs mentor, lets them copy the partner invite instantly, and adds one-tap copy buttons for each outreach script so they can send messages without rewriting. Commit: `fcc5d35`. Live URL: `https://love.forge.dsdoes.com/blog/third-party-escalation-tool.html`
 
 #### LF-017 Blog hub splits active trust breaks from calmer boundary-setting so users get the safer first click
 - **Page:** `/blog/index.html`
