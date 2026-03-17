@@ -8,12 +8,12 @@
 ## Backlog
 
 ### TODO
-- LF-048 Homepage should make the first-screen partner send visibly customizable so a stressed spouse can swap the time and send tonight without mentally editing the copy first
+- LF-049 Homepage should make the yes-state lock-in text customizable so a stressed spouse can swap the exact time before sending yes-confirmation without rewriting it in their head
   - **Page:** `/index.html`
-  - **Problem:** The homepage now gives strong copy-ready texts, but the time and details are still static, which makes a tired spouse mentally rewrite before sending.
-  - **User pain:** "This is close, but I still have to edit it in my head before I send it."
-  - **Proposed change:** Add one tiny builder or inline customizer for the best first send so users can set the time and preserve the low-pressure wording.
-  - **Expected outcome:** Faster sends from the homepage and less friction on the highest-traffic action.
+  - **Problem:** The homepage now lets users customize the first ask, but the yes-state confirmation text still hard-codes 8:30, which creates one more rewrite right after the partner agrees.
+  - **User pain:** "We finally got a yes. Do not make me edit the confirmation text before I send it."
+  - **Proposed change:** Connect the yes-state lock-in text to the same simple time customizer or add one tiny inline time setter right there.
+  - **Expected outcome:** Faster follow-through after yes, less friction between agreement and a real scheduled rep.
   - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
 
 
@@ -21,6 +21,16 @@
 - _none_
 
 ## SHIPPED
+
+#### LF-048 Homepage should make the first-screen partner send visibly customizable so a stressed spouse can swap the time and send tonight without mentally editing the copy first
+- **Page:** `/index.html`
+- **Problem:** The homepage now gives strong copy-ready texts, but the time and details were still static, which made a tired spouse mentally rewrite before sending.
+- **User pain:** "This is close, but I still have to edit it in my head before I send it."
+- **Proposed change:** Add one tiny builder or inline customizer for the best first send so users can set the time and preserve the low-pressure wording.
+- **Expected outcome:** Faster sends from the homepage and less friction on the highest-traffic action.
+- **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage now lets users set one real time and one optional calming detail above the lane-specific first sends, while updating the conflict, connection, and trust texts live so a stressed spouse can copy a ready-to-send version tonight without mentally rewriting it first. Commit: `f8445cd`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-047 One-Issue Rule should generate the exact invite, focus line, full script, and low-energy fallback so a stressed spouse can keep one hard talk on one topic tonight without improvising
 - **Page:** `/blog/one-issue-rule.html`
