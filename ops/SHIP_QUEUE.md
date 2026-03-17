@@ -8,19 +8,23 @@
 ## Backlog
 
 ### TODO
-- **LF-034 Homepage should make the stop-and-switch override copyable so couples can send the safer pivot text without rewriting it under stress**
-  - **Page:** `/index.html`
-  - **Problem:** The homepage now tells couples when to stop repeating a tool, but the override text still sits as plain copy instead of a one-tap action inside the continuation flow.
-  - **User pain:** "We know we should switch, but give us the exact text in a way we can copy fast."
-  - **Proposed change:** Turn the stop-and-switch text into a copy-ready action so the safer pivot is even easier to use on mobile.
-  - **Expected outcome:** Faster safe pivots, less friction during repeat breakdowns, stronger follow-through on the override path.
-  - **Score:** Impact 3 / Confidence 4 / Ease 4 = **11**
-  - **Status:** TODO
+- _none_
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-034 Homepage should make the stop-and-switch override copyable so couples can send the safer pivot text without rewriting it under stress
+- **Page:** `/index.html`
+- **Problem:** The homepage now tells couples when to stop repeating a tool, but the override text still sits as plain copy instead of a one-tap action inside the continuation flow.
+- **User pain:** "We know we should switch, but give us the exact text in a way we can copy fast."
+- **Proposed change:** Turn the stop-and-switch text into a copy-ready action so the safer pivot is even easier to use on mobile.
+- **Expected outcome:** Faster safe pivots, less friction during repeat breakdowns, stronger follow-through on the override path.
+- **Score:** Impact 3 / Confidence 4 / Ease 4 = **11**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage now turns the stop-and-switch override into a copy-ready action inside the 7-day continuation flow, so couples can pivot faster on mobile without rewriting the safer text. Commit: `aaa9fc9`. Live URL: `https://love.forge.dsdoes.com/`
+
 
 #### LF-033 Homepage should make the trust-safe override obvious inside the 7-day loop so couples do not keep repeating the wrong tool after a shaky first rep
 - **Page:** `/index.html`
