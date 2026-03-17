@@ -23,7 +23,7 @@
 - **Expected outcome:** Faster sends from the homepage first screen, less translation friction, and better yes-rates because the ask matches the actual problem tonight.
 - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
 - **Status:** SHIPPED
-- **Proof after ship:** Homepage hero now gives three copy-ready first sends matched to conflict, distance, and shaky-trust nights, plus a clearer warning that active trust breaks should skip the trust-reset text and go straight to backup first. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Homepage hero now gives three copy-ready first sends matched to conflict, distance, and shaky-trust nights, plus a clearer warning that active trust breaks should skip the trust-reset text and go straight to backup first. Commit: `d17b416`. Live URL: `https://love.forge.dsdoes.com/`
 
 
 #### LF-043 Blog hub should make the first send visible right after scenario choice so a stressed spouse gets to one text before browsing the full library
