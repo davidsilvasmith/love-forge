@@ -8,18 +8,28 @@
 ## Backlog
 
 ### TODO
-- LF-016 Blog hub should surface the trust-break backup route in the first decision block
+- LF-017 Blog hub should make the trust lane point to outside backup before boundary-setting when trust is actively broken
   - **Page:** `/blog/index.html`
-  - **Problem:** The homepage now routes trust-hit couples faster, but the blog hub can still look like a general library instead of clearly saying when to skip browsing and go straight to outside backup.
-  - **User pain:** "I landed on the tool list, but I still need the safest first click when trust got hit."
-  - **Proposed change:** Add one high-contrast trust-break route near the top of the blog index that sends users directly to Get Backup Tool before generic communication tools.
-  - **Expected outcome:** Safer routing from the tool library, less wrong-page browsing, better consistency between homepage and blog hub.
-  - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+  - **Problem:** The quick-pick and relationship-moment trust entries still send stressed users to Boundary Definition first, even though active lying, cheating, hidden money, or secret messages need outside backup before a boundary talk.
+  - **User pain:** "I clicked trust, but I still have to guess whether this is a boundary talk night or a get-help-now night."
+  - **Proposed change:** Split the trust route into active trust-break vs shaky-boundary cases so the blog hub sends high-risk trust situations straight to Get Backup Tool and keeps Boundary Definition for calmer rule-setting.
+  - **Expected outcome:** Better trust triage, fewer wrong first clicks, tighter consistency across every trust entry point on the hub.
+  - **Score:** Impact 4 / Confidence 4 / Ease 3 = **11**
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-016 Blog hub surfaces the trust-break backup route before generic browsing
+- **Page:** `/blog/index.html`
+- **Problem:** The homepage already routed trust-hit couples faster, but the blog hub still looked like a general library instead of clearly telling users when to skip browsing and get outside backup first.
+- **User pain:** "I landed on the tool list, but I still need the safest first click when trust got hit."
+- **Proposed change:** Add one high-contrast trust-break route near the top of the blog index that sends users directly to Get Backup Tool before generic communication tools.
+- **Expected outcome:** Safer routing from the tool library, less wrong-page browsing, better consistency between homepage and blog hub.
+- **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+- **Status:** SHIPPED
+- **Proof after ship:** Blog hub now opens with a trust-break escape hatch that tells users not to start with one more late-night feelings talk, gives one copy-ready outside-help text, and sends them straight to Get Backup Tool before the general library. Commit: `7b71d4e`. Live URL: `https://love.forge.dsdoes.com/blog/`
 
 #### LF-015 Homepage adds a trust-hit fast exit above the fold so couples route to backup before the wrong talk
 - **Page:** `/index.html`
