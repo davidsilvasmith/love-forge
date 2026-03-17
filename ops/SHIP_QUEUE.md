@@ -8,12 +8,12 @@
 ## Backlog
 
 ### TODO
-- LF-055 Blog hub should collapse the duplicate generic invite block below the skeptical side route so stressed users do not hit a second near-identical send section after they already got the main tonight ask
+- LF-056 Blog hub should tighten the browse-first entry block into one simpler lane-first action so stressed users do not hit both a browse explainer and a second relationship-moment chooser before the library
   - **Page:** `/blog/index.html`
-  - **Problem:** The top flow is stronger, but the later “After you pick a tool, send this text” block still repeats the same invitation job after users already saw the main send-now section, which adds scan friction and choice drift.
-  - **User pain:** "I already got the text to send. Do not make me compare another almost-same invite before I move."
-  - **Proposed change:** Remove or tighten the later generic invite block so the page keeps one dominant send section, one yes/no follow-through path, and less repeated invitation copy.
-  - **Expected outcome:** Faster scanning, less re-deciding, and a cleaner main path from scenario choice to first rep.
+  - **Problem:** The top and middle of the hub are much cleaner, but users who keep scrolling still hit both “If you still want to browse first” and a full “Pick by relationship moment” grid before the actual tool library, which repeats the same choose-a-lane job.
+  - **User pain:** "If I ignored the main send path, just get me into the right lane fast. Do not make me re-decide the same thing twice before I can filter tools."
+  - **Proposed change:** Collapse or merge the browse explainer and relationship-moment chooser so the browse-first path becomes one lane-first handoff into the library with less repeated decision copy.
+  - **Expected outcome:** Faster entry into the tool library, less scan fatigue below the fold, and a cleaner browse-on-purpose path.
   - **Score:** Impact 3 / Confidence 4 / Ease 3 = **10**
   - **Status:** TODO
 
@@ -21,6 +21,16 @@
 - _none_
 
 ## SHIPPED
+
+#### LF-055 Blog hub should collapse the duplicate generic invite block below the skeptical side route so stressed users do not hit a second near-identical send section after they already got the main tonight ask
+- **Page:** `/blog/index.html`
+- **Problem:** The top flow is stronger, but the later “After you pick a tool, send this text” block still repeats the same invitation job after users already saw the main send-now section, which adds scan friction and choice drift.
+- **User pain:** "I already got the text to send. Do not make me compare another almost-same invite before I move."
+- **Proposed change:** Remove or tighten the later generic invite block so the page keeps one dominant send section, one yes/no follow-through path, and less repeated invitation copy.
+- **Expected outcome:** Faster scanning, less re-deciding, and a cleaner main path from scenario choice to first rep.
+- **Score:** Impact 3 / Confidence 4 / Ease 3 = **10**
+- **Status:** SHIPPED
+- **Proof after ship:** Blog hub now replaces the second generic invite block with one simple reply-state handoff, so users keep the main send section above, then move straight into the yes/no follow-through without comparing another near-identical invitation. Commit: `8a01564`. Live URL: `https://love.forge.dsdoes.com/blog/`
 
 #### LF-054 Blog hub should make the skeptical-partner route feel secondary to the default tonight path so stressed users do not pause on a niche branch before sending the main ask
 - **Page:** `/blog/index.html`
