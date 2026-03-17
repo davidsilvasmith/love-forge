@@ -8,19 +8,29 @@
 ## Backlog
 
 ### TODO
-- LF-041 Homepage first screen should make the first send feel even more immediate on mobile so a stressed spouse gets to one text faster
-- **Page:** `/index.html`
-- **Problem:** The homepage is strong, but the first send still sits below multiple blocks on smaller screens, which can slow the fastest useful action.
-- **User pain:** "I already know we need help. Just give me the text faster."
-- **Proposed change:** Tighten the first-screen handoff from lane choice to partner-send so the copy-ready ask becomes visible sooner on mobile.
-- **Expected outcome:** Faster partner sends, less scrolling friction, stronger first-action rate.
-- **Score:** Impact 4 / Confidence 3 / Ease 3 = **10**
+- LF-043 Blog hub should make the first send visible right after scenario choice so a stressed spouse gets to one text before browsing the full library
+- **Page:** `/blog/index.html`
+- **Problem:** The blog hub routes people well, but the first copy-ready partner ask still sits below several teaching and scenario blocks, which slows the fastest useful action on mobile.
+- **User pain:** "I picked the situation. Now give me the exact text before I keep scrolling."
+- **Proposed change:** Move one copy-ready partner ask closer to the top scenario choice so the send step becomes visible sooner without needing a jump down the page.
+- **Expected outcome:** Faster partner sends from the blog hub, less scroll drift, stronger tonight-start rate.
+- **Score:** Impact 4 / Confidence 4 / Ease 3 = **11**
 - **Status:** TODO
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-041 Homepage first screen should make the first send feel even more immediate on mobile so a stressed spouse gets to one text faster
+- **Page:** `/index.html`
+- **Problem:** The homepage is strong, but the first send still sits below multiple blocks on smaller screens, which can slow the fastest useful action.
+- **User pain:** "I already know we need help. Just give me the text faster."
+- **Proposed change:** Tighten the first-screen handoff from lane choice to partner-send so the copy-ready ask becomes visible sooner on mobile.
+- **Expected outcome:** Faster partner sends, less scrolling friction, stronger first-action rate.
+- **Score:** Impact 4 / Confidence 3 / Ease 3 = **10**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage now puts the first copy-ready partner ask directly inside the hero flow right after lane choice, so mobile users can copy the send text before dropping into the longer homepage blocks.
 
 #### LF-042 Fight Fair should generate the exact opener, one-issue script, and low-energy fallback so couples can have one hard talk tonight without improvising
 - **Page:** `/blog/fight-fair-protocol.html`
