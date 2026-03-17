@@ -31,7 +31,7 @@
 - **Expected outcome:** Faster starts, less overtalking while apart, and more couples actually running one distance check-in tonight.
 - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
 - **Status:** SHIPPED
-- **Proof after ship:** Distance Connection Protocol now tells couples how to choose one focus fast, gives stronger starter copy and low-energy fallback text, and generates one exact nightly script for normal, low-energy, or repair-first distance check-ins. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/blog/distance-connection-protocol.html`
+- **Proof after ship:** Distance Connection Protocol now tells couples how to choose one focus fast, gives stronger starter copy and low-energy fallback text, and generates one exact nightly script for normal, low-energy, or repair-first distance check-ins. Commit: `ca0fe3d`. Live URL: `https://love.forge.dsdoes.com/blog/distance-connection-protocol.html`
 
 #### LF-024 Daily 15-Minute Connection Block adds copy-ready full and short scripts so tired couples can run the rep without translating it
 - **Page:** `/blog/daily-15-minute-connection-block.html`
