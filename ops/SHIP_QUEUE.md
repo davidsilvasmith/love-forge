@@ -29,7 +29,7 @@
 - **Expected outcome:** Faster outreach, less debate, better follow-through on the trust-break path.
 - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
 - **Status:** SHIPPED
-- **Proof after ship:** Get Backup Tool now shows a three-card helper chooser near the top, gives a default rule for therapist-first trust breaks, and updates the partner script to match the faster chooser. Commit: `26f8a9a`. Live URL: `https://love.forge.dsdoes.com/blog/third-party-escalation-tool.html`
+- **Proof after ship:** Get Backup Tool now shows a three-card helper chooser near the top, gives a default rule for therapist-first trust breaks, and updates the partner script to match the faster chooser. Commit: `7417e18`. Live URL: `https://love.forge.dsdoes.com/blog/third-party-escalation-tool.html`
 
 #### LF-011 Homepage surfaces the safest trust-break route before generic communication tools
 - **Page:** `/index.html`
