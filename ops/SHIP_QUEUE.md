@@ -8,19 +8,29 @@
 ## Backlog
 
 ### TODO
-- **LF-038 Blog hub should make the no-thanks response less awkward so hesitant couples know the next safe move without reopening the whole library**
-  - **Page:** `/blog/index.html`
-  - **Problem:** The hub now handles skeptical partners better on the first ask, but the decline path still mostly routes users to a low-energy solo text instead of clearly telling them what to do tomorrow or which tool to hold for later.
-  - **User pain:** "My partner said not tonight. Tell me the next safe move so I do not turn this into another fight or just give up."
-  - **Proposed change:** Add one short no-thanks follow-up block with an exact reply, a tomorrow retry rule, and one safest-next-tool reminder.
-  - **Expected outcome:** Less friction after a soft no, fewer pressure spirals, stronger next-day follow-through.
-  - **Score:** Impact 4 / Confidence 3 / Ease 4 = **11**
+- **LF-039 Homepage should make the soft-no path explicit so a hesitant couple knows the exact next move without falling out of the 7-day loop**
+  - **Page:** `/index.html`
+  - **Problem:** The blog hub now handles a soft no better, but the homepage still leans harder toward yes-state follow-through than a clear decline path with a tomorrow retry rule.
+  - **User pain:** "My partner did not say yes tonight. Tell me exactly what to send, when to retry, and when to stop pushing."
+  - **Proposed change:** Add one compact soft-no block on the homepage with one calm reply, one tomorrow retry rule, and one safest-default next tool reminder.
+  - **Expected outcome:** Better homepage follow-through after a soft no, less pressure, stronger next-day re-entry.
+  - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
   - **Status:** TODO
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-038 Blog hub should make the no-thanks response less awkward so hesitant couples know the next safe move without reopening the whole library
+- **Page:** `/blog/index.html`
+- **Problem:** The hub now handles skeptical partners better on the first ask, but the decline path still mostly routes users to a low-energy solo text instead of clearly telling them what to do tomorrow or which tool to hold for later.
+- **User pain:** "My partner said not tonight. Tell me the next safe move so I do not turn this into another fight or just give up."
+- **Proposed change:** Add one short no-thanks follow-up block with an exact reply, a tomorrow retry rule, and one safest-next-tool reminder.
+- **Expected outcome:** Less friction after a soft no, fewer pressure spirals, stronger next-day follow-through.
+- **Score:** Impact 4 / Confidence 3 / Ease 4 = **11**
+- **Status:** SHIPPED
+- **Proof after ship:** Blog hub now gives a clear soft-no path with one exact no-pressure reply, one wait-until-tomorrow retry rule, and one safest-default next-tool reminder so a stressed spouse knows what to do after "not tonight" without reopening the whole library.
 
 #### LF-037 Blog hub should make the skeptical-partner route obvious before library browsing so hesitant couples can send one low-pressure ask without digging
 - **Page:** `/blog/index.html`
