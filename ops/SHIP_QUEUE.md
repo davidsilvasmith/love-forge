@@ -30,7 +30,7 @@
 - **Expected outcome:** Faster entry into the tool library, less scan fatigue below the fold, and a cleaner browse-on-purpose path.
 - **Score:** Impact 3 / Confidence 4 / Ease 3 = **10**
 - **Status:** SHIPPED
-- **Proof after ship:** Blog hub now replaces the separate browse explainer and relationship-moment chooser with one merged “Browse by one lane only” block that tells users to pick one lane, filter inside that lane, then track one number and repeat tomorrow instead of re-deciding twice before the library. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/blog/`
+- **Proof after ship:** Blog hub now replaces the separate browse explainer and relationship-moment chooser with one merged “Browse by one lane only” block that tells users to pick one lane, filter inside that lane, then track one number and repeat tomorrow instead of re-deciding twice before the library. Commit: `6a46e83`. Live URL: `https://love.forge.dsdoes.com/blog/`
 
 
 #### LF-055 Blog hub should collapse the duplicate generic invite block below the skeptical side route so stressed users do not hit a second near-identical send section after they already got the main tonight ask
