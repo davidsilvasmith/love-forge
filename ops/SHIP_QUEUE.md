@@ -8,18 +8,28 @@
 ## Backlog
 
 ### TODO
-- LF-014 Get Backup Tool should make the follow-up step one obvious next send so couples do not freeze after no reply
-  - **Page:** `/blog/third-party-escalation-tool.html`
-  - **Problem:** The page tells users to follow up tomorrow, but it still leaves them to invent the actual follow-up text if nobody replies tonight.
-  - **User pain:** "We sent the messages. Now what do we say tomorrow without sounding desperate or awkward?"
-  - **Proposed change:** Add one copy-ready 24-hour follow-up text plus one quick rule for when to switch helper type.
-  - **Expected outcome:** More second-touch follow-through, fewer dropped outreach attempts, better odds of booking support within 7 days.
+- LF-015 Homepage should route trust-hit couples into backup faster with one direct hero-level exit
+  - **Page:** `/index.html`
+  - **Problem:** The homepage mentions trust-break escalation lower on the page, but a spouse landing cold can still miss the fastest safe route if the real issue is lying, cheating, hidden money, or repeated blowups.
+  - **User pain:** "We do not need more browsing. Tell us the safest page to open first tonight."
+  - **Proposed change:** Add one sharper trust-hit escape hatch above the fold that routes directly into Get Backup Tool with one exact line about when not to start with a long talk.
+  - **Expected outcome:** Faster safer routing for high-stakes couples, less wrong-tool usage, better first-screen clarity.
   - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-014 Get Backup Tool adds one exact 24-hour follow-up so couples do not freeze after silence
+- **Page:** `/blog/third-party-escalation-tool.html`
+- **Problem:** The page told users to follow up tomorrow, but still made them invent the actual text and guess when to switch helper type.
+- **User pain:** "We sent the messages. Now what do we say tomorrow without sounding desperate or awkward?"
+- **Proposed change:** Add one copy-ready 24-hour follow-up text plus one quick rule for when to switch helper type.
+- **Expected outcome:** More second-touch follow-through, fewer dropped outreach attempts, better odds of booking support within 7 days.
+- **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+- **Status:** SHIPPED
+- **Proof after ship:** Get Backup Tool now gives one exact 24-hour follow-up text, tells users not to add more story, and adds one simple helper-switch rule so they know what to send next after silence. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/blog/third-party-escalation-tool.html`
 
 #### LF-013 Get Backup Tool adds helper-specific outreach examples so users do not stall after choosing
 - **Page:** `/blog/third-party-escalation-tool.html`
