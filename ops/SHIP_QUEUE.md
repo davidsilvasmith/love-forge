@@ -8,6 +8,12 @@
 ## Backlog
 
 ### TODO
+- _none_
+
+## IN PROGRESS
+- _none_
+
+## SHIPPED
 
 #### LF-004 Trust lane page should choose the safest first move fast
 - **Page:** `/blog/boundary-definition-tool.html`
@@ -16,13 +22,8 @@
 - **Proposed change:** Tighten first screen, add one sharper starter script, and make the first boundary decision easier to scan.
 - **Expected outcome:** Faster trust-lane starts, less hesitation, better odds a couple actually runs the tool tonight.
 - **Score:** Impact 4 / Confidence 4 / Ease 3 = **11**
-- **Status:** TODO
-- **Proof after ship:** _pending_
-
-## IN PROGRESS
-- _none_
-
-## SHIPPED
+- **Status:** SHIPPED
+- **Proof after ship:** Boundary page now tells users the safest first move before they pick a rule: stop if it feels unsafe, use Phone + DMs only for one specific trust issue, and default to Time + availability when the real problem is overload. Live URL: `https://love.forge.dsdoes.com/blog/boundary-definition-tool.html`
 
 #### LF-002 Blog index becomes decision hub
 - **Page:** `/blog/index.html`
