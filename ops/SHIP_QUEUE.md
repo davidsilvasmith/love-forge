@@ -30,7 +30,7 @@
 - **Expected outcome:** Faster skeptical-partner invites, less friction in the highest-resistance path, stronger first send rate from the homepage.
 - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
 - **Status:** SHIPPED
-- **Proof after ship:** Homepage now gives skeptical partners one copy-ready 7-day experiment ask plus one lighter fallback text, so a stressed spouse can send the test fast without rewriting the pitch. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Homepage now gives skeptical partners one copy-ready 7-day experiment ask plus one lighter fallback text, so a stressed spouse can send the test fast without rewriting the pitch. Commit: `883b304`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-035 Pause-and-Return should generate the exact pause, return, and close text so flooded couples do not have to translate the tool in the middle of a fight
 - **Page:** `/blog/pause-and-return-tool.html`
