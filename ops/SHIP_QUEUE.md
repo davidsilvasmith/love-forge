@@ -23,7 +23,7 @@
 - **Expected outcome:** Faster safe pivots, less friction during repeat breakdowns, stronger follow-through on the override path.
 - **Score:** Impact 3 / Confidence 4 / Ease 4 = **11**
 - **Status:** SHIPPED
-- **Proof after ship:** Homepage now turns the stop-and-switch override into a copy-ready action inside the 7-day continuation flow, so couples can pivot faster on mobile without rewriting the safer text. Commit: `aaa9fc9`. Live URL: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Homepage now turns the stop-and-switch override into a copy-ready action inside the 7-day continuation flow, so couples can pivot faster on mobile without rewriting the safer text. Commit: `0326d65`. Live URL: `https://love.forge.dsdoes.com/`
 
 
 #### LF-033 Homepage should make the trust-safe override obvious inside the 7-day loop so couples do not keep repeating the wrong tool after a shaky first rep
