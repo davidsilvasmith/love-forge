@@ -30,7 +30,7 @@
 - **Expected outcome:** Faster partner sends, less scrolling friction, stronger first-action rate.
 - **Score:** Impact 4 / Confidence 3 / Ease 3 = **10**
 - **Status:** SHIPPED
-- **Proof after ship:** Homepage now puts the first copy-ready partner ask directly inside the hero flow right after lane choice, so mobile users can copy the send text before dropping into the longer homepage blocks.
+- **Proof after ship:** Homepage now puts the first copy-ready partner ask directly inside the hero flow right after lane choice, so mobile users can copy the send text before dropping into the longer homepage blocks. Commit: `8f2a5ed`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-042 Fight Fair should generate the exact opener, one-issue script, and low-energy fallback so couples can have one hard talk tonight without improvising
 - **Page:** `/blog/fight-fair-protocol.html`
