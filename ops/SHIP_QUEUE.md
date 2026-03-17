@@ -30,7 +30,7 @@
 - **Expected outcome:** Faster first sends, less browse drift, and more couples starting one tool tonight instead of reading around it.
 - **Score:** Impact 4 / Confidence 4 / Ease 3 = **11**
 - **Status:** SHIPPED
-- **Proof after ship:** Blog hub now opens with one dominant “Fastest tonight path” that tells users to pick one problem, send one small ask, and run the default first rep before browsing, while demoting browse to an explicit fallback and keeping the two safety overrides visible. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/blog/`
+- **Proof after ship:** Blog hub now opens with one dominant “Fastest tonight path” that tells users to pick one problem, send one small ask, and run the default first rep before browsing, while demoting browse to an explicit fallback and keeping the two safety overrides visible. Commit: `ab9e3b6`. Live URL: `https://love.forge.dsdoes.com/blog/`
 
 #### LF-052 Attention Budget Tool should generate the exact nightly attention-protecting text, one protected-slot plan, and low-energy fallback so a wiped-out spouse can protect one block tonight without inventing the words
 - **Page:** `/blog/attention-budget-tool.html`
