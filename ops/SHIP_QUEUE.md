@@ -15,6 +15,16 @@
 
 ## SHIPPED
 
+#### LF-022 Transparency Tool adds a fill-in disclosure builder so couples stop vague-confessing and clear one gray-area issue tonight
+- **Page:** `/blog/transparency-tool.html`
+- **Problem:** The page was generic and advice-heavy, so stressed spouses still had to invent the actual disclosure, repair close, and future rule by hand.
+- **User pain:** "I do not need a lecture on transparency. I need the exact words to clear this up before it turns into a bigger trust fight."
+- **Proposed change:** Turn the page into a practical trust-repair tool with one strict use/not-use filter, one fill-in disclosure builder, one repair-close script, one low-energy fallback, and one exact 10-minute run of show.
+- **Expected outcome:** Faster honest disclosures, less vague minimizing, fewer late-night spirals around gray-area secrecy, and more couples leaving with one rule for the next 7 days.
+- **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+- **Status:** SHIPPED
+- **Proof after ship:** Transparency Tool now tells users when to use it versus Get Backup Tool, gives a fill-in builder for the main disclosure, repair close, and low-energy text, and adds a 10-minute repair flow plus a concrete 7-day trust-tension metric. Commit: `ef874a4`. Live URL: `https://love.forge.dsdoes.com/blog/transparency-tool.html`
+
 #### LF-021 Boundary Definition Tool adds a prefilled boundary builder so shaky-trust couples stop staring at blanks
 - **Page:** `/blog/boundary-definition-tool.html`
 - **Problem:** The page gives examples, but stressed spouses still have to assemble the final boundary line, consequence, and review time by hand.
