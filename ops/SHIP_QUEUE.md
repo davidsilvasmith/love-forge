@@ -15,6 +15,16 @@
 
 ## SHIPPED
 
+#### LF-018 Get Backup Tool adds copy buttons and a stop-at-first-yes chooser so stressed couples send outreach faster
+- **Page:** `/blog/third-party-escalation-tool.html`
+- **Problem:** The tool had strong scripts, but tired spouses still had to select, highlight, and mentally sort helper types before sending anything.
+- **User pain:** "I do not want to rewrite or overthink this. Just help me pick the helper and send the text."
+- **Proposed change:** Add one stop-at-first-yes helper chooser plus copy buttons for the partner text and each helper-specific outreach script.
+- **Expected outcome:** Faster first send, less friction on mobile, and fewer stalled trust-break users.
+- **Score:** Impact 4 / Confidence 5 / Ease 4 = **13**
+- **Status:** SHIPPED
+- **Proof after ship:** Get Backup Tool now tells users exactly when to say yes to therapist vs coach vs mentor, lets them copy the partner invite instantly, and adds one-tap copy buttons for each outreach script so they can send messages without rewriting. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/blog/third-party-escalation-tool.html`
+
 #### LF-017 Blog hub splits active trust breaks from calmer boundary-setting so users get the safer first click
 - **Page:** `/blog/index.html`
 - **Problem:** The quick-pick and relationship-moment trust entries still sent stressed users to Boundary Definition first, even though active lying, cheating, hidden money, or secret messages need outside backup before a boundary talk.
