@@ -30,7 +30,7 @@
 - **Expected outcome:** More immediate tool starts after the partner invite, less drop-off between copied text and actual use, better tonight completion rate.
 - **Score:** Impact 4 / Confidence 4 / Ease 3 = **11**
 - **Status:** SHIPPED
-- **Proof after ship:** Blog hub now makes the yes-state explicit with one default first rep — 15-Minute Connection Block — and limits overrides to only two cases: hot conflict goes to Pause-and-Return, and active trust breaks go to Get Backup Tool. Commit: `TBD`. Live URL: `https://love.forge.dsdoes.com/blog/`
+- **Proof after ship:** Blog hub now makes the yes-state explicit with one default first rep — 15-Minute Connection Block — and limits overrides to only two cases: hot conflict goes to Pause-and-Return, and active trust breaks go to Get Backup Tool. Commit: `1bbdb01`. Live URL: `https://love.forge.dsdoes.com/blog/`
 
 #### LF-029 Blog hub sharpens the copy/send step so users can invite a partner without reading past the fold
 - **Page:** `/blog/index.html`
