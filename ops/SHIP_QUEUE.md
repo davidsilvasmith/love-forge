@@ -8,12 +8,29 @@
 ## Backlog
 
 ### TODO
-- _none yet_
+- **LF-046 Clean Complaint Script should generate the exact complaint, mirror line, and doable ask so a stressed spouse can raise one issue tonight without sounding attacking**
+  - **Page:** `/blog/clean-complaint-script.html`
+  - **Problem:** The page has a solid framework, but a stressed spouse still has to invent the exact complaint wording, the mirror line, and the alternative ask while already irritated.
+  - **User pain:** "I know I need to say this better. Do not make me build the sentence from scratch while I am already mad."
+  - **Proposed change:** Add one fill-in builder that outputs the clean complaint, the mirror line, one doable alternative, and one low-energy fallback, plus a sharper one-issue chooser.
+  - **Expected outcome:** Faster starts, less blame language, better odds of one useful ask tonight.
+  - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+  - **Status:** TODO
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-045 Silence Breaker should generate the exact opener, one-issue line, and close so a stressed spouse can break the freeze tonight without improvising
+- **Page:** `/blog/silence-breaker-tool.html`
+- **Problem:** The page had the right structure, but a stressed spouse still had to invent the opener, choose the right one-issue framing, and close the rep cleanly while already feeling awkward and disconnected.
+- **User pain:** "We both went quiet. Do not give me theory. Give me the exact words to start and help us stop after one small win."
+- **Proposed change:** Add one practical builder that outputs the opener, one-issue line, closing line, and low-energy fallback, plus sharper silence triage, examples, and a cleaner 10-minute script.
+- **Expected outcome:** Faster starts after silence, less awkward improvising, better odds of one useful reconnection rep tonight.
+- **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+- **Status:** SHIPPED
+- **Proof after ship:** Silence Breaker now tells couples when to use it versus Pause-and-Return, helps them pick one silence issue fast, gives a fill-in builder for the opener, one-issue line, close, and low-energy fallback, and adds a tighter 10-minute script plus examples so they can break the freeze tonight without improvising.
 
 #### LF-044 Homepage first screen should give lane-specific first-send texts so a stressed spouse can copy the exact ask that fits tonight instead of translating one generic invite
 - **Page:** `/index.html`

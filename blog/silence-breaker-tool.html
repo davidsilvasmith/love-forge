@@ -13,64 +13,197 @@
 <div class="highlight-grid" aria-label="Why this tool works">
   <div class="highlight-card">
     <small>Problem</small>
-    <h3>Nobody starts, so distance grows</h3>
-    <p>Silence feels safer than conflict, but it quietly increases resentment.</p>
+    <h3>You both go quiet and nothing gets repaired</h3>
+    <p>Silence can feel safer than conflict, but it quietly turns one hard moment into distance, guessing, and resentment.</p>
   </div>
   <div class="highlight-card">
-    <small>Move</small>
-    <h3>Use one clean opener tonight</h3>
-    <p>A scripted start removes guesswork and lowers defensiveness.</p>
+    <small>Tonight win</small>
+    <h3>Start one calm conversation without the big relationship talk</h3>
+    <p>You are not fixing everything. You are breaking the freeze and leaving with one small next step.</p>
   </div>
   <div class="highlight-card">
-    <small>Win</small>
-    <h3>Get one small repair in 10 minutes</h3>
-    <p>You’re not solving everything. You’re restarting connection momentum.</p>
+    <small>Rule</small>
+    <h3>Pick one issue only</h3>
+    <p>If three things feel true, choose the one hurting the most right now. Do not stack complaints in the first rep.</p>
   </div>
 </div>
 
 <div class="card quick-start">
-  <h2>First step (do this now)</h2>
-  <p><strong>Set a 10-minute timer and send this exact text:</strong></p>
-  <p><strong>Copy/paste script:</strong> “I don’t want a giant relationship talk. I want one small win tonight. Can we do 10 minutes right now with one issue only?”</p>
-  <p class="muted">That’s it. Don’t explain. Don’t add context. Just send it.</p>
+  <h2>Do this first tonight</h2>
+  <p><strong>Send one exact opener and stop there.</strong> Do not explain the whole relationship. One small ask is easier to say yes to.</p>
+  <div class="copy-box" id="silence-opener-text">I do not want a giant relationship talk. I want us to break the weird silence and do one 10-minute reset on one issue tonight. Are you open to that?</div>
+  <p><button class="btn" id="copy-silence-opener" type="button">Copy first text</button></p>
+  <small id="copy-silence-opener-status" class="muted" aria-live="polite"></small>
+  <p class="muted"><strong>Low-energy fallback:</strong> “Can we do 5 minutes tonight just to break the silence, then stop?”</p>
+  <p class="muted"><strong>If tension spikes:</strong> use <a href="/blog/pause-and-return-tool.html">Pause-and-Return</a> first. Silence Breaker is for freeze, not active escalation.</p>
 </div>
 
 <div class="card">
-  <h2>Choose your mode</h2>
-  <div class="comparison-grid" aria-label="Silence breaker mode tiles">
+  <h2>Pick the silence type before you start</h2>
+  <div class="comparison-grid" aria-label="Silence types">
     <div class="compare-tile">
-      <small>Mode A</small>
-      <h3>Exhausted / kid-chaos</h3>
-      <p>Do it during a walk, in the car pickup line, or right after bedtime.</p>
+      <small>Most common</small>
+      <h3>Cold distance</h3>
+      <p>You are polite but flat. No fight, no warmth, just drift.</p>
     </div>
     <div class="compare-tile">
-      <small>Mode B</small>
-      <h3>Interrupted night</h3>
-      <p>Split into 2 x 5-minute rounds. Resume the same night.</p>
+      <small>After a miss</small>
+      <h3>Something happened and nobody is naming it</h3>
+      <p>A snappy comment, shutdown, forgotten promise, or awkward moment is hanging in the air.</p>
     </div>
     <a class="compare-tile" href="/blog/pause-and-return-tool.html">
-      <small>Mode C</small>
-      <h3>Emotionally flooded</h3>
-      <p>Pause and return first. Then run this tool when calm.</p>
+      <small>Not this tool</small>
+      <h3>Voices are sharp or one of you is flooded</h3>
+      <p>Do not force a calm reconnection script in a hot moment. Pause first, then come back.</p>
     </a>
   </div>
 </div>
 
 <div class="card">
-  <h2>7-day success markers</h2>
-  <div class="icon-row">
-    <span class="icon-chip">📉 Fewer escalations</span>
-    <span class="icon-chip">🛠️ Faster repair</span>
-    <span class="icon-chip">📈 +2 connection points</span>
+  <h2>Build your exact Silence Breaker script</h2>
+  <p><strong>Fill this in once.</strong> The page will write the opener, the one-issue line, the close, and the low-energy fallback for you.</p>
+  <div class="builder" aria-label="Silence breaker builder">
+    <div>
+      <label for="silence-topic"><strong>What is the one issue tonight?</strong></label>
+      <input id="silence-topic" type="text" value="how far apart we have felt this week" style="width:100%;padding:10px;margin-top:6px" />
+    </div>
+    <div>
+      <label for="silence-goal"><strong>What is the small win you want?</strong></label>
+      <input id="silence-goal" type="text" value="leave with one small next step for tomorrow" style="width:100%;padding:10px;margin-top:6px" />
+    </div>
+    <div>
+      <label for="silence-time"><strong>What exact time can you do this?</strong></label>
+      <input id="silence-time" type="text" value="8:30 tonight" style="width:100%;padding:10px;margin-top:6px" />
+    </div>
+    <div>
+      <label for="silence-format"><strong>What format fits tonight?</strong></label>
+      <select id="silence-format" style="width:100%;padding:10px;margin-top:6px">
+        <option value="10-minute reset">10-minute reset</option>
+        <option value="5-minute reset">5-minute reset</option>
+        <option value="10-minute walk-and-talk">10-minute walk-and-talk</option>
+        <option value="2 x 5-minute split reset">2 x 5-minute split reset</option>
+      </select>
+    </div>
   </div>
-  <p><strong>Rule:</strong> Keep tools that improve your score by 2+ points. Replace tools that stall.</p>
+  <div class="starter-message-grid" aria-label="Built silence breaker scripts" style="margin-top:16px">
+    <div class="starter-message-tile">
+      <span class="starter-message-icon" aria-hidden="true">📩</span>
+      <h3>Partner opener</h3>
+      <p id="silence-builder-opener">I do not want a giant relationship talk. Can we do a 10-minute reset at 8:30 tonight about how far apart we have felt this week and leave with one small next step for tomorrow?</p>
+      <button class="btn" id="copy-silence-builder-opener" type="button">Copy opener</button>
+      <small id="copy-silence-builder-opener-status" class="muted" aria-live="polite"></small>
+    </div>
+    <div class="starter-message-tile">
+      <span class="starter-message-icon" aria-hidden="true">🎯</span>
+      <h3>One-issue line</h3>
+      <p id="silence-builder-focus">For tonight, I only want to talk about how far apart we have felt this week. I do not want to pile on five other things.</p>
+      <button class="btn" id="copy-silence-builder-focus" type="button">Copy one-issue line</button>
+      <small id="copy-silence-builder-focus-status" class="muted" aria-live="polite"></small>
+    </div>
+    <div class="starter-message-tile">
+      <span class="starter-message-icon" aria-hidden="true">✅</span>
+      <h3>Close the rep</h3>
+      <p id="silence-builder-close">Thanks for doing this. For tomorrow, let’s leave with one small next step for tomorrow and stop here instead of overtalking it.</p>
+      <button class="btn" id="copy-silence-builder-close" type="button">Copy closing line</button>
+      <small id="copy-silence-builder-close-status" class="muted" aria-live="polite"></small>
+    </div>
+    <div class="starter-message-tile">
+      <span class="starter-message-icon" aria-hidden="true">🌙</span>
+      <h3>Low-energy fallback</h3>
+      <p id="silence-builder-fallback">Can we do a 5-minute reset at 8:30 tonight about how far apart we have felt this week, then stop and decide tomorrow if we want the full version?</p>
+      <button class="btn" id="copy-silence-builder-fallback" type="button">Copy low-energy fallback</button>
+      <small id="copy-silence-builder-fallback-status" class="muted" aria-live="polite"></small>
+    </div>
+  </div>
 </div>
 
-<div class="card"><h2>10-minute plan (zero guesswork)</h2><ol><li><strong>Minute 0-1:</strong> Send the script above and start a 10-minute timer.</li><li><strong>Minute 1-3:</strong> Each person says one sentence: “The thing that feels hard lately is ____.” No interruptions.</li><li><strong>Minute 3-6:</strong> Pick one issue only. Say: “For tonight, let’s solve just this one part: ____.”</li><li><strong>Minute 6-9:</strong> Choose one action for tomorrow (time + place). Example: “Tomorrow at 8:45 PM, 10-minute check-in on the couch.”</li><li><strong>Minute 9-10:</strong> Close with: “Thanks for doing this with me. We’re done for tonight.” Stop when timer ends.</li></ol><p><strong>Low-energy fallback (2 minutes):</strong> If either of you is wiped, skip to Minute 6 and only schedule tomorrow’s 10-minute check-in.</p><p><strong>Repair fallback (if emotions spike):</strong> Say: “I want this to go well, and I’m getting flooded. Let’s pause 20 minutes and come back at [time].” Then use <a href="/blog/pause-and-return-tool.html">Pause-and-Return Tool</a>.</p></div>
+<div class="card">
+  <h2>10-minute plan with exact words</h2>
+  <ol>
+    <li><strong>Minute 0-1:</strong> Send the opener above and set a timer. Start with: <strong>“One issue only. I am not trying to turn this into a giant talk.”</strong></li>
+    <li><strong>Minute 1-3:</strong> Person A says: <strong>“The thing that has felt hardest lately is ____.”</strong> One sentence only.</li>
+    <li><strong>Minute 3-5:</strong> Person B mirrors: <strong>“I hear that the hard part has been ____.”</strong> No defending yet.</li>
+    <li><strong>Minute 5-7:</strong> Person B answers: <strong>“What would feel like a small win by tomorrow?”</strong></li>
+    <li><strong>Minute 7-9:</strong> Pick one tiny proof action: a text, a hug, a bedtime check-in, a 10-minute walk, or one concrete follow-through.</li>
+    <li><strong>Minute 9-10:</strong> Close with the line above and stop on time. A clean stop is better than squeezing in one more issue.</li>
+  </ol>
+  <p><strong>If it gets awkward:</strong> say, <strong>“This feels clunky, but I would rather be clunky than keep going silent.”</strong></p>
+  <p><strong>If you feel tempted to add more issues:</strong> write them down for later and keep only tonight’s one issue in the room.</p>
+</div>
 
-<div class="card"><h2>How to use this tool effectively</h2><ul><li><strong>When to use it:</strong> Use <strong>Silence Breaker Tool</strong> when this exact problem is happening now, not as a general reading exercise.</li><li><strong>How often:</strong> Run it once today, then repeat 3-7 times before judging results.</li><li><strong>Common mistake:</strong> Changing multiple things at once. Use one tool at a time so you can see what works.</li><li><strong>If it feels awkward:</strong> Use the script exactly once, keep the first run under 10 minutes, and rate helpfulness 1-10.</li></ul></div>
+<div class="card">
+  <h2>Tonight examples</h2>
+  <div class="highlight-grid" aria-label="Silence breaker examples">
+    <div class="highlight-card">
+      <small>After kid chaos</small>
+      <h3>Nobody has checked in for days</h3>
+      <p><strong>Opener:</strong> “Can we do a 10-minute reset tonight about how flat we have felt after bedtime this week?”</p>
+    </div>
+    <div class="highlight-card">
+      <small>After a shutdown</small>
+      <h3>One awkward moment is hanging there</h3>
+      <p><strong>One-issue line:</strong> “I only want to talk about how we left that conversation this morning, not every other thing.”</p>
+    </div>
+    <div class="highlight-card">
+      <small>Low-energy night</small>
+      <h3>You both look cooked</h3>
+      <p><strong>Fallback:</strong> “Can we do 5 minutes tonight just so we do not carry this silence into tomorrow?”</p>
+    </div>
+  </div>
+</div>
 
-<div class="card"><h2>Tomorrow rep + fallback + escalation</h2><ul><li><strong>Tomorrow:</strong> run this same tool once more before trying a new one.</li><li><strong>If it didn’t help:</strong> switch to <a href="/blog/pause-and-return-tool.html">Pause-and-Return Tool</a> first, then retry.</li><li><strong>If it got worse or felt unsafe:</strong> stop DIY and involve a licensed professional/support resource.</li></ul></div>
+<div class="card">
+  <h2>What counts as success in the next 7 days</h2>
+  <div class="icon-row">
+    <span class="icon-chip">📉 Less weird tension after hard moments</span>
+    <span class="icon-chip">🗣️ Faster starts after silence</span>
+    <span class="icon-chip">🤝 More small next steps actually completed</span>
+    <span class="icon-chip">📊 +1 point in connection or -1 point in tension</span>
+  </div>
+  <p><strong>Track one number:</strong> right after each rep, both answer: <strong>Did tension drop or connection rise by at least 1 point out of 10?</strong></p>
+  <p><strong>Tomorrow rule:</strong> if tonight helped at all, repeat the same tool tomorrow at the same rough time before you hunt for a better fix.</p>
+</div>
 
-<div class="card"><h2>Best next tool</h2><p>After this, run <a href="/blog/10-minute-weekly-meeting.html">10-Minute Weekly Meeting</a> to keep the connection from slipping back into silence.</p></div>
-</div></body></html>
+<div class="card"><h2>How to use this tool well</h2><ul><li><strong>When to use it:</strong> Use <strong>Silence Breaker Tool</strong> when you feel cold, avoidant, or awkward after a miss — not when a fight is actively hot.</li><li><strong>How often:</strong> Run it once tonight, then repeat it 3-7 times before judging whether it belongs in your week.</li><li><strong>Common mistake:</strong> Using the first 2 minutes to explain the whole relationship. Keep the opener small and specific.</li><li><strong>If it still feels awkward:</strong> Use the exact script anyway, cap the rep at 5 minutes, and end with one tiny proof action for tomorrow.</li></ul></div>
+
+<div class="card"><h2>Best next tool</h2><p>If the silence broke and you want a cleaner daily rhythm, go to <a href="/blog/daily-15-minute-connection-block.html">Daily 15-Minute Connection Block</a>. If the silence breaks into sharp conflict instead, switch to <a href="/blog/pause-and-return-tool.html">Pause-and-Return</a>.</p></div>
+</div><script>(function(){
+const ids={
+  topic:document.getElementById('silence-topic'),
+  goal:document.getElementById('silence-goal'),
+  time:document.getElementById('silence-time'),
+  format:document.getElementById('silence-format'),
+  opener:document.getElementById('silence-builder-opener'),
+  focus:document.getElementById('silence-builder-focus'),
+  close:document.getElementById('silence-builder-close'),
+  fallback:document.getElementById('silence-builder-fallback')
+};
+function clean(value,fallback){return (value||'').trim()||fallback;}
+function render(){
+  const topic=clean(ids.topic.value,'how far apart we have felt this week');
+  const goal=clean(ids.goal.value,'leave with one small next step for tomorrow');
+  const time=clean(ids.time.value,'8:30 tonight');
+  const format=clean(ids.format.value,'10-minute reset');
+  ids.opener.textContent=`I do not want a giant relationship talk. Can we do a ${format} at ${time} about ${topic} and ${goal}?`;
+  ids.focus.textContent=`For tonight, I only want to talk about ${topic}. I do not want to pile on five other things.`;
+  ids.close.textContent=`Thanks for doing this. For tomorrow, let’s ${goal} and stop here instead of overtalking it.`;
+  ids.fallback.textContent=`Can we do a 5-minute reset at ${time} about ${topic}, then stop and decide tomorrow if we want the full version?`;
+}
+['input','change'].forEach(function(evt){ids.topic.addEventListener(evt,render);ids.goal.addEventListener(evt,render);ids.time.addEventListener(evt,render);ids.format.addEventListener(evt,render);});
+render();
+const copyPairs=[
+  {btn:'copy-silence-opener',text:'silence-opener-text',status:'copy-silence-opener-status',ok:'Copied. Send it now.'},
+  {btn:'copy-silence-builder-opener',text:'silence-builder-opener',status:'copy-silence-builder-opener-status',ok:'Copied opener.'},
+  {btn:'copy-silence-builder-focus',text:'silence-builder-focus',status:'copy-silence-builder-focus-status',ok:'Copied one-issue line.'},
+  {btn:'copy-silence-builder-close',text:'silence-builder-close',status:'copy-silence-builder-close-status',ok:'Copied closing line.'},
+  {btn:'copy-silence-builder-fallback',text:'silence-builder-fallback',status:'copy-silence-builder-fallback-status',ok:'Copied low-energy fallback.'}
+];
+copyPairs.forEach(function(pair){
+  const btn=document.getElementById(pair.btn);const text=document.getElementById(pair.text);const status=document.getElementById(pair.status);
+  if(!btn||!text||!status)return;
+  btn.addEventListener('click',async function(){
+    try{await navigator.clipboard.writeText(text.textContent.replace(/^"|"$/g,''));status.textContent=pair.ok;}
+    catch(e){status.textContent='Copy failed. Select the text above and copy manually.';}
+  });
+});
+})();</script></body></html>
