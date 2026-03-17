@@ -8,19 +8,23 @@
 ## Backlog
 
 ### TODO
-- **LF-046 Clean Complaint Script should generate the exact complaint, mirror line, and doable ask so a stressed spouse can raise one issue tonight without sounding attacking**
-  - **Page:** `/blog/clean-complaint-script.html`
-  - **Problem:** The page has a solid framework, but a stressed spouse still has to invent the exact complaint wording, the mirror line, and the alternative ask while already irritated.
-  - **User pain:** "I know I need to say this better. Do not make me build the sentence from scratch while I am already mad."
-  - **Proposed change:** Add one fill-in builder that outputs the clean complaint, the mirror line, one doable alternative, and one low-energy fallback, plus a sharper one-issue chooser.
-  - **Expected outcome:** Faster starts, less blame language, better odds of one useful ask tonight.
-  - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
-  - **Status:** TODO
+- _none_
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-046 Clean Complaint Script should generate the exact complaint, mirror line, and doable ask so a stressed spouse can raise one issue tonight without sounding attacking
+- **Page:** `/blog/clean-complaint-script.html`
+- **Problem:** The page has a solid framework, but a stressed spouse still had to invent the exact complaint wording, the mirror line, and the alternative ask while already irritated.
+- **User pain:** "I know I need to say this better. Do not make me build the sentence from scratch while I am already mad."
+- **Proposed change:** Add one fill-in builder that outputs the clean complaint, the mirror line, one doable alternative, and one low-energy fallback, plus a sharper one-issue chooser.
+- **Expected outcome:** Faster starts, less blame language, better odds of one useful ask tonight.
+- **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+- **Status:** SHIPPED
+- **Proof after ship:** Clean Complaint Script now helps couples choose one issue fast, generates the exact complaint, mirror line, doable alternative, and low-energy fallback, and adds tighter examples plus a cleaner success metric so they can raise one issue tonight without improvising.
+
 
 #### LF-045 Silence Breaker should generate the exact opener, one-issue line, and close so a stressed spouse can break the freeze tonight without improvising
 - **Page:** `/blog/silence-breaker-tool.html`

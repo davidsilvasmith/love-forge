@@ -5,80 +5,233 @@
 
 <div class="icon-row" aria-label="What this tool improves">
   <div class="icon-chip">🧼 Cleaner asks</div>
-  <div class="icon-chip">🧯 Fewer blame spirals</div>
-  <div class="icon-chip">🛠️ Faster repair</div>
-  <div class="icon-chip">📈 Better connection score</div>
+  <div class="icon-chip">🪞 Exact mirror line</div>
+  <div class="icon-chip">🤝 Doable ask, not a vague fix</div>
+  <div class="icon-chip">🌙 Low-energy fallback included</div>
 </div>
 
-<div class="highlight-grid">
+<div class="highlight-grid" aria-label="Why this tool works">
   <div class="highlight-card">
     <small>Problem</small>
-    <h3>Needs come out as blame</h3>
-    <p>Under kid + work pressure, complaints sound like attacks and trigger defensiveness.</p>
+    <h3>You know the issue, but the sentence comes out sharp</h3>
+    <p>When you are overloaded, a real need can come out like blame, sarcasm, or five complaints stacked together.</p>
   </div>
   <div class="highlight-card">
-    <small>Promise</small>
-    <h3>One script that lowers heat fast</h3>
-    <p>Use a simple sentence frame so you can ask clearly without starting a fight.</p>
+    <small>Tonight win</small>
+    <h3>Raise one issue without sounding like an attack</h3>
+    <p>You are not proving a case. You are naming one moment, one feeling, and one small change for tomorrow.</p>
+  </div>
+  <div class="highlight-card">
+    <small>Rule</small>
+    <h3>Pick one issue only</h3>
+    <p>If three things are true, choose the one that would make tomorrow easier. Save the rest for later.</p>
   </div>
 </div>
 
 <div class="card quick-start">
-  <h2>Do this tonight (one script, 10 minutes)</h2>
-  <p><strong>First step (do this now):</strong> Text this exactly: <strong>“Can we do a 10-minute clean complaint at 8:30? I’ll keep it short and specific.”</strong></p>
-  <p><strong>Copy/paste script to use in the talk:</strong><br><strong>“When [specific moment] happened, I felt [one feeling]. I need [one specific change] tomorrow. Are you open to that?”</strong></p>
-  <ol>
-    <li><strong>Minute 0-1:</strong> Set a 10-minute timer and say: “One issue only. No old stuff.”</li>
-    <li><strong>Minute 1-3:</strong> Partner A reads the script once. No extra context.</li>
-    <li><strong>Minute 3-5:</strong> Partner B mirrors: “I heard you say ___, and you need ___ tomorrow. Did I get it?”</li>
-    <li><strong>Minute 5-7:</strong> Partner B answers yes/no on the request. If no, offer one doable alternative.</li>
-    <li><strong>Minute 7-9:</strong> Switch roles and repeat with one issue.</li>
-    <li><strong>Minute 9-10:</strong> Lock one concrete action for tomorrow (who, what, when).</li>
-  </ol>
-  <p class="muted"><strong>Low-energy version (3 minutes):</strong> Run one round only (A speaks, B mirrors, one tomorrow action).</p>
-  <p class="muted"><strong>If emotions spike:</strong> Say “Pause. I want to come back at 9:15.” Then use <a href="/blog/pause-and-return-tool.html">Pause-and-Return Tool</a>.</p>
-</div>
-
-<div class="comparison-grid">
-  <a class="compare-tile" href="/blog/repair-attempt-tool.html">
-    <small>If tension is already high</small>
-    <h3>Use Repair Attempt Tool first</h3>
-    <p>De-escalate before you make the ask.</p>
-  </a>
-  <a class="compare-tile" href="/blog/clean-complaint-script.html">
-    <small>If you need something specific</small>
-    <h3>Run Clean Complaint Script</h3>
-    <p>Clear request, less blame, quicker action.</p>
-  </a>
-  <a class="compare-tile" href="/blog/10-minute-weekly-meeting.html">
-    <small>After 7 days</small>
-    <h3>Move to Weekly Meeting</h3>
-    <p>Track what worked and lock in new habits.</p>
-  </a>
+  <h2>Do this first tonight</h2>
+  <p><strong>Send one clean opener and stop there.</strong> Do not explain the whole week before they even say yes.</p>
+  <div class="copy-box" id="complaint-opener-text">Can we do a 10-minute clean complaint tonight at 8:30? I want to keep it to one issue and one doable ask for tomorrow.</div>
+  <p><button class="btn" id="copy-complaint-opener" type="button">Copy first text</button></p>
+  <small id="copy-complaint-opener-status" class="muted" aria-live="polite"></small>
+  <p class="muted"><strong>Low-energy fallback:</strong> “I do not want a giant talk. Can we do 5 minutes on one issue tonight and stop after one next step?”</p>
+  <p class="muted"><strong>If voices are already sharp:</strong> use <a href="/blog/pause-and-return-tool.html">Pause-and-Return Tool</a> first. Clean Complaint is for a clear ask, not an active blowup.</p>
 </div>
 
 <div class="card">
-  <h2>Kid-chaos version</h2>
-  <ul>
-    <li>Do it after bedtime, in pickup line, or during a walk.</li>
-    <li>If interrupted, split into two 5-minute rounds.</li>
-    <li>If either person gets flooded, pause and return later.</li>
-  </ul>
-</div>
-
-<div class="card">
-  <h2>Scoreboard (7 days)</h2>
-  <div class="icon-row">
-    <div class="icon-chip">✅ Fewer escalations</div>
-    <div class="icon-chip">✅ Faster repair</div>
-    <div class="icon-chip">✅ +2 connection points</div>
+  <h2>Choose the one issue before you build the script</h2>
+  <div class="comparison-grid" aria-label="How to pick one issue tonight">
+    <div class="compare-tile">
+      <small>Pick this</small>
+      <h3>The issue that is happening again tomorrow</h3>
+      <p>Bedtime handoff, phone distraction, late arrival, skipped check-in, or a repeated tone problem usually beats abstract resentment.</p>
+    </div>
+    <div class="compare-tile">
+      <small>Avoid this</small>
+      <h3>The issue that needs a 40-minute backstory</h3>
+      <p>If you need five examples to explain it, it is too big for tonight. Shrink it to one recent moment instead.</p>
+    </div>
+    <a class="compare-tile" href="/blog/one-issue-rule.html">
+      <small>If you keep stacking complaints</small>
+      <h3>Use One-Issue Rule first</h3>
+      <p>That tool helps you choose the one fight to have before you try to say it cleanly.</p>
+    </a>
   </div>
-  <p><strong>Rule:</strong> Keep tools that improve your score by 2+ points. Swap the rest.</p>
 </div>
 
-<div class="card"><h2>How to use this tool effectively</h2><ul><li><strong>When to use it:</strong> Use <strong>Clean Complaint Script</strong> when this exact problem is happening now, not as a general reading exercise.</li><li><strong>How often:</strong> Run it once today, then repeat 3-7 times before judging results.</li><li><strong>Common mistake:</strong> Changing multiple things at once. Use one tool at a time so you can see what works.</li><li><strong>If it feels awkward:</strong> Use the script exactly once, keep the first run under 10 minutes, and rate helpfulness 1-10.</li></ul></div>
+<div class="card">
+  <h2>Build your exact Clean Complaint</h2>
+  <p><strong>Fill this in once.</strong> The page will write the complaint, the mirror line, one doable alternative, and one low-energy fallback for you.</p>
+  <div class="builder" aria-label="Clean Complaint builder">
+    <div class="row">
+      <div>
+        <label for="complaint-moment"><strong>What exact moment are you naming?</strong></label>
+        <input id="complaint-moment" type="text" value="when bedtime turned into me doing the whole cleanup alone" />
+      </div>
+      <div>
+        <label for="complaint-feeling"><strong>What one feeling fits best?</strong></label>
+        <input id="complaint-feeling" type="text" value="overloaded and alone" />
+      </div>
+    </div>
+    <div class="row">
+      <div>
+        <label for="complaint-ask"><strong>What is the one doable ask for tomorrow?</strong></label>
+        <input id="complaint-ask" type="text" value="take dishes and backpacks for 10 minutes right after bedtime" />
+      </div>
+      <div>
+        <label for="complaint-alternative"><strong>If the ask is too much, what smaller version still helps?</strong></label>
+        <input id="complaint-alternative" type="text" value="at least clear the counter and start lunches before sitting down" />
+      </div>
+    </div>
+    <div class="row">
+      <div>
+        <label for="complaint-time"><strong>What time can you do this talk?</strong></label>
+        <input id="complaint-time" type="text" value="8:30 tonight" />
+      </div>
+      <div>
+        <label for="complaint-mode"><strong>What format fits tonight?</strong></label>
+        <select id="complaint-mode">
+          <option value="10-minute clean complaint">10-minute clean complaint</option>
+          <option value="5-minute clean complaint">5-minute clean complaint</option>
+          <option value="10-minute walk-and-talk">10-minute walk-and-talk</option>
+          <option value="2 x 5-minute split talk">2 x 5-minute split talk</option>
+        </select>
+      </div>
+    </div>
+  </div>
 
-<div class="card"><h2>Tomorrow rep + fallback + escalation</h2><ul><li><strong>Tomorrow:</strong> run this same tool once more before trying a new one.</li><li><strong>If it didn’t help:</strong> switch to <a href="/blog/pause-and-return-tool.html">Pause-and-Return Tool</a> first, then retry.</li><li><strong>If it got worse or felt unsafe:</strong> stop DIY and involve a licensed professional/support resource.</li></ul></div>
+  <div class="starter-message-grid" aria-label="Built clean complaint scripts" style="margin-top:16px">
+    <div class="starter-message-tile">
+      <span class="starter-message-icon" aria-hidden="true">🗣️</span>
+      <h3>Clean complaint</h3>
+      <p id="complaint-main-output">When bedtime turned into me doing the whole cleanup alone, I felt overloaded and alone. Tomorrow I need you to take dishes and backpacks for 10 minutes right after bedtime. Are you open to that?</p>
+      <button class="btn" id="copy-complaint-main" type="button">Copy complaint</button>
+      <small id="copy-complaint-main-status" class="muted" aria-live="polite"></small>
+    </div>
+    <div class="starter-message-tile">
+      <span class="starter-message-icon" aria-hidden="true">🪞</span>
+      <h3>Mirror line</h3>
+      <p id="complaint-mirror-output">I hear that when bedtime turned into you doing the whole cleanup alone, you felt overloaded and alone, and tomorrow you need me to take dishes and backpacks for 10 minutes right after bedtime. Did I get that right?</p>
+      <button class="btn" id="copy-complaint-mirror" type="button">Copy mirror line</button>
+      <small id="copy-complaint-mirror-status" class="muted" aria-live="polite"></small>
+    </div>
+    <div class="starter-message-tile">
+      <span class="starter-message-icon" aria-hidden="true">🤝</span>
+      <h3>Doable alternative</h3>
+      <p id="complaint-alt-output">If taking dishes and backpacks for 10 minutes right after bedtime feels too big tomorrow, would you do at least clear the counter and start lunches before sitting down instead?</p>
+      <button class="btn" id="copy-complaint-alt" type="button">Copy alternative ask</button>
+      <small id="copy-complaint-alt-status" class="muted" aria-live="polite"></small>
+    </div>
+    <div class="starter-message-tile">
+      <span class="starter-message-icon" aria-hidden="true">🌙</span>
+      <h3>Low-energy fallback</h3>
+      <p id="complaint-low-output">Can we do a 5-minute clean complaint at 8:30 tonight about bedtime turning into me doing the whole cleanup alone, then just lock one small ask for tomorrow and stop?</p>
+      <button class="btn" id="copy-complaint-low" type="button">Copy low-energy fallback</button>
+      <small id="copy-complaint-low-status" class="muted" aria-live="polite"></small>
+    </div>
+  </div>
+  <p class="muted">Use facts, not character attacks. One moment. One feeling. One ask. One smaller backup ask.</p>
+</div>
 
-<div class="card"><h2>Best next tool</h2><p>After this, run <a href="/blog/10-minute-weekly-meeting.html">10-Minute Weekly Meeting</a> to keep momentum.</p></div>
-</div></body></html>
+<div class="card">
+  <h2>10-minute plan with exact words</h2>
+  <ol>
+    <li><strong>Minute 0-1:</strong> Send the opener above and start with: <strong>“One issue only. I am not trying to dump five things on you.”</strong></li>
+    <li><strong>Minute 1-3:</strong> Person A reads the clean complaint once. No evidence list. No old history.</li>
+    <li><strong>Minute 3-5:</strong> Person B uses the mirror line exactly. The job is to reflect it, not fix it yet.</li>
+    <li><strong>Minute 5-7:</strong> Person B answers yes, no, or smaller yes. If no, use the doable alternative instead of stonewalling.</li>
+    <li><strong>Minute 7-9:</strong> Switch roles only if both people still have a calm voice. Otherwise stop after the first clean rep.</li>
+    <li><strong>Minute 9-10:</strong> Lock one exact action for tomorrow: who does what, and when.</li>
+  </ol>
+  <p><strong>If it gets awkward:</strong> say, <strong>“I am trying to say this cleanly, not perfectly. Stay with the one issue.”</strong></p>
+  <p><strong>If the complaint turns into defending:</strong> go back to the mirror line once more before adding anything new.</p>
+</div>
+
+<div class="card">
+  <h2>Tonight examples</h2>
+  <div class="highlight-grid" aria-label="Clean complaint examples">
+    <div class="highlight-card">
+      <small>Household load</small>
+      <h3>You keep feeling left holding the bag</h3>
+      <p><strong>Complaint:</strong> “When bedtime turned into me doing the whole cleanup alone, I felt overloaded. Tomorrow I need you to handle dishes for 10 minutes right after bedtime.”</p>
+    </div>
+    <div class="highlight-card">
+      <small>Phone distraction</small>
+      <h3>You are there, but not really there</h3>
+      <p><strong>Mirror line:</strong> “I hear that when I stayed on my phone during our check-in, you felt brushed off, and tomorrow you need 10 phone-free minutes first. Did I get that right?”</p>
+    </div>
+    <div class="highlight-card">
+      <small>Low-energy night</small>
+      <h3>You both look cooked</h3>
+      <p><strong>Fallback:</strong> “Can we do 5 minutes on one complaint tonight and just lock one small tomorrow change before we stop?”</p>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <h2>What counts as success in the next 7 days</h2>
+  <div class="icon-row">
+    <span class="icon-chip">📉 Fewer blame spirals</span>
+    <span class="icon-chip">🪞 Faster mirroring</span>
+    <span class="icon-chip">✅ More yes or smaller-yes answers</span>
+    <span class="icon-chip">📊 +1 point in fairness or connection</span>
+  </div>
+  <p><strong>Track one number:</strong> after each rep, both answer: <strong>Did this feel 1 point cleaner than our usual complaint talks?</strong></p>
+  <p><strong>Tomorrow rule:</strong> if tonight helped at all, repeat the same complaint pattern tomorrow on a new small issue before you switch tools.</p>
+</div>
+
+<div class="card"><h2>How to use this tool well</h2><ul><li><strong>When to use it:</strong> Use <strong>Clean Complaint Script</strong> when you need one clear request and both people are calm enough to stay on one issue.</li><li><strong>How often:</strong> Run it once tonight, then repeat it 3-7 times before judging whether it belongs in your weekly rhythm.</li><li><strong>Common mistake:</strong> Turning a complaint into a character verdict like “you never care” or “you always disappear.” Keep it on one specific moment and one next ask.</li><li><strong>If it still feels awkward:</strong> use the exact built version, keep the rep to 5 minutes, and accept a smaller yes instead of pushing for the perfect answer.</li></ul></div>
+
+<div class="card"><h2>Best next tool</h2><p>If you keep stacking too many complaints, go to <a href="/blog/one-issue-rule.html">One-Issue Rule</a>. If the talk turns sharp before the ask lands, switch to <a href="/blog/pause-and-return-tool.html">Pause-and-Return Tool</a>.</p></div>
+</div><script>(function(){
+const ids={
+  moment:document.getElementById('complaint-moment'),
+  feeling:document.getElementById('complaint-feeling'),
+  ask:document.getElementById('complaint-ask'),
+  alternative:document.getElementById('complaint-alternative'),
+  time:document.getElementById('complaint-time'),
+  mode:document.getElementById('complaint-mode'),
+  main:document.getElementById('complaint-main-output'),
+  mirror:document.getElementById('complaint-mirror-output'),
+  alt:document.getElementById('complaint-alt-output'),
+  low:document.getElementById('complaint-low-output')
+};
+function clean(value,fallback){return (value||'').trim()||fallback;}
+function render(){
+  const moment=clean(ids.moment.value,'when bedtime turned into me doing the whole cleanup alone');
+  const feeling=clean(ids.feeling.value,'overloaded and alone');
+  const ask=clean(ids.ask.value,'take dishes and backpacks for 10 minutes right after bedtime');
+  const alternative=clean(ids.alternative.value,'at least clear the counter and start lunches before sitting down');
+  const time=clean(ids.time.value,'8:30 tonight');
+  const mode=clean(ids.mode.value,'10-minute clean complaint');
+  ids.main.textContent=`When ${moment}, I felt ${feeling}. Tomorrow I need you to ${ask}. Are you open to that?`;
+  ids.mirror.textContent=`I hear that when ${moment}, you felt ${feeling}, and tomorrow you need me to ${ask}. Did I get that right?`;
+  ids.alt.textContent=`If ${ask} feels too big tomorrow, would you do ${alternative} instead?`;
+  ids.low.textContent=`Can we do a 5-minute clean complaint at ${time} about ${moment}, then just lock one small ask for tomorrow and stop?`;
+  const opener=document.getElementById('complaint-opener-text');
+  if(opener) opener.textContent=`Can we do a ${mode} at ${time}? I want to keep it to one issue and one doable ask for tomorrow.`;
+}
+['input','change'].forEach(function(evt){
+  ids.moment.addEventListener(evt,render);
+  ids.feeling.addEventListener(evt,render);
+  ids.ask.addEventListener(evt,render);
+  ids.alternative.addEventListener(evt,render);
+  ids.time.addEventListener(evt,render);
+  ids.mode.addEventListener(evt,render);
+});
+render();
+[
+  {btn:'copy-complaint-opener',text:'complaint-opener-text',status:'copy-complaint-opener-status',ok:'Copied first text.'},
+  {btn:'copy-complaint-main',text:'complaint-main-output',status:'copy-complaint-main-status',ok:'Copied complaint.'},
+  {btn:'copy-complaint-mirror',text:'complaint-mirror-output',status:'copy-complaint-mirror-status',ok:'Copied mirror line.'},
+  {btn:'copy-complaint-alt',text:'complaint-alt-output',status:'copy-complaint-alt-status',ok:'Copied alternative ask.'},
+  {btn:'copy-complaint-low',text:'complaint-low-output',status:'copy-complaint-low-status',ok:'Copied low-energy fallback.'}
+].forEach(function(pair){
+  const btn=document.getElementById(pair.btn);const text=document.getElementById(pair.text);const status=document.getElementById(pair.status);
+  if(!btn||!text||!status)return;
+  btn.addEventListener('click',async function(){
+    try{await navigator.clipboard.writeText(text.textContent.replace(/^"|"$/g,'').trim());status.textContent=pair.ok;}
+    catch(e){status.textContent='Copy failed. Select the text above and copy manually.';}
+  });
+});
+})();</script></body></html>
