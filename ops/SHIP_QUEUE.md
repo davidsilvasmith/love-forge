@@ -30,7 +30,7 @@
 - **Expected outcome:** Faster de-escalation, less in-the-moment improvising, and more couples actually completing the return instead of stalling after the pause.
 - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
 - **Status:** SHIPPED
-- **Proof after ship:** Pause-and-Return now gives couples a fill-in builder that generates the exact pause line, return line, low-energy fallback, and closing line so they can de-escalate without rewriting the tool mid-fight.
+- **Proof after ship:** Pause-and-Return now gives couples a fill-in builder that generates the exact pause line, return line, low-energy fallback, and closing line so they can de-escalate without rewriting the tool mid-fight. Commit: `594c67b`. Live URL: `https://love.forge.dsdoes.com/blog/pause-and-return-tool.html`
 
 
 #### LF-034 Homepage should make the stop-and-switch override copyable so couples can send the safer pivot text without rewriting it under stress
