@@ -30,7 +30,7 @@
 - **Expected outcome:** Faster partner sends, less homepage wandering, higher first-action follow-through.
 - **Score:** Impact 4 / Confidence 4 / Ease 3 = **11**
 - **Status:** SHIPPED
-- **Proof after ship:** Homepage now turns the post-starter block into a strict two-step flow: pick one starter, then jump straight to the copy-ready partner text, with the old extra starter card reframed as a fallback instead of another browsing detour. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Homepage now turns the post-starter block into a strict two-step flow: pick one starter, then jump straight to the copy-ready partner text, with the old extra starter card reframed as a fallback instead of another browsing detour. Commit: `a04d89c`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-026 Homepage trims below-the-fold choice overload so the first clear path stays obvious after the hero
 - **Page:** `/index.html`
