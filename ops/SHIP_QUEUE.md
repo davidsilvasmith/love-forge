@@ -15,6 +15,17 @@
 
 ## SHIPPED
 
+#### LF-044 Homepage first screen should give lane-specific first-send texts so a stressed spouse can copy the exact ask that fits tonight instead of translating one generic invite
+- **Page:** `/index.html`
+- **Problem:** The homepage first screen got users to a partner send fast, but the copy was still generic across conflict, distance, and shaky-trust nights, which made the first ask less precise under stress.
+- **User pain:** "I know which lane fits. Give me the exact text for this situation so I do not have to rewrite it in my head."
+- **Proposed change:** Replace the single generic hero send with three lane-specific copy-ready texts for hot conflict, distance, and shaky trust, plus one sharper rule that active trust breaks should still skip to outside backup.
+- **Expected outcome:** Faster sends from the homepage first screen, less translation friction, and better yes-rates because the ask matches the actual problem tonight.
+- **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage hero now gives three copy-ready first sends matched to conflict, distance, and shaky-trust nights, plus a clearer warning that active trust breaks should skip the trust-reset text and go straight to backup first. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+
+
 #### LF-043 Blog hub should make the first send visible right after scenario choice so a stressed spouse gets to one text before browsing the full library
 - **Page:** `/blog/index.html`
 - **Problem:** The blog hub routes people well, but the first copy-ready partner ask still sat below several teaching and scenario blocks, which slowed the fastest useful action on mobile.
