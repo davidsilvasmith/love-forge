@@ -30,7 +30,7 @@
 - **Expected outcome:** Faster scanning, less re-deciding, and a cleaner main path from scenario choice to first rep.
 - **Score:** Impact 3 / Confidence 4 / Ease 3 = **10**
 - **Status:** SHIPPED
-- **Proof after ship:** Blog hub now replaces the second generic invite block with one simple reply-state handoff, so users keep the main send section above, then move straight into the yes/no follow-through without comparing another near-identical invitation. Commit: `8a01564`. Live URL: `https://love.forge.dsdoes.com/blog/`
+- **Proof after ship:** Blog hub now replaces the second generic invite block with one simple reply-state handoff, so users keep the main send section above, then move straight into the yes/no follow-through without comparing another near-identical invitation. Commit: `f6784a6`. Live URL: `https://love.forge.dsdoes.com/blog/`
 
 #### LF-054 Blog hub should make the skeptical-partner route feel secondary to the default tonight path so stressed users do not pause on a niche branch before sending the main ask
 - **Page:** `/blog/index.html`
