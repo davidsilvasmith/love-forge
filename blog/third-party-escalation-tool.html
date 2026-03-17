@@ -64,6 +64,17 @@
 </div>
 
 <div class="card">
+  <h2>If someone replies, do not wing it</h2>
+  <p><strong>Goal:</strong> lock one real next step in under 2 minutes. Do not restart the whole story over text.</p>
+  <div class="comparison-grid" aria-label="Reply scripts when a helper responds">
+    <div class="compare-tile"><small>They say yes</small><h3>Book the next step fast</h3><p id="backup-yes-reply-text"><em>"Yes, thank you. We are available <strong>[two time options]</strong> this week. If those do not work, what is the fastest next step to get on your calendar?"</em></p><p><button class="btn" id="copy-backup-yes-reply" type="button">Copy yes-reply text</button></p><small id="copy-backup-yes-reply-status" class="muted" aria-live="polite"></small></div>
+    <div class="compare-tile"><small>They say no room</small><h3>Ask for one referral, not a long conversation</h3><p id="backup-no-room-reply-text"><em>"Thanks for letting me know. If you trust one person for couples support around <strong>[one issue]</strong>, would you send their name or best contact info?"</em></p><p><button class="btn" id="copy-backup-no-room-reply" type="button">Copy no-room reply</button></p><small id="copy-backup-no-room-reply-status" class="muted" aria-live="polite"></small></div>
+    <div class="compare-tile"><small>They ask what is going on</small><h3>Keep it short and contained</h3><p id="backup-context-reply-text"><em>"We keep getting stuck on <strong>[one issue]</strong> and want support before it turns into another bad loop. We are looking for one concrete next step this week."</em></p><p><button class="btn" id="copy-backup-context-reply" type="button">Copy context reply</button></p><small id="copy-backup-context-reply-status" class="muted" aria-live="polite"></small></div>
+  </div>
+  <p><strong>Tonight rule:</strong> give only one-sentence context, offer two real time windows, and stop texting once the next step is booked.</p>
+</div>
+
+<div class="card">
   <h2>One-card checklist</h2>
   <div class="process-strip" aria-label="Fast execution checklist">
     <div class="process-step"><span class="process-icon" aria-hidden="true">✅</span><h3>Pick one helper type</h3><p>Don’t debate all options. Pick one category and move.</p></div>
@@ -102,7 +113,10 @@ const copyPairs=[
   {btn:"copy-backup-partner-text",text:"backup-partner-text",status:"copy-backup-partner-text-status",ok:"Copied. Send it now and keep the decision small."},
   {btn:"copy-therapist-outreach",text:"therapist-outreach-text",status:"copy-therapist-outreach-status",ok:"Copied therapist text ✅"},
   {btn:"copy-coach-outreach",text:"coach-outreach-text",status:"copy-coach-outreach-status",ok:"Copied coach text ✅"},
-  {btn:"copy-mentor-outreach",text:"mentor-outreach-text",status:"copy-mentor-outreach-status",ok:"Copied mentor text ✅"}
+  {btn:"copy-mentor-outreach",text:"mentor-outreach-text",status:"copy-mentor-outreach-status",ok:"Copied mentor text ✅"},
+  {btn:"copy-backup-yes-reply",text:"backup-yes-reply-text",status:"copy-backup-yes-reply-status",ok:"Copied yes-reply text ✅"},
+  {btn:"copy-backup-no-room-reply",text:"backup-no-room-reply-text",status:"copy-backup-no-room-reply-status",ok:"Copied referral ask ✅"},
+  {btn:"copy-backup-context-reply",text:"backup-context-reply-text",status:"copy-backup-context-reply-status",ok:"Copied context reply ✅"}
 ];
 for(const pair of copyPairs){
   const btn=document.getElementById(pair.btn);

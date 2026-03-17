@@ -15,6 +15,16 @@
 
 ## SHIPPED
 
+#### LF-019 Get Backup Tool adds exact reply scripts so couples book support without improvising
+- **Page:** `/blog/third-party-escalation-tool.html`
+- **Problem:** The tool helped couples choose a helper and send outreach, but it still left the next high-stakes moment blank once someone actually replied.
+- **User pain:** "Okay, they answered. What do I say back without oversharing or fumbling the booking?"
+- **Proposed change:** Add one reply block with copy-ready scripts for yes, no-room, and what-is-going-on responses so users can lock a next step fast.
+- **Expected outcome:** More booked calls, less stalling after first contact, and higher follow-through from the trust-break backup path.
+- **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+- **Status:** SHIPPED
+- **Proof after ship:** Get Backup Tool now gives couples exact reply texts for booking a time, asking for one referral when someone has no room, and giving one-sentence context when asked what is going on. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/blog/third-party-escalation-tool.html`
+
 #### LF-018 Get Backup Tool adds copy buttons and a stop-at-first-yes chooser so stressed couples send outreach faster
 - **Page:** `/blog/third-party-escalation-tool.html`
 - **Problem:** The tool had strong scripts, but tired spouses still had to select, highlight, and mentally sort helper types before sending anything.
