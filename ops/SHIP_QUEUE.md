@@ -8,18 +8,28 @@
 ## Backlog
 
 ### TODO
-- LF-012 Get Backup Tool should make the helper-choice order faster to scan on mobile
+- LF-013 Get Backup Tool should add helper-specific outreach examples so users do not stall after choosing
   - **Page:** `/blog/third-party-escalation-tool.html`
-  - **Problem:** The tool has the right sequence, but the helper-type choice is still buried in body copy instead of a faster visual decision block.
-  - **User pain:** "Just tell me who to contact first so we can send the messages tonight."
-  - **Proposed change:** Turn the helper-type order into one obvious chooser with one-line guidance for therapist, coach, or trusted mentor.
-  - **Expected outcome:** Faster outreach, less debate, better follow-through on the trust-break path.
+  - **Problem:** The page now makes helper choice faster, but the outreach script is still generic instead of showing one ready text for therapist, coach, and trusted mentor.
+  - **User pain:** "Okay, we picked the helper. What exactly do I text this person?"
+  - **Proposed change:** Add three short copy-ready outreach examples matched to therapist, coach, and trusted mentor.
+  - **Expected outcome:** More sends tonight, less rewriting, better follow-through after the chooser.
   - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-012 Get Backup Tool makes the helper-choice order faster to scan on mobile
+- **Page:** `/blog/third-party-escalation-tool.html`
+- **Problem:** The tool had the right sequence, but the helper-type choice was buried in body copy instead of a faster visual decision block.
+- **User pain:** "Just tell me who to contact first so we can send the messages tonight."
+- **Proposed change:** Turn the helper-type order into one obvious chooser with one-line guidance for therapist, coach, or trusted mentor.
+- **Expected outcome:** Faster outreach, less debate, better follow-through on the trust-break path.
+- **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+- **Status:** SHIPPED
+- **Proof after ship:** Get Backup Tool now shows a three-card helper chooser near the top, gives a default rule for therapist-first trust breaks, and updates the partner script to match the faster chooser. Commit: `26f8a9a`. Live URL: `https://love.forge.dsdoes.com/blog/third-party-escalation-tool.html`
 
 #### LF-011 Homepage surfaces the safest trust-break route before generic communication tools
 - **Page:** `/index.html`
