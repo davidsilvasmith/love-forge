@@ -8,19 +8,23 @@
 ## Backlog
 
 ### TODO
-- LF-043 Blog hub should make the first send visible right after scenario choice so a stressed spouse gets to one text before browsing the full library
-- **Page:** `/blog/index.html`
-- **Problem:** The blog hub routes people well, but the first copy-ready partner ask still sits below several teaching and scenario blocks, which slows the fastest useful action on mobile.
-- **User pain:** "I picked the situation. Now give me the exact text before I keep scrolling."
-- **Proposed change:** Move one copy-ready partner ask closer to the top scenario choice so the send step becomes visible sooner without needing a jump down the page.
-- **Expected outcome:** Faster partner sends from the blog hub, less scroll drift, stronger tonight-start rate.
-- **Score:** Impact 4 / Confidence 4 / Ease 3 = **11**
-- **Status:** TODO
+- _none yet_
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-043 Blog hub should make the first send visible right after scenario choice so a stressed spouse gets to one text before browsing the full library
+- **Page:** `/blog/index.html`
+- **Problem:** The blog hub routes people well, but the first copy-ready partner ask still sat below several teaching and scenario blocks, which slowed the fastest useful action on mobile.
+- **User pain:** "I picked the situation. Now give me the exact text before I keep scrolling."
+- **Proposed change:** Move one copy-ready partner ask closer to the top scenario choice so the send step becomes visible sooner without needing a jump down the page.
+- **Expected outcome:** Faster partner sends from the blog hub, less scroll drift, stronger tonight-start rate.
+- **Score:** Impact 4 / Confidence 4 / Ease 3 = **11**
+- **Status:** SHIPPED
+- **Proof after ship:** Blog hub now puts a copy-ready first send directly under the scenario chooser, adds a low-energy fallback beside it, and shows the safest default first rep plus the two safety overrides right there so a stressed spouse can send one text before drifting into more browsing.
+
 
 #### LF-041 Homepage first screen should make the first send feel even more immediate on mobile so a stressed spouse gets to one text faster
 - **Page:** `/index.html`
