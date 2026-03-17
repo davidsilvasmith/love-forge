@@ -30,7 +30,7 @@
 - **Expected outcome:** Faster first clicks from the hub, less browsing drift, higher start rate on one tool.
 - **Score:** Impact 4 / Confidence 3 / Ease 3 = **10**
 - **Status:** SHIPPED
-- **Proof after ship:** Blog hub now opens with one stronger split: start tonight via the quiz or scenario tiles, or intentionally jump to the filtered library, while the old duplicate quick-pick layer is removed and the trust-break route stays visible above the fold. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/blog/`
+- **Proof after ship:** Blog hub now opens with one stronger split: start tonight via the quiz or scenario tiles, or intentionally jump to the filtered library, while the old duplicate quick-pick layer is removed and the trust-break route stays visible above the fold. Commit: `52c2cf6`. Live URL: `https://love.forge.dsdoes.com/blog/`
 
 #### LF-027 Homepage sharpens the handoff from starter choice to partner send so the next move stays obvious after the first click
 - **Page:** `/index.html`
