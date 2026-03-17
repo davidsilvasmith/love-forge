@@ -8,19 +8,22 @@
 ## Backlog
 
 ### TODO
-- LF-049 Homepage should make the yes-state lock-in text customizable so a stressed spouse can swap the exact time before sending yes-confirmation without rewriting it in their head
-  - **Page:** `/index.html`
-  - **Problem:** The homepage now lets users customize the first ask, but the yes-state confirmation text still hard-codes 8:30, which creates one more rewrite right after the partner agrees.
-  - **User pain:** "We finally got a yes. Do not make me edit the confirmation text before I send it."
-  - **Proposed change:** Connect the yes-state lock-in text to the same simple time customizer or add one tiny inline time setter right there.
-  - **Expected outcome:** Faster follow-through after yes, less friction between agreement and a real scheduled rep.
-  - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
-
+- _none_
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-049 Homepage should make the yes-state lock-in text customizable so a stressed spouse can swap the exact time before sending yes-confirmation without rewriting it in their head
+- **Page:** `/index.html`
+- **Problem:** The homepage now lets users customize the first ask, but the yes-state confirmation text still hard-coded 8:30, which created one more rewrite right after the partner agreed.
+- **User pain:** "We finally got a yes. Do not make me edit the confirmation text before I send it."
+- **Proposed change:** Connect the yes-state lock-in text to the same simple time customizer so the confirmation updates live without extra thinking.
+- **Expected outcome:** Faster follow-through after yes, less friction between agreement and a real scheduled rep.
+- **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage yes-state lock-in text now updates from the same real-time picker used for the first ask, and the page tells users to change the time once above and copy the ready-to-send confirmation exactly as it updates here. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-048 Homepage should make the first-screen partner send visibly customizable so a stressed spouse can swap the time and send tonight without mentally editing the copy first
 - **Page:** `/index.html`
