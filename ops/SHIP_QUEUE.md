@@ -8,19 +8,29 @@
 ## Backlog
 
 ### TODO
-- **LF-031 Blog hub should make the “we finished one rep” follow-up obvious so couples know what to do over the next 7 days**
-  - **Page:** `/blog/index.html`
-  - **Problem:** The hub now gets users to the right first rep faster, but after they finish one tool the continuation path still spreads across scorecards, plans, and browsing instead of one simple keep-or-swap follow-up.
-  - **User pain:** "We did one good rep. Now tell us the one thing to track and what to do tomorrow instead of dumping us back into the library."
-  - **Proposed change:** Tighten the after-the-tool follow-through so one 7-day metric and one next-day action become the obvious continuation after a first rep.
-  - **Expected outcome:** Better repeat use, less post-tool drift, stronger 7-day follow-through from the hub.
-  - **Score:** Impact 4 / Confidence 3 / Ease 3 = **10**
+- **LF-032 Homepage should make the 7-day keep-or-swap loop obvious after the first send so couples do not lose momentum below the fold**
+  - **Page:** `/index.html`
+  - **Problem:** The homepage now gets users to the partner-send step faster, but the follow-through after a first yes still leans on scattered score/plan blocks instead of one locked-in next-day repeat and day-7 decision.
+  - **User pain:** "We used one tool. Now tell us what to repeat tomorrow and how we decide if this stays in the week."
+  - **Proposed change:** Add one clear after-the-first-rep continuation block on the homepage with one 7-day metric, one next-day action, and one day-7 keep-or-swap rule.
+  - **Expected outcome:** Better homepage follow-through, less drift after one good rep, stronger 7-day retention.
+  - **Score:** Impact 4 / Confidence 4 / Ease 3 = **11**
   - **Status:** TODO
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-031 Blog hub should make the “we finished one rep” follow-up obvious so couples know what to do over the next 7 days
+- **Page:** `/blog/index.html`
+- **Problem:** The hub now gets users to the right first rep faster, but after they finish one tool the continuation path still spreads across scorecards, plans, and browsing instead of one simple keep-or-swap follow-up.
+- **User pain:** "We did one good rep. Now tell us the one thing to track and what to do tomorrow instead of dumping us back into the library."
+- **Proposed change:** Tighten the after-the-tool follow-through so one 7-day metric and one next-day action become the obvious continuation after a first rep.
+- **Expected outcome:** Better repeat use, less post-tool drift, stronger 7-day follow-through from the hub.
+- **Score:** Impact 4 / Confidence 3 / Ease 3 = **10**
+- **Status:** SHIPPED
+- **Proof after ship:** Blog hub now tells couples exactly what to do after the first good rep: track one shared 1-to-10 movement check for 7 days, repeat the same tool tomorrow at the same rough time, and make one keep-or-swap decision on day 7 instead of falling back into the library.
 
 #### LF-030 Blog hub makes the “yes, let’s do it” step obvious right after the partner invite
 - **Page:** `/blog/index.html`
