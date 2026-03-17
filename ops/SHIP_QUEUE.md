@@ -29,7 +29,7 @@
 - **Expected outcome:** Better continuation after first click, less drop-off below the fold, cleaner path into the plan flow.
 - **Score:** Impact 4 / Confidence 4 / Ease 3 = **11**
 - **Status:** SHIPPED
-- **Proof after ship:** Homepage now groups the 7-day path, score tracker, and next step into one continuation block so users can lock a time, copy the tracker once, and choose the guided plan or quiz without bouncing between separate cards. Commit: `4ed13a0`. Live URL: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Homepage now groups the 7-day path, score tracker, and next step into one continuation block so users can lock a time, copy the tracker once, and choose the guided plan or quiz without bouncing between separate cards. Commit: `1c02000`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-006 Homepage prunes duplicate choice blocks below the fold
 - **Page:** `/index.html`
