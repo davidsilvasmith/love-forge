@@ -8,12 +8,12 @@
 ## Backlog
 
 ### TODO
-- **LF-032 Homepage should make the 7-day keep-or-swap loop obvious after the first send so couples do not lose momentum below the fold**
+- **LF-033 Homepage should make the trust-safe override obvious inside the 7-day loop so couples do not keep repeating the wrong tool after a shaky first rep**
   - **Page:** `/index.html`
-  - **Problem:** The homepage now gets users to the partner-send step faster, but the follow-through after a first yes still leans on scattered score/plan blocks instead of one locked-in next-day repeat and day-7 decision.
-  - **User pain:** "We used one tool. Now tell us what to repeat tomorrow and how we decide if this stays in the week."
-  - **Proposed change:** Add one clear after-the-first-rep continuation block on the homepage with one 7-day metric, one next-day action, and one day-7 keep-or-swap rule.
-  - **Expected outcome:** Better homepage follow-through, less drift after one good rep, stronger 7-day retention.
+  - **Problem:** The homepage now explains the repeat-tomorrow loop better, but the continuation path can still under-emphasize when to stop repeating and switch to backup because tomorrow reveals a trust hit or the same escalation pattern.
+  - **User pain:** "You told us to repeat the tool, but tell us when not to keep forcing the same rep."
+  - **Proposed change:** Tighten the 7-day loop with one sharper stop-and-switch rule for trust hits and repeat escalation so the safe override is obvious in the continuation block.
+  - **Expected outcome:** Safer repeat behavior, less wrong-tool persistence, stronger trust in the homepage guidance.
   - **Score:** Impact 4 / Confidence 4 / Ease 3 = **11**
   - **Status:** TODO
 
@@ -21,6 +21,16 @@
 - _none_
 
 ## SHIPPED
+
+#### LF-032 Homepage should make the 7-day keep-or-swap loop obvious after the first send so couples do not lose momentum below the fold
+- **Page:** `/index.html`
+- **Problem:** The homepage now gets users to the partner-send step faster, but the follow-through after a first yes still leans on scattered score/plan blocks instead of one locked-in next-day repeat and day-7 decision.
+- **User pain:** "We used one tool. Now tell us what to repeat tomorrow and how we decide if this stays in the week."
+- **Proposed change:** Add one clear after-the-first-rep continuation block on the homepage with one 7-day metric, one next-day action, and one day-7 keep-or-swap rule.
+- **Expected outcome:** Better homepage follow-through, less drift after one good rep, stronger 7-day retention.
+- **Score:** Impact 4 / Confidence 4 / Ease 3 = **11**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage now turns the old generic 7-day block into a clear after-the-first-rep loop: ask the same one-number question right after the rep, send one copy-ready tomorrow-repeat text, repeat the same tool at the same rough time, and keep or swap on day 7 using a simple 4-of-7 rule.
 
 #### LF-031 Blog hub should make the “we finished one rep” follow-up obvious so couples know what to do over the next 7 days
 - **Page:** `/blog/index.html`
