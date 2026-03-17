@@ -8,19 +8,29 @@
 ## Backlog
 
 ### TODO
-- **LF-030 Blog hub makes the “yes, let’s do it” step obvious right after the partner invite**
+- **LF-031 Blog hub should make the “we finished one rep” follow-up obvious so couples know what to do over the next 7 days**
   - **Page:** `/blog/index.html`
-  - **Problem:** The hub now gets users to the send step faster, but the follow-through after a partner says yes still competes with more browsing and chooser blocks instead of one locked-in first rep.
-  - **User pain:** "My partner said yes. Now tell us exactly which first tool to run without making us think again."
-  - **Proposed change:** Tighten the post-invite flow so one clear first rep becomes the dominant next action after the copied text.
-  - **Expected outcome:** More immediate tool starts after the partner invite, less drop-off between copied text and actual use, better tonight completion rate.
-  - **Score:** Impact 4 / Confidence 4 / Ease 3 = **11**
+  - **Problem:** The hub now gets users to the right first rep faster, but after they finish one tool the continuation path still spreads across scorecards, plans, and browsing instead of one simple keep-or-swap follow-up.
+  - **User pain:** "We did one good rep. Now tell us the one thing to track and what to do tomorrow instead of dumping us back into the library."
+  - **Proposed change:** Tighten the after-the-tool follow-through so one 7-day metric and one next-day action become the obvious continuation after a first rep.
+  - **Expected outcome:** Better repeat use, less post-tool drift, stronger 7-day follow-through from the hub.
+  - **Score:** Impact 4 / Confidence 3 / Ease 3 = **10**
   - **Status:** TODO
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-030 Blog hub makes the “yes, let’s do it” step obvious right after the partner invite
+- **Page:** `/blog/index.html`
+- **Problem:** The hub now gets users to the send step faster, but the follow-through after a partner says yes still competes with more browsing and chooser blocks instead of one locked-in first rep.
+- **User pain:** "My partner said yes. Now tell us exactly which first tool to run without making us think again."
+- **Proposed change:** Tighten the post-invite flow so one clear first rep becomes the dominant next action after the copied text.
+- **Expected outcome:** More immediate tool starts after the partner invite, less drop-off between copied text and actual use, better tonight completion rate.
+- **Score:** Impact 4 / Confidence 4 / Ease 3 = **11**
+- **Status:** SHIPPED
+- **Proof after ship:** Blog hub now makes the yes-state explicit with one default first rep — 15-Minute Connection Block — and limits overrides to only two cases: hot conflict goes to Pause-and-Return, and active trust breaks go to Get Backup Tool. Commit: `TBD`. Live URL: `https://love.forge.dsdoes.com/blog/`
 
 #### LF-029 Blog hub sharpens the copy/send step so users can invite a partner without reading past the fold
 - **Page:** `/blog/index.html`
