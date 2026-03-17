@@ -8,19 +8,29 @@
 ## Backlog
 
 ### TODO
-- LF-052 Attention Budget Tool should generate the exact nightly attention-protecting text, one protected-slot plan, and low-energy fallback so a wiped-out spouse can protect one block tonight without inventing the words
-  - **Page:** `/blog/attention-budget-tool.html`
-  - **Problem:** The page names the right goal, but it still reads like advice. A stressed spouse still has to choose the slot, phrase the ask, and translate the tool into a concrete tonight plan.
-  - **User pain:** "We are both fried. Do not make me turn this into a custom routine from scratch."
-  - **Proposed change:** Add one protected-slot builder that writes the invite, exact 10-minute plan, low-energy fallback, and tomorrow proof action.
-  - **Expected outcome:** Faster starts, less mental translation, and more couples actually protecting one attention block tonight.
-  - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+- LF-053 Blog hub should make the fastest tonight path even more dominant than browsing so a stressed spouse lands on one send and one first rep before scanning the library
+  - **Page:** `/blog/index.html`
+  - **Problem:** The hub is much better, but the top still competes with multiple valid routes and browsing options before the single fastest tonight action fully takes over.
+  - **User pain:** "I already know we need help tonight. Do not make me evaluate three good options before I send one text."
+  - **Proposed change:** Tighten the top of the blog hub around one primary tonight path, one default first rep, and one lower-noise browse handoff.
+  - **Expected outcome:** Faster first sends, less browse drift, and more couples starting one tool tonight instead of reading around it.
+  - **Score:** Impact 4 / Confidence 4 / Ease 3 = **11**
   - **Status:** TODO
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-052 Attention Budget Tool should generate the exact nightly attention-protecting text, one protected-slot plan, and low-energy fallback so a wiped-out spouse can protect one block tonight without inventing the words
+- **Page:** `/blog/attention-budget-tool.html`
+- **Problem:** The page named the right goal, but it still read like advice. A stressed spouse still had to choose the slot, phrase the ask, and translate the tool into a concrete tonight plan.
+- **User pain:** "We are both fried. Do not make me turn this into a custom routine from scratch."
+- **Proposed change:** Add one protected-slot builder that writes the invite, exact 10-minute plan, low-energy fallback, and tomorrow proof action.
+- **Expected outcome:** Faster starts, less mental translation, and more couples actually protecting one attention block tonight.
+- **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+- **Status:** SHIPPED
+- **Proof after ship:** Attention Budget Tool now tells couples how to pick the single attention leak doing the most damage tonight, gives a protected-slot builder that writes the exact invite, 10-minute plan, low-energy fallback, and tomorrow proof action, and adds a tighter minute-by-minute script plus 7-day success rule so they can protect one block tonight without inventing the words.
 
 #### LF-051 Resentment Flush Tool should generate the exact resentment line, clean ask, and proof action so a stressed spouse can clear one lingering hurt tonight without improvising
 - **Page:** `/blog/resentment-flush-tool.html`

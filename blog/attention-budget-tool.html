@@ -7,24 +7,24 @@
   <span class="icon-chip">🧠 Low bandwidth</span>
   <span class="icon-chip">⏱️ 10-15 minutes</span>
   <span class="icon-chip">🛡️ No giant talk</span>
-  <span class="icon-chip">📈 Build daily momentum</span>
+  <span class="icon-chip">📅 Protect one slot tonight</span>
 </div>
 
 <div class="highlight-grid">
   <div class="highlight-card">
     <small>Problem</small>
-    <h3>Kids get first pick of attention</h3>
-    <p>Most couples are wiped out by the end of the day and have nothing left for each other.</p>
+    <h3>Everything else gets the best attention</h3>
+    <p>By the end of the day, kids, chores, and phones have already spent the budget. Your marriage gets whatever scraps are left.</p>
   </div>
   <div class="highlight-card">
     <small>Goal</small>
-    <h3>One small nightly win</h3>
-    <p>Protect one short block to reconnect so stress does not spill into tomorrow.</p>
+    <h3>Protect one small block</h3>
+    <p>Do one short, named connection block before the night disappears. Not a giant talk. One protected rep.</p>
   </div>
   <div class="highlight-card">
-    <small>Constraint</small>
-    <h3>Keep it lightweight</h3>
-    <p>Use a timer, one script, and one next step. Keep it simple.</p>
+    <small>Tonight rule</small>
+    <h3>Pick one attention leak only</h3>
+    <p>If three things feel true, fix the one doing the most damage tonight: phone drift, logistics overload, or exhausted shutdown.</p>
   </div>
 </div>
 
@@ -32,63 +32,245 @@
   <h2>Quick start (tonight)</h2>
   <div class="attention-flow" aria-label="Attention Budget quick start">
     <div class="attention-step">
-      <span class="attention-step-icon" aria-hidden="true">🗓️</span>
-      <h3>Pick the slot</h3>
-      <p>Lock one protected 15-minute block before the night gets away from you.</p>
+      <span class="attention-step-icon" aria-hidden="true">1</span>
+      <h3>Pick one slot</h3>
+      <p>Choose the first real 10-minute window you can actually protect.</p>
     </div>
     <div class="attention-step">
-      <span class="attention-step-icon" aria-hidden="true">⏲️</span>
-      <h3>Start the timer</h3>
-      <p>Contain the talk so it feels safe and realistic on low energy.</p>
+      <span class="attention-step-icon" aria-hidden="true">2</span>
+      <h3>Name the leak</h3>
+      <p>Do not solve all of marriage. Pick the one thing stealing your attention tonight.</p>
     </div>
     <div class="attention-step">
-      <span class="attention-step-icon" aria-hidden="true">🗣️</span>
-      <h3>Run the script</h3>
-      <p>Use the copy/paste line below exactly — no freestyle debate.</p>
+      <span class="attention-step-icon" aria-hidden="true">3</span>
+      <h3>Send one exact invite</h3>
+      <p>Use the ready text below. No freestyle explaining.</p>
     </div>
     <div class="attention-step">
-      <span class="attention-step-icon" aria-hidden="true">✅</span>
-      <h3>Name tomorrow’s move</h3>
-      <p>End with one tiny next step to keep momentum alive.</p>
+      <span class="attention-step-icon" aria-hidden="true">4</span>
+      <h3>Run one tiny plan</h3>
+      <p>Use the 10-minute plan, then lock tomorrow before you drift away again.</p>
     </div>
   </div>
 </div>
 
-<div class="card"><h2>Copy/paste script</h2><p>“I am not asking for a big talk. I just want one small win tonight. Can we try the <strong>Attention Budget Tool</strong> for 10 minutes?”</p></div>
+<div class="card">
+  <h2>Pick one attention leak tonight</h2>
+  <div class="comparison-grid" aria-label="Choose one attention leak">
+    <div class="compare-tile">
+      <small>Most common</small>
+      <h3>Phone drift</h3>
+      <p>You sit near each other, but screens eat the whole night.</p>
+    </div>
+    <div class="compare-tile">
+      <small>Busy parent version</small>
+      <h3>Logistics overload</h3>
+      <p>You only talk about kids, errands, and what still is not done.</p>
+    </div>
+    <div class="compare-tile">
+      <small>Wiped-out version</small>
+      <h3>Exhausted shutdown</h3>
+      <p>One or both of you goes flat, quiet, or checked out after bedtime.</p>
+    </div>
+  </div>
+  <p><strong>Rule:</strong> if two or three feel true, choose the one causing the most damage <em>tonight</em>. If voices are already sharp, use <a href="/blog/pause-and-return-tool.html">Pause-and-Return</a> first instead of forcing this tool.</p>
+</div>
 
-<div class="comparison-grid">
-  <div class="compare-tile">
-    <small>When exhausted</small>
-    <h3>Kid-chaos mode</h3>
-    <p>Do it after bedtime, in the school pickup line, or on a short walk.</p>
+<div class="card">
+  <h2>Protected-slot builder</h2>
+  <p><strong>Fill this in once.</strong> It writes the invite, the exact 10-minute plan, the low-energy fallback, and the tomorrow proof action for you.</p>
+  <div class="builder" aria-label="Attention Budget builder">
+    <div>
+      <label for="attention-slot"><strong>Protected slot</strong></label>
+      <input id="attention-slot" type="text" value="8:40 tonight after bedtime" placeholder="8:40 tonight after bedtime" style="width:100%;margin-top:8px;padding:10px;font:inherit">
+      <small class="muted">Pick the first real window you can keep.</small>
+    </div>
+    <div>
+      <label for="attention-leak"><strong>Main attention leak</strong></label>
+      <select id="attention-leak" style="width:100%;margin-top:8px;padding:10px;font:inherit">
+        <option value="phone drift">Phone drift</option>
+        <option value="logistics overload">Logistics overload</option>
+        <option value="exhausted shutdown">Exhausted shutdown</option>
+      </select>
+      <small class="muted">Choose one. Not all three.</small>
+    </div>
+    <div>
+      <label for="attention-place"><strong>Where you will do it</strong></label>
+      <input id="attention-place" type="text" value="on the couch with phones down" placeholder="on the couch with phones down" style="width:100%;margin-top:8px;padding:10px;font:inherit">
+      <small class="muted">Name one simple place so the slot feels real.</small>
+    </div>
+    <div>
+      <label for="attention-action"><strong>One tiny connection action</strong></label>
+      <input id="attention-action" type="text" value="each answer one question and end with a 20-second hug" placeholder="each answer one question and end with a 20-second hug" style="width:100%;margin-top:8px;padding:10px;font:inherit">
+      <small class="muted">Keep it small enough to finish while tired.</small>
+    </div>
   </div>
-  <div class="compare-tile">
-    <small>When interrupted</small>
-    <h3>Chunk mode</h3>
-    <p>Pause and come back in 5-minute chunks instead of canceling.</p>
-  </div>
-  <div class="compare-tile">
-    <small>When flooded</small>
-    <h3>Reset mode</h3>
-    <p>Take a short calm-down break first, then finish the attention block.</p>
+
+  <div class="starter-message-grid" aria-label="Generated Attention Budget outputs" style="margin-top:16px">
+    <div class="starter-message-tile">
+      <span class="starter-message-icon" aria-hidden="true">📩</span>
+      <h3>Invite text</h3>
+      <p id="attention-invite-text">Can we protect 10 minutes at 8:40 tonight after bedtime? I do not want a huge relationship talk. I just want us to stop letting phone drift eat the whole night. Let’s sit on the couch with phones down, do one tiny reset, and stop after 10 minutes.</p>
+      <button class="btn" id="copy-attention-invite" type="button">Copy invite text</button>
+      <small id="copy-attention-invite-status" class="muted" aria-live="polite"></small>
+    </div>
+    <div class="starter-message-tile">
+      <span class="starter-message-icon" aria-hidden="true">🗂️</span>
+      <h3>Exact 10-minute plan</h3>
+      <div class="copy-box" id="attention-plan-text">1) Start at 8:40 tonight after bedtime — on the couch with phones down. 2) Say: “I want to protect a little attention for us before the day ends.” 3) Name one problem only: phone drift. 4) Spend 5 minutes on this: each answer one question and end with a 20-second hug. 5) End by asking: “Same time tomorrow?”</div>
+      <button class="btn" id="copy-attention-plan" type="button">Copy 10-minute plan</button>
+      <small id="copy-attention-plan-status" class="muted" aria-live="polite"></small>
+    </div>
+    <div class="starter-message-tile">
+      <span class="starter-message-icon" aria-hidden="true">🌙</span>
+      <h3>Low-energy fallback</h3>
+      <p id="attention-fallback-text">We look wiped out. Can we still protect 5 minutes at 8:40 tonight after bedtime on the couch with phones down? No big talk. Let’s just do one tiny reset and stop there.</p>
+      <button class="btn" id="copy-attention-fallback" type="button">Copy low-energy text</button>
+      <small id="copy-attention-fallback-status" class="muted" aria-live="polite"></small>
+    </div>
+    <div class="starter-message-tile">
+      <span class="starter-message-icon" aria-hidden="true">✅</span>
+      <h3>Tomorrow proof action</h3>
+      <div class="copy-box" id="attention-proof-text">Tomorrow proof: repeat the same protected slot once. Success = you kept the slot and one of you can name one moment where phone drift, logistics overload, or exhausted shutdown stole less attention than usual.</div>
+      <button class="btn" id="copy-attention-proof" type="button">Copy tomorrow proof</button>
+      <small id="copy-attention-proof-status" class="muted" aria-live="polite"></small>
+    </div>
   </div>
 </div>
 
-<div class="card"><h2>Starter kit (no guesswork)</h2><p>Pick one of these and run it exactly tonight:</p><ol><li><strong>5-minute version:</strong> Read the copy/paste script out loud, then do one tiny action from this tool immediately.</li><li><strong>10-minute version:</strong> Set a timer, follow the “Do this tonight” steps top to bottom, and stop when timer ends.</li><li><strong>Couple-text version:</strong> Send this now: “Can we do <strong>Attention Budget Tool</strong> tonight for 10 minutes? I already picked the first step so this is easy.”</li></ol><p class="muted">If you feel stuck, use the 5-minute version first. Progress beats perfection.</p></div>
+<div class="card">
+  <h2>Use this 10-minute script</h2>
+  <div class="process-strip" aria-label="Minute-by-minute attention budget plan">
+    <div class="process-step">
+      <span class="process-icon" aria-hidden="true">0-1</span>
+      <h3>Open</h3>
+      <p>“I do not want a giant talk. I want to protect a small piece of attention for us tonight.”</p>
+    </div>
+    <div class="process-step">
+      <span class="process-icon" aria-hidden="true">1-3</span>
+      <h3>Name the leak</h3>
+      <p>Pick one: phone drift, logistics overload, or exhausted shutdown. Do not debate the whole relationship.</p>
+    </div>
+    <div class="process-step">
+      <span class="process-icon" aria-hidden="true">3-8</span>
+      <h3>Run the tiny rep</h3>
+      <p>Do one tiny action only: one question each, one cuddle, one walk, one calendar protect, or one appreciation loop.</p>
+    </div>
+    <div class="process-step">
+      <span class="process-icon" aria-hidden="true">8-10</span>
+      <h3>Lock tomorrow</h3>
+      <p>End with one yes/no question: “Same time tomorrow?”</p>
+    </div>
+  </div>
+  <p><strong>If it gets awkward:</strong> do not explain more. Shrink the rep. Five protected minutes still counts.</p>
+</div>
+
+<div class="card">
+  <h2>What tiny action should you pick?</h2>
+  <div class="comparison-grid" aria-label="Tiny actions by attention leak">
+    <div class="compare-tile">
+      <small>If the leak is phone drift</small>
+      <h3>Phones down + one question each</h3>
+      <p>Ask: “What felt heaviest today?” Then mirror back one sentence only.</p>
+    </div>
+    <div class="compare-tile">
+      <small>If the leak is logistics overload</small>
+      <h3>One feeling first, chores second</h3>
+      <p>Each person names one non-logistics feeling before talking about tomorrow.</p>
+    </div>
+    <div class="compare-tile">
+      <small>If the leak is exhausted shutdown</small>
+      <h3>Low-word version</h3>
+      <p>Sit together, hold hands for 20 seconds, and each say one thing that would make tomorrow feel lighter.</p>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <h2>Starter kit (no guesswork)</h2>
+  <ol>
+    <li><strong>Pick one leak:</strong> phone drift, logistics overload, or exhausted shutdown.</li>
+    <li><strong>Pick one slot:</strong> the first real 10-minute window you can keep tonight.</li>
+    <li><strong>Copy the invite:</strong> send the generated text exactly once.</li>
+    <li><strong>Run one tiny action:</strong> use the generated 10-minute plan or the 5-minute fallback.</li>
+    <li><strong>Track one proof:</strong> did you protect the slot, yes or no?</li>
+  </ol>
+  <p class="muted">Common mistake: turning a protected attention block into a giant relationship summit. Small and repeatable wins here.</p>
+</div>
 
 <div class="card">
   <h2>7-day scoreboard</h2>
   <div class="icon-row">
-    <span class="icon-chip">🔥 Fewer blowups</span>
-    <span class="icon-chip">🩹 Faster repair</span>
-    <span class="icon-chip">❤️ +2 connection points</span>
+    <span class="icon-chip">📅 Slot kept 4 of 7 nights</span>
+    <span class="icon-chip">📉 Less drift</span>
+    <span class="icon-chip">❤️ More warmth before bed</span>
   </div>
-  <p><strong>Rule:</strong> Keep tools that improve your score by 2+ points. Swap the rest.</p>
+  <p><strong>Success metric:</strong> keep the same protected slot on 4 of the next 7 nights and ask one question after each rep: <strong>Did we give our marriage more real attention than yesterday?</strong></p>
+  <p><strong>Keep-or-swap rule:</strong> keep this tool if the answer is yes on 4+ nights. If not, switch once.</p>
 </div>
 
-<div class="card"><h2>How to use this tool effectively</h2><ul><li><strong>When to use it:</strong> Use <strong>Attention Budget Tool</strong> when this exact problem is happening now, not as a general reading exercise.</li><li><strong>How often:</strong> Run it once today, then repeat 3-7 times before judging results.</li><li><strong>Common mistake:</strong> Changing multiple things at once. Use one tool at a time so you can see what works.</li><li><strong>If it feels awkward:</strong> Use the script exactly once, keep the first run under 10 minutes, and rate helpfulness 1-10.</li></ul></div>
+<div class="card">
+  <h2>Tomorrow rep + fallback + escalation</h2>
+  <ul>
+    <li><strong>Tomorrow:</strong> repeat the same protected slot before trying a new tool.</li>
+    <li><strong>If it still feels too flat:</strong> switch to <a href="/blog/daily-15-minute-connection-block.html">Daily 15-Minute Connection Block</a> for more structure.</li>
+    <li><strong>If the real issue is repeated resentment:</strong> use <a href="/blog/resentment-flush-tool.html">Resentment Flush Tool</a> instead of pretending this is only an attention problem.</li>
+    <li><strong>If conflict spikes mid-rep:</strong> stop and use <a href="/blog/pause-and-return-tool.html">Pause-and-Return</a>.</li>
+    <li><strong>If it feels unsafe or trust was clearly broken:</strong> stop DIY and involve a licensed professional or outside support.</li>
+  </ul>
+</div>
 
-<div class="card"><h2>Tomorrow rep + fallback + escalation</h2><ul><li><strong>Tomorrow:</strong> run this same tool once more before trying a new one.</li><li><strong>If it didn’t help:</strong> switch to <a href="/blog/pause-and-return-tool.html">Pause-and-Return Tool</a> first, then retry.</li><li><strong>If it got worse or felt unsafe:</strong> stop DIY and involve a licensed professional/support resource.</li></ul></div>
+<div class="card"><h2>Best next tool</h2><p>After you protect one slot tonight, use <a href="/blog/daily-15-minute-connection-block.html">Daily 15-Minute Connection Block</a> if you want a stronger repeatable routine tomorrow.</p></div>
+</div>
+<script>(function(){
+  const slot=document.getElementById('attention-slot');
+  const leak=document.getElementById('attention-leak');
+  const place=document.getElementById('attention-place');
+  const action=document.getElementById('attention-action');
+  const invite=document.getElementById('attention-invite-text');
+  const plan=document.getElementById('attention-plan-text');
+  const fallback=document.getElementById('attention-fallback-text');
+  const proof=document.getElementById('attention-proof-text');
 
-<div class="card"><h2>Best next tool</h2><p>After this, run <a href="/blog/10-minute-weekly-meeting.html">10-Minute Weekly Meeting</a> to lock in the gains.</p></div>
-</div></body></html>
+  function safeValue(el, fallbackText){
+    const raw=el && el.value ? el.value.trim() : '';
+    return raw || fallbackText;
+  }
+
+  function update(){
+    const slotText=safeValue(slot,'8:40 tonight after bedtime');
+    const leakText=safeValue(leak,'phone drift');
+    const placeText=safeValue(place,'on the couch with phones down');
+    const actionText=safeValue(action,'each answer one question and end with a 20-second hug');
+
+    invite.textContent='Can we protect 10 minutes at '+slotText+'? I do not want a huge relationship talk. I just want us to stop letting '+leakText+' eat the whole night. Let’s sit '+placeText+', do one tiny reset, and stop after 10 minutes.';
+    plan.textContent='1) Start at '+slotText+' — '+placeText+'. 2) Say: “I want to protect a little attention for us before the day ends.” 3) Name one problem only: '+leakText+'. 4) Spend 5 minutes on this: '+actionText+'. 5) End by asking: “Same time tomorrow?”';
+    fallback.textContent='We look wiped out. Can we still protect 5 minutes at '+slotText+' '+placeText+'? No big talk. Let’s just do one tiny reset and stop there.';
+    proof.textContent='Tomorrow proof: repeat the same protected slot once. Success = you kept the slot and one of you can name one moment where '+leakText+' stole less attention than usual.';
+  }
+
+  [slot, leak, place, action].forEach(function(el){ if(el){ el.addEventListener('input', update); el.addEventListener('change', update); } });
+  update();
+
+  const pairs=[
+    {btn:'copy-attention-invite',text:'attention-invite-text',status:'copy-attention-invite-status',ok:'Copied. Send the invite now.'},
+    {btn:'copy-attention-plan',text:'attention-plan-text',status:'copy-attention-plan-status',ok:'Copied. Run the 10-minute plan exactly once tonight.'},
+    {btn:'copy-attention-fallback',text:'attention-fallback-text',status:'copy-attention-fallback-status',ok:'Copied. Use the 5-minute fallback tonight.'},
+    {btn:'copy-attention-proof',text:'attention-proof-text',status:'copy-attention-proof-status',ok:'Copied. Use this to lock tomorrow.'}
+  ];
+
+  pairs.forEach(function(pair){
+    const btn=document.getElementById(pair.btn);
+    const text=document.getElementById(pair.text);
+    const status=document.getElementById(pair.status);
+    if(!btn||!text||!status)return;
+    btn.addEventListener('click', async function(){
+      try{
+        await navigator.clipboard.writeText(text.textContent.replace(/^"|"$/g,''));
+        status.textContent=pair.ok;
+      }catch(e){
+        status.textContent='Copy failed. Select the text above and copy manually.';
+      }
+    });
+  });
+})();</script></body></html>
