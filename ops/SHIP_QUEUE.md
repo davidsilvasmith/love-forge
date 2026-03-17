@@ -8,18 +8,28 @@
 ## Backlog
 
 ### TODO
-- LF-013 Get Backup Tool should add helper-specific outreach examples so users do not stall after choosing
+- LF-014 Get Backup Tool should make the follow-up step one obvious next send so couples do not freeze after no reply
   - **Page:** `/blog/third-party-escalation-tool.html`
-  - **Problem:** The page now makes helper choice faster, but the outreach script is still generic instead of showing one ready text for therapist, coach, and trusted mentor.
-  - **User pain:** "Okay, we picked the helper. What exactly do I text this person?"
-  - **Proposed change:** Add three short copy-ready outreach examples matched to therapist, coach, and trusted mentor.
-  - **Expected outcome:** More sends tonight, less rewriting, better follow-through after the chooser.
+  - **Problem:** The page tells users to follow up tomorrow, but it still leaves them to invent the actual follow-up text if nobody replies tonight.
+  - **User pain:** "We sent the messages. Now what do we say tomorrow without sounding desperate or awkward?"
+  - **Proposed change:** Add one copy-ready 24-hour follow-up text plus one quick rule for when to switch helper type.
+  - **Expected outcome:** More second-touch follow-through, fewer dropped outreach attempts, better odds of booking support within 7 days.
   - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-013 Get Backup Tool adds helper-specific outreach examples so users do not stall after choosing
+- **Page:** `/blog/third-party-escalation-tool.html`
+- **Problem:** The page made helper choice faster, but the outreach script was still generic instead of showing one ready text for therapist, coach, and trusted mentor.
+- **User pain:** "Okay, we picked the helper. What exactly do I text this person?"
+- **Proposed change:** Add three short copy-ready outreach examples matched to therapist, coach, and trusted mentor.
+- **Expected outcome:** More sends tonight, less rewriting, better follow-through after the chooser.
+- **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+- **Status:** SHIPPED
+- **Proof after ship:** Get Backup Tool now keeps one base outreach line and adds three copy-ready examples for therapist, coach, and trusted mentor so couples can send the right ask fast without rewriting from scratch. Commit: `c3d3ab7`. Live URL: `https://love.forge.dsdoes.com/blog/third-party-escalation-tool.html`
 
 #### LF-012 Get Backup Tool makes the helper-choice order faster to scan on mobile
 - **Page:** `/blog/third-party-escalation-tool.html`
