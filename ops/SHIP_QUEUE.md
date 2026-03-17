@@ -8,12 +8,28 @@
 ## Backlog
 
 ### TODO
-- _none_
+- LF-011 Homepage should surface the safest trust-break route before generic communication tools
+  - **Page:** `/index.html`
+  - **Problem:** The homepage safety section mentions trust breaks, but stressed users can still miss the strongest route when lying, cheating, or hidden money is the real emergency.
+  - **User pain:** "If trust got broken, just tell me the safest first move tonight."
+  - **Proposed change:** Turn the trust-break warning into one sharper first-action block with one exact script and one clearer route into third-party escalation.
+  - **Expected outcome:** Safer triage, more credible trust handling, less chance users start with the wrong page.
+  - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-010 Blog hub cuts duplicate chooser blocks so the fastest next tool stays obvious
+- **Page:** `/blog/index.html`
+- **Problem:** The blog hub repeated the same choose-a-tool decision in too many formats, which turned a fast decision page into extra scanning.
+- **User pain:** "I already picked the problem. Stop making me choose again and again."
+- **Proposed change:** Remove repeated chooser strips and popular-tool blocks so the page keeps one clear quick start, one relationship-moment picker, and one filterable library.
+- **Expected outcome:** Faster scanning, less analysis paralysis, and quicker clicks into one useful tool.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Blog hub now drops the extra chooser row, the situation/time board, and the popular-tools wall so users hit one decision block and then the filterable full library without repeated re-deciding. Commit: `c9867a4`. Live URL: `https://love.forge.dsdoes.com/blog/`
 
 #### LF-009 Homepage makes the “partner said yes” state one obvious next move
 - **Page:** `/index.html`
