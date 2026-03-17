@@ -8,12 +8,30 @@
 ## Backlog
 
 ### TODO
-- _none_
+- **LF-036 Homepage should make the skeptical-partner 7-day ask copyable so users can send the experiment text without retyping it under friction**
+  - **Page:** `/index.html`
+  - **Problem:** The homepage explains the skeptical-partner pitch well, but the strongest 7-day experiment ask still lives as plain copy instead of a one-tap send action.
+  - **User pain:** "My partner is skeptical. Give me the exact low-pressure 7-day text so I can send it fast."
+  - **Proposed change:** Turn the skeptical-partner experiment opener into a copy-ready action with one lighter fallback so resistance drops faster.
+  - **Expected outcome:** Faster skeptical-partner invites, less friction in the highest-resistance path, stronger first send rate from the homepage.
+  - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+  - **Status:** TODO
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-035 Pause-and-Return should generate the exact pause, return, and close text so flooded couples do not have to translate the tool in the middle of a fight
+- **Page:** `/blog/pause-and-return-tool.html`
+- **Problem:** The page explained the structure, but stressed spouses still had to invent the actual pause line, return line, low-energy fallback, and closing step while already flooded.
+- **User pain:** "Do not make me improvise mid-fight. Give me the exact words to pause, come back, and end cleanly."
+- **Proposed change:** Add one fill-in builder that outputs the exact pause text, return text, low-energy fallback, and closing line from one issue, one return time, and one next step.
+- **Expected outcome:** Faster de-escalation, less in-the-moment improvising, and more couples actually completing the return instead of stalling after the pause.
+- **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+- **Status:** SHIPPED
+- **Proof after ship:** Pause-and-Return now gives couples a fill-in builder that generates the exact pause line, return line, low-energy fallback, and closing line so they can de-escalate without rewriting the tool mid-fight.
+
 
 #### LF-034 Homepage should make the stop-and-switch override copyable so couples can send the safer pivot text without rewriting it under stress
 - **Page:** `/index.html`
