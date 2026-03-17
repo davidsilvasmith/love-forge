@@ -8,19 +8,29 @@
 ## Backlog
 
 ### TODO
-- **LF-028 Blog hub sharpens the first-screen split between fix-tonight tools and browse-the-library paths**
+- **LF-029 Blog hub sharpens the copy/send step so users can invite a partner without reading past the fold**
   - **Page:** `/blog/index.html`
-  - **Problem:** The blog hub may still make stressed users read too much library framing before the best tonight-use route feels obvious.
-  - **User pain:** "I do not want to browse a relationship content library. I want the one tool we should use tonight."
-  - **Proposed change:** Tighten the top of the blog index so one direct tonight path stays dominant before the broader tool library.
-  - **Expected outcome:** Faster first clicks from the hub, less browsing drift, higher start rate on one tool.
-  - **Score:** Impact 4 / Confidence 3 / Ease 3 = **10**
+  - **Problem:** The blog hub now splits tonight path vs browse path better, but the partner-invite scripts still sit below several chooser blocks instead of becoming the next obvious action.
+  - **User pain:** "Okay, I picked the tool. Now give me the exact text to send without making me keep scrolling."
+  - **Proposed change:** Move one copy-ready partner invite higher and tighten the top flow so choosing a path naturally leads into one send action.
+  - **Expected outcome:** Faster partner sends, less drop-off between tool choice and actual use, stronger share intent from the hub.
+  - **Score:** Impact 4 / Confidence 4 / Ease 3 = **11**
   - **Status:** TODO
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-028 Blog hub sharpens the first-screen split between fix-tonight tools and browse-the-library paths
+- **Page:** `/blog/index.html`
+- **Problem:** The blog hub may still make stressed users read too much library framing before the best tonight-use route feels obvious.
+- **User pain:** "I do not want to browse a relationship content library. I want the one tool we should use tonight."
+- **Proposed change:** Tighten the top of the blog index so one direct tonight path stays dominant before the broader tool library.
+- **Expected outcome:** Faster first clicks from the hub, less browsing drift, higher start rate on one tool.
+- **Score:** Impact 4 / Confidence 3 / Ease 3 = **10**
+- **Status:** SHIPPED
+- **Proof after ship:** Blog hub now opens with one stronger split: start tonight via the quiz or scenario tiles, or intentionally jump to the filtered library, while the old duplicate quick-pick layer is removed and the trust-break route stays visible above the fold. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/blog/`
 
 #### LF-027 Homepage sharpens the handoff from starter choice to partner send so the next move stays obvious after the first click
 - **Page:** `/index.html`
