@@ -8,19 +8,22 @@
 ## Backlog
 
 ### TODO
-- **LF-039 Homepage should make the soft-no path explicit so a hesitant couple knows the exact next move without falling out of the 7-day loop**
-  - **Page:** `/index.html`
-  - **Problem:** The blog hub now handles a soft no better, but the homepage still leans harder toward yes-state follow-through than a clear decline path with a tomorrow retry rule.
-  - **User pain:** "My partner did not say yes tonight. Tell me exactly what to send, when to retry, and when to stop pushing."
-  - **Proposed change:** Add one compact soft-no block on the homepage with one calm reply, one tomorrow retry rule, and one safest-default next tool reminder.
-  - **Expected outcome:** Better homepage follow-through after a soft no, less pressure, stronger next-day re-entry.
-  - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
-  - **Status:** TODO
+- _none_
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-039 Homepage should make the soft-no path explicit so a hesitant couple knows the exact next move without falling out of the 7-day loop
+- **Page:** `/index.html`
+- **Problem:** The blog hub now handles a soft no better, but the homepage still leans harder toward yes-state follow-through than a clear decline path with a tomorrow retry rule.
+- **User pain:** "My partner did not say yes tonight. Tell me exactly what to send, when to retry, and when to stop pushing."
+- **Proposed change:** Add one compact soft-no block on the homepage with one calm reply, one tomorrow retry rule, and one safest-default next tool reminder.
+- **Expected outcome:** Better homepage follow-through after a soft no, less pressure, stronger next-day re-entry.
+- **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage now gives soft-no users one copy-ready calm reply, one wait-until-tomorrow retry rule, and one safest-default next-tool reminder, so a stressed spouse knows what to send tonight, when to retry, and when to stop pushing without dropping out of the 7-day loop.
 
 #### LF-038 Blog hub should make the no-thanks response less awkward so hesitant couples know the next safe move without reopening the whole library
 - **Page:** `/blog/index.html`
