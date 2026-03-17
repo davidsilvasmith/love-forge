@@ -8,19 +8,29 @@
 ## Backlog
 
 ### TODO
-- **LF-033 Homepage should make the trust-safe override obvious inside the 7-day loop so couples do not keep repeating the wrong tool after a shaky first rep**
+- **LF-034 Homepage should make the stop-and-switch override copyable so couples can send the safer pivot text without rewriting it under stress**
   - **Page:** `/index.html`
-  - **Problem:** The homepage now explains the repeat-tomorrow loop better, but the continuation path can still under-emphasize when to stop repeating and switch to backup because tomorrow reveals a trust hit or the same escalation pattern.
-  - **User pain:** "You told us to repeat the tool, but tell us when not to keep forcing the same rep."
-  - **Proposed change:** Tighten the 7-day loop with one sharper stop-and-switch rule for trust hits and repeat escalation so the safe override is obvious in the continuation block.
-  - **Expected outcome:** Safer repeat behavior, less wrong-tool persistence, stronger trust in the homepage guidance.
-  - **Score:** Impact 4 / Confidence 4 / Ease 3 = **11**
+  - **Problem:** The homepage now tells couples when to stop repeating a tool, but the override text still sits as plain copy instead of a one-tap action inside the continuation flow.
+  - **User pain:** "We know we should switch, but give us the exact text in a way we can copy fast."
+  - **Proposed change:** Turn the stop-and-switch text into a copy-ready action so the safer pivot is even easier to use on mobile.
+  - **Expected outcome:** Faster safe pivots, less friction during repeat breakdowns, stronger follow-through on the override path.
+  - **Score:** Impact 3 / Confidence 4 / Ease 4 = **11**
   - **Status:** TODO
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-033 Homepage should make the trust-safe override obvious inside the 7-day loop so couples do not keep repeating the wrong tool after a shaky first rep
+- **Page:** `/index.html`
+- **Problem:** The homepage now explains the repeat-tomorrow loop better, but the continuation path can still under-emphasize when to stop repeating and switch to backup because tomorrow reveals a trust hit or the same escalation pattern.
+- **User pain:** "You told us to repeat the tool, but tell us when not to keep forcing the same rep."
+- **Proposed change:** Tighten the 7-day loop with one sharper stop-and-switch rule for trust hits and repeat escalation so the safe override is obvious in the continuation block.
+- **Expected outcome:** Safer repeat behavior, less wrong-tool persistence, stronger trust in the homepage guidance.
+- **Score:** Impact 4 / Confidence 4 / Ease 3 = **11**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage 7-day loop now tells couples exactly when to stop repeating: trust hits route straight to Get Backup Tool, a second escalation means stop forcing the same rep, and one copy-ready stop-and-switch text makes the safer pivot obvious.
 
 #### LF-032 Homepage should make the 7-day keep-or-swap loop obvious after the first send so couples do not lose momentum below the fold
 - **Page:** `/index.html`
