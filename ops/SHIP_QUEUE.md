@@ -8,12 +8,29 @@
 ## Backlog
 
 ### TODO
-- _none_
+- **LF-021 Boundary Definition Tool adds a prefilled boundary builder so shaky-trust couples stop staring at blanks**
+  - **Page:** `/blog/boundary-definition-tool.html`
+  - **Problem:** The page gives examples, but stressed spouses still have to assemble the final boundary line, consequence, and review time by hand.
+  - **User pain:** "I get the idea, but I still need the exact rule text we can copy tonight."
+  - **Proposed change:** Add one fill-in builder that outputs a finished boundary statement, consequence line, and check-in text in one block.
+  - **Expected outcome:** Faster starts on the trust-boundary path, less freezing at placeholders, more copied scripts.
+  - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-020 Get Backup Tool adds a fill-in builder so couples can copy finished outreach texts instead of staring at placeholders
+- **Page:** `/blog/third-party-escalation-tool.html`
+- **Problem:** The page had strong scripts, but tired spouses still had to replace `[one issue]`, helper type, and time windows by hand before they could send anything.
+- **User pain:** "I do not want to translate templates tonight. Just turn this into the exact texts I need to send."
+- **Proposed change:** Add one builder that outputs the partner text, outreach text, and yes-reply after users fill in one issue, one helper type, and two time options.
+- **Expected outcome:** Faster sends, less blank-page friction, and more booked support from the trust-break path.
+- **Score:** Impact 4 / Confidence 5 / Ease 4 = **13**
+- **Status:** SHIPPED
+- **Proof after ship:** Get Backup Tool now lets couples fill in the one issue, pick the helper type, and generate three copy-ready texts for the partner ask, outreach send, and yes-reply without rewriting placeholders. Commit: `a358f34`. Live URL: `https://love.forge.dsdoes.com/blog/third-party-escalation-tool.html`
 
 #### LF-019 Get Backup Tool adds exact reply scripts so couples book support without improvising
 - **Page:** `/blog/third-party-escalation-tool.html`

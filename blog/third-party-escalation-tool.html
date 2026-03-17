@@ -54,6 +54,61 @@
 </div>
 
 <div class="card">
+  <h2>Fill the blanks once. Copy three texts fast.</h2>
+  <p><strong>If placeholders make you freeze, use this builder.</strong> Type the one issue, pick the helper, and copy the exact texts you need tonight.</p>
+  <div class="builder" aria-label="Get Backup text builder">
+    <div class="row">
+      <div>
+        <label for="backup-builder-issue"><strong>One issue</strong></label>
+        <input id="backup-builder-issue" type="text" value="money after the kids go down" />
+      </div>
+      <div>
+        <label for="backup-builder-helper"><strong>Helper type</strong></label>
+        <select id="backup-builder-helper">
+          <option value="therapist">Licensed therapist</option>
+          <option value="coach">Coach</option>
+          <option value="trusted mentor">Trusted mentor</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div>
+        <label for="backup-builder-time-1"><strong>Time option 1</strong></label>
+        <input id="backup-builder-time-1" type="text" value="Tuesday at 7:30 PM" />
+      </div>
+      <div>
+        <label for="backup-builder-time-2"><strong>Time option 2</strong></label>
+        <input id="backup-builder-time-2" type="text" value="Thursday at 12:15 PM" />
+      </div>
+    </div>
+  </div>
+  <div class="comparison-grid" aria-label="Built texts for tonight">
+    <div class="compare-tile">
+      <small>Step 1</small>
+      <h3>Send this to your partner</h3>
+      <p id="backup-builder-partner-output">We keep getting stuck on money after the kids go down. I want backup, not another bad fight. Tonight let’s pick therapist and send two messages.</p>
+      <p><button class="btn" id="copy-backup-builder-partner" type="button">Copy partner text</button></p>
+      <small id="copy-backup-builder-partner-status" class="muted" aria-live="polite"></small>
+    </div>
+    <div class="compare-tile">
+      <small>Step 2</small>
+      <h3>Send this outreach text</h3>
+      <p id="backup-builder-outreach-output">Hi, my partner and I keep getting stuck on money after the kids go down. We want support this week. Do you have any openings or a referral?</p>
+      <p><button class="btn" id="copy-backup-builder-outreach" type="button">Copy outreach text</button></p>
+      <small id="copy-backup-builder-outreach-status" class="muted" aria-live="polite"></small>
+    </div>
+    <div class="compare-tile">
+      <small>Step 3</small>
+      <h3>If someone says yes, send this</h3>
+      <p id="backup-builder-yes-output">Yes, thank you. We are available Tuesday at 7:30 PM or Thursday at 12:15 PM this week. If those do not work, what is the fastest next step to get on your calendar?</p>
+      <p><button class="btn" id="copy-backup-builder-yes" type="button">Copy yes-reply text</button></p>
+      <small id="copy-backup-builder-yes-status" class="muted" aria-live="polite"></small>
+    </div>
+  </div>
+  <p><strong>Tonight rule:</strong> fill this out once, send the partner text, send the outreach text to two real people, then use the yes-reply only if someone responds.</p>
+</div>
+
+<div class="card">
   <h2>Use the ready text for your helper type</h2>
   <div class="comparison-grid" aria-label="Copy-ready outreach examples by helper type">
     <div class="compare-tile"><small>Licensed therapist</small><h3>Text this if trust broke or fights keep blowing up</h3><p id="therapist-outreach-text"><em>"Hi, my partner and I had a trust hit around <strong>[one issue]</strong>, and our talks keep spiraling. We want licensed support this week. Do you have an opening, cancellation list, or one therapist referral you trust?"</em></p><p><button class="btn" id="copy-therapist-outreach" type="button">Copy therapist text</button></p><small id="copy-therapist-outreach-status" class="muted" aria-live="polite"></small></div>
@@ -132,4 +187,54 @@ for(const pair of copyPairs){
     }
   });
 }
+
+const issueInput=document.getElementById('backup-builder-issue');
+const helperInput=document.getElementById('backup-builder-helper');
+const time1Input=document.getElementById('backup-builder-time-1');
+const time2Input=document.getElementById('backup-builder-time-2');
+const partnerOutput=document.getElementById('backup-builder-partner-output');
+const outreachOutput=document.getElementById('backup-builder-outreach-output');
+const yesOutput=document.getElementById('backup-builder-yes-output');
+
+function cleanValue(value,fallback){
+  const trimmed=(value||'').trim();
+  return trimmed||fallback;
+}
+
+function updateBackupBuilder(){
+  if(!issueInput||!helperInput||!time1Input||!time2Input||!partnerOutput||!outreachOutput||!yesOutput) return;
+  const issue=cleanValue(issueInput.value,'the same fight');
+  const helper=cleanValue(helperInput.value,'therapist');
+  const time1=cleanValue(time1Input.value,'Tuesday at 7:30 PM');
+  const time2=cleanValue(time2Input.value,'Thursday at 12:15 PM');
+  partnerOutput.textContent=`We keep getting stuck on ${issue}. I want backup, not another bad fight. Tonight let’s pick ${helper} and send two messages.`;
+  outreachOutput.textContent=`Hi, my partner and I keep getting stuck on ${issue}. We want support this week. Do you have any openings or a referral?`;
+  yesOutput.textContent=`Yes, thank you. We are available ${time1} or ${time2} this week. If those do not work, what is the fastest next step to get on your calendar?`;
+}
+
+const builtCopyPairs=[
+  {btn:'copy-backup-builder-partner',text:'backup-builder-partner-output',status:'copy-backup-builder-partner-status',ok:'Copied built partner text ✅'},
+  {btn:'copy-backup-builder-outreach',text:'backup-builder-outreach-output',status:'copy-backup-builder-outreach-status',ok:'Copied built outreach text ✅'},
+  {btn:'copy-backup-builder-yes',text:'backup-builder-yes-output',status:'copy-backup-builder-yes-status',ok:'Copied built yes-reply ✅'}
+];
+for(const pair of builtCopyPairs){
+  const btn=document.getElementById(pair.btn);
+  const text=document.getElementById(pair.text);
+  const status=document.getElementById(pair.status);
+  if(!btn||!text||!status) continue;
+  btn.addEventListener('click',async()=>{
+    try{
+      await navigator.clipboard.writeText(text.textContent.trim());
+      status.textContent=pair.ok;
+    }catch(e){
+      status.textContent='Copy failed. Select the text above and copy manually.';
+    }
+  });
+}
+
+for(const input of [issueInput,helperInput,time1Input,time2Input]){
+  if(input) input.addEventListener('input',updateBackupBuilder);
+  if(input) input.addEventListener('change',updateBackupBuilder);
+}
+updateBackupBuilder();
 })();</script></body></html>
