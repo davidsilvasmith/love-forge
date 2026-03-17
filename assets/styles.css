@@ -261,6 +261,21 @@ input[type="radio"],input[type="checkbox"],select{accent-color:#7c5cff}
 .yes-tile p{margin:0;color:#dce5ff;font-size:.91rem}
 .yes-tile em{color:#eef2ff;font-style:normal;font-weight:600}
 
+.share-card{border:1px solid rgba(124,92,255,.4);background:linear-gradient(160deg,rgba(124,92,255,.18),rgba(20,184,166,.1))}
+.share-priority{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(260px,.9fr);gap:14px;margin-top:12px}
+.share-primary{background:rgba(11,16,32,.56);border:1px solid rgba(255,255,255,.16);border-radius:16px;padding:16px;box-shadow:var(--shadow)}
+.share-primary h3{margin:.45rem 0 .5rem;font-size:1.02rem}
+.share-primary p{margin:0;color:#eef2ff;font-size:.98rem;line-height:1.55}
+.share-primary-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.share-text-btn{background:linear-gradient(135deg,#3f8b4b,#2d6cdf)}
+.share-copy-btn{background:rgba(11,16,32,.72);box-shadow:none}
+.share-copy-btn:hover{filter:brightness(1.08)}
+.share-support{display:grid;gap:12px}
+.share-support-tile{background:rgba(11,16,32,.48);border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:14px;box-shadow:var(--shadow);min-height:128px}
+.share-support-tile strong{display:block;margin-bottom:6px;color:#eef2ff}
+.share-support-tile p{margin:0;color:#dce5ff;font-size:.91rem}
+.message-badge{display:inline-flex;width:fit-content;padding:5px 10px;border-radius:999px;background:rgba(124,92,255,.18);border:1px solid rgba(255,255,255,.16);font-size:.76rem;font-weight:700;color:#e8efff}
+
 .solo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:12px 0 10px}
 .solo-tile{background:linear-gradient(160deg,rgba(63,139,75,.16),rgba(124,92,255,.15));border:1px solid rgba(180,230,194,.28);border-radius:16px;padding:14px;box-shadow:var(--shadow);min-height:156px;display:flex;flex-direction:column;gap:8px}
 .solo-icon{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:rgba(11,16,32,.56);border:1px solid rgba(255,255,255,.2);font-size:1.08rem}
@@ -424,6 +439,8 @@ input[type="radio"],input[type="checkbox"],select{accent-color:#7c5cff}
   .hero-lane-choices{grid-template-columns:1fr}
   .hero-mood-strip{grid-template-columns:1fr}
   .mood-tile{min-height:96px}
+  .share-priority{grid-template-columns:1fr}
+  .share-primary-actions{flex-direction:column}
   .update-item{grid-template-columns:1fr}
   .release-timeline::before{left:16px}
   .timeline-entry{grid-template-columns:1fr}

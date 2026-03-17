@@ -8,18 +8,28 @@
 ## Backlog
 
 ### TODO
-- **LF-008** Homepage should turn the partner-share block into one clearer choice with the best next send action
+- **LF-009** Homepage should make the “partner says yes” section feel more like one immediate next action than three equal tiles
   - **Page:** `/index.html`
-  - **Problem:** The homepage still asks users to share the site in several ways before clearly telling them which share action is best tonight.
-  - **User pain:** "Just tell me the easiest message to send so we can start."
-  - **Proposed change:** Simplify the share section to one primary partner invite path, one fallback, and one stronger reason to send it now.
-  - **Expected outcome:** Faster partner invites, less hesitation, more starts from one copied message.
+  - **Problem:** After the partner invite, the “yes” block still makes users scan three parallel tiles instead of showing the fastest first move, then the opener, then the close.
+  - **User pain:** "Okay, they said yes. What do I send first?"
+  - **Proposed change:** Turn the yes-state block into one primary lock-it-in action with one follow-up opener and one simple close.
+  - **Expected outcome:** Faster follow-through after partner buy-in, less hesitation between yes and actual scheduled rep.
   - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-008 Homepage turns the partner-share block into one clearer send action
+- **Page:** `/index.html`
+- **Problem:** The homepage still asked users to share the site in several ways before clearly telling them which share action was best tonight.
+- **User pain:** "Just tell me the easiest message to send so we can start."
+- **Proposed change:** Simplify the share section to one primary partner invite path, one fallback, and one stronger reason to send it now.
+- **Expected outcome:** Faster partner invites, less hesitation, more starts from one copied message.
+- **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage now gives one clear partner-invite text as the primary action, explains why that ask is safer after a hard day, and fixes the shared link to the live Love Forge domain. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-007 Homepage turns the 7-day plan into one cleaner continuation block
 - **Page:** `/index.html`
