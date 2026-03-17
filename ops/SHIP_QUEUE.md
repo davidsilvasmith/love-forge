@@ -15,6 +15,16 @@
 
 ## SHIPPED
 
+#### LF-050 Weekly State-of-Us Scorecard should generate the exact score-summary, focus line, and tomorrow action so a stressed spouse can run the check-in tonight without inventing the wording
+- **Page:** `/blog/weekly-state-of-us-scorecard.html`
+- **Problem:** The scorecard explained what to rate, but a stressed spouse still had to invent the invite, decide how to pick one focus when multiple categories felt low, and phrase the summary plus tomorrow step while already tired.
+- **User pain:** "We know something feels off. Do not make us turn four scores into the actual words for tonight."
+- **Proposed change:** Add one fill-in builder that outputs the focus line and full score-summary text, plus a sharper 10-minute run of show, low-energy invite, and lowest-score rule.
+- **Expected outcome:** Faster scorecard starts, less vague diagnosing, cleaner one-issue follow-through, and better odds a couple leaves with one useful next step tonight.
+- **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+- **Status:** SHIPPED
+- **Proof after ship:** Weekly State-of-Us Scorecard now gives couples a fill-in builder for the focus line and full score-summary text, tells them to fix the single lowest score instead of debating everything at once, and routes the next tool based on what scored lowest so they can run the check-in tonight without inventing the wording.
+
 #### LF-049 Homepage should make the yes-state lock-in text customizable so a stressed spouse can swap the exact time before sending yes-confirmation without rewriting it in their head
 - **Page:** `/index.html`
 - **Problem:** The homepage now lets users customize the first ask, but the yes-state confirmation text still hard-coded 8:30, which created one more rewrite right after the partner agreed.

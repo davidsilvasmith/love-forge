@@ -5,36 +5,110 @@
 
 <div class="card quick-start">
   <h2>Quick start (tonight)</h2>
-  <div class="icon-row">
-    <span class="icon-chip">⏱️ Set a 10-minute timer</span>
+  <div class="icon-row" aria-label="Scorecard quick start summary">
+    <span class="icon-chip">⏱️ 10-minute timer</span>
     <span class="icon-chip">📊 Score 4 areas</span>
-    <span class="icon-chip">🗣️ Say one short opener</span>
-    <span class="icon-chip">✅ Choose one tiny next step</span>
+    <span class="icon-chip">🎯 Fix the lowest score</span>
+    <span class="icon-chip">✅ Pick one tiny next step</span>
   </div>
-  <p><strong>Goal:</strong> leave feeling more connected, not drained.</p>
+  <p><strong>Use this when:</strong> you both know something feels off, but you do not want another giant relationship talk tonight.</p>
+  <p><strong>Tonight rule:</strong> score all 4 areas, then work on <strong>the single lowest score only</strong>. Do not try to fix trust, closeness, teamwork, and fun in one sitting.</p>
 </div>
 
 <div class="highlight-grid">
   <div class="highlight-card">
     <small>Problem</small>
     <h3>You know something feels off</h3>
-    <p>When life is a blur, this helps you name the one thing to fix first.</p>
+    <p>When life turns into logistics, this helps you name the one weak spot instead of vaguely saying "we need to connect more."</p>
   </div>
   <div class="highlight-card">
     <small>Best use case</small>
-    <h3>When you keep having the same stress loop</h3>
-    <p>This gives you one clear fix for tomorrow.</p>
+    <h3>You keep looping the same stress</h3>
+    <p>It gives you one shared diagnosis and one practical fix for tomorrow.</p>
   </div>
   <div class="highlight-card">
-    <small>Time cost</small>
-    <h3>10–15 minutes total</h3>
-    <p>Do it after bedtime, in the car line, or on a short walk.</p>
+    <small>Constraint</small>
+    <h3>Keep it small enough to repeat</h3>
+    <p>No giant processing session. One scorecard, one weak spot, one next step.</p>
+  </div>
+</div>
+
+<div class="card quick-start">
+  <h2>10-minute run of show</h2>
+  <div class="quick-start-block-grid" aria-label="Exact scorecard plan for tonight">
+    <div class="quick-start-block"><span class="quick-start-emoji" aria-hidden="true">0-1</span><h3>Use the opener</h3><p>Read the exact invite below so this starts small, not heavy.</p></div>
+    <div class="quick-start-block"><span class="quick-start-emoji" aria-hidden="true">1-4</span><h3>Score all 4 areas</h3><p>Each person gives trust, closeness, teamwork, and fun a number from 1 to 10.</p></div>
+    <div class="quick-start-block"><span class="quick-start-emoji" aria-hidden="true">4-6</span><h3>Pick the lowest score</h3><p>If multiple are low, choose the one causing the most tension right now.</p></div>
+    <div class="quick-start-block"><span class="quick-start-emoji" aria-hidden="true">6-8</span><h3>Say one reason only</h3><p>Each person gives one sentence about why that score is low. No courtroom speeches.</p></div>
+    <div class="quick-start-block"><span class="quick-start-emoji" aria-hidden="true">8-10</span><h3>Lock one tiny next step</h3><p>Choose one action for the next 24 hours, then send the follow-up text before you drift.</p></div>
   </div>
 </div>
 
 <div class="card">
+  <h2>Copy/paste invite</h2>
+  <div class="highlight-grid" aria-label="Starter scripts for the scorecard">
+    <div class="highlight-card"><small>Main opener</small><h3>Start without making it heavy</h3><p id="scorecard-main-invite">I do not want a huge relationship talk tonight. Can we do a 10-minute scorecard, name the one area that feels weakest, and pick one small win for tomorrow?</p><p><button class="btn" id="copy-scorecard-main-invite" type="button">Copy main invite</button></p><small id="copy-scorecard-main-invite-status" class="muted" aria-live="polite"></small></div>
+    <div class="highlight-card"><small>Low-energy fallback</small><h3>Keep the rep alive</h3><p id="scorecard-fallback-invite">I do not have energy for a big talk, but I do want us to get unstuck. Can we each score 4 areas in 5 minutes tonight and pick the next step tomorrow?</p><p><button class="btn" id="copy-scorecard-fallback-invite" type="button">Copy low-energy text</button></p><small id="copy-scorecard-fallback-invite-status" class="muted" aria-live="polite"></small></div>
+  </div>
+</div>
+
+<div class="card quick-start">
+  <h2>Fill this in and copy the exact score-summary text</h2>
+  <p><strong>This is the point of the page:</strong> do not invent the wording while tired. Enter the scores, pick the lowest one, and copy the ready-to-send summary for tonight.</p>
+  <div class="builder" aria-label="Weekly State-of-Us scorecard builder">
+    <div>
+      <label for="scorecard-trust"><strong>Trust</strong></label>
+      <input id="scorecard-trust" type="number" min="1" max="10" value="6" style="width:100%;margin-top:8px;padding:10px;font:inherit">
+      <small class="muted">Did I feel emotionally safe with you this week?</small>
+    </div>
+    <div>
+      <label for="scorecard-closeness"><strong>Closeness</strong></label>
+      <input id="scorecard-closeness" type="number" min="1" max="10" value="5" style="width:100%;margin-top:8px;padding:10px;font:inherit">
+      <small class="muted">Did we feel close, or just run logistics?</small>
+    </div>
+    <div>
+      <label for="scorecard-teamwork"><strong>Teamwork</strong></label>
+      <input id="scorecard-teamwork" type="number" min="1" max="10" value="7" style="width:100%;margin-top:8px;padding:10px;font:inherit">
+      <small class="muted">Did home and kid stress feel shared and fair?</small>
+    </div>
+    <div>
+      <label for="scorecard-fun"><strong>Fun</strong></label>
+      <input id="scorecard-fun" type="number" min="1" max="10" value="4" style="width:100%;margin-top:8px;padding:10px;font:inherit">
+      <small class="muted">Did we laugh or have one good moment together?</small>
+    </div>
+    <div>
+      <label for="scorecard-reason"><strong>One-sentence reason the lowest score feels low</strong></label>
+      <input id="scorecard-reason" type="text" value="We have barely had any relaxed time together." placeholder="We felt like roommates all week." style="width:100%;margin-top:8px;padding:10px;font:inherit">
+      <small class="muted">Keep it to one sentence. No backstory dump.</small>
+    </div>
+    <div>
+      <label for="scorecard-step"><strong>One tiny next step for the next 24 hours</strong></label>
+      <input id="scorecard-step" type="text" value="Sit together for 10 minutes after bedtime with no phones." placeholder="Take a 10-minute walk after dinner." style="width:100%;margin-top:8px;padding:10px;font:inherit">
+      <small class="muted">Pick one action you can actually do tomorrow.</small>
+    </div>
+  </div>
+  <div class="comparison-grid" aria-label="Scorecard builder output blocks" style="margin-top:16px">
+    <div class="compare-tile">
+      <small>Copy this into the talk</small>
+      <h3>Tonight focus line</h3>
+      <p id="scorecard-focus-line">Our lowest score tonight is fun at 4, so that is the one thing we should work on first.</p>
+      <p><button class="btn" id="copy-scorecard-focus-line" type="button">Copy focus line</button></p>
+      <small id="copy-scorecard-focus-line-status" class="muted" aria-live="polite"></small>
+    </div>
+    <div class="compare-tile">
+      <small>Copy this after you score it</small>
+      <h3>Tonight summary text</h3>
+      <p id="scorecard-summary-text">We did the scorecard. Trust 6, closeness 5, teamwork 7, fun 4. The lowest score is fun because we have barely had any relaxed time together. Tomorrow, let’s sit together for 10 minutes after bedtime with no phones.</p>
+      <p><button class="btn" id="copy-scorecard-summary-text" type="button">Copy summary text</button></p>
+      <small id="copy-scorecard-summary-text-status" class="muted" aria-live="polite"></small>
+    </div>
+  </div>
+  <p class="hero-micro"><strong>If two scores tie:</strong> choose the one causing the most heat right now. If conflict is hot, use <a href="/blog/pause-and-return-tool.html">Pause-and-Return</a> before doing this scorecard. If trust got clearly hit, use <a href="/blog/third-party-escalation-tool.html">Get Backup Tool</a> first.</p>
+</div>
+
+<div class="card">
   <h2>Score these 4 areas (1-10)</h2>
-  <div class="comparison-grid">
+  <div class="comparison-grid" aria-label="Scorecard categories">
     <div class="compare-tile">
       <small>Category 1</small>
       <h3>Trust</h3>
@@ -58,17 +132,75 @@
   </div>
 </div>
 
-<div class="card"><h2>Copy/paste script</h2><p>“I love us, and I don’t want a big heavy talk tonight. Can we do this 10-minute scorecard and pick one small win?”</p></div>
+<div class="card"><h2>Kid-chaos fallback</h2><ul><li>Do it in two 5-minute rounds if kids interrupt.</li><li>If either person is too upset, use <a href="/blog/pause-and-return-tool.html">Pause-and-Return</a> first.</li><li>No time? Score the 4 areas tonight, then pick the action tomorrow.</li></ul></div>
 
-<div class="card"><h2>Kid-chaos fallback</h2><ul><li>Do it in two 5-minute rounds if kids interrupt.</li><li>If either person is too upset, use <a href="/blog/pause-and-return-tool.html">Pause-and-Return</a> first.</li><li>No time? Score just two categories tonight.</li></ul></div>
+<div class="card"><h2>What to do with your score</h2><div class="comparison-grid"><div class="compare-tile"><small>8-10</small><h3>Protect what is working</h3><p>Do not over-fix a strong area. Repeat next week and keep the routine.</p></div><div class="compare-tile"><small>5-7</small><h3>Pick one weak spot</h3><p>Use the lowest score to choose one conversation or habit tool this week.</p></div><div class="compare-tile"><small>1-4</small><h3>Go into repair mode</h3><p>Pause blame. Focus on safety and one tiny agreement, not a full solution.</p></div></div><p><strong>Simple 7-day rule:</strong> keep a tool only if the weak area rises by at least 1 point more nights than not over the next week.</p></div>
 
-<div class="card"><h2>What to do with your score</h2><div class="comparison-grid"><div class="compare-tile"><small>8-10</small><h3>Keep doing what works</h3><p>Protect your routines. Repeat next week.</p></div><div class="compare-tile"><small>5-7</small><h3>Pick one weak spot</h3><p>Choose one issue and use one tool this week.</p></div><div class="compare-tile"><small>1-4</small><h3>Go into repair mode</h3><p>Pause blame. Focus on safety and one small agreement.</p></div></div><p><strong>Simple rule:</strong> Keep tools that raise your score by 2 or more points. Drop the rest.</p></div>
+<div class="card"><h2>Starter kit (no guesswork)</h2><p>Pick one version and run it exactly tonight:</p><ol><li><strong>5-minute version:</strong> Use the low-energy invite, score all 4 areas, and stop after you pick the lowest one.</li><li><strong>10-minute version:</strong> Follow the run-of-show above, then copy the summary text and send it to each other or save it in Notes.</li><li><strong>Couple-text version:</strong> Send this now: “Can we do the Weekly State-of-Us Scorecard tonight for 10 minutes? I want us to pick one weak spot and one tiny win instead of having a huge talk.”</li></ol><p class="muted">If you feel stuck, start with the 5-minute version. Short and repeatable beats ideal and skipped.</p></div>
 
-<div class="card"><h2>Starter kit (no guesswork)</h2><p>Pick one of these and run it exactly tonight:</p><ol><li><strong>5-minute version:</strong> Read the copy/paste script out loud, then do one tiny action from this tool immediately.</li><li><strong>10-minute version:</strong> Set a timer, follow the “Do this tonight” steps top to bottom, and stop when timer ends.</li><li><strong>Couple-text version:</strong> Send this now: “Can we do <strong>Weekly State-of-Us Scorecard</strong> tonight for 10 minutes? I already picked the first step so this is easy.”</li></ol><p class="muted">If you feel stuck, use the 5-minute version first. Progress beats perfection.</p></div>
+<div class="card"><h2>Use it well</h2><ul><li><strong>When to use it:</strong> Use this when several things feel off and you need one shared diagnosis fast.</li><li><strong>How often:</strong> Run it once a week, or after a rough week when you need to choose the next fix.</li><li><strong>Common mistake:</strong> Turning the lowest score into a long prosecution speech. One reason each, then move to the next step.</li><li><strong>If it feels awkward:</strong> Read the script exactly, keep the first run under 10 minutes, and do not debate the numbers forever.</li></ul></div>
 
-<div class="card"><h2>How to use this tool effectively</h2><ul><li><strong>When to use it:</strong> Use <strong>Weekly State-of-Us Scorecard</strong> when this exact problem is happening now, not as a general reading exercise.</li><li><strong>How often:</strong> Run it once today, then repeat 3-7 times before judging results.</li><li><strong>Common mistake:</strong> Changing multiple things at once. Use one tool at a time so you can see what works.</li><li><strong>If it feels awkward:</strong> Use the script exactly once, keep the first run under 10 minutes, and rate helpfulness 1-10.</li></ul></div>
+<div class="card"><h2>Tomorrow, fallback, escalation</h2><ul><li><strong>Tomorrow:</strong> run one tool that matches the lowest score before shopping for anything else.</li><li><strong>If closeness or fun scored lowest:</strong> go to <a href="/blog/daily-15-minute-connection-block.html">Daily 15-Minute Connection Block</a>.</li><li><strong>If teamwork scored lowest:</strong> go to <a href="/blog/10-minute-weekly-meeting.html">10-Minute Weekly Meeting</a>.</li><li><strong>If talks get hot while scoring:</strong> switch to <a href="/blog/pause-and-return-tool.html">Pause-and-Return</a> first.</li><li><strong>If trust scored lowest because of a fresh trust hit:</strong> stop DIY and go to <a href="/blog/third-party-escalation-tool.html">Get Backup Tool</a>.</li></ul></div>
 
-<div class="card"><h2>Tomorrow rep + fallback + escalation</h2><ul><li><strong>Tomorrow:</strong> run this same tool once more before trying a new one.</li><li><strong>If it didn’t help:</strong> switch to <a href="/blog/pause-and-return-tool.html">Pause-and-Return Tool</a> first, then retry.</li><li><strong>If it got worse or felt unsafe:</strong> stop DIY and involve a licensed professional/support resource.</li></ul></div>
-
-<div class="card"><h2>Best next tool</h2><p>After this, run <a href="/blog/10-minute-weekly-meeting.html">10-Minute Weekly Meeting</a> to keep the progress going.</p></div>
-</div></body></html>
+<div class="card"><h2>Best next tool</h2><p>If closeness, drift, or no-fun energy scored lowest, run <a href="/blog/daily-15-minute-connection-block.html">Daily 15-Minute Connection Block</a> next. If the real problem is shared load, use <a href="/blog/10-minute-weekly-meeting.html">10-Minute Weekly Meeting</a>.</p></div>
+</div><script>(function(){
+const copyPairs=[
+  {btn:'copy-scorecard-main-invite',text:'scorecard-main-invite',status:'copy-scorecard-main-invite-status',ok:'Copied main invite ✅'},
+  {btn:'copy-scorecard-fallback-invite',text:'scorecard-fallback-invite',status:'copy-scorecard-fallback-invite-status',ok:'Copied low-energy text ✅'},
+  {btn:'copy-scorecard-focus-line',text:'scorecard-focus-line',status:'copy-scorecard-focus-line-status',ok:'Copied focus line ✅'},
+  {btn:'copy-scorecard-summary-text',text:'scorecard-summary-text',status:'copy-scorecard-summary-text-status',ok:'Copied summary text ✅'}
+];
+for(const pair of copyPairs){
+  const btn=document.getElementById(pair.btn);
+  const text=document.getElementById(pair.text);
+  const status=document.getElementById(pair.status);
+  if(!btn||!text||!status) continue;
+  btn.addEventListener('click', async()=>{
+    try{
+      await navigator.clipboard.writeText(text.textContent);
+      status.textContent=pair.ok;
+    }catch(e){
+      status.textContent='Copy failed. Select and copy manually.';
+    }
+  });
+}
+const fields={
+  trust:document.getElementById('scorecard-trust'),
+  closeness:document.getElementById('scorecard-closeness'),
+  teamwork:document.getElementById('scorecard-teamwork'),
+  fun:document.getElementById('scorecard-fun'),
+  reason:document.getElementById('scorecard-reason'),
+  step:document.getElementById('scorecard-step')
+};
+const focus=document.getElementById('scorecard-focus-line');
+const summary=document.getElementById('scorecard-summary-text');
+const labels={trust:'trust',closeness:'closeness',teamwork:'teamwork',fun:'fun'};
+function clampScore(value,fallback){
+  const n=parseInt(value,10);
+  if(Number.isNaN(n)) return fallback;
+  return Math.min(10,Math.max(1,n));
+}
+function lowestArea(scores){
+  const order=['trust','closeness','teamwork','fun'];
+  let current=order[0];
+  for(const key of order){
+    if(scores[key] < scores[current]) current=key;
+  }
+  return current;
+}
+function updateBuilder(){
+  const scores={
+    trust:clampScore(fields.trust.value,6),
+    closeness:clampScore(fields.closeness.value,5),
+    teamwork:clampScore(fields.teamwork.value,7),
+    fun:clampScore(fields.fun.value,4)
+  };
+  const low=lowestArea(scores);
+  const reason=(fields.reason.value||'we have barely had any relaxed time together.').trim();
+  const step=(fields.step.value||'sit together for 10 minutes after bedtime with no phones.').trim();
+  focus.textContent='Our lowest score tonight is '+labels[low]+' at '+scores[low]+', so that is the one thing we should work on first.';
+  summary.textContent='We did the scorecard. Trust '+scores.trust+', closeness '+scores.closeness+', teamwork '+scores.teamwork+', fun '+scores.fun+'. The lowest score is '+labels[low]+' because '+reason.charAt(0).toLowerCase()+reason.slice(1)+(reason.endsWith('.')?'':'.')+' Tomorrow, let’s '+step.charAt(0).toLowerCase()+step.slice(1)+(step.endsWith('.')?'':'.');
+}
+Object.values(fields).forEach(function(field){ if(field){ field.addEventListener('input',updateBuilder); }});
+updateBuilder();
+})();</script></body></html>
