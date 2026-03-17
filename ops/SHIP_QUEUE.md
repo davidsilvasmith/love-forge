@@ -31,7 +31,7 @@
 - **Expected outcome:** Faster clicks into one tool, less scroll fatigue, stronger first-session action rate.
 - **Score:** Impact 4 / Confidence 4 / Ease 3 = **11**
 - **Status:** SHIPPED
-- **Proof after ship:** Homepage now removes the duplicate quick-start and one-issue chooser cards directly under the hero, so users move from the first-screen starter strip straight into the partner-send action instead of re-picking the same problem again. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Homepage now removes the duplicate quick-start and one-issue chooser cards directly under the hero, so users move from the first-screen starter strip straight into the partner-send action instead of re-picking the same problem again. Commit: `83888c8`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-025 Distance Connection Protocol adds a copy-ready nightly script builder so apart couples stop translating the routine by hand
 - **Page:** `/blog/distance-connection-protocol.html`
