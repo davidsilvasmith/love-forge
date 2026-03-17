@@ -8,19 +8,29 @@
 ## Backlog
 
 ### TODO
-- LF-054 Blog hub should make the skeptical-partner route feel secondary to the default tonight path so stressed users do not pause on a niche branch before sending the main ask
+- LF-055 Blog hub should collapse the duplicate generic invite block below the skeptical side route so stressed users do not hit a second near-identical send section after they already got the main tonight ask
   - **Page:** `/blog/index.html`
-  - **Problem:** The top of the hub is clearer now, but the skeptical-partner block still appears high enough to compete with the main tonight path for users who do not actually need it.
-  - **User pain:** "I am not dealing with a skeptical partner. Do not make me re-evaluate if I should take a side route before I send the normal text."
-  - **Proposed change:** Demote or tighten the skeptical-partner section so the main tonight path stays dominant and the niche branch still exists without stealing early attention.
-  - **Expected outcome:** Faster first sends from the default route and less hesitation at the top of the hub.
-  - **Score:** Impact 3 / Confidence 4 / Ease 4 = **11**
+  - **Problem:** The top flow is stronger, but the later “After you pick a tool, send this text” block still repeats the same invitation job after users already saw the main send-now section, which adds scan friction and choice drift.
+  - **User pain:** "I already got the text to send. Do not make me compare another almost-same invite before I move."
+  - **Proposed change:** Remove or tighten the later generic invite block so the page keeps one dominant send section, one yes/no follow-through path, and less repeated invitation copy.
+  - **Expected outcome:** Faster scanning, less re-deciding, and a cleaner main path from scenario choice to first rep.
+  - **Score:** Impact 3 / Confidence 4 / Ease 3 = **10**
   - **Status:** TODO
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-054 Blog hub should make the skeptical-partner route feel secondary to the default tonight path so stressed users do not pause on a niche branch before sending the main ask
+- **Page:** `/blog/index.html`
+- **Problem:** The top of the hub was clearer, but the skeptical-partner block still appeared high enough to compete with the default tonight path for users who did not actually need it.
+- **User pain:** "I am not dealing with a skeptical partner. Do not make me re-evaluate if I should take a side route before I send the normal text."
+- **Proposed change:** Demote or tighten the skeptical-partner section so the main tonight path stays dominant and the niche branch still exists without stealing early attention.
+- **Expected outcome:** Faster first sends from the default route and less hesitation at the top of the hub.
+- **Score:** Impact 3 / Confidence 4 / Ease 4 = **11**
+- **Status:** SHIPPED
+- **Proof after ship:** Blog hub now tells most couples to ignore the skeptical-partner route, moves that path behind a collapsed details toggle, and keeps the niche scripts available only when the normal first ask is likely to get a fast no, so the main tonight send stays visually dominant. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/blog/`
 
 #### LF-053 Blog hub should make the fastest tonight path even more dominant than browsing so a stressed spouse lands on one send and one first rep before scanning the library
 - **Page:** `/blog/index.html`
