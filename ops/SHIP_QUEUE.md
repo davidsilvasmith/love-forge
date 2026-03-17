@@ -23,7 +23,7 @@
 - **Expected outcome:** Faster follow-through after partner buy-in, less hesitation between yes and an actual scheduled rep.
 - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
 - **Status:** SHIPPED
-- **Proof after ship:** Homepage now makes the yes-state feel like one immediate move by leading with a copy-ready lock-in text, adding exact-time guidance, and demoting the opener and close to support steps so stressed spouses can schedule the rep fast. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Homepage now makes the yes-state feel like one immediate move by leading with a copy-ready lock-in text, adding exact-time guidance, and demoting the opener and close to support steps so stressed spouses can schedule the rep fast. Commit: `4b39ecc`. Live URL: `https://love.forge.dsdoes.com/`
 
 
 #### LF-008 Homepage turns the partner-share block into one clearer send action
