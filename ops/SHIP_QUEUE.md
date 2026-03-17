@@ -15,6 +15,16 @@
 
 ## SHIPPED
 
+#### LF-023 No-Secret-Threads Rule adds a fill-in boundary builder so couples stop vague phone-trust talks and lock one exact rule tonight
+- **Page:** `/blog/no-secret-threads-rule.html`
+- **Problem:** The page had the right idea, but it still left stressed spouses to invent the actual phone-trust rule, miss response, and review plan by hand.
+- **User pain:** "I do not need another warning about secret messages. I need the exact words for the rule and what happens if we miss it."
+- **Proposed change:** Turn the page into a practical trust-boundary tool with one strict use/not-use filter, one fill-in builder for the boundary, miss response, and low-energy text, plus one exact 10-minute run of show and a concrete 7-day metric.
+- **Expected outcome:** Faster phone-trust resets, less vague debating, more couples leaving with one exact rule they can test for 7 days.
+- **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+- **Status:** SHIPPED
+- **Proof after ship:** No-Secret-Threads Rule now tells users when to use it versus Get Backup Tool, gives a fill-in boundary builder for the rule, miss response, and low-energy text, and adds a 10-minute reset flow plus a concrete 7-day trust-tension metric. Commit: `<pending>`. Live URL: `https://love.forge.dsdoes.com/blog/no-secret-threads-rule.html`
+
 #### LF-022 Transparency Tool adds a fill-in disclosure builder so couples stop vague-confessing and clear one gray-area issue tonight
 - **Page:** `/blog/transparency-tool.html`
 - **Problem:** The page was generic and advice-heavy, so stressed spouses still had to invent the actual disclosure, repair close, and future rule by hand.
