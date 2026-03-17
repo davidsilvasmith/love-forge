@@ -30,7 +30,7 @@
 - **Expected outcome:** Faster partner sends, less drop-off between tool choice and actual use, stronger share intent from the hub.
 - **Score:** Impact 4 / Confidence 4 / Ease 3 = **11**
 - **Status:** SHIPPED
-- **Proof after ship:** Blog hub now puts the partner-send step directly under the first scenario chooser, renames the copy block around one obvious next action, and tells users to stop browsing once they have the text. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/blog/`
+- **Proof after ship:** Blog hub now puts the partner-send step directly under the first scenario chooser, renames the copy block around one obvious next action, and tells users to stop browsing once they have the text. Commit: `716d5a5`. Live URL: `https://love.forge.dsdoes.com/blog/`
 
 #### LF-028 Blog hub sharpens the first-screen split between fix-tonight tools and browse-the-library paths
 - **Page:** `/blog/index.html`
