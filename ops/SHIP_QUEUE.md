@@ -30,7 +30,7 @@
 - **Expected outcome:** Faster starts, less mental translation, and more couples actually protecting one attention block tonight.
 - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
 - **Status:** SHIPPED
-- **Proof after ship:** Attention Budget Tool now tells couples how to pick the single attention leak doing the most damage tonight, gives a protected-slot builder that writes the exact invite, 10-minute plan, low-energy fallback, and tomorrow proof action, and adds a tighter minute-by-minute script plus 7-day success rule so they can protect one block tonight without inventing the words.
+- **Proof after ship:** Attention Budget Tool now tells couples how to pick the single attention leak doing the most damage tonight, gives a protected-slot builder that writes the exact invite, 10-minute plan, low-energy fallback, and tomorrow proof action, and adds a tighter minute-by-minute script plus 7-day success rule so they can protect one block tonight without inventing the words. Commit: `6c4e54a`. Live URL: `https://love.forge.dsdoes.com/blog/attention-budget-tool.html`
 
 #### LF-051 Resentment Flush Tool should generate the exact resentment line, clean ask, and proof action so a stressed spouse can clear one lingering hurt tonight without improvising
 - **Page:** `/blog/resentment-flush-tool.html`
