@@ -8,19 +8,30 @@
 ## Backlog
 
 ### TODO
-- LF-056 Blog hub should tighten the browse-first entry block into one simpler lane-first action so stressed users do not hit both a browse explainer and a second relationship-moment chooser before the library
+- LF-057 Blog hub should align the library lane language and counts so browse-first users do not see a 5-lane chooser above a 4-lane library and pause on whether planning is a separate path
   - **Page:** `/blog/index.html`
-  - **Problem:** The top and middle of the hub are much cleaner, but users who keep scrolling still hit both “If you still want to browse first” and a full “Pick by relationship moment” grid before the actual tool library, which repeats the same choose-a-lane job.
-  - **User pain:** "If I ignored the main send path, just get me into the right lane fast. Do not make me re-decide the same thing twice before I can filter tools."
-  - **Proposed change:** Collapse or merge the browse explainer and relationship-moment chooser so the browse-first path becomes one lane-first handoff into the library with less repeated decision copy.
-  - **Expected outcome:** Faster entry into the tool library, less scan fatigue below the fold, and a cleaner browse-on-purpose path.
-  - **Score:** Impact 3 / Confidence 4 / Ease 3 = **10**
+  - **Problem:** The merged browse block is cleaner, but the lane-first section now names conflict, connection, trust, distance, and planning, while the library stats and lane buttons still present 4 lanes, which can create one last credibility wobble before filtering.
+  - **User pain:** "You just told me planning is a lane, then the library says there are 4 lanes. Do not make me wonder if I am in the wrong section."
+  - **Proposed change:** Tighten the browse-first copy and/or library metadata so the lane count and planning path read as one consistent system.
+  - **Expected outcome:** Cleaner browse trust, less hesitation before filtering, and a more credible lane-first handoff.
+  - **Score:** Impact 3 / Confidence 4 / Ease 4 = **11**
   - **Status:** TODO
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-056 Blog hub should tighten the browse-first entry block into one simpler lane-first action so stressed users do not hit both a browse explainer and a second relationship-moment chooser before the library
+- **Page:** `/blog/index.html`
+- **Problem:** The top and middle of the hub are much cleaner, but users who keep scrolling still hit both “If you still want to browse first” and a full “Pick by relationship moment” grid before the actual tool library, which repeats the same choose-a-lane job.
+- **User pain:** "If I ignored the main send path, just get me into the right lane fast. Do not make me re-decide the same thing twice before I can filter tools."
+- **Proposed change:** Collapse or merge the browse explainer and relationship-moment chooser so the browse-first path becomes one lane-first handoff into the library with less repeated decision copy.
+- **Expected outcome:** Faster entry into the tool library, less scan fatigue below the fold, and a cleaner browse-on-purpose path.
+- **Score:** Impact 3 / Confidence 4 / Ease 3 = **10**
+- **Status:** SHIPPED
+- **Proof after ship:** Blog hub now replaces the separate browse explainer and relationship-moment chooser with one merged “Browse by one lane only” block that tells users to pick one lane, filter inside that lane, then track one number and repeat tomorrow instead of re-deciding twice before the library. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/blog/`
+
 
 #### LF-055 Blog hub should collapse the duplicate generic invite block below the skeptical side route so stressed users do not hit a second near-identical send section after they already got the main tonight ask
 - **Page:** `/blog/index.html`
