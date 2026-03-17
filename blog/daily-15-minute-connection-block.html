@@ -38,11 +38,95 @@
   </div>
 </div>
 
-<div class="card"><h2>If you have 4-5 issues at once (daughter/son/work/wedding/etc.)</h2><ol><li><strong>Write all issues in 30 seconds:</strong> daughter, son, work, wedding, etc.</li><li><strong>Circle one for tonight:</strong> “Which one is causing the most tension between us right now?”</li><li><strong>Park the rest:</strong> say out loud, “We’re not ignoring these; we’re doing one tonight so we actually finish.”</li><li><strong>Put the next issue on tomorrow’s check-in.</strong></li></ol><p><strong>Rule:</strong> one issue per 15-minute block. Multi-issue talks fail more often.</p></div>
+<div class="card">
+  <h2>If you have 4-5 issues at once</h2>
+  <div class="icon-row" aria-label="Multi-issue rules">
+    <span class="icon-chip">📝 List everything fast</span>
+    <span class="icon-chip">🎯 Circle one issue</span>
+    <span class="icon-chip">🅿️ Park the rest</span>
+    <span class="icon-chip">📅 Put one on tomorrow</span>
+  </div>
+  <div class="quick-start-block-grid" aria-label="How to narrow to one issue tonight">
+    <div class="quick-start-block"><span class="quick-start-emoji" aria-hidden="true">1️⃣</span><h3>Dump the list</h3><p>Write all current stressors in 30 seconds: kids, work, money, family, travel.</p></div>
+    <div class="quick-start-block"><span class="quick-start-emoji" aria-hidden="true">2️⃣</span><h3>Pick the loudest pain</h3><p>Ask: which issue is causing the most tension between us right now?</p></div>
+    <div class="quick-start-block"><span class="quick-start-emoji" aria-hidden="true">3️⃣</span><h3>Say the parking line</h3><p>“We’re not ignoring the rest. We’re doing one tonight so we actually finish.”</p></div>
+    <div class="quick-start-block"><span class="quick-start-emoji" aria-hidden="true">4️⃣</span><h3>Queue tomorrow</h3><p>Move the next issue to the next check-in instead of stacking it now.</p></div>
+  </div>
+  <div class="comparison-grid" aria-label="What works versus what fails when multiple issues hit">
+    <div class="compare-tile"><small>Do this</small><h3>One issue per block</h3><p>Finish one clean rep tonight and preserve energy for tomorrow.</p></div>
+    <div class="compare-tile"><small>Avoid this</small><h3>Kitchen-sink conversation</h3><p>Trying to solve kids, work, and resentment in one sitting usually blows up.</p></div>
+  </div>
+</div>
 
-<div class="card"><h2>Use this exact plan (copy this)</h2><ol><li><strong>Minute 0-2:</strong> Name today’s ONE focus in one sentence.</li><li><strong>Minute 2-6:</strong> Partner A shares for 2 minutes, Partner B reflects back.</li><li><strong>Minute 6-10:</strong> Switch roles.</li><li><strong>Minute 10-13:</strong> Choose one tiny action for next 24 hours.</li><li><strong>Minute 13-15:</strong> Confirm tomorrow’s check-in time + one appreciation.</li></ol></div>
+<div class="card quick-start">
+  <h2>15-minute run of show</h2>
+  <div class="quick-start-block-grid" aria-label="Exact Daily 15 minute-by-minute plan">
+    <div class="quick-start-block"><span class="quick-start-emoji" aria-hidden="true">0-2</span><h3>Name the focus</h3><p>Say tonight’s one issue in one sentence. No backstory dump.</p></div>
+    <div class="quick-start-block"><span class="quick-start-emoji" aria-hidden="true">2-6</span><h3>Partner A shares</h3><p>Two minutes to speak. Partner B reflects back the main point.</p></div>
+    <div class="quick-start-block"><span class="quick-start-emoji" aria-hidden="true">6-10</span><h3>Switch roles</h3><p>Partner B shares for two minutes. Partner A mirrors back.</p></div>
+    <div class="quick-start-block"><span class="quick-start-emoji" aria-hidden="true">10-13</span><h3>Pick one action</h3><p>Choose one tiny behavior for the next 24 hours.</p></div>
+    <div class="quick-start-block"><span class="quick-start-emoji" aria-hidden="true">13-15</span><h3>Close cleanly</h3><p>Lock tomorrow’s time and give one specific appreciation.</p></div>
+  </div>
+</div>
 
-<div class="card"><h2>Copy/paste script</h2><p>“We have a lot going on (kids/work/life). Let’s pick just ONE thing for tonight and do a 15-minute check-in so we don’t spiral. We can do the next issue tomorrow.”</p></div>
+<div class="card">
+  <h2>Copy/paste starter text</h2>
+  <div class="highlight-grid" aria-label="Starter scripts">
+    <div class="highlight-card"><small>Main opener</small><h3>Start tonight without spiraling</h3><p id="daily15-main-opener">We have a lot going on. Let’s pick just ONE thing for tonight and do a 15-minute check-in so we don’t spiral. We can do the next issue tomorrow.</p><p><button class="btn" id="copy-daily15-main" type="button">Copy main opener</button></p><small id="copy-daily15-main-status" class="muted" aria-live="polite"></small></div>
+    <div class="highlight-card"><small>Low-energy fallback</small><h3>Keep the rep alive</h3><p id="daily15-fallback">I’m low-energy, but I still want us to connect. Can we do the first 5 minutes tonight and finish the full check-in tomorrow?</p><p><button class="btn" id="copy-daily15-fallback" type="button">Copy low-energy text</button></p><small id="copy-daily15-fallback-status" class="muted" aria-live="polite"></small></div>
+  </div>
+</div>
+
+<div class="card quick-start">
+  <h2>Copy this exact 15-minute script</h2>
+  <p>Do not wing it when you are tired. Copy this, read it, then stop after one rep.</p>
+  <textarea id="daily15-full-script" readonly style="width:100%;min-height:220px;padding:12px;font:inherit">Daily 15-Minute Connection Block
+
+Opening line:
+We have a lot going on, and I do not want us to spiral tonight. Can we pick just one issue, do a 15-minute check-in, and stop there?
+
+Minute 0-2:
+Name the one issue in one sentence.
+Example: The thing creating the most tension for me today is how disconnected we felt after bedtime.
+
+Minute 2-6:
+Partner A shares for two minutes.
+Partner B says: What I hear is ________. Did I get that right?
+
+Minute 6-10:
+Switch roles.
+Partner A says: What I hear is ________. Did I get that right?
+
+Minute 10-13:
+Pick one tiny action for the next 24 hours.
+Example: Tomorrow after dinner we sit together for 10 minutes with no phones.
+
+Minute 13-15:
+Close with this line: Thank you for doing this with me. Can we do the same time tomorrow and keep it just as short?
+Then each person gives one specific appreciation.</textarea>
+  <p><button class="btn" id="copy-daily15-full-script" type="button">Copy full script</button></p>
+  <small id="copy-daily15-full-script-status" class="muted" aria-live="polite"></small>
+</div>
+
+<div class="card">
+  <h2>If tonight is too heavy for 15 minutes</h2>
+  <div class="comparison-grid" aria-label="Choose full or shorter version tonight">
+    <div class="compare-tile"><small>Use the full version</small><h3>Both of you have enough energy</h3><p>Keep the normal 15-minute plan and end with one tiny action for tomorrow.</p></div>
+    <div class="compare-tile"><small>Use the short version</small><h3>Kids, fatigue, or late-night brain</h3><p>Do the 5-minute reset below tonight, then finish the full rep tomorrow.</p></div>
+  </div>
+  <textarea id="daily15-short-script" readonly style="width:100%;min-height:140px;padding:12px;font:inherit">5-Minute Connection Reset
+
+Say this:
+I do not have energy for the full 15 minutes, but I do want us to stay connected. Can we do 5 minutes tonight and finish the full check-in tomorrow?
+
+Then do this:
+1. Each person gets one minute to say what felt heavy today.
+2. Each person reflects back one sentence.
+3. Pick one exact time for tomorrow's full check-in.
+4. End with one appreciation and stop.</textarea>
+  <p><button class="btn" id="copy-daily15-short-script" type="button">Copy 5-minute fallback</button></p>
+  <small id="copy-daily15-short-script-status" class="muted" aria-live="polite"></small>
+</div>
 
 <div class="comparison-grid" aria-label="Choose your mode">
   <div class="compare-tile"><small>When exhausted</small><h3>Kid-chaos mode</h3><p>Run it after bedtime, in the pickup line, or during a short walk.</p></div>
@@ -57,12 +141,52 @@
     <span class="icon-chip">🩹 Faster repair</span>
     <span class="icon-chip">❤️ +2 connection points</span>
   </div>
-  <p><strong>Rule:</strong> Keep tools that improve your average score by 2+ points. Swap the rest.</p>
+  <div class="comparison-grid" aria-label="How to decide after 7 days">
+    <div class="compare-tile"><small>Keep</small><h3>Average score up 2+</h3><p>The tool is working. Repeat another week.</p></div>
+    <div class="compare-tile"><small>Tweak</small><h3>Helpful but inconsistent</h3><p>Keep the format, shrink the topic, and protect the time better.</p></div>
+    <div class="compare-tile"><small>Swap</small><h3>No improvement</h3><p>Move to Pause-and-Return first, then retry connection work later.</p></div>
+  </div>
 </div>
 
-<div class="card"><h2>How to use this tool effectively</h2><ul><li><strong>When to use it:</strong> Use <strong>Daily 15-Minute Connection Block</strong> when this exact problem is happening now, not as a general reading exercise.</li><li><strong>How often:</strong> Run it once today, then repeat 3-7 times before judging results.</li><li><strong>Common mistake:</strong> Changing multiple things at once. Use one tool at a time so you can see what works.</li><li><strong>If it feels awkward:</strong> Use the script exactly once, keep the first run under 10 minutes, and rate helpfulness 1-10.</li></ul></div>
+<div class="card">
+  <h2>Use it well</h2>
+  <div class="highlight-grid" aria-label="How to make the tool work better">
+    <div class="highlight-card"><small>When to use it</small><h3>Use it on a real problem</h3><p>Run it when distance is happening now, not as theory homework.</p></div>
+    <div class="highlight-card"><small>How often</small><h3>Repeat before judging</h3><p>Use it 3-7 times before deciding if it works for you.</p></div>
+    <div class="highlight-card"><small>Common mistake</small><h3>Changing too much at once</h3><p>One tool, one lane, one measurable shift.</p></div>
+    <div class="highlight-card"><small>If awkward</small><h3>Shorten, don’t quit</h3><p>Keep the first rep under 10 minutes and score helpfulness 1-10.</p></div>
+  </div>
+</div>
 
-<div class="card"><h2>Tomorrow rep + fallback + escalation</h2><ul><li><strong>Tomorrow:</strong> run this same tool once more before trying a new one.</li><li><strong>If it didn’t help:</strong> switch to <a href="/blog/pause-and-return-tool.html">Pause-and-Return Tool</a> first, then retry.</li><li><strong>If it got worse or felt unsafe:</strong> stop DIY and involve a licensed professional/support resource.</li></ul></div>
+<div class="card">
+  <h2>Tomorrow, fallback, escalation</h2>
+  <div class="comparison-grid" aria-label="What to do after tonight">
+    <div class="compare-tile"><small>Tomorrow</small><h3>Repeat the same tool</h3><p>Run this again once before trying anything new.</p></div>
+    <a class="compare-tile" href="/blog/pause-and-return-tool.html"><small>If it didn’t help</small><h3>Switch to Pause-and-Return</h3><p>De-escalate first, then come back to connection work.</p></a>
+    <div class="compare-tile"><small>If it felt unsafe</small><h3>Stop DIY</h3><p>Use licensed professional or local support resources instead.</p></div>
+  </div>
+</div>
 
 <div class="card"><h2>Best next tool</h2><p>After this, run <a href="/blog/10-minute-weekly-meeting.html">10-Minute Weekly Meeting</a> to lock in momentum.</p></div>
-</div></body></html>
+</div><script>(function(){
+const copyPairs=[
+  {btn:'copy-daily15-main',text:'daily15-main-opener',status:'copy-daily15-main-status',ok:'Copied main opener ✅'},
+  {btn:'copy-daily15-fallback',text:'daily15-fallback',status:'copy-daily15-fallback-status',ok:'Copied low-energy text ✅'},
+  {btn:'copy-daily15-full-script',text:'daily15-full-script',status:'copy-daily15-full-script-status',ok:'Copied full 15-minute script ✅',value:true},
+  {btn:'copy-daily15-short-script',text:'daily15-short-script',status:'copy-daily15-short-script-status',ok:'Copied 5-minute fallback ✅',value:true}
+];
+for(const pair of copyPairs){
+  const btn=document.getElementById(pair.btn);
+  const text=document.getElementById(pair.text);
+  const status=document.getElementById(pair.status);
+  if(!btn||!text||!status) continue;
+  btn.addEventListener('click', async()=>{
+    try{
+      await navigator.clipboard.writeText(pair.value ? text.value : text.textContent);
+      status.textContent=pair.ok;
+    }catch(e){
+      status.textContent='Copy failed. Select and copy manually.';
+    }
+  });
+}
+})();</script></body></html>
