@@ -23,7 +23,7 @@
 - **Expected outcome:** Faster phone-trust resets, less vague debating, more couples leaving with one exact rule they can test for 7 days.
 - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
 - **Status:** SHIPPED
-- **Proof after ship:** No-Secret-Threads Rule now tells users when to use it versus Get Backup Tool, gives a fill-in boundary builder for the rule, miss response, and low-energy text, and adds a 10-minute reset flow plus a concrete 7-day trust-tension metric. Commit: `<pending>`. Live URL: `https://love.forge.dsdoes.com/blog/no-secret-threads-rule.html`
+- **Proof after ship:** No-Secret-Threads Rule now tells users when to use it versus Get Backup Tool, gives a fill-in boundary builder for the rule, miss response, and low-energy text, and adds a 10-minute reset flow plus a concrete 7-day trust-tension metric. Commit: `930db94`. Live URL: `https://love.forge.dsdoes.com/blog/no-secret-threads-rule.html`
 
 #### LF-022 Transparency Tool adds a fill-in disclosure builder so couples stop vague-confessing and clear one gray-area issue tonight
 - **Page:** `/blog/transparency-tool.html`
