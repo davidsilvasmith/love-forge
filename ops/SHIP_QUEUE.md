@@ -24,7 +24,7 @@
 - **Expected outcome:** Faster starts, less improvising under stress, and more couples actually finishing the connection rep tonight.
 - **Score:** Impact 4 / Confidence 5 / Ease 4 = **13**
 - **Status:** SHIPPED
-- **Proof after ship:** Daily 15-Minute Connection Block now gives couples one-tap copy for the main opener and low-energy text, one full 15-minute run script with reflection and close lines, and one 5-minute fallback they can use on wiped-out nights. Commit: `COMMIT_HASH`. Live URL: `https://love.forge.dsdoes.com/blog/daily-15-minute-connection-block.html`
+- **Proof after ship:** Daily 15-Minute Connection Block now gives couples one-tap copy for the main opener and low-energy text, one full 15-minute run script with reflection and close lines, and one 5-minute fallback they can use on wiped-out nights. Commit: `f0bccf7`. Live URL: `https://love.forge.dsdoes.com/blog/daily-15-minute-connection-block.html`
 
 #### LF-023 No-Secret-Threads Rule adds a fill-in boundary builder so couples stop vague phone-trust talks and lock one exact rule tonight
 - **Page:** `/blog/no-secret-threads-rule.html`
