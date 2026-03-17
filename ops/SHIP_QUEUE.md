@@ -8,12 +8,12 @@
 ## Backlog
 
 ### TODO
-- **LF-026 Homepage trims below-the-fold choice overload so the first clear path stays obvious after the hero**
+- **LF-027 Homepage sharpens the handoff from starter choice to partner send so the next move stays obvious after the first click**
   - **Page:** `/index.html`
-  - **Problem:** The hero is strong, but the homepage still repeats too many alternate routes below the fold, which can turn one clean decision into more scanning.
-  - **User pain:** "I already picked the problem. Stop making me evaluate five more sections before I act."
-  - **Proposed change:** Tighten the homepage continuation blocks so one primary next step stays dominant after the first screen.
-  - **Expected outcome:** Faster clicks into one tool, less scroll fatigue, stronger first-session action rate.
+  - **Problem:** After choosing a starter, the homepage still makes users scan several response-state sections before clearly pushing the best share/send action.
+  - **User pain:** "I picked the tool. Now tell me the exact message to send without making me keep scrolling through edge cases."
+  - **Proposed change:** Tighten the post-starter flow so the partner invite becomes the obvious continuation before secondary branches.
+  - **Expected outcome:** Faster partner sends, less homepage wandering, higher first-action follow-through.
   - **Score:** Impact 4 / Confidence 4 / Ease 3 = **11**
   - **Status:** TODO
 
@@ -22,6 +22,16 @@
 - _none_
 
 ## SHIPPED
+
+#### LF-026 Homepage trims below-the-fold choice overload so the first clear path stays obvious after the hero
+- **Page:** `/index.html`
+- **Problem:** The hero was strong, but the homepage still repeated too many alternate routes below the fold, which turned one clean decision into more scanning.
+- **User pain:** "I already picked the problem. Stop making me evaluate five more sections before I act."
+- **Proposed change:** Tighten the homepage continuation blocks so one primary next step stays dominant after the first screen.
+- **Expected outcome:** Faster clicks into one tool, less scroll fatigue, stronger first-session action rate.
+- **Score:** Impact 4 / Confidence 4 / Ease 3 = **11**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage now removes the duplicate quick-start and one-issue chooser cards directly under the hero, so users move from the first-screen starter strip straight into the partner-send action instead of re-picking the same problem again. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-025 Distance Connection Protocol adds a copy-ready nightly script builder so apart couples stop translating the routine by hand
 - **Page:** `/blog/distance-connection-protocol.html`
