@@ -29,7 +29,7 @@
 - **Expected outcome:** Faster safer routing for high-stakes couples, less wrong-tool usage, better first-screen clarity.
 - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
 - **Status:** SHIPPED
-- **Proof after ship:** Homepage first screen now gives trust-hit couples one direct warning not to start with a long feelings talk, one copy-ready text, and one obvious button into Get Backup Tool before the generic lane chooser. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Homepage first screen now gives trust-hit couples one direct warning not to start with a long feelings talk, one copy-ready text, and one obvious button into Get Backup Tool before the generic lane chooser. Commit: `6dc87c1`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-014 Get Backup Tool adds one exact 24-hour follow-up so couples do not freeze after silence
 - **Page:** `/blog/third-party-escalation-tool.html`
