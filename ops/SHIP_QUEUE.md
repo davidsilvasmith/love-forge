@@ -30,7 +30,7 @@
 - **Expected outcome:** Faster first sends from the default route and less hesitation at the top of the hub.
 - **Score:** Impact 3 / Confidence 4 / Ease 4 = **11**
 - **Status:** SHIPPED
-- **Proof after ship:** Blog hub now tells most couples to ignore the skeptical-partner route, moves that path behind a collapsed details toggle, and keeps the niche scripts available only when the normal first ask is likely to get a fast no, so the main tonight send stays visually dominant. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/blog/`
+- **Proof after ship:** Blog hub now tells most couples to ignore the skeptical-partner route, moves that path behind a collapsed details toggle, and keeps the niche scripts available only when the normal first ask is likely to get a fast no, so the main tonight send stays visually dominant. Commit: `92dd543`. Live URL: `https://love.forge.dsdoes.com/blog/`
 
 #### LF-053 Blog hub should make the fastest tonight path even more dominant than browsing so a stressed spouse lands on one send and one first rep before scanning the library
 - **Page:** `/blog/index.html`
