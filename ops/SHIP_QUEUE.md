@@ -23,7 +23,7 @@
 - **Expected outcome:** Better trust triage, fewer wrong first clicks, tighter consistency across every trust entry point on the hub.
 - **Score:** Impact 4 / Confidence 4 / Ease 3 = **11**
 - **Status:** SHIPPED
-- **Proof after ship:** Blog hub now routes hard trust hits to Get Backup Tool in both the quick-pick strip and the relationship-moment chooser, while keeping Boundary Definition for lower-drama rule-setting. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/blog/`
+- **Proof after ship:** Blog hub now routes hard trust hits to Get Backup Tool in both the quick-pick strip and the relationship-moment chooser, while keeping Boundary Definition for lower-drama rule-setting. Commit: `eeb1624`. Live URL: `https://love.forge.dsdoes.com/blog/`
 
 
 #### LF-016 Blog hub surfaces the trust-break backup route before generic browsing
