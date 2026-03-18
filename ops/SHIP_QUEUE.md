@@ -25,7 +25,7 @@
 - **Expected outcome:** Stronger homepage follow-through from the highest-traffic first-screen action, less drop-off between first send and actual reply handling, and better odds a stressed spouse keeps moving after the partner responds tonight.
 - **Score:** Impact 4 / Confidence 4 / Ease 5 = **13**
 - **Status:** SHIPPED
-- **Proof after ship:** Homepage selected-lane preview now tells users the yes / not-right-now flow is directly below, the button now says `Copy text and show next step`, and clicking it copies the selected text while jumping straight into the main send flow.
+- **Proof after ship:** Homepage selected-lane preview now tells users the yes / not-right-now flow is directly below, the button now says `Copy text and show next step`, and clicking it copies the selected text while jumping straight into the main send flow. Commit: `b465a10`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-108 Homepage first-screen selected-lane preview should name the exact yes-state tool so a stressed couple can trust the first copied text without wondering what happens if the partner says yes
 - **Page:** `/index.html`
