@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-125 Homepage yes-state should stay neutral until a lane is chosen so high-intent users do not inherit the wrong same-roof follow-through after a yes
+- **Page:** `/index.html`
+- **Problem:** The homepage main send block and skeptical route already stayed neutral until users picked a lane, but the homepage `If your partner says yes` block still preloaded same-roof lock-in copy, opener cards, closes, and the same-roof tool before any lane choice. That meant conflict, apart, and trust users could hit the highest-intent follow-through state and inherit the wrong next move right after getting a yes.
+- **User pain:** "If we already got a yes, do not preload the wrong follow-through for a totally different kind of night. Keep the yes-state neutral until it matches tonight."
+- **Proposed change:** Remove the preloaded same-roof yes-state, lock the lock-in text, opener cards, closes, and tool handoff until a lane is chosen, then unlock the lane-matched follow-through.
+- **Expected outcome:** Less wrong-lane leakage in the homepage's highest-intent yes-state, better trust that the follow-through really fits tonight, and faster movement from getting a yes to opening the right tool.
+- **Score:** Impact 5 / Confidence 5 / Ease 5 = **15**
+- **Status:** SHIPPED
+- **Proof after ship:** Live homepage now keeps the main yes-state neutral before lane choice; production shows `Pick a lane to unlock lock-in text`, `Pick a lane to unlock first question`, and `Pick a lane to unlock the right tool` until a lane is selected, then swaps to the correct lane-matched follow-through. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+
 #### LF-124 Homepage lower skeptical route should stay neutral until a lane is chosen so resistant couples do not inherit the wrong 7-day ask after scrolling
 - **Page:** `/index.html`
 - **Problem:** The homepage hero skeptical route already stayed locked until a lane was chosen, but the lower `If one partner is skeptical` section still loaded active same-roof copy, live copy buttons, and the default same-roof tool before any lane choice. That let conflict, apart, and trust users scroll into the skeptical route and inherit the wrong lower-pressure ask right at the homepage's biggest objection-handling block.
