@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-114 Homepage trust-break first-screen route should stop making high-stakes users retype the backup ask before they can take the safest next move tonight
+- **Page:** `/index.html`
+- **Problem:** The homepage first screen already routed trust-hit couples to the Get Backup Tool, but the highest-stakes card still showed the exact outreach text as plain paragraph copy while every lower-stakes homepage route had a copy action. Users dealing with lying, cheating, hidden money, or secret messages still had to retype the safest first message at the most fragile moment.
+- **User pain:** "If trust got hit, do not make me rewrite the one safest text by hand before I can use it. Let me copy it fast and move."
+- **Proposed change:** Turn the homepage trust-break first-step text into a copy-ready block with one clear `Copy trust-break text` action beside the existing Get Backup Tool link.
+- **Expected outcome:** Faster safer first action for trust-hit couples, less friction on the highest-stakes homepage route, and better odds a stressed spouse sends the backup-first text tonight instead of stalling or improvising.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage trust-break first-screen card now gives users the exact backup-first text inside a copy box plus a dedicated copy button next to the Get Backup Tool link, so the safest route is immediately usable without retyping. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+
 #### LF-113 Homepage first-screen skeptical route should stop making resistance-heavy couples jump lower just to get the exact safer ask when the normal invite will obviously get an eye-roll
 - **Page:** `/index.html`
 - **Problem:** The homepage first-screen selected-lane preview already exposed a skeptical-partner fast route, but that card still only offered a `Jump to skeptical-partner text` button. Resistance-heavy users still had to scroll lower before they could copy the one safer ask most likely to help tonight.
