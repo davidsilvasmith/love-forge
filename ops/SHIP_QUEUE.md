@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-115 Blog hub first send should stop sneaking tomorrow commitment into the very first ask so a stressed spouse can get one smaller yes tonight
+- **Page:** `/blog/index.html`
+- **Problem:** The blog hub told users to send one small ask and stop there, but the main dynamic first-send block still added tomorrow or ongoing-commitment language inside the first message itself — including `If it helps, we can repeat it tomorrow. If not, we drop it.`, `then decide tomorrow if we want the full 10-minute version`, `If it helps, we stop there and repeat tomorrow.`, and `If it helps, we keep going tomorrow.`
+- **User pain:** "I am trying to get one yes for tonight. Do not make my first text sound like I am already signing us up for tomorrow too."
+- **Proposed change:** Strip tomorrow/ongoing-commitment language out of the blog hub's first-send and low-energy fallback texts so the first ask stays focused on one small rep tonight; keep tomorrow follow-through only in the later yes / soft-no sections.
+- **Expected outcome:** Smaller safer first sends from the blog hub, less resistance at the first ask, and better odds a stressed spouse gets one yes tonight before follow-through talk starts.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Blog hub first-send and low-energy fallback texts now ask only for one small rep tonight across distance, conflict, apart, and trust states, while tomorrow follow-through stays in the later reply-handling blocks where it belongs. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/blog/`
+
 #### LF-114 Homepage trust-break first-screen route should stop making high-stakes users retype the backup ask before they can take the safest next move tonight
 - **Page:** `/index.html`
 - **Problem:** The homepage first screen already routed trust-hit couples to the Get Backup Tool, but the highest-stakes card still showed the exact outreach text as plain paragraph copy while every lower-stakes homepage route had a copy action. Users dealing with lying, cheating, hidden money, or secret messages still had to retype the safest first message at the most fragile moment.
