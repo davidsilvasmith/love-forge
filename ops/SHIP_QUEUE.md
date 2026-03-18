@@ -24,7 +24,7 @@
 - **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
 - **Status:** SHIPPED
 - **Proof after ship:** The blog hub quick scenario strip now shows all 4 core lanes, including a dedicated trust-boundary tile that points calm trust-rule nights to Boundary Definition without weakening the existing fresh-trust-break route above.
-- **Commit:** `PENDING`
+- **Commit:** `7822411`
 - **Live URL:** `https://love.forge.dsdoes.com/blog/`
 
 
