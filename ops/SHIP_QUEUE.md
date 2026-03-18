@@ -8,19 +8,22 @@
 ## Backlog
 
 ### TODO
-- LF-064 Homepage follow-through copy should keep tomorrow wording natural when users enter flexible time phrases like "8:30 tonight" or "tomorrow at lunch"
-  - **Page:** `/index.html`
-  - **Problem:** The yes-state text is cleaner now, but the homepage still depends on one free-text time field across multiple send and follow-through blocks, so future edits could reintroduce awkward phrasing if tomorrow-specific copy is not guarded carefully.
-  - **User pain:** "I changed the time once. Do not make the retry or tomorrow text sound robotic right when I am about to send it."
-  - **Proposed change:** Review the remaining homepage time-dependent strings and tighten any edge-case phrasing that still sounds generated instead of human.
-  - **Expected outcome:** More trustworthy copy across the full send → yes → soft-no → tomorrow loop, with less last-second manual cleanup.
-  - **Score:** Impact 3 / Confidence 3 / Ease 3 = **9**
-
+- _none_
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-064 Homepage follow-through copy should keep tomorrow wording natural when users enter flexible time phrases like "8:30 tonight" or "tomorrow at lunch"
+- **Page:** `/index.html`
+- **Problem:** The yes-state text is cleaner now, but the homepage still depends on one free-text time field across multiple send and follow-through blocks, so future edits could reintroduce awkward phrasing if tomorrow-specific copy is not guarded carefully.
+- **User pain:** "I changed the time once. Do not make the retry or tomorrow text sound robotic right when I am about to send it."
+- **Proposed change:** Review the remaining homepage time-dependent strings and tighten any edge-case phrasing that still sounds generated instead of human.
+- **Expected outcome:** More trustworthy copy across the full send → yes → soft-no → tomorrow loop, with less last-second manual cleanup.
+- **Score:** Impact 3 / Confidence 3 / Ease 3 = **9**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage soft-no and tomorrow-repeat copy now turns flexible time phrases into more natural tomorrow wording, so entries like "8:30", "8:30 tonight", "at 8:30", "after bedtime", or "tomorrow at lunch" read like something a real spouse would send instead of robotic fallback text.
 
 #### LF-063 Homepage yes-state lock-in text should mirror the plain-time format cleanly so users do not get awkward duplicate wording like "tonight at 8:30 tonight" after customizing the shared time
 - **Page:** `/index.html`
