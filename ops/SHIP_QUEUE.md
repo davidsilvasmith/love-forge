@@ -24,6 +24,8 @@
 - **Score:** Impact 4 / Confidence 5 / Ease 4 = **13**
 - **Status:** SHIPPED
 - **Proof after ship:** Get Backup Tool now gives one copy-ready 24-hour follow-up in both the main page and the builder, tells users to run one outreach cycle instead of repeating the tool like a habit, and points the next move toward pause/containment and licensed support instead of an off-topic weekly meeting.
+- **Commit:** `c00a111`
+- **Live URL:** `https://love.forge.dsdoes.com/blog/third-party-escalation-tool.html`
 
 
 #### LF-081 Distance Connection Protocol should stop wrong-page starts when apart couples are actually dealing with same-roof distance, hot conflict, or a trust hit
