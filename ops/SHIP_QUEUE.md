@@ -15,6 +15,16 @@
 
 ## SHIPPED
 
+#### LF-078 Blog hub soft-no path should match the actual situation so a stressed spouse can copy the right calm reply and tomorrow retry for conflict, distance, apart, or trust nights without mentally rewriting a generic reset
+- **Page:** `/blog/index.html`
+- **Problem:** The blog hub let users match the first ask to distant, conflict, apart, or trust nights, but the soft-no reply and tomorrow retry still stayed generic, which forced a tired spouse to mentally rewrite the calmer follow-up right after getting a no.
+- **User pain:** "If they said not tonight, do not make me translate a generic reset text into the actual kind of night we are having."
+- **Proposed change:** Make the blog hub soft-no reply and tomorrow retry switch with the same situation picker used for the first ask so the follow-up language stays specific for distant, conflict, apart, and trust nights.
+- **Expected outcome:** Less last-second rewriting after a soft no, faster calmer follow-through, and better odds a stressed spouse actually sends the next right text tomorrow.
+- **Score:** Impact 4 / Confidence 4 / Ease 5 = **13**
+- **Status:** SHIPPED
+- **Proof after ship:** Blog hub soft-no copy now changes with the same distance, conflict, apart, or trust picker as the main send, so both the calm reply and the tomorrow retry sound like the real situation instead of a generic reset users have to mentally translate.
+
 #### LF-077 Blog hub send-now path should match the actual situation so a stressed spouse can copy a distance, conflict, apart, or trust ask without mentally translating a generic reset before sending
 - **Page:** `/blog/index.html`
 - **Problem:** The blog hub already got users to one send fast, but the main send-now copy still stayed generic, which forced a stressed spouse to mentally rewrite the ask when the real situation was hot conflict, physical distance, or a trust wobble.
