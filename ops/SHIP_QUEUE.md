@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-103 Homepage should stop repeating the same jump-to-send choice right after the lane cards so stressed couples can act on the first obvious buttons instead of re-deciding the same thing again
+- **Page:** `/index.html`
+- **Problem:** Each homepage lane card already gave users two clear actions — `Copy text first` or `Open full tool` — but the very next card repeated the same jump-to-send choice with another four buttons and another explanation. That made users re-decide the same thing right after the clearest first-screen choice.
+- **User pain:** "I already picked the lane and saw the button. Do not make me choose the same send path again before I act."
+- **Proposed change:** Remove the duplicate jump-to-send card and tighten the send-section helper copy so it points back to the lane card button users already trusted.
+- **Expected outcome:** Less above-the-fold cognitive load, faster movement from lane pick to first send, and better odds a stressed spouse acts on the first obvious button tonight instead of scrolling into duplicate choices.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage now moves straight from the lane cards into the overlap triage block instead of repeating another jump-to-send chooser, and the send section now tells users to use the lane card's `Copy text first` button to jump straight into the matching send. Commit: `5b6823e`. Live URL: `https://love.forge.dsdoes.com/`
+
 #### LF-102 Homepage first-screen lane cards should stop making users choose between routing and sending so stressed couples can copy the first text from the exact lane card they already trust
 - **Page:** `/index.html`
 - **Problem:** The homepage hero promised, "Pick the sentence that sounds most like tonight, copy the text, and run one short rep," but the four biggest lane cards only opened full tool pages. The actual jump-to-send action lived in a separate card below them, so the most obvious first click still pulled stressed users into more reading before the first text.
