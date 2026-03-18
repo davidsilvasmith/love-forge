@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-105 Homepage first-screen lane cards should expose the wiped-out shortcut directly so exhausted couples can jump straight to the smallest safe text instead of hunting for it below the fold
+- **Page:** `/index.html`
+- **Problem:** The homepage hero already promised a low-energy fallback, but the first-screen lane cards only exposed `Copy ... text first` and `Open full tool`. A wiped-out user still had to scroll into the main send block and re-orient before reaching the lighter copy.
+- **User pain:** "We are too fried for the normal ask. Do not make me scroll and decode the full send block just to find the smaller safer text."
+- **Proposed change:** Add one `Need lighter text` action on each homepage lane card that keeps the chosen lane, jumps straight to the wiped-out card, and clarifies that it is the smallest safe text for tonight.
+- **Expected outcome:** Faster low-energy action from the homepage first screen, less hunting inside the main send block, and better odds an exhausted spouse sends the lighter ask tonight instead of bouncing.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage lane cards now expose a `Need lighter text` shortcut that carries the selected lane into the wiped-out card, and the live homepage shows the new shortcut plus the clearer `Too fried for the normal ask?` framing in the low-energy block. Commit: `5584761`. Live URL: `https://love.forge.dsdoes.com/`
+
 #### LF-104 Homepage main send block should show the selected lane before the chips so stressed couples who jump down from the hero instantly trust they are in the right place before copying
 - **Page:** `/index.html`
 - **Problem:** The homepage main send block updated with the chosen lane, but once users jumped down from the hero they still had to decode the active chip row and helper copy to confirm they had landed in the right send flow before copying.
