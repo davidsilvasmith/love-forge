@@ -25,7 +25,7 @@
 - **Expected outcome:** Less wrong-lane leakage in the homepage's highest-intent yes-state, better trust that the follow-through really fits tonight, and faster movement from getting a yes to opening the right tool.
 - **Score:** Impact 5 / Confidence 5 / Ease 5 = **15**
 - **Status:** SHIPPED
-- **Proof after ship:** Live homepage now keeps the main yes-state neutral before lane choice; production shows `Pick a lane to unlock lock-in text`, `Pick a lane to unlock first question`, and `Pick a lane to unlock the right tool` until a lane is selected, then swaps to the correct lane-matched follow-through. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Live homepage now keeps the main yes-state neutral before lane choice; production shows `Pick a lane to unlock lock-in text`, `Pick a lane to unlock first question`, and `Pick a lane to unlock the right tool` until a lane is selected, then swaps to the correct lane-matched follow-through. Commit: `5539f2c`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-124 Homepage lower skeptical route should stay neutral until a lane is chosen so resistant couples do not inherit the wrong 7-day ask after scrolling
 - **Page:** `/index.html`
