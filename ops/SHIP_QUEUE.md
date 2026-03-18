@@ -8,19 +8,24 @@
 ## Backlog
 
 ### TODO
-- LF-068 Homepage yes-state should make the close copyable so a tired spouse can end the rep cleanly without improvising the last line after one useful answer
-  - **Page:** `/index.html`
-  - **Problem:** The homepage yes-state now gives copy-ready openers, but the close still sits as plain guidance instead of one exact line users can copy when it is time to stop cleanly.
-  - **User pain:** "We started okay. Do not make me invent the close and accidentally reopen the whole conversation at the end."
-  - **Proposed change:** Turn the yes-state close into one copy-ready ending line with a low-energy version.
-  - **Expected outcome:** Cleaner endings, less overtalking after one useful rep, and better odds couples keep tomorrow's follow-through intact.
-  - **Score:** Impact 3 / Confidence 4 / Ease 4 = **11**
-  - **Status:** TODO
+- _none_
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-068 Homepage yes-state should make the close copyable so a tired spouse can end the rep cleanly without improvising the last line after one useful answer
+- **Page:** `/index.html`
+- **Problem:** The homepage yes-state now gives copy-ready openers, but the close still sat as plain guidance instead of one exact line users could copy when it was time to stop cleanly.
+- **User pain:** "We started okay. Do not make me invent the close and accidentally reopen the whole conversation at the end."
+- **Proposed change:** Turn the yes-state close into one copy-ready ending line with a low-energy version.
+- **Expected outcome:** Cleaner endings, less overtalking after one useful rep, and better odds couples keep tomorrow's follow-through intact.
+- **Score:** Impact 3 / Confidence 4 / Ease 4 = **11**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage yes-state now gives one copy-ready close plus one low-energy close with dedicated copy buttons, so a tired spouse can end the rep cleanly tonight without improvising the last line.
+- **Commit:** `f777b6c`
+- **Live URL:** `https://love.forge.dsdoes.com/`
 
 #### LF-067 Homepage should make the yes-state first question copyable so a stressed spouse can start the rep without translating the opener after the time gets locked
 - **Page:** `/index.html`
