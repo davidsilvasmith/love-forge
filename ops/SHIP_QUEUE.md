@@ -23,7 +23,7 @@
 - **Expected outcome:** Faster lane confidence during the send and yes-state flows, less confusion between same-house distance and physically-apart nights, and better odds a stressed spouse copies the right text tonight.
 - **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
 - **Status:** SHIPPED
-- **Proof after ship:** Homepage jump-to-send and yes-state lane summary now say "Under same roof, far apart" directly, making the same-house-vs-apart distinction easier to trust at a glance before users copy. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Homepage jump-to-send and yes-state lane summary now say "Under same roof, far apart" directly, making the same-house-vs-apart distinction easier to trust at a glance before users copy. Commit: `b24b31c`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-093 Curiosity Over Certainty Tool should stop sounding like generic advice and generate the exact opener, curiosity question, mirror line, and close so a stressed spouse can challenge one bad story tonight without improvising
 - **Page:** `/blog/curiosity-over-certainty-tool.html`
