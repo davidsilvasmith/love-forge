@@ -8,12 +8,22 @@
 ## Backlog
 
 ### TODO
-- LF-089 Homepage yes-state should make the lane match more visible at a glance so users instantly trust that the follow-through copy changed with their selected night type before they copy and start
+- LF-090 Homepage same-roof main send should say "under the same roof but far apart" directly in the partner-invite block so users who jump below the hero do not have to infer what the default lane means before they copy
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-089 Homepage yes-state should make the lane match more visible at a glance so users instantly trust that the follow-through copy changed with their selected night type before they copy and start
+- **Page:** `/index.html`
+- **Problem:** The homepage yes-state already changed the first question and low-energy opener with the selected lane, but once users landed in the yes block the match still relied on them noticing subtle copy shifts instead of seeing one obvious signal that the opener was now tuned for conflict, same-roof distance, apart, or trust.
+- **User pain:** "I changed the lane. Show me fast that the opener changed with it so I can copy it without second-guessing whether this is still the generic version."
+- **Proposed change:** Add one visible yes-state lane summary plus small lane labels on the opener cards so users can trust at a glance that the follow-through copy matches the selected night type.
+- **Expected outcome:** Faster confidence in the yes-state flow, less re-reading before copying the first question, and better odds a stressed spouse starts the rep tonight instead of hesitating.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage yes-state now shows a live "Tonight's lane" summary plus lane-specific labels on the normal and low-energy opener cards, making it obvious at a glance that the follow-through copy changes with conflict, same-roof distance, apart, or trust before users copy and start. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-088 Homepage yes-state opener should match the lane already chosen so a stressed spouse does not get a yes and then have to translate a generic first question before the rep starts tonight
 - **Page:** `/index.html`
