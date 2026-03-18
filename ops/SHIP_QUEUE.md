@@ -25,7 +25,7 @@
 - **Expected outcome:** Fewer wrong first sends from the homepage first screen, stronger trust in the lane routing, and better odds a stressed spouse copies the right message for tonight on the first try.
 - **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
 - **Status:** SHIPPED
-- **Proof after ship:** Homepage first-screen selected-lane preview now stays locked with neutral copy until users choose a lane, then unlocks the matching message and exact next-tool handoff so conflict, apart, and trust nights do not accidentally inherit the default same-roof text. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Homepage first-screen selected-lane preview now stays locked with neutral copy until users choose a lane, then unlocks the matching message and exact next-tool handoff so conflict, apart, and trust nights do not accidentally inherit the default same-roof text. Commit: `69a99d0`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-115 Blog hub first send should stop sneaking tomorrow commitment into the very first ask so a stressed spouse can get one smaller yes tonight
 - **Page:** `/blog/index.html`
