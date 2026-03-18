@@ -25,7 +25,7 @@
 - **Expected outcome:** Less wrong-lane leakage in the homepage skeptical route, better trust that the lower-pressure ask really fits tonight, and faster movement from routing to sending without last-second translation.
 - **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
 - **Status:** SHIPPED
-- **Proof after ship:** Live homepage now keeps the lower skeptical section neutral before lane choice; production shows `Pick a lane to unlock 7-day ask`, `Pick a lane to unlock lighter fallback`, and a neutral `Pick a lane to unlock the right tool` state until a lane is selected. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Live homepage now keeps the lower skeptical section neutral before lane choice; production shows `Pick a lane to unlock 7-day ask`, `Pick a lane to unlock lighter fallback`, and a neutral `Pick a lane to unlock the right tool` state until a lane is selected. Commit: `5f90273`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-123 Homepage main send block should stay neutral until a lane is chosen so users who jump straight to the first ask do not copy the wrong same-roof text
 - **Page:** `/index.html`
