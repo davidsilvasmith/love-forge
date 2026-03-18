@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-127 Homepage same-roof hero action should say under-same-roof so apart couples do not hesitate on the first obvious click
+- **Page:** `/index.html`
+- **Problem:** The homepage hero already spelled the lane as `We are under the same roof but feel far apart`, but the first obvious action button still said `Copy same-roof text first`. On the highest-leverage click path, that shorthand made the lane feel less exact than the surrounding copy and easier to second-guess against the separate apart-tonight lane.
+- **User pain:** "I can tell we live together, but when I am stressed I should not have to translate whether `same-roof` means this lane or the apart one. The first button should match the diagnosis right in front of me."
+- **Proposed change:** Rename the hero CTA to `Copy under-same-roof text first` and mirror that wording in the locked selected-lane helper so the homepage uses one exact label for this lane.
+- **Expected outcome:** Less hesitation between the same-house and apart routes, cleaner first-screen routing, and more trust that the first click matches the diagnosed problem.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Live homepage hero now shows `Copy under-same-roof text first` on the same-roof lane card, matching the diagnosis copy above it. Commit: `d236d87`. Live URL: `https://love.forge.dsdoes.com/`
+
 #### LF-126 Homepage soft-no path should stay neutral until a lane is chosen so users do not inherit the wrong same-roof recovery script after a not-right-now
 - **Page:** `/index.html`
 - **Problem:** The homepage main send block and yes-state already stayed neutral until users picked a lane, but the homepage `If your partner says "not right now"` section still preloaded same-roof recovery copy, tomorrow retry text, and the same-roof tool before any lane choice. That meant conflict, apart, and trust users could hit the homepage's biggest objection-handling block and inherit the wrong recovery move right after a soft no.
