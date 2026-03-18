@@ -15,6 +15,16 @@
 
 ## SHIPPED
 
+#### LF-080 Blog hub should tell stressed spouses exactly how to choose when trust, conflict, distance, and apart all feel partly true so they stop hesitating and open one right tool tonight
+- **Page:** `/blog/index.html`
+- **Problem:** The blog hub already had strong first sends and routing, but it still assumed users could quickly resolve overlap in their own head when the real night felt like some mix of trust wobble, hot conflict, emotional distance, and physical apartness.
+- **User pain:** "More than one of these is true. Do not make me guess which problem wins tonight before I can move."
+- **Proposed change:** Add one above-the-fold triage card on the blog hub that sets the decision order: trust hit first, hot conflict next, then a clear split between apart tonight, emotionally distant under the same roof, and calm boundary-setting.
+- **Expected outcome:** Faster first clicks from the blog hub, less second-guessing, and better odds a stressed spouse opens one right tool instead of freezing between overlapping lanes.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Blog hub now gives one explicit “if more than one thing feels true” triage block near the top, so users can see the exact order for trust hits, hot conflict, apart-tonight distance, same-roof emotional distance, and calm boundary work before choosing a tool.
+
 #### LF-079 Homepage first screen should give apart couples their own obvious route so a stressed spouse does not have to guess whether “far apart” means emotionally distant or physically apart tonight
 - **Page:** `/index.html`
 - **Problem:** The homepage already handled conflict, distance, and trust well, but physically-apart couples still had to mentally translate the emotional-distance lane into their situation before they could act.
