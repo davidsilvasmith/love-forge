@@ -15,6 +15,17 @@
 
 ## SHIPPED
 
+#### LF-079 Homepage first screen should give apart couples their own obvious route so a stressed spouse does not have to guess whether “far apart” means emotionally distant or physically apart tonight
+- **Page:** `/index.html`
+- **Problem:** The homepage already handled conflict, distance, and trust well, but physically-apart couples still had to mentally translate the emotional-distance lane into their situation before they could act.
+- **User pain:** "We are literally apart tonight. Do not make me guess whether this page means emotional distance or long-distance logistics."
+- **Proposed change:** Add one explicit apart-tonight lane on the homepage first screen and match it with copy-ready apart messages in the hero and main send block.
+- **Expected outcome:** Faster first-screen recognition for apart couples, less translation friction, and better odds a stressed spouse sends one short connection ask tonight instead of hesitating.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage now gives physically-apart couples one obvious “apart tonight” route in the first screen plus matching copy-ready apart messages in the hero and main send picker, so they can act fast without translating the generic distance lane in their head.
+
+
 #### LF-078 Blog hub soft-no path should match the actual situation so a stressed spouse can copy the right calm reply and tomorrow retry for conflict, distance, apart, or trust nights without mentally rewriting a generic reset
 - **Page:** `/blog/index.html`
 - **Problem:** The blog hub let users match the first ask to distant, conflict, apart, or trust nights, but the soft-no reply and tomorrow retry still stayed generic, which forced a tired spouse to mentally rewrite the calmer follow-up right after getting a no.
