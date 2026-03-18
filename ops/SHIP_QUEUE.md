@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-104 Homepage main send block should show the selected lane before the chips so stressed couples who jump down from the hero instantly trust they are in the right place before copying
+- **Page:** `/index.html`
+- **Problem:** The homepage main send block updated with the chosen lane, but once users jumped down from the hero they still had to decode the active chip row and helper copy to confirm they had landed in the right send flow before copying.
+- **User pain:** "I already picked the lane. Show me fast that I am in the right send block so I do not stop and re-check the chips before I copy."
+- **Proposed change:** Add one visible `Selected tonight lane` summary above the main send chips and make it update with conflict, same-roof distance, apart, or calm trust-boundary selection.
+- **Expected outcome:** Faster trust in the homepage send block, less chip-decoding before the first copy action, and better odds a stressed spouse sends the right text tonight instead of hesitating.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage main send block now shows a live `Selected tonight lane` summary above the lane chips, so users who jump down from the hero can confirm the current route at a glance before they copy. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+
 #### LF-103 Homepage should stop repeating the same jump-to-send choice right after the lane cards so stressed couples can act on the first obvious buttons instead of re-deciding the same thing again
 - **Page:** `/index.html`
 - **Problem:** Each homepage lane card already gave users two clear actions — `Copy text first` or `Open full tool` — but the very next card repeated the same jump-to-send choice with another four buttons and another explanation. That made users re-decide the same thing right after the clearest first-screen choice.
