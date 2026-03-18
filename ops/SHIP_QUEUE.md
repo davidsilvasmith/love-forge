@@ -25,7 +25,7 @@
 - **Expected outcome:** Faster first sends from the homepage first screen, less page-hopping before action, and better odds a stressed spouse copies one exact ask tonight instead of drifting into more reading.
 - **Score:** Impact 5 / Confidence 5 / Ease 4 = **14**
 - **Status:** SHIPPED
-- **Proof after ship:** Homepage hero lane cards now let users copy the matching lane text directly from the first-screen card while keeping a separate full-tool path, so the page's "copy the text" promise is true on the first obvious click. Commit: `TO_FILL`. Live URL: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Homepage hero lane cards now let users copy the matching lane text directly from the first-screen card while keeping a separate full-tool path, so the page's "copy the text" promise is true on the first obvious click. Commit: `94d55ba`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-101 Homepage low-energy fallback should stop hiding behind helper copy and give wiped-out couples one exact lighter text in the main send block so they can act tonight without rewriting the ask
 - **Page:** `/index.html`
