@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-107 Homepage first-screen send customizer should stop re-showing four full send texts after lane choice so a stressed couple can stay on one obvious copy-ready ask instead of re-deciding the same route
+- **Page:** `/index.html`
+- **Problem:** The homepage already asked users to pick one lane above, but the very next first-screen send block re-expanded into four full send tiles again. A stressed spouse could still feel forced to re-scan conflict, same-roof, apart, and trust copy after already deciding which night they were having.
+- **User pain:** "I already picked the lane. Do not make me re-read four more send options before I copy the one text you want me to send."
+- **Proposed change:** Replace the four-tile first-screen send grid with one live selected-lane preview card that stays synced to the current lane and keeps one obvious copy action.
+- **Expected outcome:** Less first-screen re-deciding, faster movement from lane choice to copied text, and better odds a stressed spouse sends one exact ask tonight instead of scanning the same decision twice.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage first-screen send customizer now shows one selected-lane preview instead of four competing full-text tiles, so users keep one obvious copy-ready ask after lane choice without re-scanning the whole set. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+
 #### LF-106 Homepage first-screen “Copy text first” buttons should actually copy the matching text so a stressed spouse can act on the first click instead of getting false-forwarded into more scanning
 - **Page:** `/index.html`
 - **Problem:** The homepage hero promised, "Pick the sentence that sounds most like tonight, copy the text, and run one short rep," and each lane card repeated `Copy ... text first`, but those buttons only scrolled down the page. The user still had to re-orient in the send block before getting the actual message.
