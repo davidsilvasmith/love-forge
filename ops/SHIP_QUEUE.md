@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-116 Homepage first-screen selected-lane preview should stop unlocking the default same-roof copy before users choose a lane so conflict, apart, and trust nights do not get the wrong first text
+- **Page:** `/index.html`
+- **Problem:** The homepage first-screen selected-lane preview already promised `after you pick a lane above, this is the one text to copy first`, but the preview loaded immediately with the same-roof badge, same-roof title, same-roof yes-state tool, live copy text, and an active `Copy text and show next step` button before any lane was chosen.
+- **User pain:** "Do not let me accidentally copy the default same-roof message when tonight is actually conflict, apart, or trust. Lock the preview until I choose."
+- **Proposed change:** Replace the preloaded same-roof hero preview with a locked neutral state that tells users to choose a lane first, disable the copy action until a hero lane is picked, and only then load the matching text and yes-state tool.
+- **Expected outcome:** Fewer wrong first sends from the homepage first screen, stronger trust in the lane routing, and better odds a stressed spouse copies the right message for tonight on the first try.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage first-screen selected-lane preview now stays locked with neutral copy until users choose a lane, then unlocks the matching message and exact next-tool handoff so conflict, apart, and trust nights do not accidentally inherit the default same-roof text. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+
 #### LF-115 Blog hub first send should stop sneaking tomorrow commitment into the very first ask so a stressed spouse can get one smaller yes tonight
 - **Page:** `/blog/index.html`
 - **Problem:** The blog hub told users to send one small ask and stop there, but the main dynamic first-send block still added tomorrow or ongoing-commitment language inside the first message itself — including `If it helps, we can repeat it tomorrow. If not, we drop it.`, `then decide tomorrow if we want the full 10-minute version`, `If it helps, we stop there and repeat tomorrow.`, and `If it helps, we keep going tomorrow.`
