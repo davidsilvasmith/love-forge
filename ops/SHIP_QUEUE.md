@@ -15,6 +15,19 @@
 
 ## SHIPPED
 
+#### LF-083 Blog hub scenario strip should show the trust-boundary lane directly so a stressed spouse does not see 4 core lanes in the copy but only 3 quick-pick tiles when trying to choose fast
+- **Page:** `/blog/index.html`
+- **Problem:** The blog hub already taught the 4 core lanes clearly, but the quick scenario strip only showed conflict, connection, and apart, which made the fast-pick UI feel inconsistent right where a stressed spouse was trying to choose one lane fast.
+- **User pain:** "You told me trust is one of the main lanes. Do not make me hunt lower on the page or second-guess whether trust belongs here tonight."
+- **Proposed change:** Add one trust-boundary quick-pick tile to the blog hub scenario strip and make the tile clarify that fresh trust breaks still go to Get Backup Tool while blurry-rule trust nights go to Boundary Definition.
+- **Expected outcome:** Faster right-lane confidence on the blog hub, less hesitation for trust users, and better alignment between the blog hub teaching model and the actual quick-pick UI.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** The blog hub quick scenario strip now shows all 4 core lanes, including a dedicated trust-boundary tile that points calm trust-rule nights to Boundary Definition without weakening the existing fresh-trust-break route above.
+- **Commit:** `PENDING`
+- **Live URL:** `https://love.forge.dsdoes.com/blog/`
+
+
 #### LF-082 Get Backup Tool should stop sounding like a repeatable habit and give one exact follow-up path so a stressed spouse can seek outside help tonight without bad next-step advice
 - **Page:** `/blog/third-party-escalation-tool.html`
 - **Problem:** The page had strong first-send and builder sections, but the lower guidance still treated outside-help outreach like a repeatable relationship habit with generic "repeat 3-7 times," "run this same tool once more tomorrow," and a Weekly Meeting next step that weakened trust on a high-stakes page.
