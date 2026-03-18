@@ -15,6 +15,19 @@
 
 ## SHIPPED
 
+#### LF-074 Blog hub soft-no reply should read like a ready-to-send tomorrow retry so a stressed spouse does not hit awkward double-tomorrow wording right before copying the calmer follow-up
+- **Page:** `/blog/index.html`
+- **Problem:** The blog hub already gave the right soft-no path, but the dynamic no-thanks text could render awkward copy like “Tomorrow, can we try one 10-minute reset tomorrow at 8:30,” which adds friction in the exact moment a tired spouse needs a clean calmer retry.
+- **User pain:** "Do not make the retry text sound robotic or duplicated right when I am about to copy it."
+- **Proposed change:** Remove the extra leading “Tomorrow,” from the dynamic no-thanks reply so the same shared time logic still works, but the sentence reads naturally across clock times and tomorrow phrases.
+- **Expected outcome:** Cleaner copy in the soft-no path, less last-second editing, and better odds a stressed spouse actually sends the calmer retry.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Blog hub soft-no copy now keeps the shared tomorrow time logic but drops the duplicate leading “Tomorrow,” so users get a natural ready-to-send retry line instead of awkward double-tomorrow wording.
+- **Commit:** `1bce86d`
+- **Live URL:** `https://love.forge.dsdoes.com/blog/`
+
+
 #### LF-073 10-Minute Weekly Meeting should generate the exact low-energy invite and calm soft-no retry so busy parents can still lock the meeting tonight when a full weekly meeting feels too heavy
 - **Page:** `/blog/10-minute-weekly-meeting.html`
 - **Problem:** The page already generated a strong invite, one-issue opener, and close, but it still made a tired spouse invent the lower-pressure fallback when energy was gone or the partner said not tonight.
