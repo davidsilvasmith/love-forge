@@ -25,7 +25,7 @@
 - **Expected outcome:** Less wrong-lane leakage in the homepage's 7-day follow-through, better trust that tomorrow's repeat still fits tonight's tool, and faster movement from one good rep into the right repeat loop.
 - **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
 - **Status:** SHIPPED
-- **Proof after ship:** Live homepage now keeps the 7-day follow-through neutral before lane choice; production shows `Pick one lane first so tomorrow's repeat stays matched to tonight instead of defaulting to the same-roof path` plus a locked `Pick a lane to unlock tomorrow text` state until a lane is selected, then swaps to the correct lane-matched repeat copy. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Live homepage now keeps the 7-day follow-through neutral before lane choice; production shows `Pick one lane first so tomorrow's repeat stays matched to tonight instead of defaulting to the same-roof path` plus a locked `Pick a lane to unlock tomorrow text` state until a lane is selected, then swaps to the correct lane-matched repeat copy. Commit: `1ef8759`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-129 Homepage tomorrow-repeat text should stay lane-matched so couples do not get a wrong follow-through script after one good rep
 - **Page:** `/index.html`
