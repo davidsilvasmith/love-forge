@@ -15,6 +15,19 @@
 
 ## SHIPPED
 
+#### LF-076 Bid Response Tool should generate the exact bid reply, low-energy text, and tomorrow repeat so a tired spouse can catch one connection moment tonight without improvising
+- **Page:** `/blog/bid-response-tool.html`
+- **Problem:** The page still read like light advice and a generic checklist, which left a stressed spouse to choose the right bid, invent the actual warm response, and figure out how to repeat it tomorrow while already low on bandwidth.
+- **User pain:** "We miss these tiny moments all the time. Do not make me build the exact words from scratch right when I am trying to show up better."
+- **Proposed change:** Turn the page into a practical tonight-use tool with one bid picker, one exact response builder, one low-energy fallback, one 10-minute script, and one 7-day tracker.
+- **Expected outcome:** Faster starts, less vague "be more present" advice, and better odds a stressed spouse actually catches and answers one bid tonight.
+- **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+- **Status:** SHIPPED
+- **Proof after ship:** Bid Response Tool now tells couples how to pick one missed bid, generates the exact response line plus tomorrow repeat text, includes a low-energy fallback and full copy-ready script, and gives one simple 7-day tracker so they can practice one real micro-connection tonight instead of just reading advice.
+- **Commit:** pending
+- **Live URL:** `https://love.forge.dsdoes.com/blog/bid-response-tool.html`
+
+
 #### LF-075 Blog hub soft-no path should give the exact tomorrow retry text so a stressed spouse can do the thinking tonight and send one calmer smaller ask tomorrow without improvising
 - **Page:** `/blog/index.html`
 - **Problem:** The blog hub told users to wait until tomorrow and retry once, but it still made a tired spouse invent the actual smaller follow-up text the next day right when energy and confidence were likely lower.
