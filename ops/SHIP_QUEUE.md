@@ -8,12 +8,12 @@
 ## Backlog
 
 ### TODO
-- LF-062 Homepage should let the optional calming detail flow into the main partner invite so the first send matches the most reassuring wording the user already chose above the fold
+- LF-063 Homepage yes-state lock-in text should mirror the plain-time format cleanly so users do not get awkward duplicate wording like "tonight at 8:30 tonight" after customizing the shared time
   - **Page:** `/index.html`
-  - **Problem:** The homepage now keeps the chosen real time inside the main partner invite, but the optional calming detail still only changes the lane-specific distance text instead of the primary share block most users will actually send.
-  - **User pain:** "I already added the calming detail that makes this feel safer. Do not drop it when I copy the main text I am most likely to send."
-  - **Proposed change:** Wire the primary partner invite to reuse the optional calming detail when it strengthens the ask without making the message longer or messier.
-  - **Expected outcome:** Better emotional safety in the main send, less mismatch between the hero customizer and the primary share block, and higher send confidence tonight.
+  - **Problem:** The homepage now carries the chosen time well across the flow, but the yes-state lock-in copy can still read awkwardly when users type a time phrase that already includes the date context.
+  - **User pain:** "We finally got a yes. Do not make the confirmation text sound clunky right before I send it."
+  - **Proposed change:** Normalize or tighten the yes-state sentence so custom times read naturally whether the user types just a time or a fuller phrase.
+  - **Expected outcome:** Cleaner lock-in copy, higher send confidence after a yes, and less last-second editing in the most important follow-through moment.
   - **Score:** Impact 3 / Confidence 4 / Ease 4 = **11**
 
 
@@ -21,6 +21,16 @@
 - _none_
 
 ## SHIPPED
+
+#### LF-062 Homepage should let the optional calming detail flow into the main partner invite so the first send matches the most reassuring wording the user already chose above the fold
+- **Page:** `/index.html`
+- **Problem:** The homepage now keeps the chosen real time inside the main partner invite, but the optional calming detail still only changes the lane-specific distance text instead of the primary share block most users will actually send.
+- **User pain:** "I already added the calming detail that makes this feel safer. Do not drop it when I copy the main text I am most likely to send."
+- **Proposed change:** Wire the primary partner invite to reuse the optional calming detail when it strengthens the ask without making the message longer or messier.
+- **Expected outcome:** Better emotional safety in the main send, less mismatch between the hero customizer and the primary share block, and higher send confidence tonight.
+- **Score:** Impact 3 / Confidence 4 / Ease 4 = **11**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage main partner invite now reuses the optional calming detail from the hero customizer, and the share block tells users that the primary text keeps that safer wording, so the most likely first send finally matches the emotional safety detail they already chose above the fold.
 
 #### LF-061 Homepage should keep the chosen real time inside the main partner invite so a stressed spouse does not customize the hero texts but still paste a generic send from the primary share block
 - **Page:** `/index.html`
