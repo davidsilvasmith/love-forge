@@ -24,7 +24,7 @@
 - **Score:** Impact 3 / Confidence 4 / Ease 4 = **11**
 - **Status:** SHIPPED
 - **Proof after ship:** Homepage yes-state now gives one copy-ready close plus one low-energy close with dedicated copy buttons, so a tired spouse can end the rep cleanly tonight without improvising the last line.
-- **Commit:** `f777b6c`
+- **Commit:** `8c2b728`
 - **Live URL:** `https://love.forge.dsdoes.com/`
 
 #### LF-067 Homepage should make the yes-state first question copyable so a stressed spouse can start the rep without translating the opener after the time gets locked
