@@ -25,7 +25,7 @@
 - **Expected outcome:** Smaller safer first sends from the blog hub, less resistance at the first ask, and better odds a stressed spouse gets one yes tonight before follow-through talk starts.
 - **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
 - **Status:** SHIPPED
-- **Proof after ship:** Blog hub first-send and low-energy fallback texts now ask only for one small rep tonight across distance, conflict, apart, and trust states, while tomorrow follow-through stays in the later reply-handling blocks where it belongs. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/blog/`
+- **Proof after ship:** Blog hub first-send and low-energy fallback texts now ask only for one small rep tonight across distance, conflict, apart, and trust states, while tomorrow follow-through stays in the later reply-handling blocks where it belongs. Commit: `3f8506b`. Live URL: `https://love.forge.dsdoes.com/blog/`
 
 #### LF-114 Homepage trust-break first-screen route should stop making high-stakes users retype the backup ask before they can take the safest next move tonight
 - **Page:** `/index.html`
