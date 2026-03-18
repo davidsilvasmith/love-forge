@@ -15,6 +15,17 @@
 
 ## SHIPPED
 
+#### LF-085 Specific Appreciation Tool should stop reading like generic advice and generate one exact appreciation line, low-energy fallback, and tomorrow repeat so an under-seen spouse can create warmth tonight without inventing the words
+- **Page:** `/blog/specific-appreciation-tool.html`
+- **Problem:** The page still read like a generic blog post with broad guidance and no real builder, which forced a tired spouse to invent the actual appreciation sentence, the buy-in ask, and the tomorrow follow-through right when the whole point was to reduce friction.
+- **User pain:** "I know I should say thank you better. Do not make me build the exact words from scratch when I already feel fried and under-seen."
+- **Proposed change:** Turn the page into a tonight-use tool with one appreciation builder, one copy-ready invite, one exact 10-minute plan, one awkward-moment fallback, and one simple tomorrow repeat.
+- **Expected outcome:** Faster starts on a warm reconnection rep, less vague gratitude advice, and better odds a stressed spouse actually names one real appreciation tonight instead of postponing it again.
+- **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+- **Status:** SHIPPED
+- **Proof after ship:** Specific Appreciation Tool now gives users a fill-in builder for the exact appreciation line, low-energy version, tomorrow repeat, and close; adds clear multi-issue routing so people do not use it in hot conflict or hard trust-break situations; and turns the page into a concrete 10-minute rep with examples and awkward-moment fallbacks.
+
+
 #### LF-084 Homepage same-roof connection lane should say "under the same roof but far apart" everywhere that choice is made so stressed spouses do not confuse emotional distance with being physically apart tonight
 - **Page:** `/index.html`
 - **Problem:** The homepage already had separate apart and connection lanes, but some of the highest-traffic connection copy still said only "distant tonight," which forced a tired spouse to stop and re-interpret whether that meant same-roof emotional distance or being physically apart.
