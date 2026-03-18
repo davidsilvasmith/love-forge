@@ -8,12 +8,40 @@
 ## Backlog
 
 ### TODO
-- _none_
+- LF-067 Homepage should make the yes-state first question copyable so a stressed spouse can start the rep without translating the opener after the time gets locked
+  - **Page:** `/index.html`
+  - **Problem:** The homepage yes-state tells users the best first question, but it still lives as plain text instead of a copy-ready send/start artifact.
+  - **User pain:** "We got to yes. Do not make me invent the exact opener right when we finally sit down."
+  - **Proposed change:** Turn the yes-state opener into one copy-ready first-question block with a low-energy version.
+  - **Expected outcome:** Faster starts after lock-in, less awkwardness in the first 30 seconds, and higher odds the rep actually begins tonight.
+  - **Score:** Impact 3 / Confidence 4 / Ease 4 = **11**
+  - **Status:** TODO
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-066 Homepage soft-no path should give the exact tomorrow retry text so a stressed spouse can prepare the calmer follow-up tonight instead of inventing tomorrow's ask from a rule summary
+- **Page:** `/index.html`
+- **Problem:** The homepage soft-no path had a calm reply and a retry rule, but it still made a tired spouse translate that rule into the exact smaller ask to send tomorrow.
+- **User pain:** "If they said not right now, do not make me come back tomorrow and invent the retry text from scratch."
+- **Proposed change:** Add one copy-ready tomorrow retry block under the soft-no path and keep it synced to the same real-time picker used above the fold.
+- **Expected outcome:** Less mental load after a soft no, faster calmer follow-up tomorrow, and better odds the second ask actually gets sent.
+- **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage soft-no flow now includes a copy-ready tomorrow retry text that updates from the same time picker as the first ask, so a stressed spouse can do the thinking tonight and send one calmer follow-up tomorrow without rewriting the ask by hand.
+
+#### LF-065 10-Minute Weekly Meeting should generate the exact invite, one-issue opener, and tomorrow close so busy parents can lock the meeting tonight without translating the framework by hand
+- **Page:** `/blog/10-minute-weekly-meeting.html`
+- **Problem:** The page had a solid agenda builder, but a tired spouse still had to turn the framework into the actual invite text, one-issue opener, and next-day close while already low on time and attention.
+- **User pain:** "We need the weekly meeting, but do not make me convert the agenda into the exact words to send and say tonight."
+- **Proposed change:** Expand the builder so users can fill in the exact issue and tomorrow action, then generate the invite, one-issue line, close text, and full meeting pack in one place.
+- **Expected outcome:** Faster starts on the planning path, less translation friction, and better odds couples actually lock the meeting tonight.
+- **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+- **Status:** SHIPPED
+- **Proof after ship:** The Weekly Meeting page now generates a full meeting pack with the exact invite text, one-issue opener, tomorrow close, and mode-specific agenda from one builder, so busy parents can lock the meeting tonight without translating the framework by hand.
+
 
 #### LF-064 Homepage follow-through copy should keep tomorrow wording natural when users enter flexible time phrases like "8:30 tonight" or "tomorrow at lunch"
 - **Page:** `/index.html`
