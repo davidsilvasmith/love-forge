@@ -15,6 +15,19 @@
 
 ## SHIPPED
 
+#### LF-075 Blog hub soft-no path should give the exact tomorrow retry text so a stressed spouse can do the thinking tonight and send one calmer smaller ask tomorrow without improvising
+- **Page:** `/blog/index.html`
+- **Problem:** The blog hub told users to wait until tomorrow and retry once, but it still made a tired spouse invent the actual smaller follow-up text the next day right when energy and confidence were likely lower.
+- **User pain:** "Do not make me come back tomorrow and write the calmer retry from scratch after we already had a no tonight."
+- **Proposed change:** Add one copy-ready tomorrow retry block under the blog hub soft-no path and keep it synced to the same real-time picker used for the first ask and calm reply.
+- **Expected outcome:** Less next-day translation friction, faster calmer follow-through after a soft no, and better odds a stressed spouse actually sends the second ask.
+- **Score:** Impact 4 / Confidence 4 / Ease 5 = **13**
+- **Status:** SHIPPED
+- **Proof after ship:** Blog hub now gives one copy-ready tomorrow retry card in the soft-no path, and it stays synced to the same shared time picker as the first ask and calm reply so a tired spouse can do the thinking tonight and send a calmer smaller ask tomorrow without improvising.
+- **Commit:** `2a5d1af`
+- **Live URL:** `https://love.forge.dsdoes.com/blog/`
+
+
 #### LF-074 Blog hub soft-no reply should read like a ready-to-send tomorrow retry so a stressed spouse does not hit awkward double-tomorrow wording right before copying the calmer follow-up
 - **Page:** `/blog/index.html`
 - **Problem:** The blog hub already gave the right soft-no path, but the dynamic no-thanks text could render awkward copy like “Tomorrow, can we try one 10-minute reset tomorrow at 8:30,” which adds friction in the exact moment a tired spouse needs a clean calmer retry.
