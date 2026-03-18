@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-110 Homepage yes-state should name the exact next tool inside the main follow-through block so a stressed couple does not get a yes and still have to guess what page to open
+- **Page:** `/index.html`
+- **Problem:** The homepage main yes-state flow gave users a lock-in text plus lane-specific opener cards, but once the partner said yes the page still made them infer which full tool to open next. The first-screen preview named the right tool, but the main yes-state block itself still stopped short of the exact handoff.
+- **User pain:** "We got a yes. Do not make me guess which page to open now that we are actually doing this. Point me straight to the exact tool."
+- **Proposed change:** Add one dynamic `Open this exact tool now` handoff card inside the homepage yes-state block that updates with the selected lane and points directly to the matching tool.
+- **Expected outcome:** Cleaner yes-state follow-through on the homepage, less drop-off after the partner agrees, and better odds a stressed couple moves from text exchange into the right tool tonight without hesitating.
+- **Score:** Impact 4 / Confidence 4 / Ease 5 = **13**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage yes-state now shows a lane-matched `Open this exact tool now` card for same-roof distance, conflict, apart, and calm trust-boundary nights, so users who get a yes can jump straight into the right tool from the main follow-through block. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+
 #### LF-109 Homepage first-screen selected-lane preview should carry users straight into the yes-or-no follow-through so a stressed couple does not send the first text and then guess what to do after the reply
 - **Page:** `/index.html`
 - **Problem:** The homepage first-screen selected-lane preview gave users the right first text, but the preview button only copied the message and left them at the top of the page. A stressed spouse could send the ask and still miss the exact yes-state and soft-no next steps sitting lower in the main send flow.
