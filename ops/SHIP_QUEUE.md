@@ -8,12 +8,23 @@
 ## Backlog
 
 ### TODO
-- LF-091 Homepage same-roof main send chip should spell out "under the same roof" directly on the button label so users who skip helper copy can still distinguish emotional distance from being physically apart at a glance
+- _none_
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-091 Homepage same-roof main send chip should spell out "under the same roof" directly on the button labels so users who skip helper copy can still distinguish emotional distance from being physically apart at a glance
+- **Page:** `/index.html`
+- **Problem:** The homepage main partner-send lane already defaulted to the same-roof path, but the quick jump chip and main send chip still shortened the label to "same roof," which made skim-reading spouses do one more interpretation step instead of seeing the physical-living-situation distinction instantly.
+- **User pain:** "I am moving fast. Put 'under the same roof' right on the button so I do not confuse emotional distance with being physically apart."
+- **Proposed change:** Rename the homepage jump chip and the main send lane chip so both spell out "under same roof" directly in the button label.
+- **Expected outcome:** Faster lane recognition, less confusion between same-roof distance and apart nights, and better odds a stressed spouse taps the right send path on the first pass.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage jump-to-send and main send same-roof chips now say "Under same roof" directly on the buttons, making the emotional-distance-vs-apart split clearer at a glance before users copy.
+
 
 #### LF-090 Homepage same-roof main send should say "under the same roof but far apart" directly in the partner-invite block so users who jump below the hero do not have to infer what the default lane means before they copy
 - **Page:** `/index.html`
