@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-111 Homepage first-screen send path should expose the skeptical-partner route before the normal ask so a stressed spouse does not copy the default text when the real blocker is obvious resistance
+- **Page:** `/index.html`
+- **Problem:** The homepage first-screen send flow was strong for lane choice and yes/no follow-through, but the skeptical-partner route only appeared much lower on the page after the main send, yes-state, soft-no, and solo sections. A spouse who already knew their partner would roll their eyes or instantly say no could still copy the default ask first and hit a preventable rejection.
+- **User pain:** "I already know the normal ask will get an eye-roll. Do not make me scroll half the page to find the smaller safer skeptical route."
+- **Proposed change:** Add one compact skeptical-partner escape hatch inside the first-screen selected-lane preview that tells users to skip the normal ask and jump straight to the 7-day experiment text.
+- **Expected outcome:** Better first-screen routing for resistance-heavy nights, fewer wrong first sends, and better odds a stressed spouse chooses the lower-pressure skeptical invite before triggering an easy no tonight.
+- **Score:** Impact 4 / Confidence 4 / Ease 5 = **13**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage first-screen send preview now includes an explicit skeptical-partner fast route that tells users not to push the normal ask first and jumps them straight to the 7-day experiment text section below, so resistance-heavy nights get the lower-pressure route before the main send. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+
 #### LF-110 Homepage yes-state should name the exact next tool inside the main follow-through block so a stressed couple does not get a yes and still have to guess what page to open
 - **Page:** `/index.html`
 - **Problem:** The homepage main yes-state flow gave users a lock-in text plus lane-specific opener cards, but once the partner said yes the page still made them infer which full tool to open next. The first-screen preview named the right tool, but the main yes-state block itself still stopped short of the exact handoff.
