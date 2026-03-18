@@ -1315,6 +1315,16 @@
 - **Status:** SHIPPED
 - **Proof after ship:** Blog hub now sends active-conflict users to Pause-and-Return as the first move in every main conflict entry point, and explicitly says Fight Fair comes after both people are calm. Live URL: `https://love.forge.dsdoes.com/blog/`
 
+#### LF-005 Homepage trust lane now clearly separates calm trust from fresh trust breaks
+- **Page:** `/index.html`
+- **Problem:** Homepage trust routing still used vague "Trust feels shaky" language on the trust lane card, which blurs the calm-boundary lane with the backup-first trust-break path.
+- **User pain:** "I cannot tell if this trust option is for a blurry rule problem or for a real trust hit tonight."
+- **Proposed change:** Rename the homepage trust lane label and locked preview title to `Calm trust, no fresh break` so the trust-break backup route stays obviously separate.
+- **Expected outcome:** Faster safer routing on trust nights, less chance a stressed couple picks the wrong lane in the first minute.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage trust lane card and locked preview now both say `Calm trust, no fresh break`, which matches the backup-first warning for fresh trust hits and makes the safer route easier to choose fast. Live URL: `https://love.forge.dsdoes.com/`
+
 #### LF-004 Trust lane page should choose the safest first move fast
 - **Page:** `/blog/boundary-definition-tool.html`
 - **Problem:** Trust pain pages can still feel like more reading instead of an immediate first move.
