@@ -8,19 +8,29 @@
 ## Backlog
 
 ### TODO
-- LF-063 Homepage yes-state lock-in text should mirror the plain-time format cleanly so users do not get awkward duplicate wording like "tonight at 8:30 tonight" after customizing the shared time
+- LF-064 Homepage follow-through copy should keep tomorrow wording natural when users enter flexible time phrases like "8:30 tonight" or "tomorrow at lunch"
   - **Page:** `/index.html`
-  - **Problem:** The homepage now carries the chosen time well across the flow, but the yes-state lock-in copy can still read awkwardly when users type a time phrase that already includes the date context.
-  - **User pain:** "We finally got a yes. Do not make the confirmation text sound clunky right before I send it."
-  - **Proposed change:** Normalize or tighten the yes-state sentence so custom times read naturally whether the user types just a time or a fuller phrase.
-  - **Expected outcome:** Cleaner lock-in copy, higher send confidence after a yes, and less last-second editing in the most important follow-through moment.
-  - **Score:** Impact 3 / Confidence 4 / Ease 4 = **11**
+  - **Problem:** The yes-state text is cleaner now, but the homepage still depends on one free-text time field across multiple send and follow-through blocks, so future edits could reintroduce awkward phrasing if tomorrow-specific copy is not guarded carefully.
+  - **User pain:** "I changed the time once. Do not make the retry or tomorrow text sound robotic right when I am about to send it."
+  - **Proposed change:** Review the remaining homepage time-dependent strings and tighten any edge-case phrasing that still sounds generated instead of human.
+  - **Expected outcome:** More trustworthy copy across the full send → yes → soft-no → tomorrow loop, with less last-second manual cleanup.
+  - **Score:** Impact 3 / Confidence 3 / Ease 3 = **9**
 
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-063 Homepage yes-state lock-in text should mirror the plain-time format cleanly so users do not get awkward duplicate wording like "tonight at 8:30 tonight" after customizing the shared time
+- **Page:** `/index.html`
+- **Problem:** The homepage now carries the chosen time well across the flow, but the yes-state lock-in copy can still read awkwardly when users type a time phrase that already includes the date context.
+- **User pain:** "We finally got a yes. Do not make the confirmation text sound clunky right before I send it."
+- **Proposed change:** Normalize or tighten the yes-state sentence so custom times read naturally whether the user types just a time or a fuller phrase.
+- **Expected outcome:** Cleaner lock-in copy, higher send confidence after a yes, and less last-second editing in the most important follow-through moment.
+- **Score:** Impact 3 / Confidence 4 / Ease 4 = **11**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage yes-state, soft-no retry, and tomorrow-repeat texts now normalize shared time phrases so users get clean human wording like "at 8:30 tonight" or "tomorrow at lunch" instead of awkward duplicates right before they send the follow-through text.
 
 #### LF-062 Homepage should let the optional calming detail flow into the main partner invite so the first send matches the most reassuring wording the user already chose above the fold
 - **Page:** `/index.html`
