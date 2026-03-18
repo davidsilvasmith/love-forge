@@ -15,6 +15,17 @@
 
 ## SHIPPED
 
+#### LF-087 Homepage should stop repeating the starter-to-send handoff below the hero so a stressed spouse lands on the partner text faster instead of rereading the same instruction twice
+- **Page:** `/index.html`
+- **Problem:** The homepage hero already told users to pick one lane, set one time, and copy one matching text, but the very next card repeated the same starter-to-send instruction and fallback copy before users finally hit the main partner invite.
+- **User pain:** "I already picked the lane and saw the text flow. Do not make me reread the same handoff before I can copy the main send."
+- **Proposed change:** Remove the duplicate post-hero starter handoff card so the main partner-send block starts immediately after the first-screen flow.
+- **Expected outcome:** Faster scanning from hero to send, less below-the-fold repetition, and better odds a stressed spouse copies the main partner invite tonight instead of drifting.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage now moves straight from the first-screen lane/text flow into the main partner-send block, cutting the repeated starter/send reminder and making the fastest send path easier to reach.
+
+
 #### LF-086 Homepage lane choice should let stressed spouses jump straight to the matching send text so they do not get kicked into a second page before making the first ask tonight
 - **Page:** `/index.html`
 - **Problem:** The homepage already told users to pick one lane and send one text, but the most obvious lane cards were full-page links, which could pull a tired spouse away from the copy-ready send flow sitting lower on the homepage before they ever sent the first ask.
