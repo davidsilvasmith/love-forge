@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-122 Homepage hero skeptical lighter-fallback button should land on the exact tiny ask instead of the top of the skeptical section so resistant couples do not have to scan again before sending
+- **Page:** `/index.html`
+- **Problem:** The homepage hero skeptical route already stayed lane-matched and unlocked only after lane choice, but its `See lighter fallback` button still jumped to the top of the skeptical section instead of the exact lower-pressure fallback action. That forced resistant, low-energy users to scan again right after asking for the smallest safe ask.
+- **User pain:** "If I tap the lighter fallback from the homepage hero, take me straight to the exact tiny text I need — not to a section where I have to hunt for it again."
+- **Proposed change:** Add a direct anchor on the skeptical lighter-fallback action and make the hero `See lighter fallback` control jump straight to that exact copy target with a clearer status message.
+- **Expected outcome:** Less last-second scanning on the homepage skeptical route, faster movement to the lowest-pressure exact ask, and better odds a stressed spouse sends the tiny fallback tonight instead of stalling.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Live homepage now routes the hero skeptical lighter-fallback button straight to the exact lighter-fallback action instead of the top of the skeptical section; production contains `id="skeptical-lite-actions"` and `scrollToMainSend('skeptical-lite-actions')`. Commit: `cf430bd`. Live URL: `https://love.forge.dsdoes.com/`
+
 #### LF-121 Homepage skeptical lighter fallback trigger should stay locked to the chosen lane so resistant couples do not jump into the wrong tiny ask from the highest-leverage screen
 - **Page:** `/index.html`
 - **Problem:** The homepage hero skeptical route now swapped the main 7-day ask by lane, but its `See lighter fallback` control was still always live and could drop users into the lower skeptical section before a lane was chosen. That let the highest-leverage skeptical path fall back to the default same-roof copy right when conflict, apart, or trust users needed the smallest exact ask.
