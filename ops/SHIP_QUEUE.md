@@ -8,19 +8,23 @@
 ## Backlog
 
 ### TODO
-- _none_
+- LF-089 Homepage yes-state should make the lane match more visible at a glance so users instantly trust that the follow-through copy changed with their selected night type before they copy and start
 
 ## IN PROGRESS
-- LF-088 Homepage yes-state opener should match the lane already chosen so a stressed spouse does not get a yes and then have to translate a generic first question before the rep starts tonight
-  - **Page:** `/index.html`
-  - **Problem:** The homepage already let users choose conflict, same-roof distance, apart, or trust for the main invite, but once the partner said yes the first question and low-energy opener snapped back to generic wording that forced one more mental rewrite right after the hardest part was over.
-  - **User pain:** "We finally got a yes. Do not make me translate the first question into conflict, apart, or trust language before we even start."
-  - **Proposed change:** Make the yes-state first question and low-energy opener switch with the same homepage lane picker so the first spoken line matches the actual kind of night they are having.
-  - **Expected outcome:** Faster starts after a yes, less last-second rewriting, and better odds a stressed spouse actually begins the rep tonight instead of hesitating.
-  - **Score:** Impact 4 / Confidence 4 / Ease 5 = **13**
-  - **Status:** IN PROGRESS
+- _none_
 
 ## SHIPPED
+
+#### LF-088 Homepage yes-state opener should match the lane already chosen so a stressed spouse does not get a yes and then have to translate a generic first question before the rep starts tonight
+- **Page:** `/index.html`
+- **Problem:** The homepage already let users choose conflict, same-roof distance, apart, or trust for the main invite, but once the partner said yes the first question and low-energy opener snapped back to generic wording that forced one more mental rewrite right after the hardest part was over.
+- **User pain:** "We finally got a yes. Do not make me translate the first question into conflict, apart, or trust language before we even start."
+- **Proposed change:** Make the yes-state first question and low-energy opener switch with the same homepage lane picker so the first spoken line matches the actual kind of night they are having.
+- **Expected outcome:** Faster starts after a yes, less last-second rewriting, and better odds a stressed spouse actually begins the rep tonight instead of hesitating.
+- **Score:** Impact 4 / Confidence 4 / Ease 5 = **13**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage yes-state now changes both the first question and low-energy opener with the same distance/conflict/apart/trust picker used for the main invite, so the first spoken line fits the real night without one more rewrite. Commit: `bee4646`. Live URL: `https://love.forge.dsdoes.com/`
+
 
 #### LF-087 Homepage should stop repeating the starter-to-send handoff below the hero so a stressed spouse lands on the partner text faster instead of rereading the same instruction twice
 - **Page:** `/index.html`
