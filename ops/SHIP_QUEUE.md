@@ -25,7 +25,7 @@
 - **Expected outcome:** Better follow-through after the first good rep, less mental rewriting on tired nights, and fewer couples accidentally carrying the wrong next-day script into the wrong tool.
 - **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
 - **Status:** SHIPPED
-- **Proof after ship:** Live homepage now changes the `Copy tomorrow text` box by lane. Conflict now says `That helped us stop the damage sooner... pause-and-return reset...`; apart now says `That felt better than another vague late-night catch-up... apart check-in...`; calm trust now says `That felt clearer than another messy trust talk... boundary check-in...`. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Live homepage now changes the `Copy tomorrow text` box by lane. Conflict now says `That helped us stop the damage sooner... pause-and-return reset...`; apart now says `That felt better than another vague late-night catch-up... apart check-in...`; calm trust now says `That felt clearer than another messy trust talk... boundary check-in...`. Commit: `35381e9`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-128 Homepage trust lane should say calm trust with no fresh break so stressed couples do not confuse it with the trust-break backup route
 - **Page:** `/index.html`
