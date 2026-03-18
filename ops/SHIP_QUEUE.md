@@ -8,7 +8,14 @@
 ## Backlog
 
 ### TODO
-- _none_
+- LF-073 10-Minute Weekly Meeting should generate the exact low-energy invite and calm soft-no retry so busy parents can still lock the meeting tonight when a full weekly meeting feels too heavy
+  - **Page:** `/blog/10-minute-weekly-meeting.html`
+  - **Problem:** The page already generated a strong invite, one-issue opener, and close, but it still made a tired spouse invent the lower-pressure fallback when energy was gone or the partner said not tonight.
+  - **User pain:** "We want the weekly meeting, but do not make me improvise the softer ask or the calm retry when tonight already feels heavy."
+  - **Proposed change:** Expand the builder and first-step guidance so it outputs one low-energy invite plus one calm soft-no reply that still locks the weekly meeting slot.
+  - **Expected outcome:** Less translation friction in the highest-resistance moment, more meetings actually scheduled, and better odds a stressed spouse takes one planning action tonight.
+  - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+  - **Status:** TODO
 
 ## IN PROGRESS
 - _none_

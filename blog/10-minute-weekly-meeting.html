@@ -21,7 +21,8 @@
   <ol>
     <li>Pick one exact day and time for this week.</li>
     <li>Send this exact text: “Can we do our 10-minute weekly meeting on <strong>[day]</strong> at <strong>[time]</strong>? I want one small win for us this week, not a giant talk.”</li>
-    <li>If you are exhausted, send this instead: “I only have 5 minutes tonight, but I still want us to stay on the same team. Can we do the first half now and finish later?”</li>
+    <li>If you are exhausted, send this instead: “I only have 5 calm minutes in me tonight, but I still want us on the same team. Can we start our weekly meeting and keep the first pass short?”</li>
+    <li>If they say “not tonight,” reply once: “Okay. I am not trying to force a big talk tonight. Can we lock our 10-minute weekly meeting for <strong>[day]</strong> at <strong>[time]</strong> and stop there?”</li>
   </ol>
 </div>
 
@@ -63,7 +64,8 @@
 </div>
 
 <div class="card">
-  <h2>Agenda builder (makes it easy)</h2>
+  <h2>Weekly meeting builder (use this tonight)</h2>
+  <p><strong>Do not translate this in your head.</strong> Pick the slot, name the one issue, and copy the exact invite, low-energy fallback, calm soft-no reply, and agenda.</p>
   <div class="builder">
     <div class="row">
       <div><label>Meeting day</label><select id="day"><option>Sunday</option><option>Monday</option><option>Tuesday</option><option>Wednesday</option><option>Thursday</option><option>Friday</option><option>Saturday</option></select></div>
@@ -73,15 +75,47 @@
       <div><label>Main stress area this week</label><select id="stress"><option>Communication</option><option>Household load</option><option>Parenting logistics</option><option>Intimacy</option><option>Money stress</option><option>Time/attention</option></select></div>
       <div><label>Choose your mode</label><select id="mode"><option value="normal">Normal 10-minute version</option><option value="chaos">Kid-chaos 5+5 split</option><option value="repair">Repair-first version</option></select></div>
     </div>
-    <div>
-      <button class="btn" id="buildBtn" type="button">Generate my copy/paste agenda</button>
-      <button class="btn" style="background:#2d6cdf" id="copyBtn" type="button">Copy to clipboard</button>
+    <div class="row">
+      <div><label>One exact issue tonight</label><input id="issue" value="the way we keep missing each other at handoff" /></div>
+      <div><label>One action by tomorrow</label><input id="tomorrowAction" value="confirm pickup by 5 PM in text" /></div>
     </div>
-    <div id="output" class="copy-box">Tap “Generate my copy/paste agenda” to create your weekly script.</div>
+    <div>
+      <button class="btn" id="buildBtn" type="button">Generate my copy/paste meeting pack</button>
+      <button class="btn" style="background:#2d6cdf" id="copyBtn" type="button">Copy meeting pack</button>
+      <small id="copyStatus" class="muted" aria-live="polite" style="display:block;margin-top:8px"></small>
+    </div>
+    <div class="highlight-grid" style="margin-top:16px">
+      <div class="highlight-card">
+        <small>Send this now</small>
+        <h3>Invite text</h3>
+        <p id="inviteOutput">Your exact invite will show here.</p>
+      </div>
+      <div class="highlight-card">
+        <small>If energy is low</small>
+        <h3>Low-energy invite</h3>
+        <p id="lowEnergyInviteOutput">Your low-energy invite will show here.</p>
+      </div>
+      <div class="highlight-card">
+        <small>If they say not tonight</small>
+        <h3>Calm retry text</h3>
+        <p id="softNoOutput">Your calm retry text will show here.</p>
+      </div>
+      <div class="highlight-card">
+        <small>Say this at the start</small>
+        <h3>One-issue line</h3>
+        <p id="focusOutput">Your one-issue line will show here.</p>
+      </div>
+      <div class="highlight-card">
+        <small>Lock tomorrow before you end</small>
+        <h3>Close text</h3>
+        <p id="closeOutput">Your close text will show here.</p>
+      </div>
+    </div>
+    <div id="output" class="copy-box">Your full meeting pack will show here.</div>
   </div>
 </div>
 
-<div class="card"><h2>Copy/paste script</h2><p>“Hey love, can we do our 10-minute weekly meeting on <strong>[day]</strong> at <strong>[time]</strong>? I want one small win for us this week, not a giant talk.”</p></div>
+<div class="card"><h2>Copy/paste script</h2><p>“Hey love, can we do our 10-minute weekly meeting on <strong>[day]</strong> at <strong>[time]</strong>? I want one small win for us this week, not a giant talk.”</p><p class="muted">Use the builder above if you want the exact invite, low-energy fallback, one-issue opener, and tomorrow close written for you.</p></div>
 
 <div class="card"><h2>7-day success signal</h2><ul><li>You completed the meeting once this week.</li><li>You stayed on one issue instead of stacking five.</li><li>Each person followed through on at least one promised action by the next day.</li><li>Your connection score moved up by 1-2 points or the meeting felt easier by week two.</li></ul><p><strong>Rule:</strong> Keep this for 3 weeks before judging it hard. Repetition matters more than a perfect first run.</p></div>
 
@@ -92,21 +126,45 @@
 <script>
 const $=id=>document.getElementById(id);
 function build(){
-  const day=$('day').value, time=$('time').value, stress=$('stress').value, mode=$('mode').value;
+  const day=$('day').value;
+  const time=$('time').value;
+  const stress=$('stress').value;
+  const mode=$('mode').value;
+  const issue=$('issue').value.trim() || 'the biggest repeated friction from this week';
+  const tomorrowAction=$('tomorrowAction').value.trim() || 'one clear action by tomorrow';
+  const invite=`Hey love, can we do our 10-minute weekly meeting on ${day} at ${time}? I want one small win for us this week, not a giant talk. The one thing I want us to clean up first is ${issue}.`;
+  const lowEnergyInvite=`I only have 5 calm minutes in me tonight, but I still want us on the same team. Can we start our weekly meeting on ${day} at ${time} and keep the first pass short?`;
+  const softNo=`Okay. I am not trying to force a big talk tonight. Can we lock our 10-minute weekly meeting for ${day} at ${time} and stop there?`;
+  const focus=`Tonight we are only talking about ${issue}. Everything else waits until next week.`;
+  const close=`Before we end, let’s lock one action by tomorrow: ${tomorrowAction}. Then we keep the same meeting slot next ${day} at ${time}.`;
   let block='';
   if(mode==='normal'){
-    block=`${day} ${time} — 10-Minute Weekly Meeting\n\n0:00-2:00 Appreciation\n• Each share one specific appreciation from this week.\n\n2:00-5:00 Check-in\n• “My connection score this week is __/10.”\n• Our one issue tonight is: ${stress}.\n\n5:00-8:00 One-issue solve\n• Use script: “When X happened, I felt Y, and I need Z tomorrow.”\n• Agree one practical change for this week.\n\n8:00-10:00 Lock commitments\n• Partner A action by tomorrow: ____\n• Partner B action by tomorrow: ____\n• Next check-in: ${day} ${time}`;
+    block=`${day} ${time} — 10-Minute Weekly Meeting\n\nInvite text\n${invite}\n\nLow-energy invite\n${lowEnergyInvite}\n\nIf they say not tonight\n${softNo}\n\nOpen with this one-issue line\n${focus}\n\n0:00-2:00 Appreciation\n• Each share one specific appreciation from this week.\n\n2:00-5:00 Check-in\n• “My connection score this week is __/10.”\n• Our one issue tonight is: ${issue}.\n• Main stress area behind it: ${stress}.\n\n5:00-8:00 One-issue solve\n• Use script: “When X happened, I felt Y, and I need Z tomorrow.”\n• Agree one practical change for this week.\n\n8:00-10:00 Lock commitments\n• Tomorrow action: ${tomorrowAction}\n• Close with: ${close}`;
   } else if(mode==='chaos'){
-    block=`${day} ${time} — Kid-Chaos 5+5 Version\n\nPart 1 (5 min, whenever possible)\n1) One appreciation each\n2) Name one stress focus only: ${stress}\n3) Pick one issue to solve later\n\nPart 2 (5 min, after kids settle)\n1) Solve that same one issue only\n2) One action each for tomorrow\n3) Confirm next check-in: ${day} ${time}`;
+    block=`${day} ${time} — Kid-Chaos 5+5 Version\n\nInvite text\n${invite}\n\nLow-energy invite\n${lowEnergyInvite}\n\nIf they say not tonight\n${softNo}\n\nOpen with this one-issue line\n${focus}\n\nPart 1 (5 min, whenever possible)\n1) One appreciation each\n2) Name one issue only: ${issue}\n3) Name the stress area behind it: ${stress}\n\nPart 2 (5 min, after kids settle)\n1) Solve that same one issue only\n2) One action by tomorrow: ${tomorrowAction}\n3) Close with: ${close}`;
   } else {
-    block=`${day} ${time} — Repair-First Version\n\nStep 1 (2 min)\n• “I care about us more than winning this argument.”\n• If flooded, run Pause-and-Return for 20 minutes.\n\nStep 2 (6 min)\n• One appreciation each\n• One issue only: ${stress}\n• One request each (clear and small)\n\nStep 3 (2 min)\n• One action each by tomorrow\n• Next check-in confirmed: ${day} ${time}`;
+    block=`${day} ${time} — Repair-First Version\n\nInvite text\n${invite}\n\nLow-energy invite\n${lowEnergyInvite}\n\nIf they say not tonight\n${softNo}\n\nOpen with this one-issue line\n${focus}\n\nStep 1 (2 min)\n• “I care about us more than winning this argument.”\n• If flooded, run Pause-and-Return for 20 minutes.\n\nStep 2 (6 min)\n• One appreciation each\n• One issue only: ${issue}\n• Main stress area behind it: ${stress}\n• One request each (clear and small)\n\nStep 3 (2 min)\n• Tomorrow action: ${tomorrowAction}\n• Close with: ${close}`;
   }
+  $('inviteOutput').textContent=invite;
+  $('lowEnergyInviteOutput').textContent=lowEnergyInvite;
+  $('softNoOutput').textContent=softNo;
+  $('focusOutput').textContent=focus;
+  $('closeOutput').textContent=close;
   $('output').textContent=block;
+  $('copyStatus').textContent='Meeting pack ready. Copy the invite or the full pack.';
 }
 $('buildBtn').addEventListener('click',build);
 $('copyBtn').addEventListener('click',async()=>{
   const t=$('output').textContent;
-  try{await navigator.clipboard.writeText(t); $('copyBtn').textContent='Copied ✅'; setTimeout(()=>$('copyBtn').textContent='Copy to clipboard',1200);}catch(e){alert('Copy failed. You can still select and copy manually.');}
+  try{
+    await navigator.clipboard.writeText(t);
+    $('copyStatus').textContent='Copied. Paste it into text, Notes, or your calendar.';
+    $('copyBtn').textContent='Copied ✅';
+    setTimeout(()=>$('copyBtn').textContent='Copy meeting pack',1200);
+  }catch(e){
+    $('copyStatus').textContent='Copy failed. Select the text and copy manually.';
+  }
 });
+build();
 </script>
 </body></html>
