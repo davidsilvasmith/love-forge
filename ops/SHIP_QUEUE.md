@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-121 Homepage skeptical lighter fallback trigger should stay locked to the chosen lane so resistant couples do not jump into the wrong tiny ask from the highest-leverage screen
+- **Page:** `/index.html`
+- **Problem:** The homepage hero skeptical route now swapped the main 7-day ask by lane, but its `See lighter fallback` control was still always live and could drop users into the lower skeptical section before a lane was chosen. That let the highest-leverage skeptical path fall back to the default same-roof copy right when conflict, apart, or trust users needed the smallest exact ask.
+- **User pain:** "If I tap the lighter skeptical fallback from the homepage, do not dump me into the wrong version and make me translate it myself first. Keep the smallest safe ask tied to the lane I picked."
+- **Proposed change:** Lock the hero skeptical lighter-fallback trigger until a lane is chosen, then make it jump straight into the lane-matched skeptical section with the correct lower-pressure fallback.
+- **Expected outcome:** Less wrong-lane leakage from the homepage skeptical route, faster trust in the smallest safe ask, and better odds a stressed spouse uses the exact lower-pressure line tonight instead of stalling on a mismatch.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Live homepage now keeps the hero skeptical lighter-fallback trigger locked until a lane is chosen, then routes users into the lane-matched skeptical section; production now contains the locked label `Pick a lane to unlock lighter fallback`. Commit: `159e23d`. Live URL: `https://love.forge.dsdoes.com/`
+
 #### LF-120 Homepage skeptical lighter fallback should stay lane-matched after route selection so exhausted resistant couples do not have to rewrite the smallest safe ask themselves
 - **Page:** `/index.html`
 - **Problem:** The homepage skeptical-partner section now stayed lane-matched for the main 7-day experiment ask, but its lighter fallback still collapsed back to one generic line: `Can we try one 10-minute reset tonight and decide tomorrow if it is worth repeating?` That forced conflict, apart, and trust users to mentally rewrite the smallest ask right when they were most depleted.
