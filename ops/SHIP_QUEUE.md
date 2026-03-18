@@ -15,6 +15,16 @@
 
 ## SHIPPED
 
+#### LF-098 Homepage trust lane should say "no fresh break" everywhere the user double-checks it so a stressed spouse does not mistake calm blurry-rule trust guidance for the backup-first path after a real trust hit
+- **Page:** `/index.html`
+- **Problem:** The homepage already had a strong backup-first card for real trust hits, but the trust lane labels below it still used broad "trust feels shaky" wording that could blur the line between calm boundary-setting nights and fresh lying, cheating, hidden-money, or secret-message situations.
+- **User pain:** "If trust actually got broken, do not make me wonder whether the regular trust lane is still okay just because the label sounds broad."
+- **Proposed change:** Tighten the homepage trust lane card, trust send label, trust lane chip, and trust helper note so they all say this path is only for shaky trust with no fresh break.
+- **Expected outcome:** Clearer first-screen routing between Boundary Definition and Get Backup Tool, less wrong-lane hesitation on trust nights, and better odds a stressed spouse takes the safer first action tonight.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage trust labels now consistently say the normal trust lane is only for shaky trust with no fresh break, making the backup-first route easier to trust when there was a real trust hit.
+
 #### LF-097 Homepage soft-no and next-day repeat guidance should stay in the same lane the user already picked so a stressed spouse does not get an apart, conflict, or trust night routed back into the generic same-roof default after one hesitation
 - **Page:** `/index.html`
 - **Problem:** The homepage let users choose conflict, same-roof distance, apart, or trust for the main send, but the soft-no and repeat guidance still snapped back to the generic same-roof default, which could quietly misroute people the moment their partner hesitated.
