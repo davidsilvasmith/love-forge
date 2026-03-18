@@ -2,6 +2,8 @@
 
 ## Rules
 - Only one item may be `IN PROGRESS`
+- Every major run must answer: **What single constraint is suppressing usefulness right now?**
+- Every queued item must name one page, one user pain, one proposed fix, and one expected outcome
 - Every shipped item must end with commit hash + live URL + outcome note
 - If an item is vague, it is not ready
 
@@ -23,7 +25,7 @@
 - **Expected outcome:** Clearer first-screen routing between Boundary Definition and Get Backup Tool, less wrong-lane hesitation on trust nights, and better odds a stressed spouse takes the safer first action tonight.
 - **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
 - **Status:** SHIPPED
-- **Proof after ship:** Homepage trust labels now consistently say the normal trust lane is only for shaky trust with no fresh break, making the backup-first route easier to trust when there was a real trust hit.
+- **Proof after ship:** Homepage trust labels now consistently say the normal trust lane is only for shaky trust with no fresh break, making the backup-first route easier to trust when there was a real trust hit. Commit: `33f2eeb`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-097 Homepage soft-no and next-day repeat guidance should stay in the same lane the user already picked so a stressed spouse does not get an apart, conflict, or trust night routed back into the generic same-roof default after one hesitation
 - **Page:** `/index.html`
