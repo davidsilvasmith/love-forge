@@ -15,6 +15,16 @@
 
 ## SHIPPED
 
+#### LF-095 Homepage below-the-fold safety block should stop repeating the whole first-screen triage so users only re-enter safety guidance when tonight actually changes instead of rereading the homepage diagnosis after they already picked a lane
+- **Page:** `/index.html`
+- **Problem:** The homepage already handled trust-hit routing and lane triage above the fold, but a later full safety card repeated the same diagnosis language and made a scrolling spouse re-evaluate the whole night again after they had already picked a lane, copied text, or started the follow-through path.
+- **User pain:** "I already picked the lane. Do not make me reread the whole safety lecture below the fold unless something actually changed tonight."
+- **Proposed change:** Replace the repeated below-the-fold safety card with a smaller "if tonight changes fast" override block that only tells users when to stop the current plan and switch for safety.
+- **Expected outcome:** Less homepage repetition, cleaner below-the-fold scanning, and better confidence that users should keep moving unless there is a fresh safety, trust, or escalation change.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage now replaces the repeated lower safety lecture with a short override block that only appears as a stop-and-switch reference for immediate danger, fresh trust hits, or a new escalation spike, so users who already chose a lane can keep moving without second-guessing the whole diagnosis again. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+
 #### LF-094 Homepage same-roof summary labels should say "under same roof, far apart" everywhere the user double-checks their lane so a stressed spouse never has to decode shorthand before copying
 - **Page:** `/index.html`
 - **Problem:** The homepage still used shortened same-roof wording in the jump-to-send button and yes-state lane summary, which made skim-reading spouses do one more interpretation step right where they were double-checking they had the emotionally-far-apart path instead of the physically-apart path.
