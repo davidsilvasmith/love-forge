@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-099 Homepage main partner invite should stop appending the site link to the first text so a stressed spouse sends a smaller safer ask instead of making the first move feel like homework
+- **Page:** `/index.html`
+- **Problem:** The homepage main send block told users, "Do not explain the whole site first," but the exact text and SMS action still appended the Love Forge URL to the very first partner message, which made the ask feel bigger and less human right at the conversion moment.
+- **User pain:** "If I am trying to get a tired partner to say yes to one small reset, do not make my first text feel like homework or a funnel."
+- **Proposed change:** Remove the site URL from the homepage's primary partner invite text and SMS link, and clarify that the link should only be shared after the partner says yes or asks for more context.
+- **Expected outcome:** Lower-friction first sends, better match between the homepage instruction and the actual copy, and better odds a stressed spouse gets a yes to one small reset tonight.
+- **Score:** Impact 5 / Confidence 5 / Ease 5 = **15**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage primary send text and SMS action now keep the first ask link-free, and the helper note now tells users to share the Love Forge link only after a yes or a request for context. Commit: `3d47f1a`. Live URL: `https://love.forge.dsdoes.com/`
+
 #### LF-098 Homepage trust lane should say "no fresh break" everywhere the user double-checks it so a stressed spouse does not mistake calm blurry-rule trust guidance for the backup-first path after a real trust hit
 - **Page:** `/index.html`
 - **Problem:** The homepage already had a strong backup-first card for real trust hits, but the trust lane labels below it still used broad "trust feels shaky" wording that could blur the line between calm boundary-setting nights and fresh lying, cheating, hidden-money, or secret-message situations.
