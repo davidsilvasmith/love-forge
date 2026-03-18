@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-113 Homepage first-screen skeptical route should stop making resistance-heavy couples jump lower just to get the exact safer ask when the normal invite will obviously get an eye-roll
+- **Page:** `/index.html`
+- **Problem:** The homepage first-screen selected-lane preview already exposed a skeptical-partner fast route, but that card still only offered a `Jump to skeptical-partner text` button. Resistance-heavy users still had to scroll lower before they could copy the one safer ask most likely to help tonight.
+- **User pain:** "I already know the normal ask will get an eye-roll. Do not make me jump farther down the page just to copy the smaller safer text."
+- **Proposed change:** Put the exact 7-day experiment ask and a copy button directly inside the first-screen skeptical-partner fast route, while keeping a secondary link to the lighter fallback below.
+- **Expected outcome:** Faster safer first action for skeptical-partner nights, less drop-off between diagnosis and copy, and better odds a stressed spouse sends the lower-pressure ask tonight instead of stalling.
+- **Score:** Impact 4 / Confidence 4 / Ease 5 = **13**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage first-screen skeptical-partner fast route now includes the exact 7-day experiment ask plus a copy button, so resistance-heavy users can copy the safer ask immediately without scrolling lower first. Commit: `8a056bd`. Live URL: `https://love.forge.dsdoes.com/`
+
 #### LF-112 Homepage main first-ask block should stop acting like texting is the only valid move so same-house couples do not hesitate at the moment they are finally ready to ask
 - **Page:** `/index.html`
 - **Problem:** The homepage first-screen flow was strong, but the main ask block still said `Send this to your partner now`, `Best move tonight: send one low-pressure text`, and `Text this exact message`. For couples under the same roof, that framing could make the safest exact ask feel weird or artificial right at the highest-leverage action.
