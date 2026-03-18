@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-108 Homepage first-screen selected-lane preview should name the exact yes-state tool so a stressed couple can trust the first copied text without wondering what happens if the partner says yes
+- **Page:** `/index.html`
+- **Problem:** The homepage first-screen selected-lane preview gave users one copy-ready text, but it still stopped short of naming the exact tool that comes next after a yes. A stressed spouse could still think, "Okay, I can send this — but what exactly are we agreeing to do if they say yes?"
+- **User pain:** "Do not make me send the first text and still wonder what happens next if my partner says yes. Tell me the exact tool now so I can trust this route."
+- **Proposed change:** Add one dynamic `If they say yes` line inside the first-screen selected-lane preview that updates with the chosen lane and points to the exact next tool.
+- **Expected outcome:** Higher first-screen trust, less uncertainty between send and follow-through, and better odds a stressed couple actually sends the text because the next step is already named.
+- **Score:** Impact 4 / Confidence 4 / Ease 5 = **13**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage first-screen selected-lane preview now tells users exactly which tool opens next after a yes for conflict, same-roof distance, apart, and calm trust-boundary nights. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+
 #### LF-107 Homepage first-screen send customizer should stop re-showing four full send texts after lane choice so a stressed couple can stay on one obvious copy-ready ask instead of re-deciding the same route
 - **Page:** `/index.html`
 - **Problem:** The homepage already asked users to pick one lane above, but the very next first-screen send block re-expanded into four full send tiles again. A stressed spouse could still feel forced to re-scan conflict, same-roof, apart, and trust copy after already deciding which night they were having.
