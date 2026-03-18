@@ -25,7 +25,7 @@
 - **Expected outcome:** Cleaner yes-state follow-through on the homepage, less drop-off after the partner agrees, and better odds a stressed couple moves from text exchange into the right tool tonight without hesitating.
 - **Score:** Impact 4 / Confidence 4 / Ease 5 = **13**
 - **Status:** SHIPPED
-- **Proof after ship:** Homepage yes-state now shows a lane-matched `Open this exact tool now` card for same-roof distance, conflict, apart, and calm trust-boundary nights, so users who get a yes can jump straight into the right tool from the main follow-through block. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Homepage yes-state now shows a lane-matched `Open this exact tool now` card for same-roof distance, conflict, apart, and calm trust-boundary nights, so users who get a yes can jump straight into the right tool from the main follow-through block. Commit: `5122699`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-109 Homepage first-screen selected-lane preview should carry users straight into the yes-or-no follow-through so a stressed couple does not send the first text and then guess what to do after the reply
 - **Page:** `/index.html`
