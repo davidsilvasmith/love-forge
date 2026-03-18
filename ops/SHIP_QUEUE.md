@@ -15,6 +15,17 @@
 
 ## SHIPPED
 
+#### LF-071 Homepage should make the lane decision obvious when more than one problem feels true so a stressed spouse does not freeze between conflict, distance, and trust on the first screen
+- **Page:** `/index.html`
+- **Problem:** The homepage already offered strong lane choices and copy-ready sends, but a tired spouse could still see two true problems at once and hesitate on which lane should win tonight.
+- **User pain:** "We are fighting and distant and trust feels weird. Do not make me guess which problem gets first shot tonight."
+- **Proposed change:** Add one above-the-fold triage card that tells users the exact order: trust hit beats everything, hot conflict beats distance, and only then do connection or boundary work.
+- **Expected outcome:** Faster first-screen decisions, less analysis paralysis, and better odds a stressed spouse picks one safe lane and acts tonight.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage now includes an above-the-fold "If two problems feel true" triage block that tells couples exactly which lane wins tonight, so they can stop debating whether conflict, trust, or distance should go first and move to one safe action faster.
+
+
 #### LF-070 Daily 15-Minute Connection Block should generate the exact focus line, 24-hour action, and tomorrow close so a tired spouse can run the check-in tonight without translating the framework by hand
 - **Page:** `/blog/daily-15-minute-connection-block.html`
 - **Problem:** The page already had a good script, but a stressed spouse still had to turn their real issue, tomorrow action, and close into exact words while already low on bandwidth.
