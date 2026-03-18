@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-130 Homepage 7-day follow-through should stay neutral until a lane is chosen so couples do not inherit the wrong repeat loop before they know which tool fits tonight
+- **Page:** `/index.html`
+- **Problem:** The homepage main send block, yes-state, soft-no path, and skeptical route already stayed neutral until users picked a lane, but the lower `Finished one good rep? Do this for the next 7 days.` section still preloaded same-roof guidance and a live tomorrow-repeat copy box before any lane choice. On the homepage's biggest follow-through section, conflict, apart, and calm-trust users could still scroll into a wrong repeat loop and inherit the same-roof default.
+- **User pain:** "If we have not picked tonight's lane yet, do not preload the wrong 7-day repeat script and make me translate it before I send it. Keep the follow-through neutral until it matches tonight."
+- **Proposed change:** Remove the preloaded same-roof 7-day repeat guidance, lock the tomorrow-repeat copy box until a lane is chosen, and keep the follow-through copy neutral until the homepage can load the lane-matched repeat path.
+- **Expected outcome:** Less wrong-lane leakage in the homepage's 7-day follow-through, better trust that tomorrow's repeat still fits tonight's tool, and faster movement from one good rep into the right repeat loop.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Live homepage now keeps the 7-day follow-through neutral before lane choice; production shows `Pick one lane first so tomorrow's repeat stays matched to tonight instead of defaulting to the same-roof path` plus a locked `Pick a lane to unlock tomorrow text` state until a lane is selected, then swaps to the correct lane-matched repeat copy. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+
 #### LF-129 Homepage tomorrow-repeat text should stay lane-matched so couples do not get a wrong follow-through script after one good rep
 - **Page:** `/index.html`
 - **Problem:** The homepage already switched the tomorrow-night guidance paragraph by lane, but the actual `Copy tomorrow text` box underneath still defaulted to the same generic reset line: `That felt better than another random fight. Can we do the same 10-minute reset...` even after users picked conflict, apart, or calm-trust lanes. On the highest-leverage page's follow-through path, the exact text couples were supposed to send after one good rep stopped matching the tool they had just used.
