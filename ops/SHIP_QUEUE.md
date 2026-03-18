@@ -15,6 +15,16 @@
 
 ## SHIPPED
 
+#### LF-094 Homepage same-roof summary labels should say "under same roof, far apart" everywhere the user double-checks their lane so a stressed spouse never has to decode shorthand before copying
+- **Page:** `/index.html`
+- **Problem:** The homepage still used shortened same-roof wording in the jump-to-send button and yes-state lane summary, which made skim-reading spouses do one more interpretation step right where they were double-checking they had the emotionally-far-apart path instead of the physically-apart path.
+- **User pain:** "I am moving fast. Keep the same-roof lane label explicit everywhere I double-check it so I do not second-guess whether this is the apart version."
+- **Proposed change:** Rename the homepage jump-to-send button and yes-state lane summary so both say "Under same roof, far apart" directly.
+- **Expected outcome:** Faster lane confidence during the send and yes-state flows, less confusion between same-house distance and physically-apart nights, and better odds a stressed spouse copies the right text tonight.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage jump-to-send and yes-state lane summary now say "Under same roof, far apart" directly, making the same-house-vs-apart distinction easier to trust at a glance before users copy. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+
 #### LF-093 Curiosity Over Certainty Tool should stop sounding like generic advice and generate the exact opener, curiosity question, mirror line, and close so a stressed spouse can challenge one bad story tonight without improvising
 - **Page:** `/blog/curiosity-over-certainty-tool.html`
 - **Problem:** The page still read like a generic framework with light prompts, which forced a tired spouse to translate an assumption into the exact opener, question, mirror line, and close while already activated.
