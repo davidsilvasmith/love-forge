@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-133 Homepage hero tool buttons should name the exact tool so stressed couples do not have to open a generic CTA to find the right next move
+- **Page:** `/index.html`
+- **Problem:** The homepage hero already routes couples into four lane-specific tools, but every secondary button on the four top cards still said the same generic `Open full tool`. On the highest-leverage page and highest-intent click path, couples could see four different diagnoses yet hit four identical CTAs, which hid the exact next move right when they needed certainty.
+- **User pain:** "If I already know tonight is conflict, apart, same-roof distance, or calm trust, do not make me click a vague button. Tell me the exact tool I am opening before I tap."
+- **Proposed change:** Replace the four generic hero `Open full tool` labels with exact tool-name CTAs: `Open Pause-and-Return`, `Open 15-Minute Connection Block`, `Open Distance Connection Protocol`, and `Open Boundary Definition`.
+- **Expected outcome:** Faster first-screen clarity, less hesitation on the first click, and better odds a stressed couple opens the right tool within 60 seconds instead of scanning again.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Live homepage hero now names the exact tool on each top-card CTA instead of repeating `Open full tool`; production shows `Open Pause-and-Return`, `Open 15-Minute Connection Block`, `Open Distance Connection Protocol`, and `Open Boundary Definition`. Commit: `96a7681`. Live URL: `https://love.forge.dsdoes.com/`
+
 #### LF-132 Homepage should say reset instead of rep so stressed couples do not have to translate startup-ish jargon before taking the first step
 - **Page:** `/index.html`
 - **Problem:** The homepage first screen and follow-through path still used `rep` in multiple high-traffic lines like `run one short rep`, `Stop after one 5-15 minute rep`, `one lane, one text, one rep`, and `schedule the full rep for tomorrow`. The page already positioned Love Forge as practical help for tonight, but this jargon forced tired couples to mentally translate the action before sending the first text.
