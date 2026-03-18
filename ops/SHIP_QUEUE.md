@@ -8,18 +8,22 @@
 ## Backlog
 
 ### TODO
-- LF-093 Curiosity Over Certainty Tool should stop sounding like generic advice and generate the exact opener, curiosity question, mirror line, and close so a stressed spouse can challenge one bad story tonight without improvising
-  - **Page:** `/blog/curiosity-over-certainty-tool.html`
-  - **Problem:** The page still read like a generic framework with light prompts, which forced a tired spouse to translate an assumption into the exact opener, question, mirror line, and close while already activated.
-  - **User pain:** "I know I might be making up a story. Do not make me invent the exact words to check it calmly when I am already tense."
-  - **Proposed change:** Turn the page into a practical builder with right-tool triage, one exact 10-minute run of show, and copy-ready outputs for the opener, main question, mirror line, and close.
-  - **Expected outcome:** Faster starts on assumption spirals, less accusation hidden inside fake curiosity, and better odds a stressed spouse asks one real question tonight instead of mind-reading harder.
-  - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+- _none_
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-093 Curiosity Over Certainty Tool should stop sounding like generic advice and generate the exact opener, curiosity question, mirror line, and close so a stressed spouse can challenge one bad story tonight without improvising
+- **Page:** `/blog/curiosity-over-certainty-tool.html`
+- **Problem:** The page still read like a generic framework with light prompts, which forced a tired spouse to translate an assumption into the exact opener, question, mirror line, and close while already activated.
+- **User pain:** "I know I might be making up a story. Do not make me invent the exact words to check it calmly when I am already tense."
+- **Proposed change:** Turn the page into a practical builder with right-tool triage, one exact 10-minute run of show, and copy-ready outputs for the opener, main question, mirror line, and close.
+- **Expected outcome:** Faster starts on assumption spirals, less accusation hidden inside fake curiosity, and better odds a stressed spouse asks one real question tonight instead of mind-reading harder.
+- **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+- **Status:** SHIPPED
+- **Proof after ship:** Curiosity Over Certainty Tool now opens with right-tool triage for hot conflict and trust-break nights, gives one fill-in builder for the exact opener, question, mirror line, and close, and adds a tighter 10-minute run of show plus a single 7-day clarity metric so users can challenge one bad story tonight without improvising. Commit: `f58d640`. Live URL: `https://love.forge.dsdoes.com/blog/curiosity-over-certainty-tool.html`
 
 #### LF-091 Homepage same-roof main send chip should spell out "under the same roof" directly on the button labels so users who skip helper copy can still distinguish emotional distance from being physically apart at a glance
 - **Page:** `/index.html`
