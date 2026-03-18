@@ -24,7 +24,7 @@
 - **Score:** Impact 4 / Confidence 4 / Ease 5 = **13**
 - **Status:** SHIPPED
 - **Proof after ship:** Blog hub now gives one copy-ready tomorrow retry card in the soft-no path, and it stays synced to the same shared time picker as the first ask and calm reply so a tired spouse can do the thinking tonight and send a calmer smaller ask tomorrow without improvising.
-- **Commit:** `2a5d1af`
+- **Commit:** `c0db82a`
 - **Live URL:** `https://love.forge.dsdoes.com/blog/`
 
 
