@@ -15,6 +15,17 @@
 
 ## SHIPPED
 
+#### LF-082 Get Backup Tool should stop sounding like a repeatable habit and give one exact follow-up path so a stressed spouse can seek outside help tonight without bad next-step advice
+- **Page:** `/blog/third-party-escalation-tool.html`
+- **Problem:** The page had strong first-send and builder sections, but the lower guidance still treated outside-help outreach like a repeatable relationship habit with generic "repeat 3-7 times," "run this same tool once more tomorrow," and a Weekly Meeting next step that weakened trust on a high-stakes page.
+- **User pain:** "If trust got hit or the same fight keeps repeating, do not make me guess the exact follow-up or wonder if this page understands that booking help is not a nightly ritual."
+- **Proposed change:** Replace the generic repeat guidance with one concrete outreach-cycle rule, add a copy-ready 24-hour follow-up, wire that follow-up into the builder, and tighten the best-next-step guidance around temperature control and licensed support.
+- **Expected outcome:** Higher trust on the highest-stakes page, cleaner next-step execution after the first outreach, and better odds a stressed spouse sends the right follow-up tomorrow instead of drifting or following bad advice.
+- **Score:** Impact 4 / Confidence 5 / Ease 4 = **13**
+- **Status:** SHIPPED
+- **Proof after ship:** Get Backup Tool now gives one copy-ready 24-hour follow-up in both the main page and the builder, tells users to run one outreach cycle instead of repeating the tool like a habit, and points the next move toward pause/containment and licensed support instead of an off-topic weekly meeting.
+
+
 #### LF-081 Distance Connection Protocol should stop wrong-page starts when apart couples are actually dealing with same-roof distance, hot conflict, or a trust hit
 - **Page:** `/blog/distance-connection-protocol.html`
 - **Problem:** The page worked well once a user had already chosen it, but people landing there directly from search, a shared link, or the homepage could still treat "we are apart" as the whole diagnosis when the real first move was same-roof connection work, de-escalation, or outside backup for a trust hit.

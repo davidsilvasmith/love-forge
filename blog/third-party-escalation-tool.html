@@ -104,8 +104,15 @@
       <p><button class="btn" id="copy-backup-builder-yes" type="button">Copy yes-reply text</button></p>
       <small id="copy-backup-builder-yes-status" class="muted" aria-live="polite"></small>
     </div>
+    <div class="compare-tile">
+      <small>Step 4</small>
+      <h3>If nobody replies by tomorrow, send this</h3>
+      <p id="backup-builder-followup-output">Hi, following up in case this got buried. My partner and I want to lock support for money after the kids go down this week. If you do not have room, one referral or one quick next step would really help.</p>
+      <p><button class="btn" id="copy-backup-builder-followup" type="button">Copy 24-hour follow-up</button></p>
+      <small id="copy-backup-builder-followup-status" class="muted" aria-live="polite"></small>
+    </div>
   </div>
-  <p><strong>Tonight rule:</strong> fill this out once, send the partner text, send the outreach text to two real people, then use the yes-reply only if someone responds.</p>
+  <p><strong>Tonight rule:</strong> fill this out once, send the partner text, send the outreach text to two real people, then use the yes-reply only if someone responds. If both people stay silent, use the built 24-hour follow-up once tomorrow and stop there for the day.</p>
 </div>
 
 <div class="card">
@@ -141,7 +148,9 @@
 <div class="card">
   <h2>If nobody replies by tomorrow, send this exact follow-up</h2>
   <p><strong>Use this once, 24 hours later:</strong></p>
-  <p><em>"Hi, following up in case this got buried. My partner and I want to lock support for <strong>[one issue]</strong> this week. If you do not have room, one referral or one quick next step would really help."</em></p>
+  <p id="backup-followup-text"><em>"Hi, following up in case this got buried. My partner and I want to lock support for <strong>[one issue]</strong> this week. If you do not have room, one referral or one quick next step would really help."</em></p>
+  <p><button class="btn" id="copy-backup-followup" type="button">Copy 24-hour follow-up</button></p>
+  <small id="copy-backup-followup-status" class="muted" aria-live="polite"></small>
   <p><strong>Do not add more story.</strong> Send the same follow-up to the same two people, then stop for the day.</p>
   <p><strong>Switch helper type only if:</strong> both people stay silent for 24 hours, or one person replies with “not a fit” and no next step. In that case, move one step only: therapist → coach, coach → trusted mentor, or mentor → therapist if the issue is really trust or repeated blowups.</p>
 </div>
@@ -158,11 +167,11 @@
   <p><strong>If fail:</strong> switch helper type once and send two fresh messages the same day.</p>
 </div>
 
-<div class="card"><h2>How to use this tool effectively</h2><ul><li><strong>When to use it:</strong> Use <strong>Get Backup Tool</strong> when this exact problem is happening now, not as a general reading exercise.</li><li><strong>How often:</strong> Run it once today, then repeat 3-7 times before judging results.</li><li><strong>Common mistake:</strong> Changing multiple things at once. Use one tool at a time so you can see what works.</li><li><strong>If it feels awkward:</strong> Use the script exactly once, keep the first run under 10 minutes, and rate helpfulness 1-10.</li></ul></div>
+<div class="card"><h2>Use it well</h2><div class="highlight-grid" aria-label="How to make Get Backup Tool work better"><div class="highlight-card"><small>When to use it</small><h3>Use it when the same fight keeps repeating</h3><p>Open this when trust got hit, the same blowup keeps happening, or you need neutral containment now.</p></div><div class="highlight-card"><small>How often</small><h3>Run one outreach cycle, not a nightly ritual</h3><p>Send two messages tonight, follow up once tomorrow if needed, then switch helper type only if both paths stall.</p></div><div class="highlight-card"><small>Common mistake</small><h3>Turning help-seeking into more debate</h3><p>Do not compare five helper options or rewrite the scripts for an hour. Pick one helper type and move.</p></div><div class="highlight-card"><small>If awkward</small><h3>Keep the context to one sentence</h3><p>Give one issue, ask for one opening or referral, and stop once the next step is booked.</p></div></div></div>
 
-<div class="card"><h2>Tomorrow rep + fallback + escalation</h2><ul><li><strong>Tomorrow:</strong> run this same tool once more before trying a new one.</li><li><strong>If it didn’t help:</strong> switch to <a href="/blog/pause-and-return-tool.html">Pause-and-Return Tool</a> first, then retry.</li><li><strong>If it got worse or felt unsafe:</strong> stop DIY and involve a licensed professional/support resource.</li></ul></div>
+<div class="card"><h2>Tomorrow, fallback, escalation</h2><div class="comparison-grid" aria-label="What to do after tonight on Get Backup Tool"><div class="compare-tile"><small>Tomorrow</small><h3>Follow up once only</h3><p>Use the exact 24-hour follow-up above with the same two people if nobody replied tonight.</p></div><div class="compare-tile"><small>If it stalled</small><h3>Switch helper type once</h3><p>If both people stay silent or say “not a fit,” move one step only and send two fresh messages the same day.</p></div><div class="compare-tile"><small>If it felt unsafe</small><h3>Go straight to licensed support</h3><p>Skip more DIY processing and involve a licensed professional or local crisis resource.</p></div></div></div>
 
-<div class="card"><h2>Best next tool</h2><p>After this, run <a href="/blog/10-minute-weekly-meeting.html">10-Minute Weekly Meeting</a> to keep momentum.</p></div>
+<div class="card"><h2>Best next tool</h2><p>After you book support or get one real referral, use <a href="/blog/pause-and-return-tool.html">Pause-and-Return</a> for tonight’s temperature control until the outside-help step is in motion.</p></div>
 </div><script>(function(){
 const copyPairs=[
   {btn:"copy-backup-partner-text",text:"backup-partner-text",status:"copy-backup-partner-text-status",ok:"Copied. Send it now and keep the decision small."},
@@ -171,7 +180,8 @@ const copyPairs=[
   {btn:"copy-mentor-outreach",text:"mentor-outreach-text",status:"copy-mentor-outreach-status",ok:"Copied mentor text ✅"},
   {btn:"copy-backup-yes-reply",text:"backup-yes-reply-text",status:"copy-backup-yes-reply-status",ok:"Copied yes-reply text ✅"},
   {btn:"copy-backup-no-room-reply",text:"backup-no-room-reply-text",status:"copy-backup-no-room-reply-status",ok:"Copied referral ask ✅"},
-  {btn:"copy-backup-context-reply",text:"backup-context-reply-text",status:"copy-backup-context-reply-status",ok:"Copied context reply ✅"}
+  {btn:"copy-backup-context-reply",text:"backup-context-reply-text",status:"copy-backup-context-reply-status",ok:"Copied context reply ✅"},
+  {btn:"copy-backup-followup",text:"backup-followup-text",status:"copy-backup-followup-status",ok:"Copied 24-hour follow-up ✅"}
 ];
 for(const pair of copyPairs){
   const btn=document.getElementById(pair.btn);
@@ -195,6 +205,8 @@ const time2Input=document.getElementById('backup-builder-time-2');
 const partnerOutput=document.getElementById('backup-builder-partner-output');
 const outreachOutput=document.getElementById('backup-builder-outreach-output');
 const yesOutput=document.getElementById('backup-builder-yes-output');
+const followupOutput=document.getElementById('backup-builder-followup-output');
+const genericFollowupOutput=document.getElementById('backup-followup-text');
 
 function cleanValue(value,fallback){
   const trimmed=(value||'').trim();
@@ -202,7 +214,7 @@ function cleanValue(value,fallback){
 }
 
 function updateBackupBuilder(){
-  if(!issueInput||!helperInput||!time1Input||!time2Input||!partnerOutput||!outreachOutput||!yesOutput) return;
+  if(!issueInput||!helperInput||!time1Input||!time2Input||!partnerOutput||!outreachOutput||!yesOutput||!followupOutput||!genericFollowupOutput) return;
   const issue=cleanValue(issueInput.value,'the same fight');
   const helper=cleanValue(helperInput.value,'therapist');
   const time1=cleanValue(time1Input.value,'Tuesday at 7:30 PM');
@@ -210,12 +222,15 @@ function updateBackupBuilder(){
   partnerOutput.textContent=`We keep getting stuck on ${issue}. I want backup, not another bad fight. Tonight let’s pick ${helper} and send two messages.`;
   outreachOutput.textContent=`Hi, my partner and I keep getting stuck on ${issue}. We want support this week. Do you have any openings or a referral?`;
   yesOutput.textContent=`Yes, thank you. We are available ${time1} or ${time2} this week. If those do not work, what is the fastest next step to get on your calendar?`;
+  followupOutput.textContent=`Hi, following up in case this got buried. My partner and I want to lock support for ${issue} this week. If you do not have room, one referral or one quick next step would really help.`;
+  genericFollowupOutput.innerHTML=`<em>"Hi, following up in case this got buried. My partner and I want to lock support for <strong>${issue}</strong> this week. If you do not have room, one referral or one quick next step would really help."</em>`;
 }
 
 const builtCopyPairs=[
   {btn:'copy-backup-builder-partner',text:'backup-builder-partner-output',status:'copy-backup-builder-partner-status',ok:'Copied built partner text ✅'},
   {btn:'copy-backup-builder-outreach',text:'backup-builder-outreach-output',status:'copy-backup-builder-outreach-status',ok:'Copied built outreach text ✅'},
-  {btn:'copy-backup-builder-yes',text:'backup-builder-yes-output',status:'copy-backup-builder-yes-status',ok:'Copied built yes-reply ✅'}
+  {btn:'copy-backup-builder-yes',text:'backup-builder-yes-output',status:'copy-backup-builder-yes-status',ok:'Copied built yes-reply ✅'},
+  {btn:'copy-backup-builder-followup',text:'backup-builder-followup-output',status:'copy-backup-builder-followup-status',ok:'Copied built 24-hour follow-up ✅'}
 ];
 for(const pair of builtCopyPairs){
   const btn=document.getElementById(pair.btn);
