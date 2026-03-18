@@ -8,19 +8,29 @@
 ## Backlog
 
 ### TODO
-- LF-061 Homepage should keep the chosen real time inside the main partner invite so a stressed spouse does not customize the hero texts but still paste a generic send from the primary share block
+- LF-062 Homepage should let the optional calming detail flow into the main partner invite so the first send matches the most reassuring wording the user already chose above the fold
   - **Page:** `/index.html`
-  - **Problem:** The homepage now carries the chosen real time through the yes, tomorrow, and soft-no follow-through paths, but the main partner invite in the primary share block still stays generic instead of matching the user's selected time.
-  - **User pain:** "I already picked the real time. Do not make the main text ignore it and sound less concrete than the follow-up texts."
-  - **Proposed change:** Connect the primary partner invite to the same homepage time picker so the first send, soft-no retry, yes lock-in, and tomorrow repeat all stay in one specific time flow.
-  - **Expected outcome:** Higher send confidence from the homepage, less mismatch between first send and follow-through, and a cleaner one-time-set-it experience.
-  - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+  - **Problem:** The homepage now keeps the chosen real time inside the main partner invite, but the optional calming detail still only changes the lane-specific distance text instead of the primary share block most users will actually send.
+  - **User pain:** "I already added the calming detail that makes this feel safer. Do not drop it when I copy the main text I am most likely to send."
+  - **Proposed change:** Wire the primary partner invite to reuse the optional calming detail when it strengthens the ask without making the message longer or messier.
+  - **Expected outcome:** Better emotional safety in the main send, less mismatch between the hero customizer and the primary share block, and higher send confidence tonight.
+  - **Score:** Impact 3 / Confidence 4 / Ease 4 = **11**
 
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-061 Homepage should keep the chosen real time inside the main partner invite so a stressed spouse does not customize the hero texts but still paste a generic send from the primary share block
+- **Page:** `/index.html`
+- **Problem:** The homepage now carried the chosen real time through the yes, tomorrow, and soft-no follow-through paths, but the main partner invite in the primary share block still stayed generic instead of matching the user's selected time.
+- **User pain:** "I already picked the real time. Do not make the main text ignore it and sound less concrete than the follow-up texts."
+- **Proposed change:** Connect the primary partner invite to the same homepage time picker so the first send, soft-no retry, yes lock-in, and tomorrow repeat all stay in one specific time flow.
+- **Expected outcome:** Higher send confidence from the homepage, less mismatch between first send and follow-through, and a cleaner one-time-set-it experience.
+- **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage primary partner invite now updates from the same real-time picker used above the fold, and the text-now button keeps the live chosen time too, so the first send finally matches the follow-through texts instead of falling back to a generic reset ask.
 
 #### LF-060 Homepage should carry the chosen real time into the soft-no retry text so a hesitant spouse can retry tomorrow without mentally converting a generic 10-minute ask into a specific plan
 - **Page:** `/index.html`
