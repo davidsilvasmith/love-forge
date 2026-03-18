@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-119 Homepage skeptical-partner section should stay lane-matched after a user picks tonight’s route so resistance-heavy couples do not drop from precise routing back into a generic 7-day pitch
+- **Page:** `/index.html`
+- **Problem:** The homepage had already become lane-aware above the fold, but the lower skeptical-partner section still collapsed back into generic connection language and the default same-roof tool. After choosing conflict, apart, or trust, users could still land in a mismatched skeptical block that made them translate the ask themselves.
+- **User pain:** "If I already picked conflict, apart, or trust, do not make the skeptical-partner section go generic again. Keep the smaller ask matched to the exact tool for tonight."
+- **Proposed change:** Make the homepage skeptical-partner section fully lane-aware after any lane selection so its title, helper copy, 7-day ask, and exact next-tool handoff all stay synced to conflict, same-roof distance, apart, or calm trust-boundary nights.
+- **Expected outcome:** Less usefulness drop after lane choice, higher trust in the smaller skeptical route, and better odds a stressed spouse sends a precise lower-pressure ask tonight instead of stalling on vague copy.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Live homepage now updates the skeptical-partner section to lane-matched copy after a lane pick; production returned the conflict-specific ask `No big overhaul. Can we test one 10-minute pause-and-return reset for 7 days...` and the matching heading `Lower resistance fast for hot conflict`. Commit: `62b4c5a`. Live URL: `https://love.forge.dsdoes.com/`
+
 #### LF-118 Homepage first-screen skeptical route should stop staying generic after lane choice so resistance-heavy couples know the exact tool they are asking to test before they send the safer 7-day ask
 - **Page:** `/index.html`
 - **Problem:** The homepage first-screen skeptical-partner fast route sat on the highest-leverage page, but after all the new lane routing work it still stayed generic: `No big overhaul. Can we test one 10-minute tool for 7 days...` It did not name the actual tool behind conflict, same-roof, apart, or trust nights, so resistance-heavy users still had to translate the offer in their head before sending.
