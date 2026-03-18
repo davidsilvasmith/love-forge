@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-101 Homepage low-energy fallback should stop hiding behind helper copy and give wiped-out couples one exact lighter text in the main send block so they can act tonight without rewriting the ask
+- **Page:** `/index.html`
+- **Problem:** The homepage told tired users to use the shortest version that still feels safe and even mentioned a low-energy fallback above the fold, but the main partner-send block only exposed the full 10-minute ask. A wiped-out spouse still had to mentally invent the lighter version at the exact moment they needed less thinking.
+- **User pain:** "We are too fried for the normal ask. Do not make me rewrite the text from scratch just to make tonight doable."
+- **Proposed change:** Add one copy-ready wiped-out version inside the homepage main send block and make it switch with the selected lane so conflict, same-roof distance, apart, and calm trust nights each get a lighter exact ask.
+- **Expected outcome:** Better low-energy usability on the homepage, less last-second rewriting before the first text, and better odds a stressed spouse sends one safer smaller ask tonight instead of doing nothing.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** The homepage main send block now includes a copy-ready wiped-out version that updates with the selected lane, giving users a smaller 5-minute fallback without leaving the primary send flow. Commit: `35af6ce`. Live URL: `https://love.forge.dsdoes.com/`
+
 #### LF-100 Homepage main partner invite should stop sneaking the 7-day commitment into the very first text so a stressed spouse makes one tiny tonight ask instead of sounding like they are pitching a program
 - **Page:** `/index.html`
 - **Problem:** The homepage main send block told users to send one low-pressure text with one simple ask, but the exact primary invite and SMS action still added `If it helps, we keep going for 7 days.` to the very first message, which quietly turned a tonight ask into a bigger commitment before the partner had even said yes.
