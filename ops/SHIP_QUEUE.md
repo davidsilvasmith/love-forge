@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-106 Homepage first-screen “Copy text first” buttons should actually copy the matching text so a stressed spouse can act on the first click instead of getting false-forwarded into more scanning
+- **Page:** `/index.html`
+- **Problem:** The homepage hero promised, "Pick the sentence that sounds most like tonight, copy the text, and run one short rep," and each lane card repeated `Copy ... text first`, but those buttons only scrolled down the page. The user still had to re-orient in the send block before getting the actual message.
+- **User pain:** "If the button says copy, copy the text. Do not make me click, scroll, and decode the page again when I am already stressed."
+- **Proposed change:** Make each homepage `Copy ... text first` button copy the matching lane text immediately while still dropping the user into the matching send block for a quick sanity check.
+- **Expected outcome:** Faster first action from the homepage first screen, less trust loss from a broken button promise, and better odds a stressed spouse sends one exact ask tonight instead of stalling after the first click.
+- **Score:** Impact 5 / Confidence 5 / Ease 5 = **15**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage first-screen `Copy ... text first` buttons now copy the matching main send text immediately and then land users in the matching send block with a confirmation state. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+
 #### LF-105 Homepage first-screen lane cards should expose the wiped-out shortcut directly so exhausted couples can jump straight to the smallest safe text instead of hunting for it below the fold
 - **Page:** `/index.html`
 - **Problem:** The homepage hero already promised a low-energy fallback, but the first-screen lane cards only exposed `Copy ... text first` and `Open full tool`. A wiped-out user still had to scroll into the main send block and re-orient before reaching the lighter copy.
