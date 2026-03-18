@@ -25,7 +25,7 @@
 - **Expected outcome:** Faster first action from the homepage first screen, less trust loss from a broken button promise, and better odds a stressed spouse sends one exact ask tonight instead of stalling after the first click.
 - **Score:** Impact 5 / Confidence 5 / Ease 5 = **15**
 - **Status:** SHIPPED
-- **Proof after ship:** Homepage first-screen `Copy ... text first` buttons now copy the matching main send text immediately and then land users in the matching send block with a confirmation state. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Homepage first-screen `Copy ... text first` buttons now copy the matching main send text immediately and then land users in the matching send block with a confirmation state. Commit: `438e5d5`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-105 Homepage first-screen lane cards should expose the wiped-out shortcut directly so exhausted couples can jump straight to the smallest safe text instead of hunting for it below the fold
 - **Page:** `/index.html`
