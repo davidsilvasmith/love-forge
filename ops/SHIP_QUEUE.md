@@ -11,16 +11,19 @@
 - _none_
 
 ## IN PROGRESS
-- LF-096 Homepage first-screen triage should spell out apart-tonight vs under-the-same-roof routing inside the overlap rule so a stressed spouse does not hit the right order but still have to guess which calmer lane fits once conflict and trust are ruled out
-  - **Page:** `/index.html`
-  - **Problem:** The homepage already told users that trust beats everything and hot conflict beats distance, but the third triage step still ended with generic reconnect-or-boundary wording that made a tired spouse do one more interpretation step after the most important sort.
-  - **User pain:** "Okay, trust and conflict are not the problem. Do not make me guess whether we need the apart tool, the same-roof tool, or the calm trust-boundary tool next."
-  - **Proposed change:** Replace the generic third triage step with explicit fit routing for apart tonight, under the same roof but emotionally far, and calm blurry-rule trust nights.
-  - **Expected outcome:** Faster homepage first-screen lane confidence, less wrong-tool hesitation after the overlap rule, and better odds a stressed spouse picks the right calmer tool in one pass tonight.
-  - **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
-  - **Status:** IN PROGRESS
+- _none_
 
 ## SHIPPED
+
+#### LF-096 Homepage first-screen triage should spell out apart-tonight vs under-the-same-roof routing inside the overlap rule so a stressed spouse does not hit the right order but still have to guess which calmer lane fits once conflict and trust are ruled out
+- **Page:** `/index.html`
+- **Problem:** The homepage already told users that trust beats everything and hot conflict beats distance, but the third triage step still ended with generic reconnect-or-boundary wording that made a tired spouse do one more interpretation step after the most important sort.
+- **User pain:** "Okay, trust and conflict are not the problem. Do not make me guess whether we need the apart tool, the same-roof tool, or the calm trust-boundary tool next."
+- **Proposed change:** Replace the generic third triage step with explicit fit routing for apart tonight, under the same roof but emotionally far, and calm blurry-rule trust nights.
+- **Expected outcome:** Faster homepage first-screen lane confidence, less wrong-tool hesitation after the overlap rule, and better odds a stressed spouse picks the right calmer tool in one pass tonight.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage overlap triage now names the exact calmer fit inside step three — apart tonight, under the same roof but emotionally far, or calm blurry-rule trust — so users can choose the right next page without decoding generic reconnect wording after conflict and trust are ruled out. Commit: `187c9ae`. Live URL: `https://love.forge.dsdoes.com/`
 
 ## IN PROGRESS
 - _none_
