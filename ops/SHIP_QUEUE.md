@@ -24,6 +24,8 @@
 - **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
 - **Status:** SHIPPED
 - **Proof after ship:** Distance Connection Protocol now opens with one clear "make sure this is the right tool" triage block that separates apart-tonight drift from same-roof distance, hot conflict, and trust-hit situations before users start the script.
+- **Commit:** `cd83d81`
+- **Live URL:** `https://love.forge.dsdoes.com/blog/distance-connection-protocol.html`
 
 #### LF-080 Blog hub should tell stressed spouses exactly how to choose when trust, conflict, distance, and apart all feel partly true so they stop hesitating and open one right tool tonight
 - **Page:** `/blog/index.html`
