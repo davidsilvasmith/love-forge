@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-129 Homepage tomorrow-repeat text should stay lane-matched so couples do not get a wrong follow-through script after one good rep
+- **Page:** `/index.html`
+- **Problem:** The homepage already switched the tomorrow-night guidance paragraph by lane, but the actual `Copy tomorrow text` box underneath still defaulted to the same generic reset line: `That felt better than another random fight. Can we do the same 10-minute reset...` even after users picked conflict, apart, or calm-trust lanes. On the highest-leverage page's follow-through path, the exact text couples were supposed to send after one good rep stopped matching the tool they had just used.
+- **User pain:** "If we just used the conflict, apart, or trust tool, I should not have to rewrite tomorrow's text in my head before I send it. The repeat message should already fit the lane we picked tonight."
+- **Proposed change:** Replace the generic tomorrow-repeat copy with four lane-specific tomorrow templates and wire the repeat box to update from the selected homepage lane, so conflict, apart, trust, and same-roof users each get the right follow-through script automatically.
+- **Expected outcome:** Better follow-through after the first good rep, less mental rewriting on tired nights, and fewer couples accidentally carrying the wrong next-day script into the wrong tool.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Live homepage now changes the `Copy tomorrow text` box by lane. Conflict now says `That helped us stop the damage sooner... pause-and-return reset...`; apart now says `That felt better than another vague late-night catch-up... apart check-in...`; calm trust now says `That felt clearer than another messy trust talk... boundary check-in...`. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+
 #### LF-128 Homepage trust lane should say calm trust with no fresh break so stressed couples do not confuse it with the trust-break backup route
 - **Page:** `/index.html`
 - **Problem:** The homepage already separated fresh trust breaks from calm trust-boundary nights, but the fourth lane still used the vague label `Trust shaky, no fresh break` and the hero CTA still said `Copy trust text first`. On the highest-leverage page, that shorthand made the safer trust-boundary lane look too close to the separate trust-break backup route.
