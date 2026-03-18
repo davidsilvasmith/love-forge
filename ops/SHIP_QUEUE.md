@@ -25,7 +25,7 @@
 - **Expected outcome:** Faster safer first action for trust-hit couples, less friction on the highest-stakes homepage route, and better odds a stressed spouse sends the backup-first text tonight instead of stalling or improvising.
 - **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
 - **Status:** SHIPPED
-- **Proof after ship:** Homepage trust-break first-screen card now gives users the exact backup-first text inside a copy box plus a dedicated copy button next to the Get Backup Tool link, so the safest route is immediately usable without retyping. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Homepage trust-break first-screen card now gives users the exact backup-first text inside a copy box plus a dedicated copy button next to the Get Backup Tool link, so the safest route is immediately usable without retyping. Commit: `c2c2153`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-113 Homepage first-screen skeptical route should stop making resistance-heavy couples jump lower just to get the exact safer ask when the normal invite will obviously get an eye-roll
 - **Page:** `/index.html`
