@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-131 Homepage yes-state lock-in text should name the chosen tool so couples do not lose clarity at the highest-intent moment
+- **Page:** `/index.html`
+- **Problem:** The homepage yes-state already swapped the opener, low-energy opener, and tool handoff by lane, but the actual `Send the lock-in text now` line stayed generic: `Perfect — let’s keep it simple. Can we do a 10-minute check-in...` On the homepage's highest-intent moment, conflict, apart, and calm-trust users still got a vague confirmation that did not name the tool they had just agreed to run.
+- **User pain:** "If we already got a yes, do not go generic again. The lock-in text should say the actual reset we are about to do so I do not have to translate it before I send it."
+- **Proposed change:** Replace the single generic yes-state lock-in text with four lane-matched versions and wire the homepage yes-state to load the selected lane's exact tool name inside the confirmation text.
+- **Expected outcome:** Better yes-state clarity, less last-second rewriting after a yes, and higher trust that the next step really matches the tool the couple is about to use tonight.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Live homepage now swaps the lock-in text by lane. In production, the conflict yes-state reads `Perfect — let’s keep it simple. Can we do the 10-minute pause-and-return reset at 8:30 tonight and stop after 10 minutes?` instead of the old generic `10-minute check-in` copy. Commit: `36dd50a`. Live URL: `https://love.forge.dsdoes.com/`
+
 #### LF-130 Homepage 7-day follow-through should stay neutral until a lane is chosen so couples do not inherit the wrong repeat loop before they know which tool fits tonight
 - **Page:** `/index.html`
 - **Problem:** The homepage main send block, yes-state, soft-no path, and skeptical route already stayed neutral until users picked a lane, but the lower `Finished one good rep? Do this for the next 7 days.` section still preloaded same-roof guidance and a live tomorrow-repeat copy box before any lane choice. On the homepage's biggest follow-through section, conflict, apart, and calm-trust users could still scroll into a wrong repeat loop and inherit the same-roof default.
