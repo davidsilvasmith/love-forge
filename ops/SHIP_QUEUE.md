@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-102 Homepage first-screen lane cards should stop making users choose between routing and sending so stressed couples can copy the first text from the exact lane card they already trust
+- **Page:** `/index.html`
+- **Problem:** The homepage hero promised, "Pick the sentence that sounds most like tonight, copy the text, and run one short rep," but the four biggest lane cards only opened full tool pages. The actual jump-to-send action lived in a separate card below them, so the most obvious first click still pulled stressed users into more reading before the first text.
+- **User pain:** "I already found our lane. Do not make me choose between opening another page and hunting the send text you just told me to copy."
+- **Proposed change:** Turn each homepage hero lane card into a two-path action with one obvious "Copy text first" button for that lane and one separate "Open full tool" button.
+- **Expected outcome:** Faster first sends from the homepage first screen, less page-hopping before action, and better odds a stressed spouse copies one exact ask tonight instead of drifting into more reading.
+- **Score:** Impact 5 / Confidence 5 / Ease 4 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage hero lane cards now let users copy the matching lane text directly from the first-screen card while keeping a separate full-tool path, so the page's "copy the text" promise is true on the first obvious click. Commit: `TO_FILL`. Live URL: `https://love.forge.dsdoes.com/`
+
 #### LF-101 Homepage low-energy fallback should stop hiding behind helper copy and give wiped-out couples one exact lighter text in the main send block so they can act tonight without rewriting the ask
 - **Page:** `/index.html`
 - **Problem:** The homepage told tired users to use the shortest version that still feels safe and even mentioned a low-energy fallback above the fold, but the main partner-send block only exposed the full 10-minute ask. A wiped-out spouse still had to mentally invent the lighter version at the exact moment they needed less thinking.
