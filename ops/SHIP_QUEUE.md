@@ -11,7 +11,7 @@
 - _none_
 
 ## IN PROGRESS
-- _none_
+- LF-077 Blog hub send-now path should match the actual situation so a stressed spouse can copy a distance, conflict, apart, or trust ask without mentally translating a generic reset before sending
 
 ## SHIPPED
 
