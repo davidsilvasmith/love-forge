@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-109 Homepage first-screen selected-lane preview should carry users straight into the yes-or-no follow-through so a stressed couple does not send the first text and then guess what to do after the reply
+- **Page:** `/index.html`
+- **Problem:** The homepage first-screen selected-lane preview gave users the right first text, but the preview button only copied the message and left them at the top of the page. A stressed spouse could send the ask and still miss the exact yes-state and soft-no next steps sitting lower in the main send flow.
+- **User pain:** "Do not make me send the first text and then wonder what I am supposed to do if they say yes or not right now. Carry me straight into the next step."
+- **Proposed change:** Make the first-screen selected-lane action explicitly promise the next step, add one short follow-through note in the preview, and auto-scroll users into the main send flow when they copy.
+- **Expected outcome:** Stronger homepage follow-through from the highest-traffic first-screen action, less drop-off between first send and actual reply handling, and better odds a stressed spouse keeps moving after the partner responds tonight.
+- **Score:** Impact 4 / Confidence 4 / Ease 5 = **13**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage selected-lane preview now tells users the yes / not-right-now flow is directly below, the button now says `Copy text and show next step`, and clicking it copies the selected text while jumping straight into the main send flow.
+
 #### LF-108 Homepage first-screen selected-lane preview should name the exact yes-state tool so a stressed couple can trust the first copied text without wondering what happens if the partner says yes
 - **Page:** `/index.html`
 - **Problem:** The homepage first-screen selected-lane preview gave users one copy-ready text, but it still stopped short of naming the exact tool that comes next after a yes. A stressed spouse could still think, "Okay, I can send this — but what exactly are we agreeing to do if they say yes?"
