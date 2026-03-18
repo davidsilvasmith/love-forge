@@ -23,7 +23,7 @@
 - **Expected outcome:** Faster confidence in the yes-state flow, less re-reading before copying the first question, and better odds a stressed spouse starts the rep tonight instead of hesitating.
 - **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
 - **Status:** SHIPPED
-- **Proof after ship:** Homepage yes-state now shows a live "Tonight's lane" summary plus lane-specific labels on the normal and low-energy opener cards, making it obvious at a glance that the follow-through copy changes with conflict, same-roof distance, apart, or trust before users copy and start. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Homepage yes-state now shows a live "Tonight's lane" summary plus lane-specific labels on the normal and low-energy opener cards, making it obvious at a glance that the follow-through copy changes with conflict, same-roof distance, apart, or trust before users copy and start. Commit: `453f093`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-088 Homepage yes-state opener should match the lane already chosen so a stressed spouse does not get a yes and then have to translate a generic first question before the rep starts tonight
 - **Page:** `/index.html`
