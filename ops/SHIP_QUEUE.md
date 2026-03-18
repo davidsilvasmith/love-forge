@@ -25,7 +25,7 @@
 - **Expected outcome:** Better trust in the homepage main action for same-house couples, less hesitation at the first ask, and better odds a stressed spouse actually uses the script tonight instead of stalling on the delivery method.
 - **Score:** Impact 4 / Confidence 4 / Ease 5 = **13**
 - **Status:** SHIPPED
-- **Proof after ship:** Homepage main ask block now tells users to text it, say it out loud, or paste it into chat, adds one same-house note to use the exact words aloud instead of rewriting, and reframes the block as the best first ask rather than a text-only action. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Homepage main ask block now tells users to text it, say it out loud, or paste it into chat, adds one same-house note to use the exact words aloud instead of rewriting, and reframes the block as the best first ask rather than a text-only action. Commit: `6fef4c1`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-111 Homepage first-screen send path should expose the skeptical-partner route before the normal ask so a stressed spouse does not copy the default text when the real blocker is obvious resistance
 - **Page:** `/index.html`
