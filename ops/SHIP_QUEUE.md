@@ -15,6 +15,17 @@
 
 ## SHIPPED
 
+#### LF-086 Homepage lane choice should let stressed spouses jump straight to the matching send text so they do not get kicked into a second page before making the first ask tonight
+- **Page:** `/index.html`
+- **Problem:** The homepage already told users to pick one lane and send one text, but the most obvious lane cards were full-page links, which could pull a tired spouse away from the copy-ready send flow sitting lower on the homepage before they ever sent the first ask.
+- **User pain:** "I know which lane fits. Do not make me bounce into another page before I can copy the first text and send it tonight."
+- **Proposed change:** Add one fast homepage jump block directly under the lane chooser so users can tap conflict, same-roof distance, apart, or trust and land on the matching preselected send text without leaving the homepage.
+- **Expected outcome:** Faster first sends from the homepage, less page-hopping before action, and better odds a stressed spouse actually copies one message tonight instead of drifting into more reading.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage now adds a dedicated "Want the text first?" jump block under the lane chooser, preselects the matching send lane in the partner invite card, and scrolls users straight to the copy-ready text so they can send first and read deeper only after the partner replies.
+
+
 #### LF-085 Specific Appreciation Tool should stop reading like generic advice and generate one exact appreciation line, low-energy fallback, and tomorrow repeat so an under-seen spouse can create warmth tonight without inventing the words
 - **Page:** `/blog/specific-appreciation-tool.html`
 - **Problem:** The page still read like a generic blog post with broad guidance and no real builder, which forced a tired spouse to invent the actual appreciation sentence, the buy-in ask, and the tomorrow follow-through right when the whole point was to reduce friction.
