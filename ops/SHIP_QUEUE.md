@@ -23,7 +23,7 @@
 - **Expected outcome:** Faster lane recognition, less confusion between same-roof distance and apart nights, and better odds a stressed spouse taps the right send path on the first pass.
 - **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
 - **Status:** SHIPPED
-- **Proof after ship:** Homepage jump-to-send and main send same-roof chips now say "Under same roof" directly on the buttons, making the emotional-distance-vs-apart split clearer at a glance before users copy.
+- **Proof after ship:** Homepage jump-to-send and main send same-roof chips now say "Under same roof" directly on the buttons, making the emotional-distance-vs-apart split clearer at a glance before users copy. Commit: `7286c63`. Live URL: `https://love.forge.dsdoes.com/`
 
 
 #### LF-090 Homepage same-roof main send should say "under the same roof but far apart" directly in the partner-invite block so users who jump below the hero do not have to infer what the default lane means before they copy
