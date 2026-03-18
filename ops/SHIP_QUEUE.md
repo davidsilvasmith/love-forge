@@ -25,7 +25,7 @@
 - **Expected outcome:** Faster trust in the homepage send block, less chip-decoding before the first copy action, and better odds a stressed spouse sends the right text tonight instead of hesitating.
 - **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
 - **Status:** SHIPPED
-- **Proof after ship:** Homepage main send block now shows a live `Selected tonight lane` summary above the lane chips, so users who jump down from the hero can confirm the current route at a glance before they copy. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Homepage main send block now shows a live `Selected tonight lane` summary above the lane chips, so users who jump down from the hero can confirm the current route at a glance before they copy. Commit: `4f5cf20`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-103 Homepage should stop repeating the same jump-to-send choice right after the lane cards so stressed couples can act on the first obvious buttons instead of re-deciding the same thing again
 - **Page:** `/index.html`
