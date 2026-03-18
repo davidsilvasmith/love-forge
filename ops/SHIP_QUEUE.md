@@ -8,12 +8,12 @@
 ## Backlog
 
 ### TODO
-- LF-067 Homepage should make the yes-state first question copyable so a stressed spouse can start the rep without translating the opener after the time gets locked
+- LF-068 Homepage yes-state should make the close copyable so a tired spouse can end the rep cleanly without improvising the last line after one useful answer
   - **Page:** `/index.html`
-  - **Problem:** The homepage yes-state tells users the best first question, but it still lives as plain text instead of a copy-ready send/start artifact.
-  - **User pain:** "We got to yes. Do not make me invent the exact opener right when we finally sit down."
-  - **Proposed change:** Turn the yes-state opener into one copy-ready first-question block with a low-energy version.
-  - **Expected outcome:** Faster starts after lock-in, less awkwardness in the first 30 seconds, and higher odds the rep actually begins tonight.
+  - **Problem:** The homepage yes-state now gives copy-ready openers, but the close still sits as plain guidance instead of one exact line users can copy when it is time to stop cleanly.
+  - **User pain:** "We started okay. Do not make me invent the close and accidentally reopen the whole conversation at the end."
+  - **Proposed change:** Turn the yes-state close into one copy-ready ending line with a low-energy version.
+  - **Expected outcome:** Cleaner endings, less overtalking after one useful rep, and better odds couples keep tomorrow's follow-through intact.
   - **Score:** Impact 3 / Confidence 4 / Ease 4 = **11**
   - **Status:** TODO
 
@@ -21,6 +21,16 @@
 - _none_
 
 ## SHIPPED
+
+#### LF-067 Homepage should make the yes-state first question copyable so a stressed spouse can start the rep without translating the opener after the time gets locked
+- **Page:** `/index.html`
+- **Problem:** The homepage yes-state tells users the best first question, but it still lived as plain text instead of a copy-ready start artifact right after the time got locked.
+- **User pain:** "We got to yes. Do not make me invent the exact opener right when we finally sit down."
+- **Proposed change:** Turn the yes-state opener into one copy-ready first-question block with a low-energy version.
+- **Expected outcome:** Faster starts after lock-in, less awkwardness in the first 30 seconds, and higher odds the rep actually begins tonight.
+- **Score:** Impact 3 / Confidence 4 / Ease 4 = **11**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage yes-state now gives one copy-ready first question plus one low-energy opener with dedicated copy buttons, so a stressed spouse can start the rep fast tonight without translating the opener by hand.
 
 #### LF-066 Homepage soft-no path should give the exact tomorrow retry text so a stressed spouse can prepare the calmer follow-up tonight instead of inventing tomorrow's ask from a rule summary
 - **Page:** `/index.html`
