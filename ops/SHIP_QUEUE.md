@@ -25,7 +25,7 @@
 - **Expected outcome:** Less wrong-lane leakage on the homepage's main send block, better trust that the first text really matches tonight, and faster movement from diagnosis to sending without last-second rewriting.
 - **Score:** Impact 5 / Confidence 5 / Ease 4 = **14**
 - **Status:** SHIPPED
-- **Proof after ship:** Live homepage now keeps the main send block neutral until a lane is chosen; production shows `Pick one lane first`, `Pick a lane to unlock copy`, and the same lock on the wiped-out fallback before any lane is selected. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Live homepage now keeps the main send block neutral until a lane is chosen; production shows `Pick one lane first`, `Pick a lane to unlock copy`, and the same lock on the wiped-out fallback before any lane is selected. Commit: `998fc96`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-122 Homepage hero skeptical lighter-fallback button should land on the exact tiny ask instead of the top of the skeptical section so resistant couples do not have to scan again before sending
 - **Page:** `/index.html`
