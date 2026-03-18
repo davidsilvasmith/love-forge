@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-126 Homepage soft-no path should stay neutral until a lane is chosen so users do not inherit the wrong same-roof recovery script after a not-right-now
+- **Page:** `/index.html`
+- **Problem:** The homepage main send block and yes-state already stayed neutral until users picked a lane, but the homepage `If your partner says "not right now"` section still preloaded same-roof recovery copy, tomorrow retry text, and the same-roof tool before any lane choice. That meant conflict, apart, and trust users could hit the homepage's biggest objection-handling block and inherit the wrong recovery move right after a soft no.
+- **User pain:** "If they say not right now, do not preload the wrong recovery script for a different kind of night. Keep the soft-no path neutral until it matches tonight."
+- **Proposed change:** Remove the preloaded same-roof soft-no state, lock the tonight reply and tomorrow retry actions until a lane is chosen, and keep the follow-through guidance neutral until the page can load the lane-matched recovery path.
+- **Expected outcome:** Less wrong-lane leakage in the homepage soft-no path, better trust that the recovery move fits tonight, and faster movement from a soft no to the safest next step instead of last-second translation.
+- **Score:** Impact 5 / Confidence 5 / Ease 5 = **15**
+- **Status:** SHIPPED
+- **Proof after ship:** Live homepage now keeps the soft-no path neutral before lane choice; production shows `Pick a lane to unlock soft-no reply`, `Pick a lane to unlock tomorrow retry`, and neutral follow-through copy until a lane is selected, then swaps to the correct lane-matched recovery path. Commit: `6b92d54`. Live URL: `https://love.forge.dsdoes.com/`
+
 #### LF-125 Homepage yes-state should stay neutral until a lane is chosen so high-intent users do not inherit the wrong same-roof follow-through after a yes
 - **Page:** `/index.html`
 - **Problem:** The homepage main send block and skeptical route already stayed neutral until users picked a lane, but the homepage `If your partner says yes` block still preloaded same-roof lock-in copy, opener cards, closes, and the same-roof tool before any lane choice. That meant conflict, apart, and trust users could hit the highest-intent follow-through state and inherit the wrong next move right after getting a yes.
