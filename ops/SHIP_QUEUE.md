@@ -8,19 +8,24 @@
 ## Backlog
 
 ### TODO
-- LF-073 10-Minute Weekly Meeting should generate the exact low-energy invite and calm soft-no retry so busy parents can still lock the meeting tonight when a full weekly meeting feels too heavy
-  - **Page:** `/blog/10-minute-weekly-meeting.html`
-  - **Problem:** The page already generated a strong invite, one-issue opener, and close, but it still made a tired spouse invent the lower-pressure fallback when energy was gone or the partner said not tonight.
-  - **User pain:** "We want the weekly meeting, but do not make me improvise the softer ask or the calm retry when tonight already feels heavy."
-  - **Proposed change:** Expand the builder and first-step guidance so it outputs one low-energy invite plus one calm soft-no reply that still locks the weekly meeting slot.
-  - **Expected outcome:** Less translation friction in the highest-resistance moment, more meetings actually scheduled, and better odds a stressed spouse takes one planning action tonight.
-  - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
-  - **Status:** TODO
+- _none_
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-073 10-Minute Weekly Meeting should generate the exact low-energy invite and calm soft-no retry so busy parents can still lock the meeting tonight when a full weekly meeting feels too heavy
+- **Page:** `/blog/10-minute-weekly-meeting.html`
+- **Problem:** The page already generated a strong invite, one-issue opener, and close, but it still made a tired spouse invent the lower-pressure fallback when energy was gone or the partner said not tonight.
+- **User pain:** "We want the weekly meeting, but do not make me improvise the softer ask or the calm retry when tonight already feels heavy."
+- **Proposed change:** Expand the builder and first-step guidance so it outputs one low-energy invite plus one calm soft-no reply that still locks the weekly meeting slot.
+- **Expected outcome:** Less translation friction in the highest-resistance moment, more meetings actually scheduled, and better odds a stressed spouse takes one planning action tonight.
+- **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+- **Status:** SHIPPED
+- **Proof after ship:** The Weekly Meeting page now gives one low-energy invite and one calm soft-no reply in both the first-step checklist and the builder output, so a tired spouse can still lock the weekly meeting tonight without improvising when energy is low or the first ask gets a soft no.
+- **Commit:** `cb39f38`
+- **Live URL:** `https://love.forge.dsdoes.com/blog/10-minute-weekly-meeting.html`
 
 #### LF-072 Blog hub send-now path should carry one real time through the first ask and soft-no retry so a stressed spouse can copy a message that sounds ready to send tonight instead of generic placeholder timing
 - **Page:** `/blog/index.html`
