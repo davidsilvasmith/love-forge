@@ -25,7 +25,7 @@
 - **Expected outcome:** Less first-screen sequence friction, faster trust in the homepage handoff, and better odds a stressed spouse keeps moving instead of pausing to re-interpret the order.
 - **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
 - **Status:** SHIPPED
-- **Proof after ship:** Homepage first-send handoff now tells users they already picked the lane above and should set one real time, then copy the matching text, which removes the repeated-sequence wobble right before the main send. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Homepage first-send handoff now tells users they already picked the lane above and should set one real time, then copy the matching text, which removes the repeated-sequence wobble right before the main send. Commit: `8940d1f`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-116 Homepage first-screen selected-lane preview should stop unlocking the default same-roof copy before users choose a lane so conflict, apart, and trust nights do not get the wrong first text
 - **Page:** `/index.html`
