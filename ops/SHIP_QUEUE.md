@@ -15,6 +15,15 @@
 
 ## SHIPPED
 
+#### LF-069 Homepage main partner invite should match the actual situation so a stressed spouse can use the biggest send block without mentally translating a generic reset into conflict, distance, or trust wording
+- **Page:** `/index.html`
+- **Problem:** The homepage already gave lane-specific hero sends, but the main partner invite lower on the page still stayed generic, which forced users to mentally rewrite the biggest send block after they had already identified whether tonight was conflict, distance, or trust.
+- **User pain:** "I know which kind of night this is. Do not make the main send sound generic when I am about to copy the biggest text block on the page."
+- **Proposed change:** Add a tiny situation picker to the main partner invite so the exact message switches between distant, hot-conflict, and shaky-trust wording while keeping the same chosen time and calming detail.
+- **Expected outcome:** Less translation friction in the homepage primary send block, faster copying, and better odds a tired spouse sends the version that actually fits tonight.
+- **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage main partner invite now includes a three-state situation picker for distant, hot-conflict, and shaky-trust nights, and the primary text-now/copy block updates with lane-specific wording while keeping the same chosen time and calming detail, so a stressed spouse can use the biggest send block without mentally translating a generic reset.
 #### LF-068 Homepage yes-state should make the close copyable so a tired spouse can end the rep cleanly without improvising the last line after one useful answer
 - **Page:** `/index.html`
 - **Problem:** The homepage yes-state now gives copy-ready openers, but the close still sat as plain guidance instead of one exact line users could copy when it was time to stop cleanly.

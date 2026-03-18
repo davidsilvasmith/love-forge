@@ -283,6 +283,11 @@ input[type="radio"],input[type="checkbox"],select{accent-color:#7c5cff}
 .share-support-tile strong{display:block;margin-bottom:6px;color:#eef2ff}
 .share-support-tile p{margin:0;color:#dce5ff;font-size:.91rem}
 .message-badge{display:inline-flex;width:fit-content;padding:5px 10px;border-radius:999px;background:rgba(124,92,255,.18);border:1px solid rgba(255,255,255,.16);font-size:.76rem;font-weight:700;color:#e8efff}
+.invite-lane-picker{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;margin:12px 0 10px}
+.invite-lane-chip{appearance:none;background:rgba(11,16,32,.58);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:10px 12px;color:var(--text);font:inherit;font-weight:700;cursor:pointer;text-align:center;box-shadow:var(--shadow)}
+.invite-lane-chip:hover{transform:translateY(-1px);filter:brightness(1.04)}
+.invite-lane-chip:focus-visible{outline:2px solid #9ec5ff;outline-offset:2px}
+.invite-lane-chip.is-active{background:linear-gradient(135deg,rgba(124,92,255,.34),rgba(20,184,166,.22));border-color:rgba(20,184,166,.58);color:#ffffff}
 
 .solo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:12px 0 10px}
 .solo-tile{background:linear-gradient(160deg,rgba(63,139,75,.16),rgba(124,92,255,.15));border:1px solid rgba(180,230,194,.28);border-radius:16px;padding:14px;box-shadow:var(--shadow);min-height:156px;display:flex;flex-direction:column;gap:8px}
