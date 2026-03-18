@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-124 Homepage lower skeptical route should stay neutral until a lane is chosen so resistant couples do not inherit the wrong 7-day ask after scrolling
+- **Page:** `/index.html`
+- **Problem:** The homepage hero skeptical route already stayed locked until a lane was chosen, but the lower `If one partner is skeptical` section still loaded active same-roof copy, live copy buttons, and the default same-roof tool before any lane choice. That let conflict, apart, and trust users scroll into the skeptical route and inherit the wrong lower-pressure ask right at the homepage's biggest objection-handling block.
+- **User pain:** "If my partner is skeptical, do not preload the wrong 7-day ask and tool before I choose what kind of night this is. Keep the skeptical route neutral until it matches tonight."
+- **Proposed change:** Remove the lower skeptical section's same-roof default state, lock its copy actions and tool cards until a lane is chosen, and only then unlock the lane-matched skeptical ask, lighter fallback, and exact tool handoff.
+- **Expected outcome:** Less wrong-lane leakage in the homepage skeptical route, better trust that the lower-pressure ask really fits tonight, and faster movement from routing to sending without last-second translation.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Live homepage now keeps the lower skeptical section neutral before lane choice; production shows `Pick a lane to unlock 7-day ask`, `Pick a lane to unlock lighter fallback`, and a neutral `Pick a lane to unlock the right tool` state until a lane is selected. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+
 #### LF-123 Homepage main send block should stay neutral until a lane is chosen so users who jump straight to the first ask do not copy the wrong same-roof text
 - **Page:** `/index.html`
 - **Problem:** The homepage hero selected-lane preview already stayed locked until users picked a lane, but the main `Send or say this to your partner now` block still loaded the same-roof distance message, active chip, SMS link, and wiped-out fallback before any lane choice. That let conflict, apart, and trust users hit the homepage's highest-intent send block and still inherit the default same-roof ask.
