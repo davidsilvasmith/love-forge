@@ -15,6 +15,16 @@
 
 ## SHIPPED
 
+#### LF-084 Homepage same-roof connection lane should say "under the same roof but far apart" everywhere that choice is made so stressed spouses do not confuse emotional distance with being physically apart tonight
+- **Page:** `/index.html`
+- **Problem:** The homepage already had separate apart and connection lanes, but some of the highest-traffic connection copy still said only "distant tonight," which forced a tired spouse to stop and re-interpret whether that meant same-roof emotional distance or being physically apart.
+- **User pain:** "We are not traveling. We live in the same house and still feel off. Do not make me guess whether the distance tool means emotional distance or being apart tonight."
+- **Proposed change:** Tighten the homepage connection lane labels, helper copy, and skeptical-partner routing so the connection path explicitly says "under the same roof but emotionally far" while the apart path keeps the travel/opposite-schedule meaning.
+- **Expected outcome:** Faster homepage lane choice, less wrong-page hesitation between connection and apart paths, and better odds a stressed spouse copies the right text tonight.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage hero, send-now lane chip, helper note, and skeptical-partner connection references now explicitly say the connection lane is for couples under the same roof but emotionally far, making the apart-vs-distance split clearer before users send or click.
+
 #### LF-083 Blog hub scenario strip should show the trust-boundary lane directly so a stressed spouse does not see 4 core lanes in the copy but only 3 quick-pick tiles when trying to choose fast
 - **Page:** `/blog/index.html`
 - **Problem:** The blog hub already taught the 4 core lanes clearly, but the quick scenario strip only showed conflict, connection, and apart, which made the fast-pick UI feel inconsistent right where a stressed spouse was trying to choose one lane fast.
