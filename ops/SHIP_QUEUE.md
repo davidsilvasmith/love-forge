@@ -8,12 +8,29 @@
 ## Backlog
 
 ### TODO
-- _none yet_
+- LF-060 Homepage should carry the chosen real time into the soft-no retry text so a hesitant spouse can retry tomorrow without mentally converting a generic 10-minute ask into a specific plan
+  - **Page:** `/index.html`
+  - **Problem:** The homepage now keeps the chosen time in more follow-through texts, but the soft-no path still tells users to retry tomorrow with a generic 10-minute ask instead of a copy-ready specific time.
+  - **User pain:** "If they said not right now, do not make me translate tomorrow's retry into a real time by myself."
+  - **Proposed change:** Connect the soft-no retry copy to the same homepage time picker so the next-day ask stays specific and easier to send.
+  - **Expected outcome:** Less mental rewriting after a soft no and better odds the retry actually gets sent.
+  - **Score:** Impact 3 / Confidence 4 / Ease 4 = **11**
+
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-059 Homepage follow-through texts should keep using the chosen real time so a stressed spouse does not have to mentally rewrite the fallback and tomorrow-repeat messages after customizing the first send
+- **Page:** `/index.html`
+- **Problem:** The homepage let users set one real time for the first send, but the fallback and tomorrow-repeat texts still hard-coded a different-looking time flow, which forced one more mental rewrite right after the main customization win.
+- **User pain:** "I already picked the time once. Do not make me re-edit the next text in my head before I send it."
+- **Proposed change:** Connect the wiped-out fallback text and the tomorrow-repeat text to the same homepage time picker and label that shared behavior clearly.
+- **Expected outcome:** Faster follow-through after the first send, less copy friction, and a cleaner one-time-set-it flow across the homepage.
+- **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage fallback and tomorrow-repeat texts now update from the same real-time picker used in the hero, with small helper notes telling users to change the time once and copy the updated text directly, so the follow-through path stays specific without extra mental editing.
 
 #### LF-058 Blog hub library should make the planning follow-through path visible without looking like a missing fifth filter so calm users know where structure tools live after they pick the right temperature
 - **Page:** `/blog/index.html`
