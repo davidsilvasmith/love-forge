@@ -8,12 +8,23 @@
 ## Backlog
 
 ### TODO
-- LF-090 Homepage same-roof main send should say "under the same roof but far apart" directly in the partner-invite block so users who jump below the hero do not have to infer what the default lane means before they copy
+- LF-091 Homepage same-roof main send chip should spell out "under the same roof" directly on the button label so users who skip helper copy can still distinguish emotional distance from being physically apart at a glance
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-090 Homepage same-roof main send should say "under the same roof but far apart" directly in the partner-invite block so users who jump below the hero do not have to infer what the default lane means before they copy
+- **Page:** `/index.html`
+- **Problem:** The homepage main partner-send block already defaulted to the same-roof distance lane, but the helper note still said only "same-roof distance version," which made a skim-reading spouse infer what that meant instead of seeing the literal same-house emotional-distance wording right before copying.
+- **User pain:** "I jumped straight to the big text block. Do not make me guess whether the default lane means we live together but feel emotionally far apart."
+- **Proposed change:** Tighten the partner-invite helper note and live lane explainer text so the default path explicitly says it is for couples under the same roof but emotionally far apart.
+- **Expected outcome:** Faster lane confidence in the main homepage send block, less hesitation between same-roof and apart lanes, and better odds a stressed spouse copies the right text tonight.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage main partner-send helper copy now says the default lane is for couples under the same roof but emotionally far apart, so users who jump below the hero no longer have to infer what the same-roof lane means before they copy.
+
 
 #### LF-089 Homepage yes-state should make the lane match more visible at a glance so users instantly trust that the follow-through copy changed with their selected night type before they copy and start
 - **Page:** `/index.html`
