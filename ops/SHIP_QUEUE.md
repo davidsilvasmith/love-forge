@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-117 Homepage first-send handoff should stop telling users to pick a lane again after they already picked it so the highest-traffic action feels like one clear next move instead of a repeated sequence
+- **Page:** `/index.html`
+- **Problem:** The homepage lane cards already made users choose conflict, same-roof distance, apart, or trust above the fold, but the next highest-leverage card still opened with `Pick your lane, set the time, then send the matching text`, which made the page sound like users had to redo the lane choice before they could take the next step.
+- **User pain:** "I already picked the lane. Do not make the next block sound like I have to decide that part again before I can send the text."
+- **Proposed change:** Rewrite that first-send handoff heading and intro so they acknowledge the lane was already chosen above and push users into the real next move: set one time and copy the matching text.
+- **Expected outcome:** Less first-screen sequence friction, faster trust in the homepage handoff, and better odds a stressed spouse keeps moving instead of pausing to re-interpret the order.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage first-send handoff now tells users they already picked the lane above and should set one real time, then copy the matching text, which removes the repeated-sequence wobble right before the main send. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+
 #### LF-116 Homepage first-screen selected-lane preview should stop unlocking the default same-roof copy before users choose a lane so conflict, apart, and trust nights do not get the wrong first text
 - **Page:** `/index.html`
 - **Problem:** The homepage first-screen selected-lane preview already promised `after you pick a lane above, this is the one text to copy first`, but the preview loaded immediately with the same-roof badge, same-roof title, same-roof yes-state tool, live copy text, and an active `Copy text and show next step` button before any lane was chosen.
