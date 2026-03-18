@@ -8,19 +8,29 @@
 ## Backlog
 
 ### TODO
-- LF-060 Homepage should carry the chosen real time into the soft-no retry text so a hesitant spouse can retry tomorrow without mentally converting a generic 10-minute ask into a specific plan
+- LF-061 Homepage should keep the chosen real time inside the main partner invite so a stressed spouse does not customize the hero texts but still paste a generic send from the primary share block
   - **Page:** `/index.html`
-  - **Problem:** The homepage now keeps the chosen time in more follow-through texts, but the soft-no path still tells users to retry tomorrow with a generic 10-minute ask instead of a copy-ready specific time.
-  - **User pain:** "If they said not right now, do not make me translate tomorrow's retry into a real time by myself."
-  - **Proposed change:** Connect the soft-no retry copy to the same homepage time picker so the next-day ask stays specific and easier to send.
-  - **Expected outcome:** Less mental rewriting after a soft no and better odds the retry actually gets sent.
-  - **Score:** Impact 3 / Confidence 4 / Ease 4 = **11**
+  - **Problem:** The homepage now carries the chosen real time through the yes, tomorrow, and soft-no follow-through paths, but the main partner invite in the primary share block still stays generic instead of matching the user's selected time.
+  - **User pain:** "I already picked the real time. Do not make the main text ignore it and sound less concrete than the follow-up texts."
+  - **Proposed change:** Connect the primary partner invite to the same homepage time picker so the first send, soft-no retry, yes lock-in, and tomorrow repeat all stay in one specific time flow.
+  - **Expected outcome:** Higher send confidence from the homepage, less mismatch between first send and follow-through, and a cleaner one-time-set-it experience.
+  - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
 
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-060 Homepage should carry the chosen real time into the soft-no retry text so a hesitant spouse can retry tomorrow without mentally converting a generic 10-minute ask into a specific plan
+- **Page:** `/index.html`
+- **Problem:** The homepage now keeps the chosen time in more follow-through texts, but the soft-no path still tells users to retry tomorrow with a generic 10-minute ask instead of a copy-ready specific time.
+- **User pain:** "If they said not right now, do not make me translate tomorrow's retry into a real time by myself."
+- **Proposed change:** Connect the soft-no retry copy to the same homepage time picker so the next-day ask stays specific and easier to send.
+- **Expected outcome:** Less mental rewriting after a soft no and better odds the retry actually gets sent.
+- **Score:** Impact 3 / Confidence 4 / Ease 4 = **11**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage soft-no reply, retry guidance, and tomorrow step now stay tied to the same real-time picker used above the fold, so a hesitant spouse can copy one specific next-day ask instead of mentally converting a generic 10-minute retry.
 
 #### LF-059 Homepage follow-through texts should keep using the chosen real time so a stressed spouse does not have to mentally rewrite the fallback and tomorrow-repeat messages after customizing the first send
 - **Page:** `/index.html`
