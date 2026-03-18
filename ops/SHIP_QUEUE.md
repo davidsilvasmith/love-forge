@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-120 Homepage skeptical lighter fallback should stay lane-matched after route selection so exhausted resistant couples do not have to rewrite the smallest safe ask themselves
+- **Page:** `/index.html`
+- **Problem:** The homepage skeptical-partner section now stayed lane-matched for the main 7-day experiment ask, but its lighter fallback still collapsed back to one generic line: `Can we try one 10-minute reset tonight and decide tomorrow if it is worth repeating?` That forced conflict, apart, and trust users to mentally rewrite the smallest ask right when they were most depleted.
+- **User pain:** "If we are already in conflict, apart, or shaky-trust mode, do not make the lighter backup text go generic again. Keep the tiniest safe ask matched to tonight."
+- **Proposed change:** Make the homepage skeptical lighter fallback update with lane-specific copy for same-roof distance, hot conflict, apart nights, and calm trust-boundary nights.
+- **Expected outcome:** Less last-second rewriting in the lowest-energy skeptical path, stronger trust that the homepage still fits tonight, and better odds a stressed spouse sends one exact smaller ask instead of freezing.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Live homepage now swaps the skeptical lighter fallback with the selected lane; production returned the conflict-specific fallback `Can we do just 5 quiet minutes tonight so we do not make this worse, then decide tomorrow if the same pause-and-return reset is worth repeating?` at the live homepage. Commit: `7d5139a`. Live URL: `https://love.forge.dsdoes.com/`
+
 #### LF-119 Homepage skeptical-partner section should stay lane-matched after a user picks tonight’s route so resistance-heavy couples do not drop from precise routing back into a generic 7-day pitch
 - **Page:** `/index.html`
 - **Problem:** The homepage had already become lane-aware above the fold, but the lower skeptical-partner section still collapsed back into generic connection language and the default same-roof tool. After choosing conflict, apart, or trust, users could still land in a mismatched skeptical block that made them translate the ask themselves.
