@@ -25,7 +25,7 @@
 - **Expected outcome:** Smaller safer first sends, better match between the homepage instruction and the actual copy, and better odds a stressed spouse gets a yes to one short reset tonight.
 - **Score:** Impact 5 / Confidence 5 / Ease 5 = **15**
 - **Status:** SHIPPED
-- **Proof after ship:** Homepage primary invite and SMS output now keep the first ask focused on one 10-minute reset tonight, and the helper note now says to save the 7-day idea for after a yes/first good rep or the skeptical-partner route. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Homepage primary invite and SMS output now keep the first ask focused on one 10-minute reset tonight, and the helper note now says to save the 7-day idea for after a yes/first good rep or the skeptical-partner route. Commit: `29e24f4`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-099 Homepage main partner invite should stop appending the site link to the first text so a stressed spouse sends a smaller safer ask instead of making the first move feel like homework
 - **Page:** `/index.html`
