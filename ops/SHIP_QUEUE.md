@@ -24,7 +24,7 @@
 - **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
 - **Status:** SHIPPED
 - **Proof after ship:** Blog hub soft-no copy now keeps the shared tomorrow time logic but drops the duplicate leading “Tomorrow,” so users get a natural ready-to-send retry line instead of awkward double-tomorrow wording.
-- **Commit:** `1bce86d`
+- **Commit:** `80a193c`
 - **Live URL:** `https://love.forge.dsdoes.com/blog/`
 
 
