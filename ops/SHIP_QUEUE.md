@@ -24,6 +24,8 @@
 - **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
 - **Status:** SHIPPED
 - **Proof after ship:** Homepage now gives physically-apart couples one obvious “apart tonight” route in the first screen plus matching copy-ready apart messages in the hero and main send picker, so they can act fast without translating the generic distance lane in their head.
+- **Commit:** `a677cf7`
+- **Live URL:** `https://love.forge.dsdoes.com/`
 
 
 #### LF-078 Blog hub soft-no path should match the actual situation so a stressed spouse can copy the right calm reply and tomorrow retry for conflict, distance, apart, or trust nights without mentally rewriting a generic reset
