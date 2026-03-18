@@ -11,9 +11,21 @@
 - _none_
 
 ## IN PROGRESS
-- LF-077 Blog hub send-now path should match the actual situation so a stressed spouse can copy a distance, conflict, apart, or trust ask without mentally translating a generic reset before sending
+- _none_
 
 ## SHIPPED
+
+#### LF-077 Blog hub send-now path should match the actual situation so a stressed spouse can copy a distance, conflict, apart, or trust ask without mentally translating a generic reset before sending
+- **Page:** `/blog/index.html`
+- **Problem:** The blog hub already got users to one send fast, but the main send-now copy still stayed generic, which forced a stressed spouse to mentally rewrite the ask when the real situation was hot conflict, physical distance, or a trust wobble.
+- **User pain:** "I already know what kind of night this is. Do not make me translate a generic reset text before I can send it."
+- **Proposed change:** Add one situation picker to the blog hub send-now block so the main send and low-energy fallback switch between distant, conflict, apart, and trust wording while keeping the same real-time field.
+- **Expected outcome:** Faster sends from the blog hub, less last-second rewriting, and better odds a stressed spouse copies a message that actually fits tonight.
+- **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+- **Status:** SHIPPED
+- **Proof after ship:** Blog hub send-now now lets users match the copy to distant, conflict, apart, or trust nights, and the main send plus low-energy fallback update from the same time field so a stressed spouse can copy a message that fits the real situation instead of translating a generic reset in their head.
+- **Commit:** `906b3af`
+- **Live URL:** `https://love.forge.dsdoes.com/blog/`
 
 #### LF-076 Bid Response Tool should generate the exact bid reply, low-energy text, and tomorrow repeat so a tired spouse can catch one connection moment tonight without improvising
 - **Page:** `/blog/bid-response-tool.html`
