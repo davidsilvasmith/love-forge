@@ -8,19 +8,22 @@
 ## Backlog
 
 ### TODO
-- LF-058 Blog hub library should make the planning follow-through path visible without looking like a missing fifth filter so calm users know where structure tools live after they pick the right temperature
-  - **Page:** `/blog/index.html`
-  - **Problem:** The copy now clarifies that planning is follow-through, not a fifth core lane, but calm users still have to infer where the planning tools live because the filter UI only exposes the 4 core lanes.
-  - **User pain:** "Got it, planning is not the first move. But once we are calm, show me where the structure tools are without making me hunt the full list."
-  - **Proposed change:** Add one small planning follow-through entry inside the library guidance so users can jump to the right planning tools without confusing the core-lane system.
-  - **Expected outcome:** Better follow-through discovery, less hunting in the full list, and cleaner alignment between the lane model and the actual tool library.
-  - **Score:** Impact 3 / Confidence 4 / Ease 3 = **10**
-  - **Status:** TODO
+- _none yet_
 
 ## IN PROGRESS
 - _none_
 
 ## SHIPPED
+
+#### LF-058 Blog hub library should make the planning follow-through path visible without looking like a missing fifth filter so calm users know where structure tools live after they pick the right temperature
+- **Page:** `/blog/index.html`
+- **Problem:** The copy now clarifies that planning is follow-through, not a fifth core lane, but calm users still have to infer where the planning tools live because the filter UI only exposes the 4 core lanes.
+- **User pain:** "Got it, planning is not the first move. But once we are calm, show me where the structure tools are without making me hunt the full list."
+- **Proposed change:** Add one small planning follow-through entry inside the library guidance so users can jump to the right planning tools without confusing the core-lane system.
+- **Expected outcome:** Better follow-through discovery, less hunting in the full list, and cleaner alignment between the lane model and the actual tool library.
+- **Score:** Impact 3 / Confidence 4 / Ease 3 = **10**
+- **Status:** SHIPPED
+- **Proof after ship:** Blog hub library now adds a calm follow-through planning card plus a planning-only quick jump that points users straight to 10-Minute Weekly Meeting, Weekly State-of-Us Scorecard, and Monthly Marriage Retro, so calm users can find structure tools fast without reading planning as a missing fifth lane.
 
 #### LF-057 Blog hub should align the library lane language and counts so browse-first users do not see a 5-lane chooser above a 4-lane library and pause on whether planning is a separate path
 - **Page:** `/blog/index.html`
