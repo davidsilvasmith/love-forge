@@ -15,6 +15,16 @@
 
 ## SHIPPED
 
+#### LF-070 Daily 15-Minute Connection Block should generate the exact focus line, 24-hour action, and tomorrow close so a tired spouse can run the check-in tonight without translating the framework by hand
+- **Page:** `/blog/daily-15-minute-connection-block.html`
+- **Problem:** The page already had a good script, but a stressed spouse still had to turn their real issue, tomorrow action, and close into exact words while already low on bandwidth.
+- **User pain:** "We know we should do the check-in. Do not make me translate the script into our exact situation right when we finally sit down."
+- **Proposed change:** Add one tiny focus-pack builder that writes the exact focus line, 24-hour action line, and tomorrow close from one issue, one action, and one real time.
+- **Expected outcome:** Faster starts on the connection path, less mental translation, and better odds couples actually finish the rep and lock tomorrow before drifting.
+- **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+- **Status:** SHIPPED
+- **Proof after ship:** Daily 15-Minute Connection Block now includes a simple builder that turns one issue, one tiny 24-hour action, and one tomorrow time into three copy-ready lines for the focus, action, and close, so a tired spouse can run the check-in tonight without translating the framework by hand.
+
 #### LF-069 Homepage main partner invite should match the actual situation so a stressed spouse can use the biggest send block without mentally translating a generic reset into conflict, distance, or trust wording
 - **Page:** `/index.html`
 - **Problem:** The homepage already gave lane-specific hero sends, but the main partner invite lower on the page still stayed generic, which forced users to mentally rewrite the biggest send block after they had already identified whether tonight was conflict, distance, or trust.

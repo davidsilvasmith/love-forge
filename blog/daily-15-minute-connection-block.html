@@ -69,6 +69,34 @@
   </div>
 </div>
 
+<div class="card quick-start">
+  <h2>Build tonight's exact focus pack</h2>
+  <p><strong>Do not translate the framework in your head.</strong> Fill in one issue, one tiny action, and one tomorrow time. Then copy the exact lines you need tonight.</p>
+  <div class="builder" aria-label="Daily 15 focus pack builder">
+    <div>
+      <label for="daily15-issue"><strong>The one issue for tonight</strong></label>
+      <input id="daily15-issue" type="text" value="how disconnected we felt after bedtime" placeholder="the bedtime handoff felt tense">
+      <small class="muted">Keep it narrow. One moment, not the whole marriage.</small>
+    </div>
+    <div>
+      <label for="daily15-action"><strong>One tiny action for the next 24 hours</strong></label>
+      <input id="daily15-action" type="text" value="sit together for 10 minutes after dinner with no phones" placeholder="sit together for 10 minutes after dinner with no phones">
+      <small class="muted">Make it small enough that both of you can actually do it tomorrow.</small>
+    </div>
+    <div>
+      <label for="daily15-time"><strong>Tomorrow time</strong></label>
+      <input id="daily15-time" type="text" value="8:30 tomorrow night" placeholder="8:30 tomorrow night">
+      <small class="muted">Use the first real time you can protect.</small>
+    </div>
+  </div>
+  <div class="highlight-grid" aria-label="Copy-ready Daily 15 focus pack outputs">
+    <div class="highlight-card"><small>Focus line</small><h3>Start with one exact sentence</h3><div class="copy-box" id="daily15-focus-line">The one issue for me tonight is how disconnected we felt after bedtime.</div><p><button class="btn" id="copy-daily15-focus-line" type="button">Copy focus line</button></p><small id="copy-daily15-focus-line-status" class="muted" aria-live="polite"></small></div>
+    <div class="highlight-card"><small>24-hour action</small><h3>Lock one doable next step</h3><div class="copy-box" id="daily15-action-line">One thing that would help in the next 24 hours is this: sit together for 10 minutes after dinner with no phones.</div><p><button class="btn" id="copy-daily15-action-line" type="button">Copy action line</button></p><small id="copy-daily15-action-line-status" class="muted" aria-live="polite"></small></div>
+    <div class="highlight-card"><small>Tomorrow close</small><h3>End the rep without drifting</h3><div class="copy-box" id="daily15-close-line">Thank you for doing this with me. Can we do the same check-in at 8:30 tomorrow night and keep it just as short?</div><p><button class="btn" id="copy-daily15-close-line" type="button">Copy tomorrow close</button></p><small id="copy-daily15-close-line-status" class="muted" aria-live="polite"></small></div>
+  </div>
+  <p class="hero-micro"><strong>Tonight rule:</strong> if three issues feel true, use the first box to name only the one causing the most tension right now. Park the rest for tomorrow.</p>
+</div>
+
 <div class="card">
   <h2>Copy/paste starter text</h2>
   <div class="highlight-grid" aria-label="Starter scripts">
@@ -169,7 +197,30 @@ Then do this:
 
 <div class="card"><h2>Best next tool</h2><p>After this, run <a href="/blog/10-minute-weekly-meeting.html">10-Minute Weekly Meeting</a> to lock in momentum.</p></div>
 </div><script>(function(){
+const issueInput=document.getElementById('daily15-issue');
+const actionInput=document.getElementById('daily15-action');
+const timeInput=document.getElementById('daily15-time');
+const focusLine=document.getElementById('daily15-focus-line');
+const actionLine=document.getElementById('daily15-action-line');
+const closeLine=document.getElementById('daily15-close-line');
+function cleanValue(input,fallback){
+  const raw=input&&input.value?input.value.trim():'';
+  return raw||fallback;
+}
+function updateFocusPack(){
+  const issue=cleanValue(issueInput,'how disconnected we felt after bedtime').replace(/[.?!]+$/,'');
+  const action=cleanValue(actionInput,'sit together for 10 minutes after dinner with no phones').replace(/[.?!]+$/,'');
+  const time=cleanValue(timeInput,'8:30 tomorrow night').replace(/^at\s+/i,'').replace(/[.?!]+$/,'');
+  if(focusLine){focusLine.textContent='The one issue for me tonight is '+issue+'.';}
+  if(actionLine){actionLine.textContent='One thing that would help in the next 24 hours is this: '+action+'.';}
+  if(closeLine){closeLine.textContent='Thank you for doing this with me. Can we do the same check-in at '+time+' and keep it just as short?';}
+}
+[issueInput,actionInput,timeInput].forEach(function(input){if(input){input.addEventListener('input',updateFocusPack);}});
+updateFocusPack();
 const copyPairs=[
+  {btn:'copy-daily15-focus-line',text:'daily15-focus-line',status:'copy-daily15-focus-line-status',ok:'Copied focus line ✅'},
+  {btn:'copy-daily15-action-line',text:'daily15-action-line',status:'copy-daily15-action-line-status',ok:'Copied action line ✅'},
+  {btn:'copy-daily15-close-line',text:'daily15-close-line',status:'copy-daily15-close-line-status',ok:'Copied tomorrow close ✅'},
   {btn:'copy-daily15-main',text:'daily15-main-opener',status:'copy-daily15-main-status',ok:'Copied main opener ✅'},
   {btn:'copy-daily15-fallback',text:'daily15-fallback',status:'copy-daily15-fallback-status',ok:'Copied low-energy text ✅'},
   {btn:'copy-daily15-full-script',text:'daily15-full-script',status:'copy-daily15-full-script-status',ok:'Copied full 15-minute script ✅',value:true},
