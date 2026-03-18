@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-118 Homepage first-screen skeptical route should stop staying generic after lane choice so resistance-heavy couples know the exact tool they are asking to test before they send the safer 7-day ask
+- **Page:** `/index.html`
+- **Problem:** The homepage first-screen skeptical-partner fast route sat on the highest-leverage page, but after all the new lane routing work it still stayed generic: `No big overhaul. Can we test one 10-minute tool for 7 days...` It did not name the actual tool behind conflict, same-roof, apart, or trust nights, so resistance-heavy users still had to translate the offer in their head before sending.
+- **User pain:** "If my partner is skeptical, do not make me pitch a vague 7-day experiment. Tell me the exact kind of thing I am asking them to test."
+- **Proposed change:** Lock the first-screen skeptical route until a homepage lane is chosen, then swap in lane-matched skeptical copy plus an exact `If they say yes` tool handoff for conflict, same-roof, apart, and calm trust-boundary nights.
+- **Expected outcome:** Less vagueness in the homepage skeptical route, stronger trust that the 7-day ask maps to a real next step, and better odds a stressed spouse sends the safer lower-pressure invite tonight instead of stalling.
+- **Score:** Impact 4 / Confidence 4 / Ease 5 = **13**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage first-screen skeptical route now stays locked until users pick a lane, then updates the 7-day ask to match the real lane-specific tool and names the exact tool to test next. Commit: `d5b36d8`. Live URL: `https://love.forge.dsdoes.com/`
+
 #### LF-117 Homepage first-send handoff should stop telling users to pick a lane again after they already picked it so the highest-traffic action feels like one clear next move instead of a repeated sequence
 - **Page:** `/index.html`
 - **Problem:** The homepage lane cards already made users choose conflict, same-roof distance, apart, or trust above the fold, but the next highest-leverage card still opened with `Pick your lane, set the time, then send the matching text`, which made the page sound like users had to redo the lane choice before they could take the next step.
