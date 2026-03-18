@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-112 Homepage main first-ask block should stop acting like texting is the only valid move so same-house couples do not hesitate at the moment they are finally ready to ask
+- **Page:** `/index.html`
+- **Problem:** The homepage first-screen flow was strong, but the main ask block still said `Send this to your partner now`, `Best move tonight: send one low-pressure text`, and `Text this exact message`. For couples under the same roof, that framing could make the safest exact ask feel weird or artificial right at the highest-leverage action.
+- **User pain:** "We are in the same house. Do not make this feel like I have to text someone in the next room if saying the same line out loud is the real next move."
+- **Proposed change:** Reframe the main homepage ask block around `send or say`, add one explicit same-house note telling users to read the exact words out loud if texting feels weird, and rename the main message label from text-only framing to exact-message framing.
+- **Expected outcome:** Better trust in the homepage main action for same-house couples, less hesitation at the first ask, and better odds a stressed spouse actually uses the script tonight instead of stalling on the delivery method.
+- **Score:** Impact 4 / Confidence 4 / Ease 5 = **13**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage main ask block now tells users to text it, say it out loud, or paste it into chat, adds one same-house note to use the exact words aloud instead of rewriting, and reframes the block as the best first ask rather than a text-only action. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+
 #### LF-111 Homepage first-screen send path should expose the skeptical-partner route before the normal ask so a stressed spouse does not copy the default text when the real blocker is obvious resistance
 - **Page:** `/index.html`
 - **Problem:** The homepage first-screen send flow was strong for lane choice and yes/no follow-through, but the skeptical-partner route only appeared much lower on the page after the main send, yes-state, soft-no, and solo sections. A spouse who already knew their partner would roll their eyes or instantly say no could still copy the default ask first and hit a preventable rejection.
