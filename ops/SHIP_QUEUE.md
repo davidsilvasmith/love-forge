@@ -23,7 +23,7 @@
 - **Expected outcome:** Less homepage repetition, cleaner below-the-fold scanning, and better confidence that users should keep moving unless there is a fresh safety, trust, or escalation change.
 - **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
 - **Status:** SHIPPED
-- **Proof after ship:** Homepage now replaces the repeated lower safety lecture with a short override block that only appears as a stop-and-switch reference for immediate danger, fresh trust hits, or a new escalation spike, so users who already chose a lane can keep moving without second-guessing the whole diagnosis again. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Homepage now replaces the repeated lower safety lecture with a short override block that only appears as a stop-and-switch reference for immediate danger, fresh trust hits, or a new escalation spike, so users who already chose a lane can keep moving without second-guessing the whole diagnosis again. Commit: `c54b4fe`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-094 Homepage same-roof summary labels should say "under same roof, far apart" everywhere the user double-checks their lane so a stressed spouse never has to decode shorthand before copying
 - **Page:** `/index.html`
