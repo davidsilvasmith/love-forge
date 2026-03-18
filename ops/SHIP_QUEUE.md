@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-128 Homepage trust lane should say calm trust with no fresh break so stressed couples do not confuse it with the trust-break backup route
+- **Page:** `/index.html`
+- **Problem:** The homepage already separated fresh trust breaks from calm trust-boundary nights, but the fourth lane still used the vague label `Trust shaky, no fresh break` and the hero CTA still said `Copy trust text first`. On the highest-leverage page, that shorthand made the safer trust-boundary lane look too close to the separate trust-break backup route.
+- **User pain:** "If trust was not freshly broken, I still should not have to guess whether this lane is the calm boundary reset or the emergency backup route. Name the safer lane exactly before I click."
+- **Proposed change:** Rename the homepage trust lane and first CTA to `Calm trust, no fresh break` / `Copy calm-trust text first`, and mirror that exact phrase in the locked helper states so the lane stays distinct from the trust-break path all the way down the page.
+- **Expected outcome:** Less hesitation between the trust-boundary lane and the trust-break backup route, cleaner first-screen routing, and more trust that the clicked action matches tonight's problem.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Live homepage now shows `Copy calm-trust text first`, `Calm trust, no fresh break`, and `calm trust with no fresh break` in the locked helper copy, which keeps the calmer boundary lane visibly separate from the trust-break backup route. Commit: `1edcc82`. Live URL: `https://love.forge.dsdoes.com/`
+
 #### LF-127 Homepage same-roof hero action should say under-same-roof so apart couples do not hesitate on the first obvious click
 - **Page:** `/index.html`
 - **Problem:** The homepage hero already spelled the lane as `We are under the same roof but feel far apart`, but the first obvious action button still said `Copy same-roof text first`. On the highest-leverage click path, that shorthand made the lane feel less exact than the surrounding copy and easier to second-guess against the separate apart-tonight lane.
