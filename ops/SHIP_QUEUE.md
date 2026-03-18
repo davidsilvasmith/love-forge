@@ -24,7 +24,7 @@
 - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
 - **Status:** SHIPPED
 - **Proof after ship:** Bid Response Tool now tells couples how to pick one missed bid, generates the exact response line plus tomorrow repeat text, includes a low-energy fallback and full copy-ready script, and gives one simple 7-day tracker so they can practice one real micro-connection tonight instead of just reading advice.
-- **Commit:** pending
+- **Commit:** `6dbb5ba`
 - **Live URL:** `https://love.forge.dsdoes.com/blog/bid-response-tool.html`
 
 
