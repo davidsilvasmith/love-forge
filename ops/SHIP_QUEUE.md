@@ -25,7 +25,7 @@
 - **Expected outcome:** Better low-energy usability on the homepage, less last-second rewriting before the first text, and better odds a stressed spouse sends one safer smaller ask tonight instead of doing nothing.
 - **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
 - **Status:** SHIPPED
-- **Proof after ship:** The homepage main send block now includes a copy-ready wiped-out version that updates with the selected lane, giving users a smaller 5-minute fallback without leaving the primary send flow. Commit: `35af6ce`. Live URL: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** The homepage main send block now includes a copy-ready wiped-out version that updates with the selected lane, giving users a smaller 5-minute fallback without leaving the primary send flow. Commit: `9985639`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-100 Homepage main partner invite should stop sneaking the 7-day commitment into the very first text so a stressed spouse makes one tiny tonight ask instead of sounding like they are pitching a program
 - **Page:** `/index.html`
