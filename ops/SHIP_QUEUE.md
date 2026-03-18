@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-132 Homepage should say reset instead of rep so stressed couples do not have to translate startup-ish jargon before taking the first step
+- **Page:** `/index.html`
+- **Problem:** The homepage first screen and follow-through path still used `rep` in multiple high-traffic lines like `run one short rep`, `Stop after one 5-15 minute rep`, `one lane, one text, one rep`, and `schedule the full rep for tomorrow`. The page already positioned Love Forge as practical help for tonight, but this jargon forced tired couples to mentally translate the action before sending the first text.
+- **User pain:** "I get what to do, but `rep` sounds weird here. Just tell me to do one short reset so I do not have to decode your language when I am already fried."
+- **Proposed change:** Replace the homepage's remaining `rep` phrasing with plain-language `reset` wording across the hero, lane cards, low-energy fallback, follow-through, and matching helper copy.
+- **Expected outcome:** Faster first-screen comprehension, less friction before copying the first text, and a homepage that sounds safer and more human within the first 60 seconds.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Live homepage now reads `run one short reset`, `Stop after one 5-15 minute reset`, and `one lane, one text, one short reset` instead of the old `rep` language. Commit: `12c8e4b`. Live URL: `https://love.forge.dsdoes.com/`
+
 #### LF-131 Homepage yes-state lock-in text should name the chosen tool so couples do not lose clarity at the highest-intent moment
 - **Page:** `/index.html`
 - **Problem:** The homepage yes-state already swapped the opener, low-energy opener, and tool handoff by lane, but the actual `Send the lock-in text now` line stayed generic: `Perfect — let’s keep it simple. Can we do a 10-minute check-in...` On the homepage's highest-intent moment, conflict, apart, and calm-trust users still got a vague confirmation that did not name the tool they had just agreed to run.
