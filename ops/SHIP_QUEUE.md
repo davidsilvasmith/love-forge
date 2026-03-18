@@ -8,7 +8,13 @@
 ## Backlog
 
 ### TODO
-- _none_
+- LF-093 Curiosity Over Certainty Tool should stop sounding like generic advice and generate the exact opener, curiosity question, mirror line, and close so a stressed spouse can challenge one bad story tonight without improvising
+  - **Page:** `/blog/curiosity-over-certainty-tool.html`
+  - **Problem:** The page still read like a generic framework with light prompts, which forced a tired spouse to translate an assumption into the exact opener, question, mirror line, and close while already activated.
+  - **User pain:** "I know I might be making up a story. Do not make me invent the exact words to check it calmly when I am already tense."
+  - **Proposed change:** Turn the page into a practical builder with right-tool triage, one exact 10-minute run of show, and copy-ready outputs for the opener, main question, mirror line, and close.
+  - **Expected outcome:** Faster starts on assumption spirals, less accusation hidden inside fake curiosity, and better odds a stressed spouse asks one real question tonight instead of mind-reading harder.
+  - **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
 
 ## IN PROGRESS
 - _none_
