@@ -15,6 +15,16 @@
 
 ## SHIPPED
 
+#### LF-097 Homepage soft-no and next-day repeat guidance should stay in the same lane the user already picked so a stressed spouse does not get an apart, conflict, or trust night routed back into the generic same-roof default after one hesitation
+- **Page:** `/index.html`
+- **Problem:** The homepage let users choose conflict, same-roof distance, apart, or trust for the main send, but the soft-no and repeat guidance still snapped back to the generic same-roof default, which could quietly misroute people the moment their partner hesitated.
+- **User pain:** "We already picked the right lane. Do not make tomorrow's retry and follow-through secretly switch us back to the generic connection path."
+- **Proposed change:** Make the homepage soft-no next-tool guidance, tomorrow step, and repeat-tomorrow rule update with the same selected lane so conflict, apart, and calm trust-boundary users keep the right follow-through path.
+- **Expected outcome:** Better follow-through trust on the homepage, fewer wrong-tool retries after hesitation, and better odds a stressed spouse keeps moving in the right lane instead of second-guessing tomorrow.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage soft-no and 7-day follow-through guidance now changes with the selected lane, so conflict users stay on Pause-and-Return, apart users stay on Distance Connection Protocol, and calm trust-boundary users stay on Boundary Definition instead of silently falling back to the generic same-roof default.
+
 #### LF-096 Homepage first-screen triage should spell out apart-tonight vs under-the-same-roof routing inside the overlap rule so a stressed spouse does not hit the right order but still have to guess which calmer lane fits once conflict and trust are ruled out
 - **Page:** `/index.html`
 - **Problem:** The homepage already told users that trust beats everything and hot conflict beats distance, but the third triage step still ended with generic reconnect-or-boundary wording that made a tired spouse do one more interpretation step after the most important sort.
