@@ -15,6 +15,16 @@
 
 ## SHIPPED
 
+#### LF-081 Distance Connection Protocol should stop wrong-page starts when apart couples are actually dealing with same-roof distance, hot conflict, or a trust hit
+- **Page:** `/blog/distance-connection-protocol.html`
+- **Problem:** The page worked well once a user had already chosen it, but people landing there directly from search, a shared link, or the homepage could still treat "we are apart" as the whole diagnosis when the real first move was same-roof connection work, de-escalation, or outside backup for a trust hit.
+- **User pain:** "We are apart tonight, but do not make me guess whether this page is still right if we are also fighting or trust feels damaged."
+- **Proposed change:** Add one above-the-fold right-tool triage block that tells users when to stay on Distance Connection Protocol and when to switch to Daily 15-Minute Connection Block, Pause-and-Return, or Get Backup Tool.
+- **Expected outcome:** Faster right-page confidence for apart couples, fewer wrong-tool starts, and better odds a stressed spouse takes one safe action tonight instead of forcing the distance script onto the wrong problem.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Distance Connection Protocol now opens with one clear "make sure this is the right tool" triage block that separates apart-tonight drift from same-roof distance, hot conflict, and trust-hit situations before users start the script.
+
 #### LF-080 Blog hub should tell stressed spouses exactly how to choose when trust, conflict, distance, and apart all feel partly true so they stop hesitating and open one right tool tonight
 - **Page:** `/blog/index.html`
 - **Problem:** The blog hub already had strong first sends and routing, but it still assumed users could quickly resolve overlap in their own head when the real night felt like some mix of trust wobble, hot conflict, emotional distance, and physical apartness.
