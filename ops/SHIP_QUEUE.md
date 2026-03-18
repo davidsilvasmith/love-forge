@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-123 Homepage main send block should stay neutral until a lane is chosen so users who jump straight to the first ask do not copy the wrong same-roof text
+- **Page:** `/index.html`
+- **Problem:** The homepage hero selected-lane preview already stayed locked until users picked a lane, but the main `Send or say this to your partner now` block still loaded the same-roof distance message, active chip, SMS link, and wiped-out fallback before any lane choice. That let conflict, apart, and trust users hit the homepage's highest-intent send block and still inherit the default same-roof ask.
+- **User pain:** "If I land on the main send block before I choose a lane, do not preload the wrong text and make me notice the mismatch myself right before I send it."
+- **Proposed change:** Remove the preselected main-send lane, keep the summary and copy actions neutral and disabled until a lane is chosen, then unlock the matching main ask and wiped-out fallback.
+- **Expected outcome:** Less wrong-lane leakage on the homepage's main send block, better trust that the first text really matches tonight, and faster movement from diagnosis to sending without last-second rewriting.
+- **Score:** Impact 5 / Confidence 5 / Ease 4 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Live homepage now keeps the main send block neutral until a lane is chosen; production shows `Pick one lane first`, `Pick a lane to unlock copy`, and the same lock on the wiped-out fallback before any lane is selected. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+
 #### LF-122 Homepage hero skeptical lighter-fallback button should land on the exact tiny ask instead of the top of the skeptical section so resistant couples do not have to scan again before sending
 - **Page:** `/index.html`
 - **Problem:** The homepage hero skeptical route already stayed lane-matched and unlocked only after lane choice, but its `See lighter fallback` button still jumped to the top of the skeptical section instead of the exact lower-pressure fallback action. That forced resistant, low-energy users to scan again right after asking for the smallest safe ask.
