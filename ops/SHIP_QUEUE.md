@@ -25,7 +25,7 @@
 - **Expected outcome:** Lower-friction first sends, better match between the homepage instruction and the actual copy, and better odds a stressed spouse gets a yes to one small reset tonight.
 - **Score:** Impact 5 / Confidence 5 / Ease 5 = **15**
 - **Status:** SHIPPED
-- **Proof after ship:** Homepage primary send text and SMS action now keep the first ask link-free, and the helper note now tells users to share the Love Forge link only after a yes or a request for context. Commit: `3d47f1a`. Live URL: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Homepage primary send text and SMS action now keep the first ask link-free, and the helper note now tells users to share the Love Forge link only after a yes or a request for context. Commit: `6c4f58a`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-098 Homepage trust lane should say "no fresh break" everywhere the user double-checks it so a stressed spouse does not mistake calm blurry-rule trust guidance for the backup-first path after a real trust hit
 - **Page:** `/index.html`
