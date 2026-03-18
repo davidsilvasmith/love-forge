@@ -15,6 +15,16 @@
 
 ## SHIPPED
 
+#### LF-072 Blog hub send-now path should carry one real time through the first ask and soft-no retry so a stressed spouse can copy a message that sounds ready to send tonight instead of generic placeholder timing
+- **Page:** `/blog/index.html`
+- **Problem:** The blog hub gave a useful first send and soft-no reply, but both still used generic timing, which forced a tired spouse to mentally rewrite the message right before sending.
+- **User pain:** "This is close, but I still have to swap in the real time myself before I can send it."
+- **Proposed change:** Add one tiny real-time picker above the blog hub send-now block and wire it into the main first send, low-energy fallback, and soft-no retry text.
+- **Expected outcome:** Faster sends from the blog hub, less last-second rewriting, and better odds a stressed spouse actually sends one small ask tonight.
+- **Score:** Impact 4 / Confidence 4 / Ease 4 = **12**
+- **Status:** SHIPPED
+- **Proof after ship:** Blog hub now lets users set one real time in the send-now block, and that same time flows into the main first send, low-energy version, and soft-no retry reply so they can copy a message that sounds ready to send tonight without mentally editing the clock.
+
 #### LF-071 Homepage should make the lane decision obvious when more than one problem feels true so a stressed spouse does not freeze between conflict, distance, and trust on the first screen
 - **Page:** `/index.html`
 - **Problem:** The homepage already offered strong lane choices and copy-ready sends, but a tired spouse could still see two true problems at once and hesitate on which lane should win tonight.
