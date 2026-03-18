@@ -25,7 +25,7 @@
 - **Expected outcome:** Higher first-screen trust, less uncertainty between send and follow-through, and better odds a stressed couple actually sends the text because the next step is already named.
 - **Score:** Impact 4 / Confidence 4 / Ease 5 = **13**
 - **Status:** SHIPPED
-- **Proof after ship:** Homepage first-screen selected-lane preview now tells users exactly which tool opens next after a yes for conflict, same-roof distance, apart, and calm trust-boundary nights. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Homepage first-screen selected-lane preview now tells users exactly which tool opens next after a yes for conflict, same-roof distance, apart, and calm trust-boundary nights. Commit: `17c1aa4`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-107 Homepage first-screen send customizer should stop re-showing four full send texts after lane choice so a stressed couple can stay on one obvious copy-ready ask instead of re-deciding the same route
 - **Page:** `/index.html`
