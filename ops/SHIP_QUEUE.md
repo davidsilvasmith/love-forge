@@ -25,7 +25,7 @@
 - **Expected outcome:** Better first-screen routing for resistance-heavy nights, fewer wrong first sends, and better odds a stressed spouse chooses the lower-pressure skeptical invite before triggering an easy no tonight.
 - **Score:** Impact 4 / Confidence 4 / Ease 5 = **13**
 - **Status:** SHIPPED
-- **Proof after ship:** Homepage first-screen send preview now includes an explicit skeptical-partner fast route that tells users not to push the normal ask first and jumps them straight to the 7-day experiment text section below, so resistance-heavy nights get the lower-pressure route before the main send. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Homepage first-screen send preview now includes an explicit skeptical-partner fast route that tells users not to push the normal ask first and jumps them straight to the 7-day experiment text section below, so resistance-heavy nights get the lower-pressure route before the main send. Commit: `db99280`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-110 Homepage yes-state should name the exact next tool inside the main follow-through block so a stressed couple does not get a yes and still have to guess what page to open
 - **Page:** `/index.html`
