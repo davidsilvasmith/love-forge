@@ -25,7 +25,7 @@
 - **Expected outcome:** Better trust in the homepage recovery path, less last-second rewriting after a soft no, and a clearer exact next move when couples need the safest retry tonight.
 - **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
 - **Status:** SHIPPED
-- **Proof after ship:** Local homepage source now loads lane-specific soft-no and tomorrow-retry copy for distance, conflict, apart, and calm-trust instead of one generic `10-minute reset` message. Live URL verified after push: `https://love.forge.dsdoes.com/` now serves `Can we try one 10-minute pause-and-return reset`, `Can we try one 10-minute apart check-in`, and `Can we spend 10 minutes ... naming one clear rule and one next check-in` inside the homepage source.
+- **Proof after ship:** Local homepage source now loads lane-specific soft-no and tomorrow-retry copy for distance, conflict, apart, and calm-trust instead of one generic `10-minute reset` message. Commit `c8505e5` was pushed to `main`. Live URL verified after push: `https://love.forge.dsdoes.com/` now serves `Can we try one 10-minute pause-and-return reset`, `Can we try one 10-minute apart check-in`, and `Can we spend 10 minutes ... naming one clear rule and one next check-in` inside the homepage source.
 
 #### LF-143 Homepage first-click lane buttons should name the exact reset action so stressed couples do not translate lane jargon before the first click
 - **Page:** `/index.html`
