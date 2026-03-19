@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-137 Homepage first 30 seconds should separate the trust-break backup route from the 4 normal lanes so stressed couples do not hunt for a lane card that does not exist
+- **Page:** `/index.html`
+- **Problem:** The homepage first screen told couples to `Pick the lane causing the most damage right now: trust hit, hot conflict, apart tonight, or under-same-roof distance.` But `trust hit` is not one of the four lane cards. It is a separate backup-first route above them. In the highest-leverage 30-second checklist, stressed couples could be told to pick a `lane` that had no matching lane card.
+- **User pain:** "If trust got hit, do not tell me to pick a lane that is not actually in the lane chooser. Tell me to use the backup route first, then tell me the real four lanes."
+- **Proposed change:** Rewrite the homepage first-screen intro, 30-second checklist, and low-energy fallback to separate `fresh trust hit = use backup route first` from the normal four-lane chooser.
+- **Expected outcome:** Cleaner first-screen diagnosis, less confusion for trust-hit couples, and better odds a stressed spouse chooses the backup route or the right real lane within 60 seconds.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Live homepage first-screen copy now says `First rule out a fresh trust hit and use the backup route if that happened`, and the 30-second checklist now separates the backup route from the real four lanes instead of calling `trust hit` a lane. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+
 #### LF-136 Homepage first 30 seconds should say pick the lane so stressed couples do not have to translate issue-language before acting
 - **Page:** `/index.html`
 - **Problem:** The homepage hero already routes users by lane — trust hit, hot conflict, apart tonight, or under-the-same-roof distance — but the first-screen copy still told them to `Pick the sentence that sounds most like tonight` and `Pick the one issue hurting most right now.` On the highest-leverage page, stressed couples still had to mentally translate from vague issue-language into the actual lane system before taking the first action.
