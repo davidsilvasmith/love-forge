@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-155 Homepage lane cards should rule out the wrong nights at the exact choice point so stressed couples do not misroute before the first click
+- **Page:** `/index.html`
+- **Problem:** The homepage now had strong route order and button labels, but the four lane cards still described what each lane *is* without clearly ruling out the nearby wrong lane at the same moment. A tired couple could still stop at the card row and wonder whether `apart tonight` versus `under the same roof`, or `hot conflict` versus `calm trust`, was the better fit.
+- **User pain:** "If I am down to two similar cards, do not make me infer the difference. Tell me what this card is *not* for so I can click once and move."
+- **Proposed change:** Rewrite only the one-line helper under each homepage lane card so every card now says both when to use it and when not to use it.
+- **Expected outcome:** Less lane-comparison friction on the homepage, fewer wrong first clicks, and better odds a stressed couple picks one safe route within 60 seconds.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Live homepage lane cards now include rule-out guidance at the exact choice point, including `Use this when you are in different places tonight. Not for same-house distance or hot conflict`, `Use this when you are in the same house and just feel off. Not for travel nights, hot conflict, or fresh trust hits`, and `Use this only when trust feels off but nothing new blew up tonight. Not for lying, cheating, hidden money, or secret messages.` Commit `522878f`. Live URL verified after push: `https://love.forge.dsdoes.com/?v=522878f`
+
 #### LF-154 Homepage time field should stop sounding required before lane choice so stressed couples do not stall on setup before taking the first useful action
 - **Page:** `/index.html`
 - **Problem:** The homepage first screen still placed the rough-time card before the lane cards and said `Set one rough time first, then tap the lane.` Even after the rough-time softening work, that headline still made the setup feel like a gate before diagnosis.
