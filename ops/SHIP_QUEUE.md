@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-162 Homepage trust-break fast route should give a solo fallback so support still starts moving when the partner will not coordinate tonight
+- **Page:** `/index.html`
+- **Problem:** The homepage trust-break fast route gave one exact joint text plus the outside-help plan link, but the highest-stakes card still assumed the partner would coordinate on the first try. If they refused, dodged, or the moment was too activated to plan together, the page did not give one plain next move on the card itself.
+- **User pain:** "If trust got hit and my partner will not do the helper step with me tonight, do not leave me hanging. Tell me whether I should still move support forward on my own."
+- **Proposed change:** Add one explicit solo fallback line directly inside the homepage trust-break card telling users to open the outside-help plan and send one outreach message themselves tonight if the joint step is blocked.
+- **Expected outcome:** Less freeze on high-stakes trust-hit nights, clearer follow-through when the partner is unavailable or defensive, and better odds support starts moving tonight instead of waiting on a perfect joint yes.
+- **Score:** Impact 4 / Confidence 4 / Ease 5 = **13**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage trust-break fast route now tells users `If they refuse, dodge, or you are too activated to coordinate together` to open the outside-help plan anyway and send one outreach message themselves that night, which keeps the safest next move explicit even when the partner will not coordinate. Commit `PENDING`. Live URL verified after push: `PENDING`
+
 #### LF-161 Homepage main send card should stop treating texting like the default even when the couple is under the same roof
 - **Page:** `/index.html`
 - **Problem:** The homepage main send card said `Send or say this to your partner now`, but once a couple picked a lane the only primary action it unlocked was `Text it now`, plus a copy success state that told them to paste into `text, email, or chat.` On the highest-intent action point, the interface was still nudging stressed same-house couples toward texting even when the page had already routed them into an in-person lane.
