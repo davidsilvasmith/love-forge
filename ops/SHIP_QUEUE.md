@@ -1465,6 +1465,16 @@
 - **Status:** SHIPPED
 - **Proof after ship:** Homepage trust lane card and locked preview now both say `Calm trust, no fresh break`, which matches the backup-first warning for fresh trust hits and makes the safer route easier to choose fast. Live URL: `https://love.forge.dsdoes.com/`
 
+#### LF-000 Homepage lane-copy flow actually works
+- **Page:** `/index.html`
+- **Problem:** The homepage promised instant lane-matched copy, but the action script was broken, so the first-click buttons and locked previews could not reliably update or copy the right text.
+- **User pain:** "I tapped the lane and still did not get the exact words to send."
+- **Proposed change:** Fix the broken homepage script so lane selection, locked previews, and copy-first actions all run again.
+- **Expected outcome:** Stressed couples can tap the right lane and get one exact next move instead of hitting a dead first screen.
+- **Score:** Impact 5 / Confidence 5 / Ease 5 = **15**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage lane actions now load correctly again, the locked preview stays neutral until a lane is chosen, GitHub Pages built successfully for commit `053c0cf`, and the live homepage is up at `https://love.forge.dsdoes.com/`.
+
 #### LF-004 Trust lane page should choose the safest first move fast
 - **Page:** `/blog/boundary-definition-tool.html`
 - **Problem:** Trust pain pages can still feel like more reading instead of an immediate first move.
