@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-144 Homepage soft-no recovery should stay lane-matched after a not-right-now so couples do not get a generic reset that fits the wrong night
+- **Page:** `/index.html`
+- **Problem:** The homepage is still the highest-leverage page, and its soft-no section now unlocks only after lane choice, but the actual unlocked copy still reused the same generic `10-minute reset` wording for every lane. After choosing conflict, apart, or calm-trust, couples could still land on a soft-no reply and tomorrow retry that no longer matched the tool they had just picked.
+- **User pain:** "If we picked pause-and-return, apart check-in, or calm trust, do not dump me back into a generic reset when they say not right now. Give me the exact safer retry for this kind of night."
+- **Proposed change:** Replace the homepage soft-no and tomorrow-retry copy with four lane-specific versions and wire the unlocked text boxes to the selected lane instead of the old generic template.
+- **Expected outcome:** Better trust in the homepage recovery path, less last-second rewriting after a soft no, and a clearer exact next move when couples need the safest retry tonight.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Local homepage source now loads lane-specific soft-no and tomorrow-retry copy for distance, conflict, apart, and calm-trust instead of one generic `10-minute reset` message. Live URL verified after push: `https://love.forge.dsdoes.com/` now serves `Can we try one 10-minute pause-and-return reset`, `Can we try one 10-minute apart check-in`, and `Can we spend 10 minutes ... naming one clear rule and one next check-in` inside the homepage source.
+
 #### LF-143 Homepage first-click lane buttons should name the exact reset action so stressed couples do not translate lane jargon before the first click
 - **Page:** `/index.html`
 - **Problem:** The homepage hero is still the highest-leverage page, and its first obvious buttons on the conflict, same-roof, and calm-trust cards still showed vague lane labels on production: `Copy or say conflict words first`, `Copy or say under-same-roof words first`, and `Copy or say calm-trust words first`. A stressed couple still had to decode lane jargon before taking the first action.
