@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-157 Homepage optional calming detail should carry into every first ask so conflict, apart, and trust couples do not personalize the page and then copy a generic message anyway
+- **Page:** `/index.html`
+- **Problem:** The homepage now tells couples `Pick one lane above, add one calming detail if needed, then send or say one exact ask`, but the actual first-ask templates only used that detail on the under-the-same-roof default. Conflict, apart, and calm-trust couples could type a calming detail, assume the page personalized their message, and still copy a generic ask that ignored the field.
+- **User pain:** "If I took the time to add the one calming detail that makes this feel safer to send, do not drop it from the actual message just because tonight is conflict, apart, or trust instead of same-house distance."
+- **Proposed change:** Thread the homepage `Optional detail` input into the conflict, apart, and calm-trust first-ask templates and their low-energy variants so every lane keeps the same calming personalization promise.
+- **Expected outcome:** Better trust in the homepage first-send flow, less last-second manual rewriting on higher-stakes nights, and a better chance stressed couples send the exact ask that feels safest tonight.
+- **Score:** Impact 4 / Confidence 4 / Ease 5 = **13**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage first-ask copy now carries the optional calming detail across conflict, apart, and calm-trust lanes instead of reserving it for the same-roof default, so the personalization promise matches the copied message on every homepage route. Commit `PENDING`. Live URL verified after push: `PENDING`
+
 #### LF-156 Homepage trust-break fast route should say outside help plainly so high-stakes couples do not stop on internal tool language before the safest first move
 - **Page:** `/index.html`
 - **Problem:** The homepage trust-break card sat at the highest-stakes first-screen choice point, but its main CTA still said `Go straight to the Get Backup Tool` and the copy button said `Copy trust-break text`. That forced stressed couples to translate internal product language right when they needed the safest outside-help move fast.
