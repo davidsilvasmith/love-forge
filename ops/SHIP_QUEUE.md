@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-134 Homepage first screen should say send or say so same-house couples do not hesitate before the first ask
+- **Page:** `/index.html`
+- **Problem:** The highest-leverage homepage first screen still framed the action almost entirely as texting: `copy the text`, `Copy one text and send it`, and `copy the text below, send it`. The lower main send block already clarified `send or say`, but same-house couples could hit the first screen, feel texting someone in the next room was weird, and hesitate before the exact first move.
+- **User pain:** "We are in the same house. Do not make the first screen sound like this only works if I text my partner from across the room. Tell me early that I can say the same words out loud."
+- **Proposed change:** Add above-the-fold `send or say` language to the homepage intro, the `If you only do one thing tonight` checklist, and the low-energy fallback so same-house couples see the out-loud option before they ever scroll into the lower send block.
+- **Expected outcome:** Less first-screen hesitation for same-house couples, more trust that the first move is socially realistic tonight, and better odds they use the exact script instead of stalling on the delivery method.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Live homepage first screen now tells same-house couples they can `copy the text or say it out loud if you are in the same house`, updates the 30-second checklist to `send it, or say the same words out loud if texting would feel weird`, and carries that same send-or-say fallback into the low-energy line above the fold. Commit: `d817c95`. Live URL: `https://love.forge.dsdoes.com/`
+
 #### LF-133 Homepage hero tool buttons should name the exact tool so stressed couples do not have to open a generic CTA to find the right next move
 - **Page:** `/index.html`
 - **Problem:** The homepage hero already routes couples into four lane-specific tools, but every secondary button on the four top cards still said the same generic `Open full tool`. On the highest-leverage page and highest-intent click path, couples could see four different diagnoses yet hit four identical CTAs, which hid the exact next move right when they needed certainty.
