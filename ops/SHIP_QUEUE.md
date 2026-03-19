@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-164 Homepage active-time warning should jump straight to the time field so couples do not lose momentum hunting for the fix
+- **Page:** `/index.html`
+- **Problem:** The homepage first screen now warns couples that the lane buttons are using a real rough time, but the only fix instruction still said `change the rough time in the next card before you send.` That forced a stressed user to scan downward and find the right field after the page had already reached the highest-intent click point.
+- **User pain:** "If you're warning me that the button is about to use the wrong time, don't make me hunt for the fix. Take me straight to the time box now."
+- **Proposed change:** Turn the homepage active-time warning into a direct `change the rough time now` jump action that scrolls to and focuses the rough-time field.
+- **Expected outcome:** Less stall between noticing the wrong time and fixing it, fewer accidental default-time sends, and a faster path from first-screen warning to one exact ask.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Live homepage now turns the active-time warning into a direct `change the rough time now` action that jumps to the rough-time field and focuses it, so couples can correct the time from the same first-screen decision point instead of hunting for the next card. Commit `670a1f9`. Live URL verified after push: `https://love.forge.dsdoes.com/?v=670a1f9`
+
 #### LF-163 Homepage lane chooser should show the active rough time at the exact click point so couples do not send the default slot by accident
 - **Page:** `/index.html`
 - **Problem:** The homepage now smartly delays rough-time setup until after lane choice, but that created a new usefulness constraint on the highest-leverage first screen: the lane buttons copy a time-based first ask immediately while the rough-time card itself now lives lower on the page. Couples could hit the right lane fast and still not realize the copied message was using the default `8:30 tonight` slot.
