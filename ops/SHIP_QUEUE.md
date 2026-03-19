@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-141 Homepage first time-picker should stop offering tomorrow examples so stressed couples do not read the fastest action as permission to defer tonight's reset
+- **Page:** `/index.html`
+- **Problem:** The homepage first-screen time picker is the highest-leverage setup step before the lane buttons, but its helper copy still said `Use the first time you can actually make — 7:45 tonight, 9:00 tonight, or tomorrow at lunch.` Right where couples decide whether to act now, the page was still suggesting a tomorrow slot before they had sent the first ask.
+- **User pain:** "If your page says this is for tonight, do not put `tomorrow at lunch` in the first setup hint and make it easier to postpone the reset before we even start."
+- **Proposed change:** Rewrite only the homepage time-picker helper so it keeps the examples tonight-bound: `7:45 tonight, after bedtime, or 9:00 tonight.`
+- **Expected outcome:** Less permission to defer on the homepage first screen, stronger tonight-use intent before the first lane click, and better odds a stressed couple sends one exact ask within 60 seconds.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Local homepage time-picker helper now says `Use the first real time you can actually make tonight — 7:45 tonight, after bedtime, or 9:00 tonight.` Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+
 #### LF-140 Homepage apart lane should stop implying an out-loud option so physically-apart couples do not hesitate on the first click
 - **Page:** `/index.html`
 - **Problem:** The homepage apart lane describes couples who are physically apart tonight, but its primary CTA still said `Copy or say apart words first`. On the highest-leverage page, that first obvious action asked apart couples to translate an impossible out-loud option before taking the first step.
