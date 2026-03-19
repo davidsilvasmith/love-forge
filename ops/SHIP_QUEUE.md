@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-140 Homepage apart lane should stop implying an out-loud option so physically-apart couples do not hesitate on the first click
+- **Page:** `/index.html`
+- **Problem:** The homepage apart lane describes couples who are physically apart tonight, but its primary CTA still said `Copy or say apart words first`. On the highest-leverage page, that first obvious action asked apart couples to translate an impossible out-loud option before taking the first step.
+- **User pain:** "If we are not in the same place, do not tell me to say the apart text out loud. Just tell me to copy the text and send it."
+- **Proposed change:** Rename only the apart lane's primary homepage CTA from `Copy or say apart words first` to `Copy apart text first` so the first action matches the actual apart-tonight flow.
+- **Expected outcome:** Less first-click hesitation for apart couples, clearer routing on the homepage hero, and better odds they send the right distance check-in within 60 seconds.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Local source now uses `Copy apart text first` for the homepage apart-lane CTA, and commit `c147924` was pushed to `main`. Live URL checked during this run: `https://love.forge.dsdoes.com/` still showed the old `Copy or say apart words first` wording at verification time, so production had not refreshed yet.
+
 #### LF-139 Homepage first-click lane buttons should stop sounding text-only so same-house couples do not hesitate before the very first move
 - **Page:** `/index.html`
 - **Problem:** The homepage first screen already told same-house couples they could `copy the text or say it out loud`, but the four biggest first-click lane buttons still all said `Copy ... text first`. On the highest-leverage page and highest-intent click path, same-house couples could still hit a texting-only CTA before they reached the lower send-or-say clarification.
