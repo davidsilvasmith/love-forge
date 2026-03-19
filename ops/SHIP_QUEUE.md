@@ -25,7 +25,7 @@
 - **Expected outcome:** Less permission to defer on the homepage first screen, stronger tonight-use intent before the first lane click, and better odds a stressed couple sends one exact ask within 60 seconds.
 - **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
 - **Status:** SHIPPED
-- **Proof after ship:** Local homepage time-picker helper now says `Use the first real time you can actually make tonight — 7:45 tonight, after bedtime, or 9:00 tonight.` Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Local homepage time-picker helper now says `Use the first real time you can actually make tonight — 7:45 tonight, after bedtime, or 9:00 tonight.` Commit: `5c34c04`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-140 Homepage apart lane should stop implying an out-loud option so physically-apart couples do not hesitate on the first click
 - **Page:** `/index.html`
