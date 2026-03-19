@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-148 Homepage safest-default lane should look like the default so tired same-house couples do not miss the most common first move inside four equal cards
+- **Page:** `/index.html`
+- **Problem:** The homepage already said `Fast default: if trust did not get hit, conflict is not hot, and you are in the same house, start with Copy or say reconnect words first`, but that rule still lived as paragraph copy above four visually equal lane cards. The most common same-house, non-explosive couple still had to notice and remember the paragraph instead of seeing the safest default directly on the reconnect card.
+- **User pain:** "If we are just off and tired, do not make me remember a paragraph and then compare four equal cards. Mark the safest default right on the card."
+- **Proposed change:** Add one visible `Start here for most couples tonight` badge and one tighter safest-default line directly on the under-same-roof reconnect card so the common-case first move is obvious at the exact click point.
+- **Expected outcome:** Faster default routing on the homepage, less stall between four lane cards, and better odds a tired same-house couple takes the reconnect path within 60 seconds.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage reconnect lane now shows a visible `Start here for most couples tonight` badge plus the line `If trust did not get hit and conflict is not hot, this is the safest default first move tonight.` Commit `PENDING` was pushed to `main`. Live URL verified after push: `https://love.forge.dsdoes.com/`
+
 #### LF-147 Homepage trust-break fast route should stop treating generic repeat blowups like trust hits so hot-conflict couples do not get pushed past the safer pause tool
 - **Page:** `/index.html`
 - **Problem:** The homepage trust-break card is still one of the first things stressed couples see, but its trigger line said `Lying, cheating, hidden money, secret messages, or the same blowup again?` That wording could wrongly sweep repeat conflict into the trust-break backup route even when the real safer first move was simply Pause-and-Return.
