@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-159 Homepage should let couples pick the right lane before any rough-time setup so the first useful action is diagnosis, not form-fill
+- **Page:** `/index.html`
+- **Problem:** The homepage had already softened the rough-time requirement, but the rough-time card still sat above the four lane cards. Right at the first-screen choice point, stressed couples were still asked to deal with setup before diagnosis.
+- **User pain:** "We need the right lane first. Do not put a setup card in front of the actual choice and make me think about time before I even know which reset fits tonight."
+- **Proposed change:** Move only the homepage rough-time card to below the lane chooser and rewrite its heading/helper so it clearly follows lane choice instead of interrupting it.
+- **Expected outcome:** Faster first clicks on the homepage, less setup friction before diagnosis, and better odds a stressed couple reaches the right first text within 60 seconds.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage first screen now moves straight from the trust-hit route and fast default into the four lane cards, and the rough-time card now appears after lane choice with `After you pick the lane, set a rough time if you have it. If not, keep the default and move.` Commit `TBD`. Live URL verified after push: `TBD`
+
 #### LF-158 Homepage main send card should stop making couples re-pick a lane after they already picked one above
 - **Page:** `/index.html`
 - **Problem:** The homepage now routes couples into one lane well, but the highest-intent `Send or say this to your partner now` card still reopened the choice with `Pick the situation for the main send` directly above the copy area. Right after a user already picked a lane above and got dropped into the main send flow, the page was asking them to compare all four lanes again.
