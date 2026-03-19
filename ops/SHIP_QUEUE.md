@@ -25,7 +25,7 @@
 - **Expected outcome:** Faster first-screen trust on fresh trust-hit nights, less hesitation at the highest-stakes routing decision, and better odds a stressed couple takes the outside-help path within 60 seconds.
 - **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
 - **Status:** SHIPPED
-- **Proof after ship:** Homepage trust-break fast route now says `Copy outside-help text`, `Open the outside-help plan now`, and `Use the outside-help route first`, which makes the safest trust-hit action plain at the exact choice point. Commit `PENDING`. Live URL verified after push: `PENDING`
+- **Proof after ship:** Homepage trust-break fast route now says `Copy outside-help text`, `Open the outside-help plan now`, and `Use the outside-help route first`, which makes the safest trust-hit action plain at the exact choice point. Commit `d7d7858`. Live URL verified after push: `https://love.forge.dsdoes.com/?v=d7d7858`
 
 #### LF-155 Homepage lane cards should rule out the wrong nights at the exact choice point so stressed couples do not misroute before the first click
 - **Page:** `/index.html`
