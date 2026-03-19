@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-153 Homepage overlap card should match the lane-card order so stressed couples do not see two different routing rules above the first copy action
+- **Page:** `/index.html`
+- **Problem:** The homepage first checklist and lane cards already taught one route order after ruling out a fresh trust hit: hot conflict, apart tonight, under-the-same-roof distance, then calm trust with no fresh break. But the nearby overlap card still said `trust hit first, then hot conflict, then apart tonight, then under-the-same-roof distance lane, then calm trust`, which forced stressed couples to reconcile two different order systems in the same first-screen flow.
+- **User pain:** "If you already told me to rule out a fresh trust hit first, do not show a second card that restarts the order differently. Keep one routing rule so I can move fast."
+- **Proposed change:** Rewrite the homepage overlap card so it explicitly says `first rule out a fresh trust hit`, then uses the same lane-card order and one-tool-only instruction as the rest of the first screen.
+- **Expected outcome:** Less routing contradiction on the homepage, faster first-screen trust, and better odds an overlap-heavy couple picks one safe lane without re-sorting the page in their head.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage overlap card now says `First rule out a fresh trust hit and use the backup route if that happened. If not, use this order: hot conflict first, then apart tonight, then under-the-same-roof distance, then calm trust with no fresh break` and the three-step strip now mirrors that same sequence instead of restarting the routing logic. Commit `PENDING`. Live URL verified after push: `https://love.forge.dsdoes.com/`
+
 #### LF-152 Homepage lane cards should appear in the same order as the routing rule so stressed couples do not see the safest second step buried after the default same-house card
 - **Page:** `/index.html`
 - **Problem:** The homepage already taught the route order clearly in the checklist, overlap card, and number badges, but the actual lane cards were still rendered as conflict, same-house default, apart, trust. That meant the card labeled `2. If you are not in the same place tonight, start here` still appeared after the default same-house card labeled `3`, which forced users to reconcile the order rule against the visual layout.
