@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-158 Homepage main send card should stop making couples re-pick a lane after they already picked one above
+- **Page:** `/index.html`
+- **Problem:** The homepage now routes couples into one lane well, but the highest-intent `Send or say this to your partner now` card still reopened the choice with `Pick the situation for the main send` directly above the copy area. Right after a user already picked a lane above and got dropped into the main send flow, the page was asking them to compare all four lanes again.
+- **User pain:** "If I already picked the lane that fits tonight, do not make me stop and re-diagnose before I copy the text. Let me move unless I clearly picked the wrong lane."
+- **Proposed change:** Reframe only the homepage main-send card so the selected lane stays primary, the chip row is clearly labeled as a correction path, and the default instruction says to copy the loaded message if the lane already looks right.
+- **Expected outcome:** Less second-guessing at the exact send moment, faster movement from lane pick to one copied ask, and better odds a stressed couple sends the first safe message within 60 seconds.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage main send card now says `Copy this exact message now`, tells users `You already picked the lane above` and `skip the buttons below and copy the message`, and relabels the chip row as a change-lane fallback instead of a fresh decision step. Commit `PENDING`. Live URL verified after push: `PENDING`
+
 #### LF-157 Homepage optional calming detail should carry into every first ask so conflict, apart, and trust couples do not personalize the page and then copy a generic message anyway
 - **Page:** `/index.html`
 - **Problem:** The homepage now tells couples `Pick one lane above, add one calming detail if needed, then send or say one exact ask`, but the actual first-ask templates only used that detail on the under-the-same-roof default. Conflict, apart, and calm-trust couples could type a calming detail, assume the page personalized their message, and still copy a generic ask that ignored the field.
