@@ -25,7 +25,7 @@
 - **Expected outcome:** Less freeze on high-stakes trust-hit nights, clearer follow-through when the partner is unavailable or defensive, and better odds support starts moving tonight instead of waiting on a perfect joint yes.
 - **Score:** Impact 4 / Confidence 4 / Ease 5 = **13**
 - **Status:** SHIPPED
-- **Proof after ship:** Homepage trust-break fast route now tells users `If they refuse, dodge, or you are too activated to coordinate together` to open the outside-help plan anyway and send one outreach message themselves that night, which keeps the safest next move explicit even when the partner will not coordinate. Commit `PENDING`. Live URL verified after push: `PENDING`
+- **Proof after ship:** Homepage trust-break fast route now tells users `If they refuse, dodge, or you are too activated to coordinate together` to open the outside-help plan anyway and send one outreach message themselves that night, which keeps the safest next move explicit even when the partner will not coordinate. Commit `0f9e3b3`. Live URL verified after push: `https://love.forge.dsdoes.com/?v=0f9e3b3`
 
 #### LF-161 Homepage main send card should stop treating texting like the default even when the couple is under the same roof
 - **Page:** `/index.html`
