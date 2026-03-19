@@ -25,7 +25,7 @@
 - **Expected outcome:** Faster default routing on the homepage, less stall between four lane cards, and better odds a tired same-house couple takes the reconnect path within 60 seconds.
 - **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
 - **Status:** SHIPPED
-- **Proof after ship:** Homepage reconnect lane now shows a visible `Start here for most couples tonight` badge plus the line `If trust did not get hit and conflict is not hot, this is the safest default first move tonight.` Commit `PENDING` was pushed to `main`. Live URL verified after push: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Homepage reconnect lane now shows a visible `Start here for most couples tonight` badge plus the line `If trust did not get hit and conflict is not hot, this is the safest default first move tonight.` Commit `1741fc6` was pushed to `main`. Live URL verified after push: `https://love.forge.dsdoes.com/`
 
 #### LF-147 Homepage trust-break fast route should stop treating generic repeat blowups like trust hits so hot-conflict couples do not get pushed past the safer pause tool
 - **Page:** `/index.html`
