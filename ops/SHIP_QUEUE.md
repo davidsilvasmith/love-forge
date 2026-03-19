@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-136 Homepage first 30 seconds should say pick the lane so stressed couples do not have to translate issue-language before acting
+- **Page:** `/index.html`
+- **Problem:** The homepage hero already routes users by lane — trust hit, hot conflict, apart tonight, or under-the-same-roof distance — but the first-screen copy still told them to `Pick the sentence that sounds most like tonight` and `Pick the one issue hurting most right now.` On the highest-leverage page, stressed couples still had to mentally translate from vague issue-language into the actual lane system before taking the first action.
+- **User pain:** "Do not make me decode whether you mean issue, sentence, or lane. Just tell me which lane to pick so I can move."
+- **Proposed change:** Rewrite the homepage intro and first checklist step to explicitly tell couples to pick the lane that fits tonight and name the four lane categories inside the 30-second checklist.
+- **Expected outcome:** Faster first-screen clarity, less hesitation before the first click, and better odds a tired couple picks the right route within 60 seconds.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Live homepage hero now says `Pick the lane that sounds most like tonight`, and the 30-second checklist now says `Pick the lane causing the most damage right now: trust hit, hot conflict, apart tonight, or under-same-roof distance.` Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+
 #### LF-135 Homepage first-send setup card should name the exact move so stressed couples do not stop to decode whether they should click, scroll, text, or just say the words
 - **Page:** `/index.html`
 - **Problem:** The homepage already gave strong first-screen lane buttons, but the next high-traffic setup card still opened with the generic heading `Set one real time, then copy the text for the lane you picked above` and helper copy about making the ask feel easier to say yes to. Right after lane choice, stressed couples still had to decode whether the real next move was tapping the lane button, using this card, texting, or saying the words out loud.
