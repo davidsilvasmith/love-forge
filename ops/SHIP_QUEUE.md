@@ -25,7 +25,7 @@
 - **Expected outcome:** Faster first-click clarity on the homepage, less lane-translation friction, and better odds a stressed couple takes one exact action within 60 seconds.
 - **Score:** Impact 4 / Confidence 4 / Ease 5 = **13**
 - **Status:** SHIPPED
-- **Proof after ship:** Local homepage source now uses `Copy or say pause words first`, `Copy or say reconnect words first`, `Copy apart check-in text first`, and `Copy or say boundary words first` for the four hero lane CTAs. Commit: `8169627`. Live URL: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Local homepage source now uses `Copy or say pause words first`, `Copy or say reconnect words first`, `Copy apart check-in text first`, and `Copy or say boundary words first` for the four hero lane CTAs. Commits `8169627` + `78897d1` were pushed to `main`. Live URL checked during this run: `https://love.forge.dsdoes.com/` still showed the old `Copy or say conflict words first`, `Copy or say under-same-roof words first`, `Copy apart text first`, and `Copy or say calm-trust words first` labels at verification time, so production had not refreshed yet.
 
 #### LF-141 Homepage first time-picker should stop offering tomorrow examples so stressed couples do not read the fastest action as permission to defer tonight's reset
 - **Page:** `/index.html`
