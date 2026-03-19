@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-160 Homepage lane cards should stop inviting tool-reading before the first ask so stressed couples do not lose momentum at the exact click point
+- **Page:** `/index.html`
+- **Problem:** The homepage first-screen lane cards already gave couples the right primary move (`Copy or say ... words first`) and low-energy fallback (`Need lighter text`), but the third button on each card still said `Open ...` as if reading the full tool was an equal next step before sending anything.
+- **User pain:** "If you already told me to copy one text and send it, do not put a same-weight `Open ...` button beside it and make me wonder if I should go read more before I act."
+- **Proposed change:** Reword only the homepage lane-card full-plan buttons so they clearly come after the first ask: `Need the full plan after you send? Open ...`
+- **Expected outcome:** Less first-screen choice paralysis, clearer sequencing from lane pick to first ask to full tool, and better odds a stressed couple takes one exact action within 60 seconds.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Live homepage lane cards now say `Need the full plan after you send? Open Pause-and-Return`, `Need the full plan after you send? Open Distance Connection Protocol`, `Need the full plan after you send? Open 15-Minute Connection Block`, and `Need the full plan after you send? Open Boundary Definition`, which keeps the first ask clearly ahead of tool-reading on the highest-leverage page. Commit `5148139`. Live URL verified after push: `https://love.forge.dsdoes.com/?v=5148139`
+
 #### LF-159 Homepage should let couples pick the right lane before any rough-time setup so the first useful action is diagnosis, not form-fill
 - **Page:** `/index.html`
 - **Problem:** The homepage had already softened the rough-time requirement, but the rough-time card still sat above the four lane cards. Right at the first-screen choice point, stressed couples were still asked to deal with setup before diagnosis.
