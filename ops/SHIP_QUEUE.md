@@ -25,7 +25,7 @@
 - **Expected outcome:** Better low-energy routing on the homepage first screen, less freeze after the default-lane recommendation, and better odds a depleted couple still sends one exact smaller ask tonight.
 - **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
 - **Status:** SHIPPED
-- **Proof after ship:** Local homepage source now says `If even that feels too heavy, tap Need lighter text and send the smallest safe version instead` in the first-screen checklist, and the `Fast default` line now tells same-house couples to use `Need lighter text` on the reconnect card instead of stalling. Commit `PENDING` was pushed to `main`. Live URL verified after push: `https://love.forge.dsdoes.com/` now serves the lighter-text fallback in the first-screen checklist and fast-default guidance.
+- **Proof after ship:** Local homepage source now says `If even that feels too heavy, tap Need lighter text and send the smallest safe version instead` in the first-screen checklist, and the `Fast default` line now tells same-house couples to use `Need lighter text` on the reconnect card instead of stalling. Commit `ea47a52` was pushed to `main`. Live URL verified after push: `https://love.forge.dsdoes.com/` now serves the lighter-text fallback in the first-screen checklist and fast-default guidance.
 
 #### LF-145 Homepage lane chooser should name the safest default start so tired couples do not stall when nothing feels obviously explosive
 - **Page:** `/index.html`
