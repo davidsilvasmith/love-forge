@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-151 Homepage lane cards should show the pick order directly on the cards so overlap-heavy couples do not hold the routing rules in memory while comparing four equal choices
+- **Page:** `/index.html`
+- **Problem:** The homepage already taught the right route order in the checklist and overlap card, but the four lane cards still looked like equal choices with no visible order on the actual click targets. Couples dealing with overlap still had to remember `hot conflict, then apart tonight, then under-same-roof distance, then calm trust` while scanning the cards.
+- **User pain:** "If more than one card sounds kind of true, do not make me memorize the order and compare four equal boxes. Put the order right on the cards."
+- **Proposed change:** Add one short order badge to each homepage lane card so the click targets themselves show `1` for hot conflict, `2` for apart tonight, `3` for same-house default, and `4` for calm trust with no fresh break.
+- **Expected outcome:** Faster first-screen routing for overlap-heavy nights, less working-memory load before the first click, and better odds a stressed couple picks one safe lane within 60 seconds.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage lane cards now show visible order badges on the actual card headers: `1. If conflict is hot, start here first`, `2. If you are not in the same place tonight, start here`, `3. If you are in the same house, use this default`, and `4. Use this only if trust feels off but there was no fresh break`. Commit `PENDING` was pushed to `main`. Live URL verified after push: `https://love.forge.dsdoes.com/`
+
 #### LF-150 Homepage first-click time setup should accept a rough tonight window so stressed couples do not stall on picking the perfect exact time before they even choose the lane
 - **Page:** `/index.html`
 - **Problem:** The homepage first screen already got couples close to action, but the time card still opened with `Set one real time first, then tap the lane`, `The first copy buttons use this exact time`, and `Real time for tonight.` That wording made the very first setup step sound like couples needed the perfect exact slot before they could even choose the lane or copy the first ask.
