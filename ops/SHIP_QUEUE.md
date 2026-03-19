@@ -25,7 +25,7 @@
 - **Expected outcome:** Less routing contradiction on the homepage, faster first-screen trust, and better odds an overlap-heavy couple picks one safe lane without re-sorting the page in their head.
 - **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
 - **Status:** SHIPPED
-- **Proof after ship:** Homepage overlap card now says `First rule out a fresh trust hit and use the backup route if that happened. If not, use this order: hot conflict first, then apart tonight, then under-the-same-roof distance, then calm trust with no fresh break` and the three-step strip now mirrors that same sequence instead of restarting the routing logic. Commit `PENDING`. Live URL verified after push: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Homepage overlap card now says `First rule out a fresh trust hit and use the backup route if that happened. If not, use this order: hot conflict first, then apart tonight, then under-the-same-roof distance, then calm trust with no fresh break` and the three-step strip now mirrors that same sequence instead of restarting the routing logic. Commit `c5436c3`. Live URL verified after push: `https://love.forge.dsdoes.com/`
 
 #### LF-152 Homepage lane cards should appear in the same order as the routing rule so stressed couples do not see the safest second step buried after the default same-house card
 - **Page:** `/index.html`
