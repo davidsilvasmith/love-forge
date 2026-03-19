@@ -25,7 +25,7 @@
 - **Expected outcome:** Less hesitation after lane pick, clearer delivery guidance for same-house couples, and better odds they take the first emotionally safe step within 60 seconds instead of second-guessing the channel.
 - **Score:** Impact 4 / Confidence 4 / Ease 5 = **13**
 - **Status:** SHIPPED
-- **Proof after ship:** Homepage main send card now tells same-house couples when saying the words out loud is the best move, only keeps `Text it now` as the default on the apart lane, and changes the copy path to support either saying or sending the words tonight. Commit `PENDING`. Live URL verified after push: `PENDING`
+- **Proof after ship:** Homepage main send card now tells same-house couples when saying the words out loud is the best move, only keeps `Text it now` as the default on the apart lane, and changes the copy path to support either saying or sending the words tonight. Commit `cec4c03`. Live URL verified after push: `https://love.forge.dsdoes.com/?v=cec4c03`
 
 #### LF-160 Homepage lane cards should stop inviting tool-reading before the first ask so stressed couples do not lose momentum at the exact click point
 - **Page:** `/index.html`
