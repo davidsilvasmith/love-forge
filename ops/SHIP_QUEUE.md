@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-135 Homepage first-send setup card should name the exact move so stressed couples do not stop to decode whether they should click, scroll, text, or just say the words
+- **Page:** `/index.html`
+- **Problem:** The homepage already gave strong first-screen lane buttons, but the next high-traffic setup card still opened with the generic heading `Set one real time, then copy the text for the lane you picked above` and helper copy about making the ask feel easier to say yes to. Right after lane choice, stressed couples still had to decode whether the real next move was tapping the lane button, using this card, texting, or saying the words out loud.
+- **User pain:** "I already picked the lane. Do not make me interpret the next card. Tell me the exact move now — tap the matching copy button, then send it or say it out loud if we are in the same house."
+- **Proposed change:** Rewrite the homepage first-send setup card heading and intro so they explicitly say `Pick one lane above, set one real time, then send or say one exact ask`, and clarify that the fastest path is the matching `Copy ... text first` button above.
+- **Expected outcome:** Less sequence confusion immediately after lane choice, faster movement from diagnosis to the exact first ask, and better odds a stressed couple acts tonight instead of pausing to decode the handoff.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Live homepage first-send setup card now says `Pick one lane above, set one real time, then send or say one exact ask` and tells same-house couples to say the same words out loud while pointing stressed users back to the matching `Copy ... text first` button as the fastest path. Commit: `950dc6b`. Live URL: `https://love.forge.dsdoes.com/`
+
 #### LF-134 Homepage first screen should say send or say so same-house couples do not hesitate before the first ask
 - **Page:** `/index.html`
 - **Problem:** The highest-leverage homepage first screen still framed the action almost entirely as texting: `copy the text`, `Copy one text and send it`, and `copy the text below, send it`. The lower main send block already clarified `send or say`, but same-house couples could hit the first screen, feel texting someone in the next room was weird, and hesitate before the exact first move.
