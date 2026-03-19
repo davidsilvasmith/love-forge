@@ -25,7 +25,7 @@
 - **Expected outcome:** Less second-guessing at the exact send moment, faster movement from lane pick to one copied ask, and better odds a stressed couple sends the first safe message within 60 seconds.
 - **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
 - **Status:** SHIPPED
-- **Proof after ship:** Homepage main send card now says `Copy this exact message now`, tells users `You already picked the lane above` and `skip the buttons below and copy the message`, and relabels the chip row as a change-lane fallback instead of a fresh decision step. Commit `PENDING`. Live URL verified after push: `PENDING`
+- **Proof after ship:** Homepage main send card now says `Copy this exact message now`, tells users `You already picked the lane above` and `skip the buttons below and copy the message`, and relabels the chip row as a change-lane fallback instead of a fresh decision step. Commit `5f54b0c`. Live URL verified after push: `https://love.forge.dsdoes.com/?v=5f54b0c`
 
 #### LF-157 Homepage optional calming detail should carry into every first ask so conflict, apart, and trust couples do not personalize the page and then copy a generic message anyway
 - **Page:** `/index.html`
