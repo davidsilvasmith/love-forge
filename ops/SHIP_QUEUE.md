@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-139 Homepage first-click lane buttons should stop sounding text-only so same-house couples do not hesitate before the very first move
+- **Page:** `/index.html`
+- **Problem:** The homepage first screen already told same-house couples they could `copy the text or say it out loud`, but the four biggest first-click lane buttons still all said `Copy ... text first`. On the highest-leverage page and highest-intent click path, same-house couples could still hit a texting-only CTA before they reached the lower send-or-say clarification.
+- **User pain:** "We are in the same house. Do not make the first obvious button sound like texting is still the default if saying the exact words out loud is just as valid tonight."
+- **Proposed change:** Rename the homepage lane CTAs and matching helper copy from `Copy ... text first` to `Copy or say ... words first` so the first click itself supports both delivery modes.
+- **Expected outcome:** Less first-click hesitation for same-house couples, stronger trust that Love Forge works without awkward same-room texting, and better odds they use the exact words within 60 seconds.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Live homepage hero now shows `Copy or say conflict words first`, `Copy or say under-same-roof words first`, `Copy or say apart words first`, and `Copy or say calm-trust words first`, with the helper copy using the same `Copy or say ... words first` language. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+
 #### LF-138 Homepage first click should use the real time already chosen so stressed couples do not copy a default 8:30 text and then stop to edit it
 - **Page:** `/index.html`
 - **Problem:** The homepage hero promised `Copy ... text first`, but the real-time picker still lived lower on the page inside the later send card. On the highest-leverage first click, stressed couples could tap a lane button, copy a text with the default `8:30 tonight`, and still have to manually rewrite the time before sending.
