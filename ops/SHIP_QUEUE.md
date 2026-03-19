@@ -25,7 +25,7 @@
 - **Expected outcome:** Cleaner first-screen diagnosis, less confusion for trust-hit couples, and better odds a stressed spouse chooses the backup route or the right real lane within 60 seconds.
 - **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
 - **Status:** SHIPPED
-- **Proof after ship:** Live homepage first-screen copy now says `First rule out a fresh trust hit and use the backup route if that happened`, and the 30-second checklist now separates the backup route from the real four lanes instead of calling `trust hit` a lane. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Live homepage first-screen copy now says `First rule out a fresh trust hit and use the backup route if that happened`, and the 30-second checklist now separates the backup route from the real four lanes instead of calling `trust hit` a lane. Commit: `ba47a66`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-136 Homepage first 30 seconds should say pick the lane so stressed couples do not have to translate issue-language before acting
 - **Page:** `/index.html`
