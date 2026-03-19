@@ -25,7 +25,7 @@
 - **Expected outcome:** Faster first clicks on the homepage, less lane-decision stall in the most common moderate-stress case, and better odds a tired couple takes one exact action within 60 seconds.
 - **Score:** Impact 4 / Confidence 4 / Ease 5 = **13**
 - **Status:** SHIPPED
-- **Proof after ship:** Local homepage source now shows `Fast default: if trust did not get hit, conflict is not hot, and you are in the same house, start with Copy or say reconnect words first` directly above the lane cards. Commit `PENDING` was pushed to `main`. Live URL verified after push: `PENDING`
+- **Proof after ship:** Local homepage source now shows `Fast default: if trust did not get hit, conflict is not hot, and you are in the same house, start with Copy or say reconnect words first` directly above the lane cards. Commit `9534e23` was pushed to `main`. Live URL verified after push: `https://love.forge.dsdoes.com/` now serves the new `Fast default:` line above the lane cards.
 
 #### LF-144 Homepage soft-no recovery should stay lane-matched after a not-right-now so couples do not get a generic reset that fits the wrong night
 - **Page:** `/index.html`
