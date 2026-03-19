@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-146 Homepage first-screen default path should point wiped-out couples to the lighter-text escape hatch so they do not stall before the first send
+- **Page:** `/index.html`
+- **Problem:** The homepage first screen already exposed `Need lighter text` on every lane card, but the highest-traffic guidance above those cards still told tired couples only to `Copy one text and send it` and to start with the reconnect lane by default. A wiped-out couple could still agree the reconnect lane fit, then stall because the first-screen instructions never told them the smaller safe version was the right move when even the default ask felt too heavy.
+- **User pain:** "We know we should probably start with reconnect, but even that feels like too much tonight. Do not make me notice the lighter button on my own when I am already fried."
+- **Proposed change:** Add one explicit first-screen lighter-text rule to the homepage checklist and fast-default guidance so wiped-out couples know to tap `Need lighter text` instead of stalling.
+- **Expected outcome:** Better low-energy routing on the homepage first screen, less freeze after the default-lane recommendation, and better odds a depleted couple still sends one exact smaller ask tonight.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Local homepage source now says `If even that feels too heavy, tap Need lighter text and send the smallest safe version instead` in the first-screen checklist, and the `Fast default` line now tells same-house couples to use `Need lighter text` on the reconnect card instead of stalling. Commit `PENDING` was pushed to `main`. Live URL verified after push: `https://love.forge.dsdoes.com/` now serves the lighter-text fallback in the first-screen checklist and fast-default guidance.
+
 #### LF-145 Homepage lane chooser should name the safest default start so tired couples do not stall when nothing feels obviously explosive
 - **Page:** `/index.html`
 - **Problem:** The homepage still routes well once a couple knows their lane, but the highest-leverage first screen dropped users straight from trust/conflict triage into four equal lane cards with no obvious default start for the common case: same house, no fresh trust hit, not actively escalating. A tired couple could still pause and ask themselves which card wins before the first click.
