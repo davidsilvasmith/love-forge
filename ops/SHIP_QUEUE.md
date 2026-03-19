@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-138 Homepage first click should use the real time already chosen so stressed couples do not copy a default 8:30 text and then stop to edit it
+- **Page:** `/index.html`
+- **Problem:** The homepage hero promised `Copy ... text first`, but the real-time picker still lived lower on the page inside the later send card. On the highest-leverage first click, stressed couples could tap a lane button, copy a text with the default `8:30 tonight`, and still have to manually rewrite the time before sending.
+- **User pain:** "If your first button says copy the text first, let me set the real time before I tap it. Do not make the first copied message sound like someone else's default plan."
+- **Proposed change:** Move the real-time picker above the lane buttons, add first-click copy guidance that says the lane buttons use that exact time, and repurpose the lower setup card around the optional calming detail only.
+- **Expected outcome:** More ready-to-send first-copy texts from the homepage hero, less last-second editing, and better odds a stressed spouse sends the first ask within 60 seconds.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Live homepage now places a `Set one real time first, then tap the lane` card above the four lane buttons, and the lower setup card now tells users to add only an optional calming detail after the time is already set. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+
 #### LF-137 Homepage first 30 seconds should separate the trust-break backup route from the 4 normal lanes so stressed couples do not hunt for a lane card that does not exist
 - **Page:** `/index.html`
 - **Problem:** The homepage first screen told couples to `Pick the lane causing the most damage right now: trust hit, hot conflict, apart tonight, or under-same-roof distance.` But `trust hit` is not one of the four lane cards. It is a separate backup-first route above them. In the highest-leverage 30-second checklist, stressed couples could be told to pick a `lane` that had no matching lane card.
