@@ -25,7 +25,7 @@
 - **Expected outcome:** Faster first clicks on the homepage, less setup friction before diagnosis, and better odds a stressed couple reaches the right first text within 60 seconds.
 - **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
 - **Status:** SHIPPED
-- **Proof after ship:** Homepage first screen now moves straight from the trust-hit route and fast default into the four lane cards, and the rough-time card now appears after lane choice with `After you pick the lane, set a rough time if you have it. If not, keep the default and move.` Commit `TBD`. Live URL verified after push: `TBD`
+- **Proof after ship:** Homepage first screen now moves straight from the trust-hit route and fast default into the four lane cards, and the rough-time card now appears after lane choice with `After you pick the lane, set a rough time if you have it. If not, keep the default and move.` Commit `16bc748`. Live URL verified after push: `https://love.forge.dsdoes.com/?v=16bc748`
 
 #### LF-158 Homepage main send card should stop making couples re-pick a lane after they already picked one above
 - **Page:** `/index.html`
