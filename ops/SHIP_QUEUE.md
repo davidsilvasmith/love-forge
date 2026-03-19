@@ -25,7 +25,7 @@
 - **Expected outcome:** Less first-screen hesitation for same-house couples, more trust that the first move is socially realistic tonight, and better odds they use the exact script instead of stalling on the delivery method.
 - **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
 - **Status:** SHIPPED
-- **Proof after ship:** Live homepage first screen now tells same-house couples they can `copy the text or say it out loud if you are in the same house`, updates the 30-second checklist to `send it, or say the same words out loud if texting would feel weird`, and carries that same send-or-say fallback into the low-energy line above the fold. Commit: `d817c95`. Live URL: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Live homepage first screen now tells same-house couples they can `copy the text or say it out loud if you are in the same house`, updates the 30-second checklist to `send it, or say the same words out loud if texting would feel weird`, and carries that same send-or-say fallback into the low-energy line above the fold. Commit: `06428fe`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-133 Homepage hero tool buttons should name the exact tool so stressed couples do not have to open a generic CTA to find the right next move
 - **Page:** `/index.html`
