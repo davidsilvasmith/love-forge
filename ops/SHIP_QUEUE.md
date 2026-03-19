@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-143 Homepage first-click lane buttons should name the exact reset action so stressed couples do not translate lane jargon before the first click
+- **Page:** `/index.html`
+- **Problem:** The homepage hero is still the highest-leverage page, and its first obvious buttons on the conflict, same-roof, and calm-trust cards still showed vague lane labels on production: `Copy or say conflict words first`, `Copy or say under-same-roof words first`, and `Copy or say calm-trust words first`. A stressed couple still had to decode lane jargon before taking the first action.
+- **User pain:** "Do not make me translate your internal lane names into the real move. Tell me if I am starting a pause, reconnect, or boundary step."
+- **Proposed change:** Rename only the homepage hero lane CTAs to the exact move: `Copy or say pause words first`, `Copy or say reconnect words first`, `Copy apart check-in text first`, and `Copy or say boundary words first`.
+- **Expected outcome:** Faster first-click clarity on the homepage and better odds a stressed couple takes one exact action within 60 seconds.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Local homepage source now uses `Copy or say pause words first`, `Copy or say reconnect words first`, `Copy apart check-in text first`, and `Copy or say boundary words first`. Commit `3714ba2` was pushed to `main`. Live URL checked after push: `https://love.forge.dsdoes.com/` was still serving the old `Copy or say conflict words first`, `Copy or say under-same-roof words first`, `Copy apart check-in text first`, and `Copy or say calm-trust words first` labels at verification time, so production had not refreshed yet.
+
 #### LF-142 Homepage first-click lane buttons should name the real move so stressed couples do not translate vague lane words before taking the first action
 - **Page:** `/index.html`
 - **Problem:** The homepage hero is the highest-leverage click path, but the primary lane buttons still used vague labels like `Copy or say conflict words first`, `Copy or say under-same-roof words first`, and `Copy or say calm-trust words first`. Right at the first obvious action, couples still had to translate lane language into the real move they were agreeing to take.
