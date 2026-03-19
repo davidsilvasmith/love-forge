@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-163 Homepage lane chooser should show the active rough time at the exact click point so couples do not send the default slot by accident
+- **Page:** `/index.html`
+- **Problem:** The homepage now smartly delays rough-time setup until after lane choice, but that created a new usefulness constraint on the highest-leverage first screen: the lane buttons copy a time-based first ask immediately while the rough-time card itself now lives lower on the page. Couples could hit the right lane fast and still not realize the copied message was using the default `8:30 tonight` slot.
+- **User pain:** "If the first button is ready to copy a real ask right now, show me the time it is about to use before I tap it. Do not make me notice later that we just sent the default time by accident."
+- **Proposed change:** Add one compact active-time preview directly above the homepage lane cards and keep it synced to the rough-time field so couples can see the exact slot the first-copy buttons are using before they act.
+- **Expected outcome:** Less accidental default-time sends, clearer first-screen confidence at the exact click point, and better odds a stressed couple sends a first ask that still matches tonight within 60 seconds.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Live homepage now shows `The lane buttons are using:` with the active rough time directly above the lane cards, and the preview stays synced to the rough-time field so couples can confirm the slot before they copy the first ask. Commit `9b704d6`. Live URL verified after push: `https://love.forge.dsdoes.com/?v=9b704d6`
+
 #### LF-162 Homepage trust-break fast route should give a solo fallback so support still starts moving when the partner will not coordinate tonight
 - **Page:** `/index.html`
 - **Problem:** The homepage trust-break fast route gave one exact joint text plus the outside-help plan link, but the highest-stakes card still assumed the partner would coordinate on the first try. If they refused, dodged, or the moment was too activated to plan together, the page did not give one plain next move on the card itself.
