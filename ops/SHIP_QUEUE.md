@@ -25,7 +25,7 @@
 - **Expected outcome:** Faster first-click clarity on the homepage, less lane-translation friction, and better odds a stressed couple takes one exact action within 60 seconds.
 - **Score:** Impact 4 / Confidence 4 / Ease 5 = **13**
 - **Status:** SHIPPED
-- **Proof after ship:** Local homepage source now uses `Copy or say pause words first`, `Copy or say reconnect words first`, `Copy apart check-in text first`, and `Copy or say boundary words first` for the four hero lane CTAs. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Local homepage source now uses `Copy or say pause words first`, `Copy or say reconnect words first`, `Copy apart check-in text first`, and `Copy or say boundary words first` for the four hero lane CTAs. Commit: `8169627`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-141 Homepage first time-picker should stop offering tomorrow examples so stressed couples do not read the fastest action as permission to defer tonight's reset
 - **Page:** `/index.html`
@@ -375,7 +375,7 @@
 - **Expected outcome:** Less first-screen re-deciding, faster movement from lane choice to copied text, and better odds a stressed spouse sends one exact ask tonight instead of scanning the same decision twice.
 - **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
 - **Status:** SHIPPED
-- **Proof after ship:** Homepage first-screen send customizer now shows one selected-lane preview instead of four competing full-text tiles, so users keep one obvious copy-ready ask after lane choice without re-scanning the whole set. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Homepage first-screen send customizer now shows one selected-lane preview instead of four competing full-text tiles, so users keep one obvious copy-ready ask after lane choice without re-scanning the whole set. Commit: `8169627`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-106 Homepage first-screen “Copy text first” buttons should actually copy the matching text so a stressed spouse can act on the first click instead of getting false-forwarded into more scanning
 - **Page:** `/index.html`
