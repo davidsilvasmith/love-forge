@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-145 Homepage lane chooser should name the safest default start so tired couples do not stall when nothing feels obviously explosive
+- **Page:** `/index.html`
+- **Problem:** The homepage still routes well once a couple knows their lane, but the highest-leverage first screen dropped users straight from trust/conflict triage into four equal lane cards with no obvious default start for the common case: same house, no fresh trust hit, not actively escalating. A tired couple could still pause and ask themselves which card wins before the first click.
+- **User pain:** "We are off, but not in a huge fight. Do not make me debate four cards before I take the first step. Tell me the safest default start."
+- **Proposed change:** Add one short `Fast default` rule directly above the homepage lane cards telling same-house, non-hot-conflict, no-fresh-trust-hit couples to start with `Copy or say reconnect words first`.
+- **Expected outcome:** Faster first clicks on the homepage, less lane-decision stall in the most common moderate-stress case, and better odds a tired couple takes one exact action within 60 seconds.
+- **Score:** Impact 4 / Confidence 4 / Ease 5 = **13**
+- **Status:** SHIPPED
+- **Proof after ship:** Local homepage source now shows `Fast default: if trust did not get hit, conflict is not hot, and you are in the same house, start with Copy or say reconnect words first` directly above the lane cards. Commit `PENDING` was pushed to `main`. Live URL verified after push: `PENDING`
+
 #### LF-144 Homepage soft-no recovery should stay lane-matched after a not-right-now so couples do not get a generic reset that fits the wrong night
 - **Page:** `/index.html`
 - **Problem:** The homepage is still the highest-leverage page, and its soft-no section now unlocks only after lane choice, but the actual unlocked copy still reused the same generic `10-minute reset` wording for every lane. After choosing conflict, apart, or calm-trust, couples could still land on a soft-no reply and tomorrow retry that no longer matched the tool they had just picked.
