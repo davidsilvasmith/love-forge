@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-142 Homepage first-click lane buttons should name the real move so stressed couples do not translate vague lane words before taking the first action
+- **Page:** `/index.html`
+- **Problem:** The homepage hero is the highest-leverage click path, but the primary lane buttons still used vague labels like `Copy or say conflict words first`, `Copy or say under-same-roof words first`, and `Copy or say calm-trust words first`. Right at the first obvious action, couples still had to translate lane language into the real move they were agreeing to take.
+- **User pain:** "If I am already stressed, do not make me decode `conflict words` or `calm-trust words` before I click. Tell me the real move right on the button."
+- **Proposed change:** Rename only the homepage primary first-click lane CTAs so they state the actual move: `Copy or say pause words first`, `Copy or say reconnect words first`, `Copy apart check-in text first`, and `Copy or say boundary words first`.
+- **Expected outcome:** Faster first-click clarity on the homepage, less lane-translation friction, and better odds a stressed couple takes one exact action within 60 seconds.
+- **Score:** Impact 4 / Confidence 4 / Ease 5 = **13**
+- **Status:** SHIPPED
+- **Proof after ship:** Local homepage source now uses `Copy or say pause words first`, `Copy or say reconnect words first`, `Copy apart check-in text first`, and `Copy or say boundary words first` for the four hero lane CTAs. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+
 #### LF-141 Homepage first time-picker should stop offering tomorrow examples so stressed couples do not read the fastest action as permission to defer tonight's reset
 - **Page:** `/index.html`
 - **Problem:** The homepage first-screen time picker is the highest-leverage setup step before the lane buttons, but its helper copy still said `Use the first time you can actually make — 7:45 tonight, 9:00 tonight, or tomorrow at lunch.` Right where couples decide whether to act now, the page was still suggesting a tomorrow slot before they had sent the first ask.
