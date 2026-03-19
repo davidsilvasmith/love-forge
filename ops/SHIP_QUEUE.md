@@ -25,7 +25,7 @@
 - **Expected outcome:** More ready-to-send first-copy texts from the homepage hero, less last-second editing, and better odds a stressed spouse sends the first ask within 60 seconds.
 - **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
 - **Status:** SHIPPED
-- **Proof after ship:** Live homepage now places a `Set one real time first, then tap the lane` card above the four lane buttons, and the lower setup card now tells users to add only an optional calming detail after the time is already set. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Verified live homepage now places a `Set one real time first, then tap the lane` card above the four lane buttons, and the lower setup card now tells users to add only an optional calming detail after the time is already set. Commit: `5d11d92`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-137 Homepage first 30 seconds should separate the trust-break backup route from the 4 normal lanes so stressed couples do not hunt for a lane card that does not exist
 - **Page:** `/index.html`
