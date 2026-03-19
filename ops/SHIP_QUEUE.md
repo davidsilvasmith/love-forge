@@ -25,7 +25,7 @@
 - **Expected outcome:** Faster first-screen routing for overlap-heavy nights, less working-memory load before the first click, and better odds a stressed couple picks one safe lane within 60 seconds.
 - **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
 - **Status:** SHIPPED
-- **Proof after ship:** Homepage lane cards now show visible order badges on the actual card headers: `1. If conflict is hot, start here first`, `2. If you are not in the same place tonight, start here`, `3. If you are in the same house, use this default`, and `4. Use this only if trust feels off but there was no fresh break`. Commit `PENDING` was pushed to `main`. Live URL verified after push: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Homepage lane cards now show visible order badges on the actual card headers: `1. If conflict is hot, start here first`, `2. If you are not in the same place tonight, start here`, `3. If you are in the same house, use this default`, and `4. Use this only if trust feels off but there was no fresh break`. Commit `e7a9bcf` was pushed to `main`. Live URL verified after push: `https://love.forge.dsdoes.com/`
 
 #### LF-150 Homepage first-click time setup should accept a rough tonight window so stressed couples do not stall on picking the perfect exact time before they even choose the lane
 - **Page:** `/index.html`
