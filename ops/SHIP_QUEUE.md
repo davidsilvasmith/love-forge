@@ -25,7 +25,7 @@
 - **Expected outcome:** Better trust in the homepage first-send flow, less last-second manual rewriting on higher-stakes nights, and a better chance stressed couples send the exact ask that feels safest tonight.
 - **Score:** Impact 4 / Confidence 4 / Ease 5 = **13**
 - **Status:** SHIPPED
-- **Proof after ship:** Homepage first-ask copy now carries the optional calming detail across conflict, apart, and calm-trust lanes instead of reserving it for the same-roof default, so the personalization promise matches the copied message on every homepage route. Commit `PENDING`. Live URL verified after push: `PENDING`
+- **Proof after ship:** Homepage first-ask copy now carries the optional calming detail across conflict, apart, and calm-trust lanes instead of reserving it for the same-roof default, so the personalization promise matches the copied message on every homepage route. Commit `c67742d`. Live URL verified after push: `https://love.forge.dsdoes.com/index.html?v=c67742d`
 
 #### LF-156 Homepage trust-break fast route should say outside help plainly so high-stakes couples do not stop on internal tool language before the safest first move
 - **Page:** `/index.html`
