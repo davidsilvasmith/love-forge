@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-156 Homepage trust-break fast route should say outside help plainly so high-stakes couples do not stop on internal tool language before the safest first move
+- **Page:** `/index.html`
+- **Problem:** The homepage trust-break card sat at the highest-stakes first-screen choice point, but its main CTA still said `Go straight to the Get Backup Tool` and the copy button said `Copy trust-break text`. That forced stressed couples to translate internal product language right when they needed the safest outside-help move fast.
+- **User pain:** "If trust got hit, do not make me decode a tool name. Tell me plainly that this is the outside-help path and let me move."
+- **Proposed change:** Rewrite only the trust-break card CTA and helper copy so they say `outside help` directly instead of `Get Backup Tool` / `backup route`.
+- **Expected outcome:** Faster first-screen trust on fresh trust-hit nights, less hesitation at the highest-stakes routing decision, and better odds a stressed couple takes the outside-help path within 60 seconds.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage trust-break fast route now says `Copy outside-help text`, `Open the outside-help plan now`, and `Use the outside-help route first`, which makes the safest trust-hit action plain at the exact choice point. Commit `PENDING`. Live URL verified after push: `PENDING`
+
 #### LF-155 Homepage lane cards should rule out the wrong nights at the exact choice point so stressed couples do not misroute before the first click
 - **Page:** `/index.html`
 - **Problem:** The homepage now had strong route order and button labels, but the four lane cards still described what each lane *is* without clearly ruling out the nearby wrong lane at the same moment. A tired couple could still stop at the card row and wonder whether `apart tonight` versus `under the same roof`, or `hot conflict` versus `calm trust`, was the better fit.
