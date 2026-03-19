@@ -17,6 +17,26 @@
 
 ## SHIPPED
 
+#### LF-150 Homepage first-click time setup should accept a rough tonight window so stressed couples do not stall on picking the perfect exact time before they even choose the lane
+- **Page:** `/index.html`
+- **Problem:** The homepage first screen already got couples close to action, but the time card still opened with `Set one real time first, then tap the lane`, `The first copy buttons use this exact time`, and `Real time for tonight.` That wording made the very first setup step sound like couples needed the perfect exact slot before they could even choose the lane or copy the first ask.
+- **User pain:** "We know we need help tonight, but do not make us solve the exact clock time before we can even take the first step. Let a rough tonight window count."
+- **Proposed change:** Reframe only the homepage time setup card so it says `rough time`, explicitly says it does not need to be perfect, and gives low-pressure examples like `after bedtime`, `after dishes`, or `before bed`.
+- **Expected outcome:** Less first-click stall on the homepage, faster movement from stress to one copied ask, and better odds a tired couple acts tonight even if they only know the rough window.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage time setup card now says `Set one rough time first, then tap the lane`, tells users `It does not need to be perfect`, and the helper now says `Good enough counts here — 7:45 tonight, after bedtime, after dishes, or before bed all work.` Commit `PENDING` was pushed to `main`. Live URL verified after push: `https://love.forge.dsdoes.com/`
+
+#### LF-149 Homepage lane-pick rule should use explicit order on first read so overlap-heavy couples do not stop to diagnose "most damage" before taking the first safe action
+- **Page:** `/index.html`
+- **Problem:** The homepage already had a strong lower triage card, but the highest-leverage first checklist still told couples to `pick the lane causing the most damage right now.` That phrase forced overlap-heavy couples to interpret their night before acting, even though the page already knew the safer order.
+- **User pain:** "If more than one thing is true, do not make me diagnose `most damage` first. Just tell me the order so I can move."
+- **Proposed change:** Rewrite the homepage first checklist line and the overlap-card intro so both use the same explicit lane order: trust hit first, then hot conflict, then apart tonight, then under-the-same-roof distance, then calm trust.
+- **Expected outcome:** Faster first-screen routing for overlap-heavy nights, less diagnosis friction before the first click, and better odds a stressed couple takes one safe action within 60 seconds.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Live homepage now says `If not, use this order: hot conflict first, then apart tonight, then under-same-roof distance, then calm trust with no fresh break` in the first checklist, and the overlap card now opens with `Use this order instead: trust hit first, then hot conflict, then apart tonight, then under-the-same-roof distance lane, then calm trust.` Commit `bb6944e` was pushed to `main`. Live URL verified after push: `https://love.forge.dsdoes.com/`
+
 #### LF-148 Homepage safest-default lane should look like the default so tired same-house couples do not miss the most common first move inside four equal cards
 - **Page:** `/index.html`
 - **Problem:** The homepage already said `Fast default: if trust did not get hit, conflict is not hot, and you are in the same house, start with Copy or say reconnect words first`, but that rule still lived as paragraph copy above four visually equal lane cards. The most common same-house, non-explosive couple still had to notice and remember the paragraph instead of seeing the safest default directly on the reconnect card.
