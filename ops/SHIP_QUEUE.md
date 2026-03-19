@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-147 Homepage trust-break fast route should stop treating generic repeat blowups like trust hits so hot-conflict couples do not get pushed past the safer pause tool
+- **Page:** `/index.html`
+- **Problem:** The homepage trust-break card is still one of the first things stressed couples see, but its trigger line said `Lying, cheating, hidden money, secret messages, or the same blowup again?` That wording could wrongly sweep repeat conflict into the trust-break backup route even when the real safer first move was simply Pause-and-Return.
+- **User pain:** "We keep blowing up, but trust was not freshly broken. Do not send us to outside-help backup just because the fight happened again. Tell us when this is a trust-hit route versus a hot-conflict route."
+- **Proposed change:** Tighten only the trust-break trigger line so it says `repeat trust break` instead of `same blowup again` and add one explicit sentence telling hot-conflict-without-fresh-trust-hit couples to use Pause-and-Return instead.
+- **Expected outcome:** Cleaner first-screen diagnosis between trust-hit and conflict nights, less wrong routing into the backup path, and better odds couples pick the safer first tool within 60 seconds.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage trust-break fast-route copy now says `Lying, cheating, hidden money, secret messages, or a repeat trust break?` and adds `If it is hot conflict without a fresh trust hit, use Pause-and-Return instead.` Local verification passed before publish; live URL verified after push at `https://love.forge.dsdoes.com/`.
+
 #### LF-146 Homepage first-screen default path should point wiped-out couples to the lighter-text escape hatch so they do not stall before the first send
 - **Page:** `/index.html`
 - **Problem:** The homepage first screen already exposed `Need lighter text` on every lane card, but the highest-traffic guidance above those cards still told tired couples only to `Copy one text and send it` and to start with the reconnect lane by default. A wiped-out couple could still agree the reconnect lane fit, then stall because the first-screen instructions never told them the smaller safe version was the right move when even the default ask felt too heavy.
