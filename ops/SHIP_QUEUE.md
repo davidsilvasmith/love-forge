@@ -25,7 +25,7 @@
 - **Expected outcome:** Faster first-screen routing, less scan friction for overlap-heavy or exhausted couples, and better odds they choose the right second card without stopping to reconcile badge numbers against card position.
 - **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
 - **Status:** SHIPPED
-- **Proof after ship:** Homepage lane cards now appear in the same order as the routing guidance: conflict, apart tonight, under the same roof, then calm trust with no fresh break. Live URL verified after push: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Homepage lane cards now appear in the same order as the routing guidance: conflict, apart tonight, under the same roof, then calm trust with no fresh break. Commit `6235088` was pushed to `main`. Live URL verified after push: `https://love.forge.dsdoes.com/`
 
 #### LF-151 Homepage lane cards should show the pick order directly on the cards so overlap-heavy couples do not hold the routing rules in memory while comparing four equal choices
 - **Page:** `/index.html`
