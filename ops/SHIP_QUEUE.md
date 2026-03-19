@@ -25,7 +25,7 @@
 - **Expected outcome:** Less sequence confusion immediately after lane choice, faster movement from diagnosis to the exact first ask, and better odds a stressed couple acts tonight instead of pausing to decode the handoff.
 - **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
 - **Status:** SHIPPED
-- **Proof after ship:** Live homepage first-send setup card now says `Pick one lane above, set one real time, then send or say one exact ask` and tells same-house couples to say the same words out loud while pointing stressed users back to the matching `Copy ... text first` button as the fastest path. Commit: `950dc6b`. Live URL: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Live homepage first-send setup card now says `Pick one lane above, set one real time, then send or say one exact ask` and tells same-house couples to say the same words out loud while pointing stressed users back to the matching `Copy ... text first` button as the fastest path. Commit: `fba1bd4`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-134 Homepage first screen should say send or say so same-house couples do not hesitate before the first ask
 - **Page:** `/index.html`
