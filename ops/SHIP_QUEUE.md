@@ -25,7 +25,7 @@
 - **Expected outcome:** Faster first-screen clarity, less hesitation before the first click, and better odds a tired couple picks the right route within 60 seconds.
 - **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
 - **Status:** SHIPPED
-- **Proof after ship:** Live homepage hero now says `Pick the lane that sounds most like tonight`, and the 30-second checklist now says `Pick the lane causing the most damage right now: trust hit, hot conflict, apart tonight, or under-same-roof distance.` Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Live homepage hero now says `Pick the lane that sounds most like tonight`, and the 30-second checklist now says `Pick the lane causing the most damage right now: trust hit, hot conflict, apart tonight, or under-same-roof distance.` Commit: `24a3eee`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-135 Homepage first-send setup card should name the exact move so stressed couples do not stop to decode whether they should click, scroll, text, or just say the words
 - **Page:** `/index.html`
