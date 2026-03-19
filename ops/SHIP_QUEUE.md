@@ -25,7 +25,7 @@
 - **Expected outcome:** Less first-click stall on the homepage, faster movement from stress to one copied ask, and better odds a tired couple acts tonight even if they only know the rough window.
 - **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
 - **Status:** SHIPPED
-- **Proof after ship:** Homepage time setup card now says `Set one rough time first, then tap the lane`, tells users `It does not need to be perfect`, and the helper now says `Good enough counts here — 7:45 tonight, after bedtime, after dishes, or before bed all work.` Commit `PENDING` was pushed to `main`. Live URL verified after push: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Homepage time setup card now says `Set one rough time first, then tap the lane`, tells users `It does not need to be perfect`, and the helper now says `Good enough counts here — 7:45 tonight, after bedtime, after dishes, or before bed all work.` Commit `83b0b93` was pushed to `main`. Live URL verified after push: `https://love.forge.dsdoes.com/`
 
 #### LF-149 Homepage lane-pick rule should use explicit order on first read so overlap-heavy couples do not stop to diagnose "most damage" before taking the first safe action
 - **Page:** `/index.html`
