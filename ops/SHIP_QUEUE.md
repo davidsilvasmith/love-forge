@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-152 Homepage lane cards should appear in the same order as the routing rule so stressed couples do not see the safest second step buried after the default same-house card
+- **Page:** `/index.html`
+- **Problem:** The homepage already taught the route order clearly in the checklist, overlap card, and number badges, but the actual lane cards were still rendered as conflict, same-house default, apart, trust. That meant the card labeled `2. If you are not in the same place tonight, start here` still appeared after the default same-house card labeled `3`, which forced users to reconcile the order rule against the visual layout.
+- **User pain:** "If you already told me the order is conflict, then apart, then same house, do not make the card row show 1, 3, 2, 4. Put the cards in the same order so I can move without re-sorting them."
+- **Proposed change:** Reorder the homepage lane cards so the visual card sequence matches the stated routing order: conflict first, apart second, same-house default third, calm trust fourth.
+- **Expected outcome:** Faster first-screen routing, less scan friction for overlap-heavy or exhausted couples, and better odds they choose the right second card without stopping to reconcile badge numbers against card position.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage lane cards now appear in the same order as the routing guidance: conflict, apart tonight, under the same roof, then calm trust with no fresh break. Live URL verified after push: `https://love.forge.dsdoes.com/`
+
 #### LF-151 Homepage lane cards should show the pick order directly on the cards so overlap-heavy couples do not hold the routing rules in memory while comparing four equal choices
 - **Page:** `/index.html`
 - **Problem:** The homepage already taught the right route order in the checklist and overlap card, but the four lane cards still looked like equal choices with no visible order on the actual click targets. Couples dealing with overlap still had to remember `hot conflict, then apart tonight, then under-same-roof distance, then calm trust` while scanning the cards.
