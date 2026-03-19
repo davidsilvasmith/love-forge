@@ -25,7 +25,7 @@
 - **Expected outcome:** Less first-click hesitation for same-house couples, stronger trust that Love Forge works without awkward same-room texting, and better odds they use the exact words within 60 seconds.
 - **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
 - **Status:** SHIPPED
-- **Proof after ship:** Live homepage hero now shows `Copy or say conflict words first`, `Copy or say under-same-roof words first`, `Copy or say apart words first`, and `Copy or say calm-trust words first`, with the helper copy using the same `Copy or say ... words first` language. Commit: `PENDING`. Live URL: `https://love.forge.dsdoes.com/`
+- **Proof after ship:** Live homepage hero now shows `Copy or say conflict words first`, `Copy or say under-same-roof words first`, `Copy or say apart words first`, and `Copy or say calm-trust words first`, with the helper copy using the same `Copy or say ... words first` language. Commit: `19a0537`. Live URL: `https://love.forge.dsdoes.com/`
 
 #### LF-138 Homepage first click should use the real time already chosen so stressed couples do not copy a default 8:30 text and then stop to edit it
 - **Page:** `/index.html`
