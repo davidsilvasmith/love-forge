@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-154 Homepage time field should stop sounding required before lane choice so stressed couples do not stall on setup before taking the first useful action
+- **Page:** `/index.html`
+- **Problem:** The homepage first screen still placed the rough-time card before the lane cards and said `Set one rough time first, then tap the lane.` Even after the rough-time softening work, that headline still made the setup feel like a gate before diagnosis.
+- **User pain:** "We need help tonight. Do not make me solve the time perfectly before I can even choose the right lane."
+- **Proposed change:** Rewrite only the homepage rough-time card so it explicitly says the field is optional, tells users to leave the default if they do not know yet, and keeps momentum focused on tapping the right lane.
+- **Expected outcome:** Less first-screen stall before lane choice, faster movement to one copied ask, and better odds a stressed couple acts tonight even if they do not know the exact time yet.
+- **Score:** Impact 4 / Confidence 5 / Ease 5 = **14**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage rough-time card now says `Set a rough time if you have it. If not, leave the default and tap the lane`, adds `This is not a gate`, and tells stuck users `keep 8:30 tonight and move.` Commit `b4b04dd`. Live URL verified after push: `https://love.forge.dsdoes.com/`
+
 #### LF-153 Homepage overlap card should match the lane-card order so stressed couples do not see two different routing rules above the first copy action
 - **Page:** `/index.html`
 - **Problem:** The homepage first checklist and lane cards already taught one route order after ruling out a fresh trust hit: hot conflict, apart tonight, under-the-same-roof distance, then calm trust with no fresh break. But the nearby overlap card still said `trust hit first, then hot conflict, then apart tonight, then under-the-same-roof distance lane, then calm trust`, which forced stressed couples to reconcile two different order systems in the same first-screen flow.
