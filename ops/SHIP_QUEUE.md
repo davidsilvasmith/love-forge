@@ -17,6 +17,16 @@
 
 ## SHIPPED
 
+#### LF-161 Homepage main send card should stop treating texting like the default even when the couple is under the same roof
+- **Page:** `/index.html`
+- **Problem:** The homepage main send card said `Send or say this to your partner now`, but once a couple picked a lane the only primary action it unlocked was `Text it now`, plus a copy success state that told them to paste into `text, email, or chat.` On the highest-intent action point, the interface was still nudging stressed same-house couples toward texting even when the page had already routed them into an in-person lane.
+- **User pain:** "If we're in the same house, don't make texting feel like the official move when I mostly need exact words I can just say."
+- **Proposed change:** Keep the homepage focused on one job, but make the main send card delivery-aware: add a lane-specific delivery note, relabel the text action to `Open text option` outside the apart lane, make the copy action explicitly usable for saying the words out loud, and make the copy success message channel-neutral.
+- **Expected outcome:** Less hesitation after lane pick, clearer delivery guidance for same-house couples, and better odds they take the first emotionally safe step within 60 seconds instead of second-guessing the channel.
+- **Score:** Impact 4 / Confidence 4 / Ease 5 = **13**
+- **Status:** SHIPPED
+- **Proof after ship:** Homepage main send card now tells same-house couples when saying the words out loud is the best move, only keeps `Text it now` as the default on the apart lane, and changes the copy path to support either saying or sending the words tonight. Commit `PENDING`. Live URL verified after push: `PENDING`
+
 #### LF-160 Homepage lane cards should stop inviting tool-reading before the first ask so stressed couples do not lose momentum at the exact click point
 - **Page:** `/index.html`
 - **Problem:** The homepage first-screen lane cards already gave couples the right primary move (`Copy or say ... words first`) and low-energy fallback (`Need lighter text`), but the third button on each card still said `Open ...` as if reading the full tool was an equal next step before sending anything.
